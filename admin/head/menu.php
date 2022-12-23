@@ -152,9 +152,7 @@
                             <li>
                                 <a href="./Clients.php"> Clients </a>
                             </li>
-                            <li>
-                                <a href="./user-account-settings.php"> Account Settings </a>
-                            </li>
+                             
                         </ul>
                     </li>
 
