@@ -46,7 +46,7 @@
     <div class="container-fluid maintanence-content">
         <div class="">
             <div class="maintanence-hero-img">
-                <a href="./index.html">
+                <a href="./index.php">
                     <img alt="logo" src="../src/assets/img/logo.svg" class="dark-element theme-logo">
                     <img alt="logo" src="../src/assets/img/logo2.svg" class="light-element theme-logo">
                 </a>
@@ -55,7 +55,7 @@
             <p class="error-text">Thank you for visiting us.</p>
             <p class="text">We are currently working on making some improvements <br/> to give you better user experience.</p>
             <p class="text">Please visit us again shortly.</p>
-            <a href="index.html" class="btn btn-dark mt-4">Home</a>
+            <a href="index.php" class="btn btn-dark mt-4">Home</a>
         </div>
     </div>
     

@@ -218,22 +218,22 @@
                             </div>
                         </div>
                         <div class="dropdown-item">
-                            <a href="user-profile.html">
+                            <a href="user-profile.php">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg> <span>Profile</span>
                             </a>
                         </div>
                         <div class="dropdown-item">
-                            <a href="app-mailbox.html">
+                            <a href="app-mailbox.php">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-inbox"><polyline points="22 12 16 12 14 15 10 15 8 12 2 12"></polyline><path d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"></path></svg> <span>Inbox</span>
                             </a>
                         </div>
                         <div class="dropdown-item">
-                            <a href="auth-boxed-lockscreen.html">
+                            <a href="auth-boxed-lockscreen.php">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-lock"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg> <span>Lock Screen</span>
                             </a>
                         </div>
                         <div class="dropdown-item">
-                            <a href="auth-boxed-signin.html">
+                            <a href="auth-boxed-signin.php">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-log-out"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg> <span>Log Out</span>
                             </a>
                         </div>
@@ -260,12 +260,12 @@
                 <div class="navbar-nav theme-brand flex-row  text-center">
                     <div class="nav-logo">
                         <div class="nav-item theme-logo">
-                            <a href="./index.html">
+                            <a href="./index.php">
                                 <img src="../src/assets/img/logo.svg" class="navbar-logo" alt="logo">
                             </a>
                         </div>
                         <div class="nav-item theme-text">
-                            <a href="./index.html" class="nav-link"> CORK </a>
+                            <a href="./index.php" class="nav-link"> CORK </a>
                         </div>
                     </div>
                     <div class="nav-item sidebar-toggle">
@@ -288,10 +288,10 @@
                         </a>
                         <ul class="collapse submenu list-unstyled" id="dashboard" data-bs-parent="#accordionExample">
                             <li>
-                                <a href="./index.html"> Analytics </a>
+                                <a href="./index.php"> Analytics </a>
                             </li>
                             <li>
-                                <a href="./index2.html"> Sales </a>
+                                <a href="./index2.php"> Sales </a>
                             </li>
                         </ul>
                     </li>
@@ -301,7 +301,7 @@
                     </li>
 
                     <li class="menu">
-                        <a href="./app-calendar.html" aria-expanded="false" class="dropdown-toggle">
+                        <a href="./app-calendar.php" aria-expanded="false" class="dropdown-toggle">
                             <div class="">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
                                 <span>Calendar</span>
@@ -310,7 +310,7 @@
                     </li>
                     
                     <li class="menu">
-                        <a href="./app-chat.html" aria-expanded="false" class="dropdown-toggle">
+                        <a href="./app-chat.php" aria-expanded="false" class="dropdown-toggle">
                             <div class="">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
                                 <span>Chat</span>
@@ -319,7 +319,7 @@
                     </li>
 
                     <li class="menu">
-                        <a href="./app-mailbox.html" aria-expanded="false" class="dropdown-toggle">
+                        <a href="./app-mailbox.php" aria-expanded="false" class="dropdown-toggle">
                             <div class="">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
                                 <span>Mailbox</span>
@@ -328,7 +328,7 @@
                     </li>
 
                     <li class="menu">
-                        <a href="./app-todoList.html" aria-expanded="false" class="dropdown-toggle">
+                        <a href="./app-todoList.php" aria-expanded="false" class="dropdown-toggle">
                             <div class="">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
                                 <span>Todo List</span>
@@ -337,7 +337,7 @@
                     </li>
 
                     <li class="menu">
-                        <a href="./app-notes.html" aria-expanded="false" class="dropdown-toggle">
+                        <a href="./app-notes.php" aria-expanded="false" class="dropdown-toggle">
                             <div class="">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
                                 <span>Notes</span>
@@ -346,7 +346,7 @@
                     </li>
 
                     <li class="menu">
-                        <a href="./app-scrumboard.html" aria-expanded="false" class="dropdown-toggle">
+                        <a href="./app-scrumboard.php" aria-expanded="false" class="dropdown-toggle">
                             <div class="">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-plus"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="12" y1="18" x2="12" y2="12"></line><line x1="9" y1="15" x2="15" y2="15"></line></svg>
                                 <span>Scrumboard</span>
@@ -355,7 +355,7 @@
                     </li>
 
                     <li class="menu">
-                        <a href="./app-contacts.html" aria-expanded="false" class="dropdown-toggle">
+                        <a href="./app-contacts.php" aria-expanded="false" class="dropdown-toggle">
                             <div class="">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
                                 <span>Contacts</span>
@@ -375,16 +375,16 @@
                         </a>
                         <ul class="collapse submenu list-unstyled" id="invoice" data-bs-parent="#accordionExample">
                             <li>
-                                <a href="./app-invoice-list.html"> List </a>
+                                <a href="./app-invoice-list.php"> List </a>
                             </li>
                             <li>
-                                <a href="./app-invoice-preview.html"> Preview </a>
+                                <a href="./app-invoice-preview.php"> Preview </a>
                             </li>
                             <li>
-                                <a href="./app-invoice-add.html"> Add </a>
+                                <a href="./app-invoice-add.php"> Add </a>
                             </li>
                             <li>
-                                <a href="./app-invoice-edit.html"> Edit </a>
+                                <a href="./app-invoice-edit.php"> Edit </a>
                             </li>                            
                         </ul>
                     </li>
@@ -401,19 +401,19 @@
                         </a>
                         <ul class="collapse submenu list-unstyled" id="ecommerce" data-bs-parent="#accordionExample">
                             <li>
-                                <a href="./app-ecommerce-product-shop.html"> Shop </a>
+                                <a href="./app-ecommerce-product-shop.php"> Shop </a>
                             </li>
                             <li>
-                                <a href="./app-ecommerce-product.html"> Product </a>
+                                <a href="./app-ecommerce-product.php"> Product </a>
                             </li>
                             <li>
-                                <a href="./app-ecommerce-product-list.html"> List </a>
+                                <a href="./app-ecommerce-product-list.php"> List </a>
                             </li>
                             <li>
-                                <a href="./app-ecommerce-product-add.html"> Create </a>
+                                <a href="./app-ecommerce-product-add.php"> Create </a>
                             </li>                            
                             <li>
-                                <a href="./app-ecommerce-product-edit.html"> Edit </a>
+                                <a href="./app-ecommerce-product-edit.php"> Edit </a>
                             </li>                            
                         </ul>
                     </li>
@@ -430,19 +430,19 @@
                         </a>
                         <ul class="collapse submenu list-unstyled" id="blog" data-bs-parent="#accordionExample">
                             <li>
-                                <a href="./app-blog-grid.html"> Grid </a>
+                                <a href="./app-blog-grid.php"> Grid </a>
                             </li>
                             <li>
-                                <a href="./app-blog-list.html"> List </a>
+                                <a href="./app-blog-list.php"> List </a>
                             </li>
                             <li>
-                                <a href="./app-blog-post.html"> Post </a>
+                                <a href="./app-blog-post.php"> Post </a>
                             </li>
                             <li>
-                                <a href="./app-blog-create.html"> Create </a>
+                                <a href="./app-blog-create.php"> Create </a>
                             </li>                            
                             <li>
-                                <a href="./app-blog-edit.html"> Edit </a>
+                                <a href="./app-blog-edit.php"> Edit </a>
                             </li>
                         </ul>
                     </li>
@@ -463,52 +463,52 @@
                         </a>
                         <ul class="collapse submenu list-unstyled" id="components" data-bs-parent="#accordionExample">
                             <li>
-                                <a href="./component-tabs.html"> Tabs </a>
+                                <a href="./component-tabs.php"> Tabs </a>
                             </li>
                             <li>
-                                <a href="./component-accordion.html"> Accordions  </a>
+                                <a href="./component-accordion.php"> Accordions  </a>
                             </li>
                             <li>
-                                <a href="./component-modal.html"> Modals </a>
+                                <a href="./component-modal.php"> Modals </a>
                             </li>                            
                             <li>
-                                <a href="./component-cards.html"> Cards </a>
+                                <a href="./component-cards.php"> Cards </a>
                             </li>
                             <li>
-                                <a href="./component-bootstrap-carousel.html">Carousel</a>
+                                <a href="./component-bootstrap-carousel.php">Carousel</a>
                             </li>
                             <li>
-                                <a href="./component-splide.html">Splide</a>
+                                <a href="./component-splide.php">Splide</a>
                             </li>
                             <li>
-                                <a href="./component-sweetalert.html"> Sweet Alerts </a>
+                                <a href="./component-sweetalert.php"> Sweet Alerts </a>
                             </li>
                             <li>
-                                <a href="./component-timeline.html"> Timeline </a>
+                                <a href="./component-timeline.php"> Timeline </a>
                             </li>
                             <li>
-                                <a href="./component-notifications.html"> Notifications </a>
+                                <a href="./component-notifications.php"> Notifications </a>
                             </li>
                             <li>
-                                <a href="./component-media-object.html"> Media Object </a>
+                                <a href="./component-media-object.php"> Media Object </a>
                             </li>
                             <li>
-                                <a href="./component-list-group.html"> List Group </a>
+                                <a href="./component-list-group.php"> List Group </a>
                             </li>
                             <li>
-                                <a href="./component-pricing-table.html"> Pricing Tables </a>
+                                <a href="./component-pricing-table.php"> Pricing Tables </a>
                             </li>
                             <li>
-                                <a href="./component-lightbox.html"> Lightbox </a>
+                                <a href="./component-lightbox.php"> Lightbox </a>
                             </li>
                             <li>
-                                <a href="./component-drag-drop.html"> Drag and Drop </a>
+                                <a href="./component-drag-drop.php"> Drag and Drop </a>
                             </li>
                             <li>
-                                <a href="./component-fonticons.html"> Font Icons </a>
+                                <a href="./component-fonticons.php"> Font Icons </a>
                             </li>
                             <li>
-                                <a href="./component-flags.html"> Flag Icons </a>
+                                <a href="./component-flags.php"> Flag Icons </a>
                             </li>
                         </ul>
                     </li>
@@ -525,61 +525,61 @@
                         </a>
                         <ul class="collapse submenu list-unstyled" id="elements" data-bs-parent="#accordionExample">
                             <li>
-                                <a href="./element-alerts.html"> Alerts </a>
+                                <a href="./element-alerts.php"> Alerts </a>
                             </li>
                             <li>
-                                <a href="./element-avatar.html"> Avatar </a>
+                                <a href="./element-avatar.php"> Avatar </a>
                             </li>
                             <li>
-                                <a href="./element-badges.html"> Badges </a>
+                                <a href="./element-badges.php"> Badges </a>
                             </li>
                             <li>
-                                <a href="./element-breadcrumbs.html"> Breadcrumbs </a>
+                                <a href="./element-breadcrumbs.php"> Breadcrumbs </a>
                             </li>                            
                             <li>
-                                <a href="./element-buttons.html"> Buttons </a>
+                                <a href="./element-buttons.php"> Buttons </a>
                             </li>
                             <li>
-                                <a href="./element-buttons-group.html"> Button Groups </a>
+                                <a href="./element-buttons-group.php"> Button Groups </a>
                             </li>
                             <li>
-                                <a href="./element-color-library.html"> Color Library </a>
+                                <a href="./element-color-library.php"> Color Library </a>
                             </li>
                             <li>
-                                <a href="./element-dropdown.html"> Dropdown </a>
+                                <a href="./element-dropdown.php"> Dropdown </a>
                             </li>
                             <li>
-                                <a href="./element-infobox.html"> Infobox </a>
+                                <a href="./element-infobox.php"> Infobox </a>
                             </li>
                             <li>
-                                <a href="./element-loader.html"> Loader </a>
+                                <a href="./element-loader.php"> Loader </a>
                             </li>
                             <li>
-                                <a href="./element-pagination.html"> Pagination </a>
+                                <a href="./element-pagination.php"> Pagination </a>
                             </li>
                             <li>
-                                <a href="./element-popovers.html"> Popovers </a>
+                                <a href="./element-popovers.php"> Popovers </a>
                             </li>
                             <li>
-                                <a href="./element-progressbar.html"> Progress Bar </a>
+                                <a href="./element-progressbar.php"> Progress Bar </a>
                             </li>
                             <li>
-                                <a href="./element-search.html"> Search </a>
+                                <a href="./element-search.php"> Search </a>
                             </li>
                             <li>
-                                <a href="./element-tooltips.html"> Tooltips </a>
+                                <a href="./element-tooltips.php"> Tooltips </a>
                             </li>
                             <li>
-                                <a href="./element-treeview.html"> Treeview </a>
+                                <a href="./element-treeview.php"> Treeview </a>
                             </li>
                             <li>
-                                <a href="./element-typography.html"> Typography </a>
+                                <a href="./element-typography.php"> Typography </a>
                             </li>
                         </ul>
                     </li>
 
                     <li class="menu active">
-                        <a href="./map-leaflet.html" aria-expanded="false" class="dropdown-toggle">
+                        <a href="./map-leaflet.php" aria-expanded="false" class="dropdown-toggle">
                             <div class="">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"></polygon><line x1="8" y1="2" x2="8" y2="18"></line><line x1="16" y1="6" x2="16" y2="22"></line></svg>
                                 <span>Maps</span>
@@ -588,7 +588,7 @@
                     </li>
 
                     <li class="menu">
-                        <a href="./charts-apex.html" aria-expanded="false" class="dropdown-toggle">
+                        <a href="./charts-apex.php" aria-expanded="false" class="dropdown-toggle">
                             <div class="">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-pie-chart"><path d="M21.21 15.89A10 10 0 1 1 8 2.83"></path><path d="M22 12A10 10 0 0 0 12 2v10z"></path></svg>
                                 <span>Charts</span>
@@ -597,7 +597,7 @@
                     </li>
 
                     <li class="menu">
-                        <a href="./widgets.html" aria-expanded="false" class="dropdown-toggle">
+                        <a href="./widgets.php" aria-expanded="false" class="dropdown-toggle">
                             <div class="">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-airplay"><path d="M5 17H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1"></path><polygon points="12 15 17 21 7 21 12 15"></polygon></svg>
                                 <span>Widgets</span>
@@ -617,16 +617,16 @@
                         </a>
                         <ul class="collapse submenu list-unstyled" id="layouts" data-bs-parent="#accordionExample">
                             <li>
-                                <a href="./layout-blank-page.html"> Blank Page </a>
+                                <a href="./layout-blank-page.php"> Blank Page </a>
                             </li>
                             <li>
-                                <a href="./layout-empty.html"> Empty Page </a>
+                                <a href="./layout-empty.php"> Empty Page </a>
                             </li>
                             <li>
-                                <a href="./layout-boxed.html"> Boxed </a>
+                                <a href="./layout-boxed.php"> Boxed </a>
                             </li>
                             <li>
-                                <a href="./layout-collapsible-menu.html"> Collapsed menu  </a>
+                                <a href="./layout-collapsible-menu.php"> Collapsed menu  </a>
                             </li>
                         </ul>
                     </li>
@@ -636,7 +636,7 @@
                     </li>
 
                     <li class="menu">
-                        <a href="./table-basic.html" aria-expanded="false" class="dropdown-toggle">
+                        <a href="./table-basic.php" aria-expanded="false" class="dropdown-toggle">
                             <div class="">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-layout"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>
                                 <span>Tables</span>
@@ -656,16 +656,16 @@
                         </a>
                         <ul class="collapse submenu list-unstyled" id="datatables" data-bs-parent="#accordionExample">
                             <li>
-                                <a href="./table-datatable-basic.html"> Basic </a>
+                                <a href="./table-datatable-basic.php"> Basic </a>
                             </li>
                             <li>
-                                <a href="./table-datatable-striped-table.html"> Striped </a>
+                                <a href="./table-datatable-striped-table.php"> Striped </a>
                             </li>
                             <li>
-                                <a href="./table-datatable-custom.html"> Custom </a>
+                                <a href="./table-datatable-custom.php"> Custom </a>
                             </li>
                             <li>
-                                <a href="./table-datatable-miscellaneous.html"> Miscellaneous </a>
+                                <a href="./table-datatable-miscellaneous.php"> Miscellaneous </a>
                             </li>
                         </ul>
                     </li>
@@ -682,64 +682,64 @@
                         </a>
                         <ul class="collapse submenu list-unstyled" id="forms" data-bs-parent="#accordionExample">
                             <li>
-                                <a href="./form-bootstrap-basic.html"> Basic </a>
+                                <a href="./form-bootstrap-basic.php"> Basic </a>
                             </li>
                             <li>
-                                <a href="./form-input-group-basic.html"> Input Group </a>
+                                <a href="./form-input-group-basic.php"> Input Group </a>
                             </li>
                             <li>
-                                <a href="./form-layouts.html"> Layouts </a>
+                                <a href="./form-layouts.php"> Layouts </a>
                             </li>
                             <li>
-                                <a href="./form-validation.html"> Validation </a>
+                                <a href="./form-validation.php"> Validation </a>
                             </li>
                             <li>
-                                <a href="./form-input-mask.html"> Input Mask </a>
+                                <a href="./form-input-mask.php"> Input Mask </a>
                             </li>
                             <li>
-                                <a href="./form-tom-select.html"> Tom Select </a>
+                                <a href="./form-tom-select.php"> Tom Select </a>
                             </li>
                             <li>
-                                <a href="./form-tagify.html"> Tagify </a>
+                                <a href="./form-tagify.php"> Tagify </a>
                             </li>
                             <li>
-                                <a href="./form-bootstrap-touchspin.html"> TouchSpin </a>
+                                <a href="./form-bootstrap-touchspin.php"> TouchSpin </a>
                             </li>
                             <li>
-                                <a href="./form-maxlength.html"> Maxlength </a>
+                                <a href="./form-maxlength.php"> Maxlength </a>
                             </li>                          
                             <li>
-                                <a href="./form-checkbox.html"> Checkbox </a>
+                                <a href="./form-checkbox.php"> Checkbox </a>
                             </li>
                             <li>
-                                <a href="./form-radio.html"> Radio </a>
+                                <a href="./form-radio.php"> Radio </a>
                             </li>
                             <li>
-                                <a href="./form-switches.html"> Switches </a>
+                                <a href="./form-switches.php"> Switches </a>
                             </li>
                             <li>
-                                <a href="./form-wizard.html"> Wizards </a>
+                                <a href="./form-wizard.php"> Wizards </a>
                             </li>
                             <li>
-                                <a href="./form-fileupload.html"> File Upload </a>
+                                <a href="./form-fileupload.php"> File Upload </a>
                             </li>
                             <li>
-                                <a href="./form-quill.html"> Quill Editor </a>
+                                <a href="./form-quill.php"> Quill Editor </a>
                             </li>
                             <li>
-                                <a href="./form-markdown.html"> Markdown Editor </a>
+                                <a href="./form-markdown.php"> Markdown Editor </a>
                             </li>
                             <li>
-                                <a href="./form-date-time-picker.html"> Date Time Picker </a>
+                                <a href="./form-date-time-picker.php"> Date Time Picker </a>
                             </li>
                             <li>
-                                <a href="./form-slider.html"> Slider </a>
+                                <a href="./form-slider.php"> Slider </a>
                             </li>
                             <li>
-                                <a href="./form-clipboard.html"> Clipboard </a>
+                                <a href="./form-clipboard.php"> Clipboard </a>
                             </li>
                             <li>
-                                <a href="./form-autoComplete.html"> Auto Complete </a>
+                                <a href="./form-autoComplete.php"> Auto Complete </a>
                             </li>
                         </ul>
                     </li>
@@ -760,10 +760,10 @@
                         </a>
                         <ul class="collapse submenu list-unstyled" id="users" data-bs-parent="#accordionExample">
                             <li>
-                                <a href="./user-profile.html"> Profile </a>
+                                <a href="./user-profile.php"> Profile </a>
                             </li>
                             <li>
-                                <a href="./user-account-settings.html"> Account Settings </a>
+                                <a href="./user-account-settings.php"> Account Settings </a>
                             </li>
                         </ul>
                     </li>
@@ -780,19 +780,19 @@
                         </a>
                         <ul class="collapse submenu list-unstyled" id="pages" data-bs-parent="#accordionExample">
                             <li>
-                                <a href="./pages-knowledge-base.html"> Knowledge Base </a>
+                                <a href="./pages-knowledge-base.php"> Knowledge Base </a>
                             </li>
                             <li>
-                                <a href="./pages-faq.html"> FAQ </a>
+                                <a href="./pages-faq.php"> FAQ </a>
                             </li>
                             <li>
-                                <a href="./pages-contact-us.html"> Contact Form </a>
+                                <a href="./pages-contact-us.php"> Contact Form </a>
                             </li>
                             <li>
-                                <a href="./pages-error404.html" target="_blank"> Error </a>
+                                <a href="./pages-error404.php" target="_blank"> Error </a>
                             </li>
                             <li>
-                                <a href="./pages-maintenence.html" target="_blank"> Maintanence </a>
+                                <a href="./pages-maintenence.php" target="_blank"> Maintanence </a>
                             </li>
                         </ul>
                     </li>
@@ -809,34 +809,34 @@
                         </a>
                         <ul class="collapse submenu list-unstyled" id="authentication" data-bs-parent="#accordionExample">
                             <li>
-                                <a href="./auth-boxed-signin.html" target="_blank"> Sign In </a>
+                                <a href="./auth-boxed-signin.php" target="_blank"> Sign In </a>
                             </li>
                             <li>
-                                <a href="./auth-boxed-signup.html" target="_blank"> Sign Up </a>
+                                <a href="./auth-boxed-signup.php" target="_blank"> Sign Up </a>
                             </li>
                             <li>
-                                <a href="./auth-boxed-lockscreen.html" target="_blank"> Unlock </a>
+                                <a href="./auth-boxed-lockscreen.php" target="_blank"> Unlock </a>
                             </li>
                             <li>
-                                <a href="./auth-boxed-password-reset.html" target="_blank"> Reset </a>
+                                <a href="./auth-boxed-password-reset.php" target="_blank"> Reset </a>
                             </li>
                             <li>
-                                <a href="./auth-boxed-2-step-verification.html" target="_blank"> 2 Step </a>
+                                <a href="./auth-boxed-2-step-verification.php" target="_blank"> 2 Step </a>
                             </li>
                             <li>
-                                <a href="./auth-cover-signin.html" target="_blank"> Sign In Cover </a>
+                                <a href="./auth-cover-signin.php" target="_blank"> Sign In Cover </a>
                             </li>
                             <li>
-                                <a href="./auth-cover-signup.html" target="_blank"> Sign Up Cover </a>
+                                <a href="./auth-cover-signup.php" target="_blank"> Sign Up Cover </a>
                             </li>
                             <li>
-                                <a href="./auth-cover-lockscreen.html" target="_blank"> Unlock Cover </a>
+                                <a href="./auth-cover-lockscreen.php" target="_blank"> Unlock Cover </a>
                             </li>
                             <li>
-                                <a href="./auth-cover-password-reset.html" target="_blank"> Reset Cover </a>
+                                <a href="./auth-cover-password-reset.php" target="_blank"> Reset Cover </a>
                             </li>
                             <li>
-                                <a href="./auth-cover-2-step-verification.html" target="_blank"> 2 Step Cover </a>
+                                <a href="./auth-cover-2-step-verification.php" target="_blank"> 2 Step Cover </a>
                             </li>
                         </ul>
                     </li>
@@ -900,7 +900,7 @@
                     </li>
                     
                     <li class="menu">
-                        <a target="_blank" href="../../documentation/index.html" aria-expanded="false" class="dropdown-toggle">
+                        <a target="_blank" href="../../documentation/index.php" aria-expanded="false" class="dropdown-toggle">
                             <div class="">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-book"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
                                 <span>Documentation</span>
@@ -908,7 +908,7 @@
                         </a>
                     </li>
                     <li class="menu">
-                        <a target="_blank" href="../../documentation/changelog.html" aria-expanded="false" class="dropdown-toggle">
+                        <a target="_blank" href="../../documentation/changelog.php" aria-expanded="false" class="dropdown-toggle">
                             <div class="">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-hash"><line x1="4" y1="9" x2="20" y2="9"></line><line x1="4" y1="15" x2="20" y2="15"></line><line x1="10" y1="3" x2="8" y2="21"></line><line x1="16" y1="3" x2="14" y2="21"></line></svg>
                                 <span>Changelog</span>
