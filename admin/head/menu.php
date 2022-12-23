@@ -50,10 +50,10 @@
                     </li>
 
                     <li class="menu">
-                        <a href="./app-mailbox.php" aria-expanded="false" class="dropdown-toggle">
+                        <a href="./Boite-de-courriel.php" aria-expanded="false" class="dropdown-toggle">
                             <div class="">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-                                <span>Mailbox</span>
+                                <span>Boite de courriel</span>
                             </div>
                         </a>
                     </li>
@@ -121,20 +121,15 @@
                             </div>
                         </a>
                         <ul class="collapse submenu list-unstyled" id="blog" data-bs-parent="#accordionExample">
+                            
                             <li>
-                                <a href="./app-blog-grid.php"> Grid </a>
+                                <a href="./listes-de-blogs.php"> listes de blogs </a>
                             </li>
                             <li>
-                                <a href="./app-blog-list.php"> List </a>
-                            </li>
-                            <li>
-                                <a href="./app-blog-post.php"> Post </a>
-                            </li>
-                            <li>
-                                <a href="./app-blog-create.php"> Create </a>
+                                <a href="./Créer-un-blog.php"> Créer un blog </a>
                             </li>                            
                             <li>
-                                <a href="./app-blog-edit.php"> Edit </a>
+                                <a href="./Blog-Modifier.php"> Blog Modifier </a>
                             </li>
                         </ul>
                     </li>
