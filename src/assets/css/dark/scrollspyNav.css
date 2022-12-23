@@ -46,12 +46,12 @@ body.dark .sidenav .sidenav-content a {
   transition: 0.5s;
 }
 body.dark .sidenav .sidenav-content a.active:before {
-  background: #008eff;
+  background: #c90c0f;
   width: 8px;
   height: 8px;
 }
 body.dark .sidenav .sidenav-content a.active:hover:before {
-  background: #008eff;
+  background: #c90c0f;
 }
 body.dark .sidenav .sidenav-content a:before {
   position: absolute;

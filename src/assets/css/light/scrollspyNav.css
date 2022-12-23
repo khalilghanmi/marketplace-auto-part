@@ -45,12 +45,12 @@
   transition: 0.5s;
 }
 .sidenav .sidenav-content a.active:before {
-  background: #008eff;
+  background: #c90c0f;
   width: 8px;
   height: 8px;
 }
 .sidenav .sidenav-content a.active:hover:before {
-  background: #008eff;
+  background: #c90c0f;
 }
 .sidenav .sidenav-content a:before {
   position: absolute;

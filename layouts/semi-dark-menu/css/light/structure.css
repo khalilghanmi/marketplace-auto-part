@@ -1045,7 +1045,7 @@ body .navbar .dark-mode, body:not(.dark) .navbar .dark-mode {
   stroke-width: 1.8;
 }
 #sidebar ul.menu-categories li.menu.active > .dropdown-toggle {
-  background-color: #008eff;
+  background-color: #c90c0f;
 }
 #sidebar ul.menu-categories li.menu.active > .dropdown-toggle svg, #sidebar ul.menu-categories li.menu.active > .dropdown-toggle span {
   color: #fff;
@@ -1154,7 +1154,7 @@ body .navbar .dark-mode, body:not(.dark) .navbar .dark-mode {
   content: "";
   position: absolute;
   background-color: rgba(255, 255, 255, 0.07);
-  background-color: #008eff;
+  background-color: #c90c0f;
   width: 15px;
   height: 42px;
   width: 100%;

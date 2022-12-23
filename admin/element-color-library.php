@@ -1336,9 +1336,9 @@
 
                         <div class="col-xl-4 col-lg-6 col-md-4 col-sm-6 col layout-spacing">
                             <div class="color-box">
-                                <span class="cl-example" style="background-color: #008eff;"></span>
+                                <span class="cl-example" style="background-color: #c90c0f;"></span>
                                 <div class="cl-info">
-                                    <h5 class="cl-title">#008eff</h5>
+                                    <h5 class="cl-title">#c90c0f</h5>
                                 </div>
                             </div>
                         </div>
