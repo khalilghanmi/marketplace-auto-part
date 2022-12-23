@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
-    <title>Account Settings | CORK - Multipurpose Bootstrap Dashboard Template </title>
+    <title>paramètres du compte | Admin - Piéce Auto Tunisie </title>
     <link rel="icon" type="image/x-icon" href="../src/assets/img/favicon.ico"/>
     <link href="../layouts/semi-dark-menu/css/light/loader.css" rel="stylesheet" type="text/css" />
     <link href="../layouts/semi-dark-menu/css/dark/loader.css" rel="stylesheet" type="text/css" />
