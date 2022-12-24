@@ -67,10 +67,11 @@
                     </div>
                     
                     <div class="row">
-                    
+                 
                     <div class="col-xl-12 col-lg-12 col-sm-12  layout-spacing">
                         <div class="statbox widget box box-shadow">
                             <div class="widget-content widget-content-area">
+                            <div class="table-responsive">
                                 <table id="html5-extension" class="table dt-table-hover" style="width:100%">
                                     <thead>
                                         <tr>
@@ -82,19 +83,49 @@
                                             <th>Adresse</th>
                                             <th>Code Postal</th>
                                             <th>Mobile</th>
+                                            <th>Statut</th>
                                             <th>Action</th>
+                                            
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td>Tiger Nixon</td>
-                                            <td>System Architect</td>
-                                            <td>Edinburgh</td>
-                                            <td>61</td>
-                                            <td>2011/04/25</td>
-                                            <td>$320,800</td>
-                                            <td>5421</td>
-                                            <td>+216 55 347 574</td>
+                                            <td>khalil</td>
+                                            <td>ghanmi</td>
+                                            <td>ghanmi.khalil@gmail.com</td>
+                                            <td>homme</td>
+                                            <td>27-09-1993</td>
+                                            <td>19 rue jarzouna tunis</td>
+                                            <td>2017</td>
+                                            <td>+216 55347574</td>
+                                            <td><span class="shadow-none badge badge-primary">Approved</span></td>
+                                            <td>
+                                                <div class="btn-group">
+                                                    <button type="button" class="btn btn-dark btn-sm">Voir</button>
+                                                    <button type="button" class="btn btn-dark btn-sm dropdown-toggle dropdown-toggle-split" id="dropdownMenuReference1" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-reference="parent">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                                                    </button>
+                                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuReference1">
+                                                        <a class="dropdown-item" href="#">Voir</a>
+                                                        <a class="dropdown-item" href="#">Modifier</a>
+                                                        <a class="dropdown-item" href="#">Supprimer</a>
+                                                        <div class="dropdown-divider"></div>
+                                                        <a class="dropdown-item" href="#">statut</a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                      
+                                        <tr>
+                                            <td>khalil</td>
+                                            <td>ghanmi</td>
+                                            <td>ghanmi.khalil@gmail.com</td>
+                                            <td>homme</td>
+                                            <td>27-09-1993</td>
+                                            <td>19 rue jarzouna tunis</td>
+                                            <td>2017</td>
+                                            <td>+216 55347574</td>
+                                            <td><span class="shadow-none badge badge-primary">Approved</span></td>
                                             <td>
                                                 <div class="btn-group">
                                                     <button type="button" class="btn btn-dark btn-sm">Voir</button>
@@ -112,101 +143,35 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td>Garrett Winters</td>
-                                            <td>Accountant</td>
-                                            <td>Tokyo</td>
-                                            <td>63</td>
-                                            <td>2011/07/25</td>
-                                            <td>$170,750</td>
-                                            <td>8422</td>
+                                            <td>khalil</td>
+                                            <td>ghanmi</td>
+                                            <td>ghanmi.khalil@gmail.com</td>
+                                            <td>homme</td>
+                                            <td>27-09-1993</td>
+                                            <td>19 rue jarzouna tunis</td>
+                                            <td>2017</td>
+                                            <td>+216 55347574</td>
+                                            <td><span class="shadow-none badge badge-primary">Approved</span></td>
                                             <td>
-                                                <div class="d-flex">
-                                                    <div class="usr-img-frame mr-2 rounded-circle">
-                                                        <img alt="avatar" class="img-fluid rounded-circle" src="../src/assets/img/boy.png">
+                                                <div class="btn-group">
+                                                    <button type="button" class="btn btn-dark btn-sm">Voir</button>
+                                                    <button type="button" class="btn btn-dark btn-sm dropdown-toggle dropdown-toggle-split" id="dropdownMenuReference1" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-reference="parent">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                                                    </button>
+                                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuReference1">
+                                                        <a class="dropdown-item" href="#">Voir</a>
+                                                        <a class="dropdown-item" href="#">Modifier</a>
+                                                        <a class="dropdown-item" href="#">Supprimer</a>
+                                                        <div class="dropdown-divider"></div>
+                                                        <a class="dropdown-item" href="#">statut</a>
                                                     </div>
                                                 </div>
                                             </td>
-                                            <td>
-                                                <div class="btn-group">
-                                                    <button type="button" class="btn btn-dark btn-sm">Open</button>
-                                                    <button type="button" class="btn btn-dark btn-sm dropdown-toggle dropdown-toggle-split" id="dropdownMenuReference2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-reference="parent">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
-                                                    </button>
-                                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuReference2">
-                                                        <a class="dropdown-item" href="#">Action</a>
-                                                        <a class="dropdown-item" href="#">Another action</a>
-                                                        <a class="dropdown-item" href="#">Something else here</a>
-                                                        <div class="dropdown-divider"></div>
-                                                        <a class="dropdown-item" href="#">Separated link</a>
-                                                    </div>
-                                                    </div>
-                                            </td>
                                         </tr>
-                                     
-                                        <tr>
-                                            <td>Jennifer Chang</td>
-                                            <td>Regional Director</td>
-                                            <td>Singapore</td>
-                                            <td>28</td>
-                                            <td>2010/11/14</td>
-                                            <td>$357,650</td>
-                                            <td>9239</td>
-                                            <td>
-                                                <div class="d-flex">
-                                                    <div class="usr-img-frame mr-2 rounded-circle">
-                                                        <img alt="avatar" class="img-fluid rounded-circle" src="../src/assets/img/girl-2.png">
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="btn-group">
-                                                    <button type="button" class="btn btn-dark btn-sm">Open</button>
-                                                    <button type="button" class="btn btn-dark btn-sm dropdown-toggle dropdown-toggle-split" id="dropdownMenuReference27" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-reference="parent">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
-                                                    </button>
-                                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuReference27">
-                                                        <a class="dropdown-item" href="#">Action</a>
-                                                        <a class="dropdown-item" href="#">Another action</a>
-                                                        <a class="dropdown-item" href="#">Something else here</a>
-                                                        <div class="dropdown-divider"></div>
-                                                        <a class="dropdown-item" href="#">Separated link</a>
-                                                    </div>
-                                                    </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>Brenden Wagner</td>
-                                            <td>Software Engineer</td>
-                                            <td>San Francisco</td>
-                                            <td>28</td>
-                                            <td>2011/06/07</td>
-                                            <td>$206,850</td>
-                                            <td>1314</td>
-                                            <td>
-                                                <div class="d-flex">
-                                                    <div class="usr-img-frame mr-2 rounded-circle">
-                                                        <img alt="avatar" class="img-fluid rounded-circle" src="../src/assets/img/boy-2.png">
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="btn-group">
-                                                    <button type="button" class="btn btn-dark btn-sm">Open</button>
-                                                    <button type="button" class="btn btn-dark btn-sm dropdown-toggle dropdown-toggle-split" id="dropdownMenuReference28" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-reference="parent">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
-                                                    </button>
-                                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuReference28">
-                                                        <a class="dropdown-item" href="#">Action</a>
-                                                        <a class="dropdown-item" href="#">Another action</a>
-                                                        <a class="dropdown-item" href="#">Something else here</a>
-                                                        <div class="dropdown-divider"></div>
-                                                        <a class="dropdown-item" href="#">Separated link</a>
-                                                    </div>
-                                                    </div>
-                                            </td>
-                                        </tr>
+                                      
                                     </tbody>
                                 </table>
+                                </div>
                             </div>
                         </div>
                     </div>
