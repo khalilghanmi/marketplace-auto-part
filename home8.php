@@ -74,14 +74,14 @@
                 <div class="row">
                     <div class="header-top-left col-lg-3 col-md-4 col-sm-5 col-xs-5">       
                         <ul class="top-log list-inline">                          
-                            <li><i class="fa fa-lock"></i><a href="login.html">Login</a> / </li><li><a href="register.html">Register</a></li>
+                            <li><i class="fa fa-lock"></i><a href="login.php">Login</a> / </li><li><a href="register.php">Register</a></li>
                         </ul>                            
                     </div>
                     <div class="header-top-right col-lg-9 col-md-8 col-sm-7 col-xs-7">
                         <ul class="top-link list-inline lang-curr">
                             <li class="currency">
                                 <div class="btn-group currencies-block">
-                                    <form action="index.html" method="post" enctype="multipart/form-data" id="currency">
+                                    <form action="index.php" method="post" enctype="multipart/form-data" id="currency">
                                         <a class="btn btn-link dropdown-toggle" data-toggle="dropdown">
                                             <span class="icon icon-credit "></span> $ US Dollar  <span class="fa fa-angle-down"></span>
                                         </a>
@@ -95,15 +95,15 @@
                             </li>   
                             <li class="language">
                                 <div class="btn-group languages-block ">
-                                    <form action="index.html" method="post" enctype="multipart/form-data" id="bt-language">
+                                    <form action="index.php" method="post" enctype="multipart/form-data" id="bt-language">
                                         <a class="btn btn-link dropdown-toggle" data-toggle="dropdown">
                                             <img src="image/catalog/flags/gb.png" alt="English" title="English">
                                             <span class="eng">English</span>
                                             <span class="fa fa-angle-down"></span>
                                         </a>
                                         <ul class="dropdown-menu">
-                                            <li><a href="index.html"><img class="image_flag" src="image/catalog/flags/gb.png" alt="English" title="English" /> English </a></li>
-                                            <li> <a href="html_with_RTL/index.html"> <img class="image_flag" src="image/catalog/flags/ar.png" alt="Arabic" title="Arabic" /> Arabic </a> </li>
+                                            <li><a href="index.php"><img class="image_flag" src="image/catalog/flags/gb.png" alt="English" title="English" /> English </a></li>
+                                            <li> <a href="html_with_RTL/index.php"> <img class="image_flag" src="image/catalog/flags/ar.png" alt="Arabic" title="Arabic" /> Arabic </a> </li>
                                         </ul>
                                     </form>
                                 </div>
@@ -121,7 +121,7 @@
                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-3">
                         <div class="search-header-w">                            
                             <div id="sosearchpro" class="sosearchpro-wrapper so-search ">
-                                <form method="GET" action="index.html">
+                                <form method="GET" action="index.php">
                                     <div id="search0" class="search input-group form-group">                               
 
                                         <input class="autosearch-input form-control" type="text" value="" size="50" autocomplete="off" placeholder="Keyword here..." name="search">
@@ -136,7 +136,7 @@
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 middle-right">
                         <div class="logo">
-                            <a href="index.html"><img src="image/catalog/logo.png" title="Your Store" alt="Your Store" /></a>
+                            <a href="index.php"><img src="image/catalog/logo.png" title="Your Store" alt="Your Store" /></a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-3">
@@ -165,16 +165,16 @@
                                             <tbody>
                                                 <tr>
                                                     <td class="text-center" style="width:70px">
-                                                        <a href="product.html">
+                                                        <a href="product.php">
                                                             <img src="image/catalog/demo/product/80/1.jpg" style="width:70px" alt="Yutculpa ullamcon" title="Yutculpa ullamco" class="preview">
                                                         </a>
                                                     </td>
-                                                    <td class="text-left"> <a class="cart_product_name" href="product.html">Yutculpa ullamco</a> 
+                                                    <td class="text-left"> <a class="cart_product_name" href="product.php">Yutculpa ullamco</a> 
                                                     </td>
                                                     <td class="text-center">x1</td>
                                                     <td class="text-center">$80.00</td>
                                                     <td class="text-right">
-                                                        <a href="product.html" class="fa fa-edit"></a>
+                                                        <a href="product.php" class="fa fa-edit"></a>
                                                     </td>
                                                     <td class="text-right">
                                                         <a onclick="cart.remove('2');" class="fa fa-times fa-delete"></a>
@@ -182,16 +182,16 @@
                                                 </tr>
                                                 <tr>
                                                     <td class="text-center" style="width:70px">
-                                                        <a href="product.html">
+                                                        <a href="product.php">
                                                             <img src="image/catalog/demo/product/80/2.jpg" style="width:70px" alt="Xancetta bresao" title="Xancetta bresao" class="preview">
                                                         </a>
                                                     </td>
-                                                    <td class="text-left"> <a class="cart_product_name" href="product.html">Xancetta bresao</a> 
+                                                    <td class="text-left"> <a class="cart_product_name" href="product.php">Xancetta bresao</a> 
                                                     </td>
                                                     <td class="text-center">x1</td>
                                                     <td class="text-center">$60.00</td>
                                                     <td class="text-right">
-                                                        <a href="product.html" class="fa fa-edit"></a>
+                                                        <a href="product.php" class="fa fa-edit"></a>
                                                     </td>
                                                     <td class="text-right">
                                                         <a onclick="cart.remove('1');" class="fa fa-times fa-delete"></a>
@@ -226,7 +226,7 @@
                                                     </tr>
                                                 </tbody>
                                             </table>
-                                            <p class="text-right"> <a class="btn view-cart" href="cart.html"><i class="fa fa-shopping-cart"></i>View Cart</a>&nbsp;&nbsp;&nbsp; <a class="btn btn-mega checkout-cart" href="checkout.html"><i class="fa fa-share"></i>Checkout</a> 
+                                            <p class="text-right"> <a class="btn view-cart" href="cart.php"><i class="fa fa-shopping-cart"></i>View Cart</a>&nbsp;&nbsp;&nbsp; <a class="btn btn-mega checkout-cart" href="checkout.php"><i class="fa fa-share"></i>Checkout</a> 
                                             </p>
                                         </div>
                                     </li>
@@ -258,12 +258,12 @@
                                         <div class="container-mega">
                                             <ul class="megamenu" data-transition="slide" data-animationtime="250">
                                                 <li class="home hover">
-                                                    <a href="index.html">Home</a>
+                                                    <a href="index.php">Home</a>
                                                     <div class="sub-menu" style="width:100%;" >
                                                         <div class="content" >
                                                             <div class="row">
                                                                 <div class="col-md-3">
-                                                                    <a href="index.html" class="image-link"> 
+                                                                    <a href="index.php" class="image-link"> 
                                                                         <span class="thumbnail">
                                                                             <img class="img-responsive img-border" src="image/catalog/menu/home1.jpg" alt="image">
                                                                             
@@ -273,7 +273,7 @@
                                                                     
                                                                 </div>
                                                                 <div class="col-md-3">
-                                                                    <a href="home2.html" class="image-link"> 
+                                                                    <a href="home2.php" class="image-link"> 
                                                                         <span class="thumbnail">
                                                                             <img class="img-responsive img-border" src="image/catalog/menu/home2.jpg" alt="image">
                                                                            
@@ -283,7 +283,7 @@
                                                                     
                                                                 </div>
                                                                 <div class="col-md-3">
-                                                                    <a href="home3.html" class="image-link"> 
+                                                                    <a href="home3.php" class="image-link"> 
                                                                         <span class="thumbnail">
                                                                             <img class="img-responsive img-border" src="image/catalog/menu/home3.jpg" alt="image">
                                                                            
@@ -293,7 +293,7 @@
                                                                     
                                                                 </div>
                                                                 <div class="col-md-3">
-                                                                    <a href="home4.html" class="image-link"> 
+                                                                    <a href="home4.php" class="image-link"> 
                                                                         <span class="thumbnail">
                                                                             <img class="img-responsive img-border" src="image/catalog/menu/home4.jpg" alt="image">
                                                                            
@@ -303,7 +303,7 @@
                                                                     
                                                                 </div>
                                                                 <div class="col-md-3">
-                                                                    <a href="home5.html" class="image-link"> 
+                                                                    <a href="home5.php" class="image-link"> 
                                                                         <span class="thumbnail">
                                                                             <img class="img-responsive img-border" src="image/catalog/menu/home5.jpg" alt="image">
                                                                            
@@ -313,7 +313,7 @@
                                                                     
                                                                 </div>
                                                                 <div class="col-md-3">
-                                                                    <a href="home6.html" class="image-link"> 
+                                                                    <a href="home6.php" class="image-link"> 
                                                                         <span class="thumbnail">
                                                                             <img class="img-responsive img-border" src="image/catalog/menu/home6.jpg" alt="image">
                                                                            
@@ -323,7 +323,7 @@
                                                                     
                                                                 </div>
                                                                 <div class="col-md-3">
-                                                                    <a href="home7.html" class="image-link"> 
+                                                                    <a href="home7.php" class="image-link"> 
                                                                         <span class="thumbnail">
                                                                             <img class="img-responsive img-border" src="image/catalog/menu/home7.jpg" alt="image">
                                                                            
@@ -333,7 +333,7 @@
                                                                     
                                                                 </div>
                                                                 <div class="col-md-3">
-                                                                    <a href="home8.html" class="image-link"> 
+                                                                    <a href="home8.php" class="image-link"> 
                                                                         <span class="thumbnail">
                                                                             <img class="img-responsive img-border" src="image/catalog/menu/home8.jpg" alt="image">
                                                                            
@@ -343,7 +343,7 @@
                                                                     
                                                                 </div>
                                                                 <div class="col-md-3">
-                                                                    <a href="html_with_RTL/index.html" class="image-link"> 
+                                                                    <a href="html_with_RTL/index.php" class="image-link"> 
                                                                         <span class="thumbnail">
                                                                             <img class="img-responsive img-border" src="image/catalog/menu/rtl.jpg" alt="image">
                                                                             
@@ -381,9 +381,9 @@
                                                                         <a href="#" class="title-submenu">Listing pages</a>
                                                                         <div>
                                                                             <ul class="row-list">
-                                                                                <li><a href="category.html">Category Page 1 </a></li>
-                                                                                <li><a href="category-v2.html">Category Page 2</a></li>
-                                                                                <li><a href="category-v3.html">Category Page 3</a></li>
+                                                                                <li><a href="category.php">Category Page 1 </a></li>
+                                                                                <li><a href="category-v2.php">Category Page 2</a></li>
+                                                                                <li><a href="category-v3.php">Category Page 3</a></li>
                                                                             </ul>
                                                                             
                                                                         </div>
@@ -394,9 +394,9 @@
                                                                         <a href="#" class="title-submenu">Product pages</a>
                                                                         <div>
                                                                             <ul class="row-list">
-                                                                                <li><a href="product.html">Product page 1</a></li>
-                                                                                <li><a href="product-v2.html">Product page 2</a></li>
-                                                                                <!-- <li><a href="product-v3.html">Image size - small</a></li> -->
+                                                                                <li><a href="product.php">Product page 1</a></li>
+                                                                                <li><a href="product-v2.php">Product page 2</a></li>
+                                                                                <!-- <li><a href="product-v3.php">Image size - small</a></li> -->
                                                                             </ul>
                                                                         </div>
                                                                     </div>
@@ -406,10 +406,10 @@
                                                                         <a href="#" class="title-submenu">Shopping pages</a>
                                                                         <div>
                                                                             <ul class="row-list">
-                                                                                <li><a href="cart.html">Shopping Cart Page</a></li>
-                                                                                <li><a href="checkout.html">Checkout Page</a></li>
-                                                                                <li><a href="compare.html">Compare Page</a></li>
-                                                                                <li><a href="wishlist.html">Wishlist Page</a></li>
+                                                                                <li><a href="cart.php">Shopping Cart Page</a></li>
+                                                                                <li><a href="checkout.php">Checkout Page</a></li>
+                                                                                <li><a href="compare.php">Compare Page</a></li>
+                                                                                <li><a href="wishlist.php">Wishlist Page</a></li>
                                                                             
                                                                             </ul>
                                                                         </div>
@@ -420,13 +420,13 @@
                                                                         <a href="#" class="title-submenu">My Account pages</a>
                                                                         <div>
                                                                             <ul class="row-list">
-                                                                                <li><a href="login.html">Login Page</a></li>
-                                                                                <li><a href="register.html">Register Page</a></li>
-                                                                                <li><a href="my-account.html">My Account</a></li>
-                                                                                <li><a href="order-history.html">Order History</a></li>
-                                                                                <li><a href="order-information.html">Order Information</a></li>
-                                                                                <li><a href="return.html">Product Returns</a></li>
-                                                                                <li><a href="gift-voucher.html">Gift Voucher</a></li>
+                                                                                <li><a href="login.php">Login Page</a></li>
+                                                                                <li><a href="register.php">Register Page</a></li>
+                                                                                <li><a href="my-account.php">My Account</a></li>
+                                                                                <li><a href="order-history.php">Order History</a></li>
+                                                                                <li><a href="order-information.php">Order Information</a></li>
+                                                                                <li><a href="return.php">Product Returns</a></li>
+                                                                                <li><a href="gift-voucher.php">Gift Voucher</a></li>
                                                                             </ul>
                                                                         </div>
                                                                     </div>
@@ -446,19 +446,19 @@
                                                             <div class="row">
                                                                 <div class="col-md-6">
                                                                     <ul class="row-list">
-                                                                        <li><a class="subcategory_item" href="faq.html">FAQ</a></li>
+                                                                        <li><a class="subcategory_item" href="faq.php">FAQ</a></li>
                                                                         
-                                                                        <li><a class="subcategory_item" href="sitemap.html">Site Map</a></li>
-                                                                        <li><a class="subcategory_item" href="contact.html">Contact us</a></li>
-                                                                        <li><a class="subcategory_item" href="banner-effect.html">Banner Effect</a></li>
+                                                                        <li><a class="subcategory_item" href="sitemap.php">Site Map</a></li>
+                                                                        <li><a class="subcategory_item" href="contact.php">Contact us</a></li>
+                                                                        <li><a class="subcategory_item" href="banner-effect.php">Banner Effect</a></li>
                                                                     </ul>
                                                                 </div>
                                                                 <div class="col-md-6">
                                                                     <ul class="row-list">
-                                                                        <li><a class="subcategory_item" href="about-us.html">About Us 1</a></li>
-                                                                        <li><a class="subcategory_item" href="about-us-2.html">About Us 2</a></li>
-                                                                        <li><a class="subcategory_item" href="about-us-3.html">About Us 3</a></li>
-                                                                        <li><a class="subcategory_item" href="about-us-4.html">About Us 4</a></li>
+                                                                        <li><a class="subcategory_item" href="about-us.php">About Us 1</a></li>
+                                                                        <li><a class="subcategory_item" href="about-us-2.php">About Us 2</a></li>
+                                                                        <li><a class="subcategory_item" href="about-us-3.php">About Us 3</a></li>
+                                                                        <li><a class="subcategory_item" href="about-us-4.php">About Us 4</a></li>
                                                                     </ul>
                                                                 </div>
                                                             </div>
@@ -567,7 +567,7 @@
                                                 </li>
                                                 <li class="">
                                                     <p class="close-menu"></p>
-                                                    <a href="blog-page.html" class="clearfix">
+                                                    <a href="blog-page.php" class="clearfix">
                                                         <strong>Blog</strong>
                                                         <span class="label"></span>
                                                     </a>
@@ -724,7 +724,7 @@
                                         <div class="product-item-container item--static">
                                             <div class="left-block">
                                                 <div class="product-image-container second_img">
-                                                    <a href="product.html" target="_self" title="DPicanha porkcho">
+                                                    <a href="product.php" target="_self" title="DPicanha porkcho">
                                                         <img src="image/catalog/demo/product/270/1.jpg" class="img-1 img-responsive" alt="image1">
                                                         <img src="image/catalog/demo/product/270/3.jpg" class="img-2 img-responsive" alt="image2">
                                                     </a>
@@ -732,7 +732,7 @@
                                                 <span class="label-product label-new">New</span>
                                                 <!--quickview--> 
                                                 <div class="so-quickview">
-                                                  <a class="iframe-link btn-button quickview quickview_handler visible-lg" href="quickview.html" title="Quick view" data-fancybox-type="iframe"><i class="fa fa-search"></i><span>Quick view</span></a>
+                                                  <a class="iframe-link btn-button quickview quickview_handler visible-lg" href="quickview.php" title="Quick view" data-fancybox-type="iframe"><i class="fa fa-search"></i><span>Quick view</span></a>
                                                 </div>                                                     
                                                 <!--end quickview-->
                                             </div>
@@ -744,7 +744,7 @@
                                                     </button>
                                                     <button type="button" class="compare btn-button" title="Compare this Product " onclick="compare.add('60');"><i class="fa fa-refresh"></i></button>                                                    
                                                 </div>
-                                                <h4><a href="product.html" title="Picanha porkcho" target="_self">Picanha porkcho</a></h4>
+                                                <h4><a href="product.php" title="Picanha porkcho" target="_self">Picanha porkcho</a></h4>
                                                 <div class="rating">    <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
                                                     <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
                                                     <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
@@ -765,7 +765,7 @@
                                         <div class="product-item-container item--static">
                                             <div class="left-block">
                                                 <div class="product-image-container second_img">
-                                                    <a href="product.html" target="_self" title="Stickrum bresao">
+                                                    <a href="product.php" target="_self" title="Stickrum bresao">
                                                         <img src="image/catalog/demo/product/270/3.jpg" class="img-1 img-responsive" alt="image1">
                                                         <img src="image/catalog/demo/product/270/4.jpg" class="img-2 img-responsive" alt="image2">
                                                     </a>
@@ -773,7 +773,7 @@
                                                 <span class="label-product label-sale">-11%</span>
                                                 <!--quickview--> 
                                                 <div class="so-quickview">
-                                                  <a class="iframe-link btn-button quickview quickview_handler visible-lg" href="quickview.html" title="Quick view" data-fancybox-type="iframe"><i class="fa fa-search"></i><span>Quick view</span></a>
+                                                  <a class="iframe-link btn-button quickview quickview_handler visible-lg" href="quickview.php" title="Quick view" data-fancybox-type="iframe"><i class="fa fa-search"></i><span>Quick view</span></a>
                                                 </div>                                                     
                                                 <!--end quickview-->
                                             </div>
@@ -786,7 +786,7 @@
                                                     </button>
                                                     <button type="button" class="compare btn-button" title="Compare this Product " onclick="compare.add('60');"><i class="fa fa-refresh"></i></button>                                                    
                                                 </div>
-                                                <h4><a href="product.html" title="Stickrum bresao" target="_self">Stickrum bresao</a></h4>
+                                                <h4><a href="product.php" title="Stickrum bresao" target="_self">Stickrum bresao</a></h4>
                                                 <div class="rating">    <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
                                                     <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
                                                     <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
@@ -808,7 +808,7 @@
                                         <div class="product-item-container item--static">
                                             <div class="left-block">
                                                 <div class="product-image-container second_img">
-                                                    <a href="product.html" target="_self" title="Remporum stick">
+                                                    <a href="product.php" target="_self" title="Remporum stick">
                                                         <img src="image/catalog/demo/product/270/9.jpg" class="img-1 img-responsive" alt="image1">
                                                         <img src="image/catalog/demo/product/270/6.jpg" class="img-2 img-responsive" alt="image2">
                                                     </a>
@@ -816,7 +816,7 @@
                                                 <span class="label-product label-new">New</span>
                                                 <!--quickview--> 
                                                 <div class="so-quickview">
-                                                  <a class="iframe-link btn-button quickview quickview_handler visible-lg" href="quickview.html" title="Quick view" data-fancybox-type="iframe"><i class="fa fa-search"></i><span>Quick view</span></a>
+                                                  <a class="iframe-link btn-button quickview quickview_handler visible-lg" href="quickview.php" title="Quick view" data-fancybox-type="iframe"><i class="fa fa-search"></i><span>Quick view</span></a>
                                                 </div>                                                     
                                                 <!--end quickview-->
                                             </div>
@@ -829,7 +829,7 @@
                                                     </button>
                                                     <button type="button" class="compare btn-button" title="Compare this Product " onclick="compare.add('60');"><i class="fa fa-refresh"></i></button>                                                    
                                                 </div>
-                                                <h4><a href="product.html" title="Remporum stick" target="_self">Remporum stick</a></h4>
+                                                <h4><a href="product.php" title="Remporum stick" target="_self">Remporum stick</a></h4>
                                                 <div class="rating">    <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
                                                     <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
                                                     <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
@@ -850,7 +850,7 @@
                                         <div class="product-item-container item--static">
                                             <div class="left-block">
                                                 <div class="product-image-container second_img">
-                                                    <a href="product.html" target="_self" title="Duis aute irure ">
+                                                    <a href="product.php" target="_self" title="Duis aute irure ">
                                                         <img src="image/catalog/demo/product/270/9.jpg" class="img-1 img-responsive" alt="image1">
                                                         <img src="image/catalog/demo/product/270/10.jpg" class="img-2 img-responsive" alt="image2">
                                                     </a>
@@ -858,7 +858,7 @@
                                                 
                                                 <!--quickview--> 
                                                 <div class="so-quickview">
-                                                  <a class="iframe-link btn-button quickview quickview_handler visible-lg" href="quickview.html" title="Quick view" data-fancybox-type="iframe"><i class="fa fa-search"></i><span>Quick view</span></a>
+                                                  <a class="iframe-link btn-button quickview quickview_handler visible-lg" href="quickview.php" title="Quick view" data-fancybox-type="iframe"><i class="fa fa-search"></i><span>Quick view</span></a>
                                                 </div>                                                     
                                                 <!--end quickview-->
                                             </div>
@@ -871,7 +871,7 @@
                                                     </button>
                                                     <button type="button" class="compare btn-button" title="Compare this Product " onclick="compare.add('60');"><i class="fa fa-refresh"></i></button>                                                    
                                                 </div>
-                                                <h4><a href="product.html" title="Volup tatem accu" target="_self">Volup tatem accu</a></h4>
+                                                <h4><a href="product.php" title="Volup tatem accu" target="_self">Volup tatem accu</a></h4>
                                                 <div class="rating">    <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
                                                     <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
                                                     <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
@@ -931,7 +931,7 @@
                                                     <div class="product-item-container item--static">
                                                         <div class="left-block">
                                                             <div class="product-image-container second_img">
-                                                                <a href="product.html" target="_self" title="Volup tatem accu">
+                                                                <a href="product.php" target="_self" title="Volup tatem accu">
                                                                     <img src="image/catalog/demo/product/270/1.jpg" class="img-1 img-responsive" alt="image1">
                                                                     <img src="image/catalog/demo/product/270/2.jpg" class="img-2 img-responsive" alt="image2">
                                                                 </a>
@@ -939,7 +939,7 @@
                                                             <span class="label-product label-new">New </span>
                                                             <!--quickview--> 
                                                             <div class="so-quickview">
-                                                              <a class="iframe-link btn-button quickview quickview_handler visible-lg" href="quickview.html" title="Quick view" data-fancybox-type="iframe"><i class="fa fa-search"></i><span>Quick view</span></a>
+                                                              <a class="iframe-link btn-button quickview quickview_handler visible-lg" href="quickview.php" title="Quick view" data-fancybox-type="iframe"><i class="fa fa-search"></i><span>Quick view</span></a>
                                                             </div>                                                     
                                                             <!--end quickview-->
                                                         </div>
@@ -952,7 +952,7 @@
                                                                 </button>
                                                                 <button type="button" class="compare btn-button" title="Compare this Product " onclick="compare.add('60');"><i class="fa fa-refresh"></i></button>                                                    
                                                             </div>
-                                                            <h4><a href="product.html" title="Volup tatem accu" target="_self">Volup tatem accu</a></h4>
+                                                            <h4><a href="product.php" title="Volup tatem accu" target="_self">Volup tatem accu</a></h4>
                                                             <div class="rating">    <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
                                                                 <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
                                                                 <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
@@ -969,7 +969,7 @@
                                                     <div class="product-item-container item--static">
                                                         <div class="left-block">
                                                             <div class="product-image-container second_img">
-                                                                <a href="product.html" target="_self" title="DPicanha porkcho">
+                                                                <a href="product.php" target="_self" title="DPicanha porkcho">
                                                                     <img src="image/catalog/demo/product/270/2.jpg" class="img-1 img-responsive" alt="image1">
                                                                     <img src="image/catalog/demo/product/270/3.jpg" class="img-2 img-responsive" alt="image2">
                                                                 </a>
@@ -977,7 +977,7 @@
                                                             <span class="label-product label-new">New</span>
                                                             <!--quickview--> 
                                                             <div class="so-quickview">
-                                                              <a class="iframe-link btn-button quickview quickview_handler visible-lg" href="quickview.html" title="Quick view" data-fancybox-type="iframe"><i class="fa fa-search"></i><span>Quick view</span></a>
+                                                              <a class="iframe-link btn-button quickview quickview_handler visible-lg" href="quickview.php" title="Quick view" data-fancybox-type="iframe"><i class="fa fa-search"></i><span>Quick view</span></a>
                                                             </div>                                                     
                                                             <!--end quickview-->
                                                         </div>
@@ -989,7 +989,7 @@
                                                                 </button>
                                                                 <button type="button" class="compare btn-button" title="Compare this Product " onclick="compare.add('60');"><i class="fa fa-refresh"></i></button>                                                    
                                                             </div>
-                                                            <h4><a href="product.html" title="Picanha porkcho" target="_self">Picanha porkcho</a></h4>
+                                                            <h4><a href="product.php" title="Picanha porkcho" target="_self">Picanha porkcho</a></h4>
                                                             <div class="rating">    <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
                                                                 <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
                                                                 <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
@@ -1008,7 +1008,7 @@
                                                     <div class="product-item-container item--static">
                                                         <div class="left-block">
                                                             <div class="product-image-container second_img">
-                                                                <a href="product.html" target="_self" title="Stickrum bresao">
+                                                                <a href="product.php" target="_self" title="Stickrum bresao">
                                                                     <img src="image/catalog/demo/product/270/3.jpg" class="img-1 img-responsive" alt="image1">
                                                                     <img src="image/catalog/demo/product/270/4.jpg" class="img-2 img-responsive" alt="image2">
                                                                 </a>
@@ -1016,7 +1016,7 @@
                                                             <span class="label-product label-sale">-11%</span>
                                                             <!--quickview--> 
                                                             <div class="so-quickview">
-                                                              <a class="iframe-link btn-button quickview quickview_handler visible-lg" href="quickview.html" title="Quick view" data-fancybox-type="iframe"><i class="fa fa-search"></i><span>Quick view</span></a>
+                                                              <a class="iframe-link btn-button quickview quickview_handler visible-lg" href="quickview.php" title="Quick view" data-fancybox-type="iframe"><i class="fa fa-search"></i><span>Quick view</span></a>
                                                             </div>                                                     
                                                             <!--end quickview-->
                                                         </div>
@@ -1029,7 +1029,7 @@
                                                                 </button>
                                                                 <button type="button" class="compare btn-button" title="Compare this Product " onclick="compare.add('60');"><i class="fa fa-refresh"></i></button>                                                    
                                                             </div>
-                                                            <h4><a href="product.html" title="Stickrum bresao" target="_self">Stickrum bresao</a></h4>
+                                                            <h4><a href="product.php" title="Stickrum bresao" target="_self">Stickrum bresao</a></h4>
                                                             <div class="rating">    <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
                                                                 <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
                                                                 <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
@@ -1047,7 +1047,7 @@
                                                     <div class="product-item-container item--static">
                                                         <div class="left-block">
                                                             <div class="product-image-container second_img">
-                                                                <a href="product.html" target="_self" title="Shoulder kevinis">
+                                                                <a href="product.php" target="_self" title="Shoulder kevinis">
                                                                     <img src="image/catalog/demo/product/270/4.jpg" class="img-1 img-responsive" alt="image1">
                                                                     <img src="image/catalog/demo/product/270/5.jpg" class="img-2 img-responsive" alt="image2">
                                                                 </a>
@@ -1055,7 +1055,7 @@
                                                   
                                                             <!--quickview--> 
                                                             <div class="so-quickview">
-                                                              <a class="iframe-link btn-button quickview quickview_handler visible-lg" href="quickview.html" title="Quick view" data-fancybox-type="iframe"><i class="fa fa-search"></i><span>Quick view</span></a>
+                                                              <a class="iframe-link btn-button quickview quickview_handler visible-lg" href="quickview.php" title="Quick view" data-fancybox-type="iframe"><i class="fa fa-search"></i><span>Quick view</span></a>
                                                             </div>                                                     
                                                             <!--end quickview-->
                                                         </div>
@@ -1068,7 +1068,7 @@
                                                                 </button>
                                                                 <button type="button" class="compare btn-button" title="Compare this Product " onclick="compare.add('60');"><i class="fa fa-refresh"></i></button>                                                    
                                                             </div>
-                                                            <h4><a href="product.html" title="Shoulder kevinis" target="_self">Shoulder kevinis</a></h4>
+                                                            <h4><a href="product.php" title="Shoulder kevinis" target="_self">Shoulder kevinis</a></h4>
                                                             <div class="rating">    <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
                                                                 <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
                                                                 <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
@@ -1088,7 +1088,7 @@
                                                     <div class="product-item-container item--static">
                                                         <div class="left-block">
                                                             <div class="product-image-container second_img">
-                                                                <a href="product.html" target="_self" title="Remporum stick">
+                                                                <a href="product.php" target="_self" title="Remporum stick">
                                                                     <img src="image/catalog/demo/product/270/5.jpg" class="img-1 img-responsive" alt="image1">
                                                                     <img src="image/catalog/demo/product/270/6.jpg" class="img-2 img-responsive" alt="image2">
                                                                 </a>
@@ -1096,7 +1096,7 @@
                                                             <span class="label-product label-new">New</span>
                                                             <!--quickview--> 
                                                             <div class="so-quickview">
-                                                              <a class="iframe-link btn-button quickview quickview_handler visible-lg" href="quickview.html" title="Quick view" data-fancybox-type="iframe"><i class="fa fa-search"></i><span>Quick view</span></a>
+                                                              <a class="iframe-link btn-button quickview quickview_handler visible-lg" href="quickview.php" title="Quick view" data-fancybox-type="iframe"><i class="fa fa-search"></i><span>Quick view</span></a>
                                                             </div>                                                     
                                                             <!--end quickview-->
                                                         </div>
@@ -1109,7 +1109,7 @@
                                                                 </button>
                                                                 <button type="button" class="compare btn-button" title="Compare this Product " onclick="compare.add('60');"><i class="fa fa-refresh"></i></button>                                                    
                                                             </div>
-                                                            <h4><a href="product.html" title="Remporum stick" target="_self">Remporum stick</a></h4>
+                                                            <h4><a href="product.php" title="Remporum stick" target="_self">Remporum stick</a></h4>
                                                             <div class="rating">    <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
                                                                 <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
                                                                 <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
@@ -1126,7 +1126,7 @@
                                                     <div class="product-item-container item--static">
                                                         <div class="left-block">
                                                             <div class="product-image-container second_img">
-                                                                <a href="product.html" target="_self" title="Luis rute arure">
+                                                                <a href="product.php" target="_self" title="Luis rute arure">
                                                                     <img src="image/catalog/demo/product/270/7.jpg" class="img-1 img-responsive" alt="image1">
                                                                     <img src="image/catalog/demo/product/270/8.jpg" class="img-2 img-responsive" alt="image2">
                                                                 </a>
@@ -1134,7 +1134,7 @@
                                                             <span class="label-product label-sale">-15%</span>
                                                             <!--quickview--> 
                                                             <div class="so-quickview">
-                                                              <a class="iframe-link btn-button quickview quickview_handler visible-lg" href="quickview.html" title="Quick view" data-fancybox-type="iframe"><i class="fa fa-search"></i><span>Quick view</span></a>
+                                                              <a class="iframe-link btn-button quickview quickview_handler visible-lg" href="quickview.php" title="Quick view" data-fancybox-type="iframe"><i class="fa fa-search"></i><span>Quick view</span></a>
                                                             </div>                                                     
                                                             <!--end quickview-->
                                                         </div>
@@ -1147,7 +1147,7 @@
                                                                 </button>
                                                                 <button type="button" class="compare btn-button" title="Compare this Product " onclick="compare.add('60');"><i class="fa fa-refresh"></i></button>                                                    
                                                             </div>
-                                                            <h4><a href="product.html" title="Luis rute arure" target="_self">Luis rute arure</a></h4>
+                                                            <h4><a href="product.php" title="Luis rute arure" target="_self">Luis rute arure</a></h4>
                                                             <div class="rating">    <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
                                                                 <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
                                                                 <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
@@ -1167,14 +1167,14 @@
                                                     <div class="product-item-container item--static">
                                                         <div class="left-block">
                                                             <div class="product-image-container second_img">
-                                                                <a href="product.html" target="_self" title="Sunt in culpa">
+                                                                <a href="product.php" target="_self" title="Sunt in culpa">
                                                                     <img src="image/catalog/demo/product/270/6.jpg" class="img-1 img-responsive" alt="image1">
                                                                     <img src="image/catalog/demo/product/270/7.jpg" class="img-2 img-responsive" alt="image2">
                                                                 </a>
                                                             </div>                                        
                                                             <!--quickview--> 
                                                             <div class="so-quickview">
-                                                              <a class="iframe-link btn-button quickview quickview_handler visible-lg" href="quickview.html" title="Quick view" data-fancybox-type="iframe"><i class="fa fa-search"></i><span>Quick view</span></a>
+                                                              <a class="iframe-link btn-button quickview quickview_handler visible-lg" href="quickview.php" title="Quick view" data-fancybox-type="iframe"><i class="fa fa-search"></i><span>Quick view</span></a>
                                                             </div>                                                     
                                                             <!--end quickview-->
                                                         </div>
@@ -1187,7 +1187,7 @@
                                                                 </button>
                                                                 <button type="button" class="compare btn-button" title="Compare this Product " onclick="compare.add('60');"><i class="fa fa-refresh"></i></button>                                                    
                                                             </div>
-                                                            <h4><a href="product.html" title="Sunt in culpa" target="_self">Sunt in culpa</a></h4>
+                                                            <h4><a href="product.php" title="Sunt in culpa" target="_self">Sunt in culpa</a></h4>
                                                             <div class="rating">    <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
                                                                 <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
                                                                 <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
@@ -1205,7 +1205,7 @@
                                                     <div class="product-item-container item--static">
                                                         <div class="left-block">
                                                             <div class="product-image-container second_img">
-                                                                <a href="product.html" target="_self" title="Duis aute irure ">
+                                                                <a href="product.php" target="_self" title="Duis aute irure ">
                                                                     <img src="image/catalog/demo/product/270/8.jpg" class="img-1 img-responsive" alt="image1">
                                                                     <img src="image/catalog/demo/product/270/9.jpg" class="img-2 img-responsive" alt="image2">
                                                                 </a>
@@ -1213,7 +1213,7 @@
                                                             
                                                             <!--quickview--> 
                                                             <div class="so-quickview">
-                                                              <a class="iframe-link btn-button quickview quickview_handler visible-lg" href="quickview.html" title="Quick view" data-fancybox-type="iframe"><i class="fa fa-search"></i><span>Quick view</span></a>
+                                                              <a class="iframe-link btn-button quickview quickview_handler visible-lg" href="quickview.php" title="Quick view" data-fancybox-type="iframe"><i class="fa fa-search"></i><span>Quick view</span></a>
                                                             </div>                                                     
                                                             <!--end quickview-->
                                                         </div>
@@ -1226,7 +1226,7 @@
                                                                 </button>
                                                                 <button type="button" class="compare btn-button" title="Compare this Product " onclick="compare.add('60');"><i class="fa fa-refresh"></i></button>                                                    
                                                             </div>
-                                                            <h4><a href="product.html" title="Volup tatem accu" target="_self">Volup tatem accu</a></h4>
+                                                            <h4><a href="product.php" title="Volup tatem accu" target="_self">Volup tatem accu</a></h4>
                                                             <div class="rating">    <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
                                                                 <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
                                                                 <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>

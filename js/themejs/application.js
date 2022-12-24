@@ -73,9 +73,9 @@ $(window).load(function() {
         var expander = $(this);
 		
         if (!$(collapse_content_selector).hasClass("open")) {
-			expander.addClass("open").html("<i class='fa fa-angle-up'></i>") ;
+			expander.addClass("open").php("<i class='fa fa-angle-up'></i>") ;
 		}
-		else expander.removeClass("open").html("<i class='fa fa-angle-down'></i>");
+		else expander.removeClass("open").php("<i class='fa fa-angle-down'></i>");
 		
 		if (!$(collapse_content_selector).hasClass("open")) $(collapse_content_selector).addClass("open").slideDown("normal");
         else $(collapse_content_selector).removeClass("open").slideUp("normal");
@@ -211,7 +211,7 @@ jQuery(function ($) {
                 success: function (data) {
 					
                     setTimeout(function () {
-                        loadcontainer.html(data)
+                        loadcontainer.php(data)
                     }, 1000)
                 }
 			
@@ -365,12 +365,12 @@ $(function ($) {
                     if ($(this).closest(".sort-isotope").length >
                         0) e.preventDefault();
                     var data = $(this).attr("data-value"),
-                        dataHTML = $(this).html();
+                        dataHTML = $(this).php();
                     $this.trigger("change", {
                         value: data,
                         html: dataHTML
                     });
-                    $value.html(dataHTML);
+                    $value.php(dataHTML);
                     if ($hidden.length) $hidden.val(data)
                 });
                 $this.data("inited-select", true)
@@ -446,7 +446,7 @@ $(document).ready(function(){
 $(function() {
 	var austDay = new Date(2020, 6 - 1, 28);
 	$('.defaultCountdown-30').countdown(austDay, function(event) {
-		var $this = $(this).html(event.strftime(''
+		var $this = $(this).php(event.strftime(''
 		   + '<div class="time-item time-day"><div class="num-time">%D</div><div class="name-time">Day </div></div>'
 		   + '<div class="time-item time-hour"><div class="num-time">%H</div><div class="name-time">Hour </div></div>'
 		   + '<div class="time-item time-min"><div class="num-time">%M</div><div class="name-time">Min </div></div>'
@@ -558,7 +558,7 @@ $(document).ready(function() {
 		});
 		
 		$(this).siblings("li").removeClass("active");
-		$(this).parent().find('.selected-option').html('<span class="label label-success">'+ $(this).find('img').data('original-title') +'</span>');
+		$(this).parent().find('.selected-option').php('<span class="label label-success">'+ $(this).find('img').data('original-title') +'</span>');
 	});
 	// Product detial reviews button
 	$(".reviews_button,.write_review_button").click(function (){
@@ -625,7 +625,7 @@ $(document).ready(function() {
 		});
 		
 		$(this).siblings("li").removeClass("active");
-		$(this).parent().find('.selected-option').html('<span class="label label-success">'+ $(this).find('img').data('original-title') +'</span>');
+		$(this).parent().find('.selected-option').php('<span class="label label-success">'+ $(this).find('img').data('original-title') +'</span>');
 	});
 	
 	var _isMobile = {

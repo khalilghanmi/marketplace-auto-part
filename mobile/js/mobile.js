@@ -151,12 +151,12 @@ $(function ($) {
                     if ($(this).closest(".sort-isotope").length >
                         0) e.preventDefault();
                     var data = $(this).attr("data-value"),
-                        dataHTML = $(this).html();
+                        dataHTML = $(this).php();
                     $this.trigger("change", {
                         value: data,
                         html: dataHTML
                     });
-                    $value.html(dataHTML);
+                    $value.php(dataHTML);
                     if ($hidden.length) $hidden.val(data)
                 });
                 $this.data("inited-select", true)
@@ -272,6 +272,6 @@ $('.product-options li.radio').click(function(){
 	});
 	
 	$(this).siblings("li").removeClass("active");
-	$(this).parent().find('.selected-option').html('<span class="label label-success">'+ $(this).find('img').data('original-title') +'</span>');
+	$(this).parent().find('.selected-option').php('<span class="label label-success">'+ $(this).find('img').data('original-title') +'</span>');
 });
 	

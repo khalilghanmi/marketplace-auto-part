@@ -49,7 +49,7 @@
 		
 		<!-- Begin Bar Tab -->
 		<nav class="bar bar-tab">
-			<a class="tab-item " href="index.html" data-transition="slide-in">
+			<a class="tab-item " href="index.php" data-transition="slide-in">
 				<span class="icon icon-home"></span>
 				<span class="tab-label">Home</span>
 			</a>
@@ -57,7 +57,7 @@
 				<span class="icon icon-search"></span>
 				<span class="tab-label">Search</span>
 			</a>
-			<a class="tab-item item-cart" href="checkout.html" data-transition="slide-in">
+			<a class="tab-item item-cart" href="checkout.php" data-transition="slide-in">
 				<span class="icon icon-download"></span>
 				<div id="cart" class="btn-shopping-cart">
 					<span class="total-shopping-cart cart-total-full">
@@ -66,7 +66,7 @@
 				
 				<span class="tab-label">View Cart</span>
 			</a>
-			<a class="tab-item" href="login.html" data-transition="slide-in">
+			<a class="tab-item" href="login.php" data-transition="slide-in">
 				<span class="icon icon-person"></span>
 				<span class="tab-label">My Account</span>
 			</a>
@@ -78,9 +78,9 @@
 		<div id="popover" class="popover fade bottom in right">
 			
 			<ul class="table-view">
-				<li class="table-view-cell"><a class="tab-item" href="index.html"> Home </a></li>
-				<li class="table-view-cell"><a class="tab-item" href="home2.html"> Home 2 </a></li>
-				<li class="table-view-cell"><a class="tab-item" href="home3.html"> Home 3 </a></li>
+				<li class="table-view-cell"><a class="tab-item" href="index.php"> Home </a></li>
+				<li class="table-view-cell"><a class="tab-item" href="home2.php"> Home 2 </a></li>
+				<li class="table-view-cell"><a class="tab-item" href="home3.php"> Home 3 </a></li>
 			</ul>
 		</div>
 		<!-- //End Bar Tab -->
@@ -118,7 +118,7 @@
 										<h2 class="hidden">Returning Customer</h2>
 										<p class="hidden"><strong>I am a returning customer</strong>
 										</p>
-										<form action="index.html" method="post" enctype="multipart/form-data">
+										<form action="index.php" method="post" enctype="multipart/form-data">
 											<div class="form-group form-user">
 												<label class="control-label font-ct" for="input-email">E-Mail Address</label>
 												<input type="text" name="email" value="" placeholder="E-Mail Address" id="input-email" class="form-control">
@@ -165,7 +165,7 @@
 										<p><strong class="font-ct">Register Account</strong>
 										</p>
 										<p style="margin-bottom: 2em;">By creating an account you will be able to shop faster, be up to date on an order's status, and keep track of the orders you have previously made.</p>
-										<a href="register.html" class="btn btn-sn">Continue</a>
+										<a href="register.php" class="btn btn-sn">Continue</a>
 									</div>
 								</div>
 							</div>
@@ -239,17 +239,17 @@
 
 				<div class="footernav-midde">
 					<ul class="footer-link-list row">
-						<li class="col-xs-6"><a href="about-us.html"> About us </a></li>
-						<li class="col-xs-6"><a href="sitemap.html"> Sitemap </a></li>
-						<li class="col-xs-6"><a href="blog-detail.html"> Blog Detail </a></li>
-						<li class="col-xs-6"><a href="category.html"> Category  </a></li>
+						<li class="col-xs-6"><a href="about-us.php"> About us </a></li>
+						<li class="col-xs-6"><a href="sitemap.php"> Sitemap </a></li>
+						<li class="col-xs-6"><a href="blog-detail.php"> Blog Detail </a></li>
+						<li class="col-xs-6"><a href="category.php"> Category  </a></li>
 						
-						<li class="col-xs-6"><a href="blogs.html"> Blog </a></li>
-						<li class="col-xs-6"><a href="product.html"> Product </a></li>
-						<li class="col-xs-6"><a href="login.html"> Login </a></li>
-						<li class="col-xs-6"><a href="checkout.html"> Checkout </a></li>
-						<li class="col-xs-6"><a href="register.html"> Register </a></li>
-						<li class="col-xs-6"><a href="contact.html"> Contact </a></li>
+						<li class="col-xs-6"><a href="blogs.php"> Blog </a></li>
+						<li class="col-xs-6"><a href="product.php"> Product </a></li>
+						<li class="col-xs-6"><a href="login.php"> Login </a></li>
+						<li class="col-xs-6"><a href="checkout.php"> Checkout </a></li>
+						<li class="col-xs-6"><a href="register.php"> Register </a></li>
+						<li class="col-xs-6"><a href="contact.php"> Contact </a></li>
 											
 					</ul>
 				</div>
@@ -271,7 +271,7 @@
 		<div class="content">
 			<div class="panel-left__top clearfix text-center">
 				<div class="panel-logo">
-					<a href="index.html"><img src="../image/demo-mobile/logo.png" title="Your Store" alt="Your Store"></a>
+					<a href="index.php"><img src="../image/demo-mobile/logo.png" title="Your Store" alt="Your Store"></a>
 				</div>
 				<div class="panel-search">
 					<div id="search" class="input-group">
@@ -493,13 +493,13 @@
 				<div class="col-xs-6">
 					<i class="fa fa-check-square-o" aria-hidden="true"></i>
 					<div class="bot-inner">
-						<a href="compare.html">Compare</a>
+						<a href="compare.php">Compare</a>
 					</div>
 				</div>
 				<div class="col-xs-6">
 					<i class="fa fa-heart" aria-hidden="true"></i>
 					<div class="bot-inner">
-						<a href="wishlist.html">Wish List</a>
+						<a href="wishlist.php">Wish List</a>
 					</div>
 				</div>
 
@@ -546,7 +546,7 @@
 								</ul>
 							</div>
 							<input type="hidden" name="code" value="">
-							<input type="hidden" name="redirect" value="index.html">
+							<input type="hidden" name="redirect" value="index.php">
 						</form>
 					</div>
 

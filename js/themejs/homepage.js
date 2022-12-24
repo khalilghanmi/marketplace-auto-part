@@ -236,7 +236,7 @@ $('.slider-nav').slick({
 		
 	function enableSelectBoxes() {
 		$tab_wrap = $('.ltabs-tabs-wrap', $element),
-			$tab_label_select.html($('.ltabs-tab', $element).filter('.tab-sel').children('.ltabs-tab-label').html());
+			$tab_label_select.php($('.ltabs-tab', $element).filter('.tab-sel').children('.ltabs-tab-label').php());
 		if ($(window).innerWidth() <= 991) {
 			$tab_wrap.addClass('ltabs-selectbox');
 		} else {
@@ -394,7 +394,7 @@ $('.slider-nav').slick({
 		var _items_active = $(items_active,$element);
 		$items_content.removeClass('ltabs-items-selected');
 		_items_active.addClass('ltabs-items-selected');
-		$tab_label_select.html($tab.filter('.tab-sel').children('.ltabs-tab-label').html());
+		$tab_label_select.php($tab.filter('.tab-sel').children('.ltabs-tab-label').php());
 		var $loading = $('.ltabs-loading', _items_active);
 		var loaded = _items_active.hasClass('ltabs-items-loaded');
 		
@@ -404,7 +404,7 @@ $('.slider-nav').slick({
 			_items_active.addClass('ltabs-process');
 			var category_id 		= $this.attr('data-category-id'),
 			path_url 	= 'ajax/listingtab_',
-			ajax_url = $tabs.parents('.ltabs-tabs-container').attr('data-ajaxurl')+path_url+category_id+ '.html';
+			ajax_url = $tabs.parents('.ltabs-tabs-container').attr('data-ajaxurl')+path_url+category_id+ '.php';
 			
 			$loading.show();
 			$.ajax({
@@ -498,7 +498,7 @@ $('.slider-nav').slick({
 		
 	function enableSelectBoxes() {
 		$tab_wrap = $('.ltabs-tabs-wrap', $element),
-			$tab_label_select.html($('.ltabs-tab', $element).filter('.tab-sel').children('.ltabs-tab-label').html());
+			$tab_label_select.php($('.ltabs-tab', $element).filter('.tab-sel').children('.ltabs-tab-label').php());
 		if ($(window).innerWidth() <= 991) {
 			$tab_wrap.addClass('ltabs-selectbox');
 		} else {
@@ -654,7 +654,7 @@ $('.slider-nav').slick({
 		var _items_active = $(items_active,$element);
 		$items_content.removeClass('ltabs-items-selected');
 		_items_active.addClass('ltabs-items-selected');
-		$tab_label_select.html($tab.filter('.tab-sel').children('.ltabs-tab-label').html());
+		$tab_label_select.php($tab.filter('.tab-sel').children('.ltabs-tab-label').php());
 		var $loading = $('.ltabs-loading', _items_active);
 		var loaded = _items_active.hasClass('ltabs-items-loaded');
 		
@@ -664,7 +664,7 @@ $('.slider-nav').slick({
 			_items_active.addClass('ltabs-process');
 			var category_id 		= $this.attr('data-category-id'),
 			path_url 	= 'ajax/listingtab_',
-			ajax_url = $tabs.parents('.ltabs-tabs-container').attr('data-ajaxurl')+path_url+category_id+ '.html';
+			ajax_url = $tabs.parents('.ltabs-tabs-container').attr('data-ajaxurl')+path_url+category_id+ '.php';
 			
 			$loading.show();
 			$.ajax({
@@ -757,7 +757,7 @@ $('.slider-nav').slick({
 		
 	function enableSelectBoxes() {
 		$tab_wrap = $('.ltabs-tabs-wrap', $element),
-			$tab_label_select.html($('.ltabs-tab', $element).filter('.tab-sel').children('.ltabs-tab-label').html());
+			$tab_label_select.php($('.ltabs-tab', $element).filter('.tab-sel').children('.ltabs-tab-label').php());
 		if ($(window).innerWidth() <= 991) {
 			$tab_wrap.addClass('ltabs-selectbox');
 		} else {
@@ -913,7 +913,7 @@ $('.slider-nav').slick({
 		var _items_active = $(items_active,$element);
 		$items_content.removeClass('ltabs-items-selected');
 		_items_active.addClass('ltabs-items-selected');
-		$tab_label_select.html($tab.filter('.tab-sel').children('.ltabs-tab-label').html());
+		$tab_label_select.php($tab.filter('.tab-sel').children('.ltabs-tab-label').php());
 		var $loading = $('.ltabs-loading', _items_active);
 		var loaded = _items_active.hasClass('ltabs-items-loaded');
 		
@@ -923,7 +923,7 @@ $('.slider-nav').slick({
 			_items_active.addClass('ltabs-process');
 			var category_id 		= $this.attr('data-category-id'),
 			path_url 	= 'ajax/listingtab_',
-			ajax_url = $tabs.parents('.ltabs-tabs-container').attr('data-ajaxurl')+path_url+category_id+ '.html';
+			ajax_url = $tabs.parents('.ltabs-tabs-container').attr('data-ajaxurl')+path_url+category_id+ '.php';
 			
 			$loading.show();
 			$.ajax({
@@ -1016,7 +1016,7 @@ $('.slider-nav').slick({
 		
 	function enableSelectBoxes() {
 		$tab_wrap = $('.ltabs-tabs-wrap', $element),
-			$tab_label_select.html($('.ltabs-tab', $element).filter('.tab-sel').children('.ltabs-tab-label').html());
+			$tab_label_select.php($('.ltabs-tab', $element).filter('.tab-sel').children('.ltabs-tab-label').php());
 		if ($(window).innerWidth() <= 991) {
 			$tab_wrap.addClass('ltabs-selectbox');
 		} else {
@@ -1171,7 +1171,7 @@ $('.slider-nav').slick({
 		var _items_active = $(items_active,$element);
 		$items_content.removeClass('ltabs-items-selected');
 		_items_active.addClass('ltabs-items-selected');
-		$tab_label_select.html($tab.filter('.tab-sel').children('.ltabs-tab-label').html());
+		$tab_label_select.php($tab.filter('.tab-sel').children('.ltabs-tab-label').php());
 		var $loading = $('.ltabs-loading', _items_active);
 		var loaded = _items_active.hasClass('ltabs-items-loaded');
 		
@@ -1181,7 +1181,7 @@ $('.slider-nav').slick({
 			_items_active.addClass('ltabs-process');
 			var category_id 		= $this.attr('data-category-id'),
 			path_url 	= 'ajax/listingtab_',
-			ajax_url = $tabs.parents('.ltabs-tabs-container').attr('data-ajaxurl')+path_url+category_id+ '.html';
+			ajax_url = $tabs.parents('.ltabs-tabs-container').attr('data-ajaxurl')+path_url+category_id+ '.php';
 			
 			$loading.show();
 			$.ajax({
@@ -1399,7 +1399,7 @@ function subscribe_newsletter()
 		else
 		{
 			$.ajax({
-				url: 'index.html?route=extension/module/so_newletter_custom_popup/newsletter',
+				url: 'index.php?route=extension/module/so_newletter_custom_popup/newsletter',
 				type: 'post',
 				data: dataString,
 				dataType: 'json',

@@ -60,7 +60,7 @@ $(function() {
         event.preventDefault();
         /* Act on the event */
         getRangeValue = $(this).val();
-        $('.range-count-number').html(getRangeValue);
+        $('.range-count-number').php(getRangeValue);
         $('.range-count-number').attr('data-rangeCountNumber', getRangeValue);
     });
 
@@ -70,7 +70,7 @@ $(function() {
         $('input,textarea').val('');
         $('input[type="range"]').val(0);
         $('.range-count-number').attr('data-rangecountnumber', 0);
-        $('.range-count-number').html(0);
+        $('.range-count-number').php(0);
     })
 
 
@@ -272,7 +272,7 @@ $(function() {
                 var $_innerThis = $(this);
                 var $_getListTitle = document.getElementById('s-list-name').value;
 
-                var $_editedListTitle = $_outerThis.parents('[data-connect="sorting"]').find('.s-heading').html($_getListTitle);
+                var $_editedListTitle = $_outerThis.parents('[data-connect="sorting"]').find('.s-heading').php($_getListTitle);
                 var $_editedListTitleDataAttr = $_outerThis.parents('[data-connect="sorting"]').find('.s-heading').attr('data-listTitle', $_getListTitle);
 
                 $('#addListModal').modal('hide');
@@ -335,7 +335,7 @@ $(function() {
 
             var $_taskProgress = $_outerThis.parents('.card').find('div.progress-bar').attr('data-progressState');
             var get_value_progress = $('#progress-range-counter').val($_taskProgress);
-            var get_value_progressHtml = $('.range-count-number').html($_taskProgress);
+            var get_value_progressHtml = $('.range-count-number').php($_taskProgress);
             var get_value_progressDataAttr = $('.range-count-number').attr('data-rangecountnumber', $_taskProgress);
 
         $('[data-btnfn="editTask"]').off('click').on('click', function(event) {
@@ -346,17 +346,17 @@ $(function() {
                 var $_taskProgressValue = $('.range-count-number').attr('data-rangeCountNumber');
 
                 var $_taskDataAttr = $_outerThis.parents('.card').find('h4').attr('data-taskTitle' , $_taskValue);
-                var $_taskTitle = $_outerThis.parents('.card').find('h4').html($_taskValue);
+                var $_taskTitle = $_outerThis.parents('.card').find('h4').php($_taskValue);
                 var $_taskTextDataAttr = $_outerThis.parents('.card').find('p:not(".progress-count")').attr('data-tasktext' , $_taskTextValue);
-                var $_taskText = $_outerThis.parents('.card').find('p:not(".progress-count")').html($_taskTextValue);
+                var $_taskText = $_outerThis.parents('.card').find('p:not(".progress-count")').php($_taskTextValue);
 
                 var $_taskProgressStyle = $_outerThis.parents('.card').find('div.progress-bar').attr('style', "width: " + $_taskProgressValue +"%");
                 var $_taskProgressDataAttr = $_outerThis.parents('.card').find('div.progress-bar').attr('data-progressState', $_taskProgressValue);
                 var $_taskProgressAriaAttr = $_outerThis.parents('.card').find('div.progress-bar').attr('aria-valuenow', $_taskProgressValue);
-                var $_taskProgressProgressCount = $_outerThis.parents('.card').find('.progress-count').html($_taskProgressValue+"%");
+                var $_taskProgressProgressCount = $_outerThis.parents('.card').find('.progress-count').php($_taskProgressValue+"%");
 
             $('#addTaskModal').modal('hide');
-            var setDate = $('.taskDate').html('');
+            var setDate = $('.taskDate').php('');
             $('.taskDate').hide();
         })
         $('#addTaskModal').modal('show');

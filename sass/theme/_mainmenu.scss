@@ -82,7 +82,7 @@
    
 
     ul.megamenu li .sub-menu .content a,
-    ul.megamenu li .sub-menu .content .html a.subcategory_item{ line-height: 30px;   color: #464646; display: block;
+    ul.megamenu li .sub-menu .content .php a.subcategory_item{ line-height: 30px;   color: #464646; display: block;
         &:hover{ color: $linkColor; }
     }
     ul.megamenu > li > a  img{ position: absolute; top: -8px; #{$right}: 0px;  height: auto;}

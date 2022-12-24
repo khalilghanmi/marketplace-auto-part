@@ -47,7 +47,7 @@
 		
 		<!-- Begin Bar Tab -->
 		<nav class="bar bar-tab">
-			<a class="tab-item " href="index.html" data-transition="slide-in">
+			<a class="tab-item " href="index.php" data-transition="slide-in">
 				<span class="icon icon-home"></span>
 				<span class="tab-label">Home</span>
 			</a>
@@ -55,7 +55,7 @@
 				<span class="icon icon-search"></span>
 				<span class="tab-label">Search</span>
 			</a>
-			<a class="tab-item item-cart" href="checkout.html" data-transition="slide-in">
+			<a class="tab-item item-cart" href="checkout.php" data-transition="slide-in">
 				<span class="icon icon-download"></span>
 				<div id="cart" class="btn-shopping-cart">
 					<span class="total-shopping-cart cart-total-full">
@@ -64,7 +64,7 @@
 				
 				<span class="tab-label">View Cart</span>
 			</a>
-			<a class="tab-item" href="login.html" data-transition="slide-in">
+			<a class="tab-item" href="login.php" data-transition="slide-in">
 				<span class="icon icon-person"></span>
 				<span class="tab-label">My Account</span>
 			</a>
@@ -76,9 +76,9 @@
 		<div id="popover" class="popover fade bottom in right">
 			
 			<ul class="table-view">
-				<li class="table-view-cell"><a class="tab-item" href="index.html"> Home </a></li>
-				<li class="table-view-cell"><a class="tab-item" href="home2.html"> Home 2 </a></li>
-				<li class="table-view-cell"><a class="tab-item" href="home3.html"> Home 3 </a></li>
+				<li class="table-view-cell"><a class="tab-item" href="index.php"> Home </a></li>
+				<li class="table-view-cell"><a class="tab-item" href="home2.php"> Home 2 </a></li>
+				<li class="table-view-cell"><a class="tab-item" href="home3.php"> Home 3 </a></li>
 			</ul>
 		</div>
 		<!-- //End Bar Tab -->
@@ -95,7 +95,7 @@
 					</a>
 				</div>
 				<div class="navbar-logo col-xs-3">
-					<a href="index.html">
+					<a href="index.php">
 						<img src="../image/demo-mobile/logo.png" title="Your Store" alt="Your Store">
 					</a>
 				</div>
@@ -124,7 +124,7 @@
 								<div class="loading-placeholder"></div>
 								<div class="menu-link contentslider" data-rtl="no" data-autoplay="yes" data-autowidth="yes" data-delay="4" data-speed="0.6" data-margin="10" data-item_xs="2" data-item_sm="2" data-arrows="no" data-pagination="no" data-lazyload="no"  data-loop="yes" data-hoverpause="yes">
 									<div class="item-link">
-										<a href="index.html">
+										<a href="index.php">
 											<span class="menu-title">New Arrivals</span>
 										</a>
 									</div>
@@ -139,17 +139,17 @@
 										</a>
 									</div>
 									<div class="item-link">
-										<a href="blogs.html">
+										<a href="blogs.php">
 											<span class="menu-title">Blog</span>
 										</a>
 									</div>
 									<div class="item-link">
-										<a href="about-us.html">
+										<a href="about-us.php">
 											<span class="menu-title">About Us</span>
 										</a>
 									</div>
 									<div class="item-link">
-										<a href="contact.html">
+										<a href="contact.php">
 											<span class="menu-title">Contact Us</span>
 										</a>
 									</div>
@@ -162,7 +162,7 @@
 									<div id="sohomepage-slider">
 										<div class="so-homeslider contentslider" data-rtl="no" data-autoplay="no" data-autowidth="no" data-delay="4" data-speed="0.6" data-margin="0" data-item_xs="1" data-item_sm="1" data-arrows="no" data-pagination="yes" data-lazyload="no"  data-loop="yes" data-hoverpause="yes">
 											 <div class="item ">
-												<a href="index.html?route=mobile/home" title="slider2" target="_self">
+												<a href="index.php?route=mobile/home" title="slider2" target="_self">
 													<img class="responsive" src="../image/demo-mobile/slider/banner-mobile-1.png" alt="slider2">
 												</a>
 												<div class="sohomeslider-description"></div>
@@ -242,14 +242,14 @@
 																<div class="box-label">
 																	<span class="label-product label-sale">-15%</span>
 																</div>
-																<a href="product.html" target="_self">
+																<a href="product.php" target="_self">
 																	<img src="../image/demo-mobile/shop/3-160x160.jpg" alt="Hamburger shoulder" class="img-responsive">
 																</a>
 															</div>
 														</div>
 														<div class="right-block">
 															<div class="caption">
-																<h4 class="font-ct"><a href="product.html" target="_self" title="Hamburger shoulder">Hamburger shoulder</a></h4>
+																<h4 class="font-ct"><a href="product.php" target="_self" title="Hamburger shoulder">Hamburger shoulder</a></h4>
 																<p class="price">
 																	<span class="price-new">$60.00</span> <span class="price-old">$71.00</span>
 																</p>
@@ -271,14 +271,14 @@
 														</span>
 																</div>
 
-																<a href="product.html" target="_self">
+																<a href="product.php" target="_self">
 																	<img src="../image/demo-mobile/shop/11-160x160.jpg" alt="Adipisicing ground" class="img-responsive">
 																</a>
 															</div>
 														</div>
 														<div class="right-block">
 															<div class="caption">
-																<h4 class="font-ct"><a href="product.html" target="_self" title="Adipisicing ground">Adipisicing ground</a></h4>
+																<h4 class="font-ct"><a href="product.php" target="_self" title="Adipisicing ground">Adipisicing ground</a></h4>
 																<p class="price">
 																	<span class="price-new">$42.00</span> <span class="price-old">$55.00</span>
 																</p>
@@ -300,14 +300,14 @@
 														</span>
 																</div>
 
-																<a href="product.html" target="_self">
+																<a href="product.php" target="_self">
 																	<img src="../image/demo-mobile/shop/10-160x160.jpg" alt="Doner spareribs" class="img-responsive">
 																</a>
 															</div>
 														</div>
 														<div class="right-block">
 															<div class="caption">
-																<h4 class="font-ct"><a href="product.html" target="_self" title="Doner spareribs">Doner spareribs</a></h4>
+																<h4 class="font-ct"><a href="product.php" target="_self" title="Doner spareribs">Doner spareribs</a></h4>
 																<p class="price">
 																	<span class="price-new">$41.00</span> <span class="price-old">$56.00</span>
 																</p>
@@ -331,14 +331,14 @@
 														</span>
 																</div>
 
-																<a href="product.html" target="_self">
+																<a href="product.php" target="_self">
 																	<img src="../image/demo-mobile/shop/2-160x160.jpg" alt="Capicola sausagops" class="img-responsive">
 																</a>
 															</div>
 														</div>
 														<div class="right-block">
 															<div class="caption">
-																<h4 class="font-ct"><a href="product.html" target="_self" title="Capicola sausagops">Capicola sausagops</a></h4>
+																<h4 class="font-ct"><a href="product.php" target="_self" title="Capicola sausagops">Capicola sausagops</a></h4>
 																<p class="price">
 																	<span class="price-new">$50.00</span> <span class="price-old">$66.00</span>
 																</p>
@@ -358,14 +358,14 @@
 																	<span class="label-product label-sale">-36%												</span>
 																</div>
 
-																<a href="product.html" target="_self">
+																<a href="product.php" target="_self">
 																	<img src="../image/demo-mobile/shop/15-160x160.jpg" alt="Fuzan sumamipon" class="img-responsive">
 																</a>
 															</div>
 														</div>
 														<div class="right-block">
 															<div class="caption">
-																<h4 class="font-ct"><a href="product.html" target="_self" title="Fuzan sumamipon">Fuzan sumamipon</a></h4>
+																<h4 class="font-ct"><a href="product.php" target="_self" title="Fuzan sumamipon">Fuzan sumamipon</a></h4>
 																<p class="price">
 																	<span class="price-new">$45.00</span> <span class="price-old">$70.00</span>
 																</p>
@@ -388,7 +388,7 @@
 						<div class="col-xs-12">
 							<div class="mobile-bn2-h1 clearfix">
 								<div class="banners">
-									<a href="index.html">
+									<a href="index.php">
 										<img src="../image/demo-mobile/banner/banner-mobile-4.png" alt="Image Client">
 									</a>
 								</div>
@@ -411,14 +411,14 @@
 																	<span class="label-product label-sale">-15%</span>
 																</div>
 
-																<a href="product.html" target="_self">
+																<a href="product.php" target="_self">
 																	<img src="../image/demo-mobile/shop/20-160x160.jpg" alt="Hamburger shoulder" class="img-responsive">
 																</a>
 															</div>
 														</div>
 														<div class="right-block">
 															<div class="caption">
-																<h4 class="font-ct"><a href="product.html" target="_self" title="Hamburger shoulder">Hamburger shoulder</a></h4>
+																<h4 class="font-ct"><a href="product.php" target="_self" title="Hamburger shoulder">Hamburger shoulder</a></h4>
 																<p class="price">
 																	<span class="price-new">$40.00</span> <span class="price-old">$65.00</span>
 																</p>
@@ -440,14 +440,14 @@
 														</span>
 																</div>
 
-																<a href="product.html" target="_self">
+																<a href="product.php" target="_self">
 																	<img src="../image/demo-mobile/shop/12-160x160.jpg" alt="Adipisicing ground" class="img-responsive">
 																</a>
 															</div>
 														</div>
 														<div class="right-block">
 															<div class="caption">
-																<h4 class="font-ct"><a href="product.html" target="_self" title="Adipisicing ground">Adipisicing ground</a></h4>
+																<h4 class="font-ct"><a href="product.php" target="_self" title="Adipisicing ground">Adipisicing ground</a></h4>
 																<p class="price">
 																	<span class="price-new">$38.00</span> <span class="price-old">$55.00</span>
 																</p>
@@ -469,14 +469,14 @@
 														</span>
 																</div>
 
-																<a href="product.html" target="_self">
+																<a href="product.php" target="_self">
 																	<img src="../image/demo-mobile/shop/11-160x160.jpg" alt="Doner spareribs" class="img-responsive">
 																</a>
 															</div>
 														</div>
 														<div class="right-block">
 															<div class="caption">
-																<h4 class="font-ct"><a href="product.html" target="_self" title="Doner spareribs">Doner spareribs</a></h4>
+																<h4 class="font-ct"><a href="product.php" target="_self" title="Doner spareribs">Doner spareribs</a></h4>
 																<p class="price">
 																	<span class="price-new">$41.00</span> <span class="price-old">$56.00</span>
 																</p>
@@ -500,14 +500,14 @@
 														</span>
 																</div>
 
-																<a href="product.html" target="_self">
+																<a href="product.php" target="_self">
 																	<img src="../image/demo-mobile/shop/2-160x160.jpg" alt="Capicola sausagops" class="img-responsive">
 																</a>
 															</div>
 														</div>
 														<div class="right-block">
 															<div class="caption">
-																<h4 class="font-ct"><a href="product.html" target="_self" title="Capicola sausagops">Capicola sausagops</a></h4>
+																<h4 class="font-ct"><a href="product.php" target="_self" title="Capicola sausagops">Capicola sausagops</a></h4>
 																<p class="price">
 																	<span class="price-new">$50.00</span> <span class="price-old">$66.00</span>
 																</p>
@@ -529,14 +529,14 @@
 														</span>
 																</div>
 
-																<a href="product.html" target="_self">
+																<a href="product.php" target="_self">
 																	<img src="../image/demo-mobile/shop/15-160x160.jpg" alt="Fuzan sumamipon" class="img-responsive">
 																</a>
 															</div>
 														</div>
 														<div class="right-block">
 															<div class="caption">
-																<h4 class="font-ct"><a href="product.html" target="_self" title="Fuzan sumamipon">Fuzan sumamipon</a></h4>
+																<h4 class="font-ct"><a href="product.php" target="_self" title="Fuzan sumamipon">Fuzan sumamipon</a></h4>
 																<p class="price">
 																	<span class="price-new">$45.00</span> <span class="price-old">$70.00</span>
 																</p>
@@ -681,17 +681,17 @@
 
 				<div class="footernav-midde">
 					<ul class="footer-link-list row">
-						<li class="col-xs-6"><a href="about-us.html"> About us </a></li>
-						<li class="col-xs-6"><a href="sitemap.html"> Sitemap </a></li>
-						<li class="col-xs-6"><a href="blog-detail.html"> Blog Detail </a></li>
-						<li class="col-xs-6"><a href="category.html"> Category  </a></li>
+						<li class="col-xs-6"><a href="about-us.php"> About us </a></li>
+						<li class="col-xs-6"><a href="sitemap.php"> Sitemap </a></li>
+						<li class="col-xs-6"><a href="blog-detail.php"> Blog Detail </a></li>
+						<li class="col-xs-6"><a href="category.php"> Category  </a></li>
 						
-						<li class="col-xs-6"><a href="blogs.html"> Blog </a></li>
-						<li class="col-xs-6"><a href="product.html"> Product </a></li>
-						<li class="col-xs-6"><a href="login.html"> Login </a></li>
-						<li class="col-xs-6"><a href="checkout.html"> Checkout </a></li>
-						<li class="col-xs-6"><a href="register.html"> Register </a></li>
-						<li class="col-xs-6"><a href="contact.html"> Contact </a></li>
+						<li class="col-xs-6"><a href="blogs.php"> Blog </a></li>
+						<li class="col-xs-6"><a href="product.php"> Product </a></li>
+						<li class="col-xs-6"><a href="login.php"> Login </a></li>
+						<li class="col-xs-6"><a href="checkout.php"> Checkout </a></li>
+						<li class="col-xs-6"><a href="register.php"> Register </a></li>
+						<li class="col-xs-6"><a href="contact.php"> Contact </a></li>
 											
 					</ul>
 				</div>
@@ -713,7 +713,7 @@
 		<div class="content">
 			<div class="panel-left__top clearfix text-center">
 				<div class="panel-logo">
-					<a href="index.html"><img src="../image/demo-mobile/logo.png" title="Your Store" alt="Your Store"></a>
+					<a href="index.php"><img src="../image/demo-mobile/logo.png" title="Your Store" alt="Your Store"></a>
 				</div>
 				<div class="panel-search">
 					<div id="search" class="input-group">
@@ -935,13 +935,13 @@
 				<div class="col-xs-6">
 					<i class="fa fa-check-square-o" aria-hidden="true"></i>
 					<div class="bot-inner">
-						<a href="compare.html">Compare</a>
+						<a href="compare.php">Compare</a>
 					</div>
 				</div>
 				<div class="col-xs-6">
 					<i class="fa fa-heart" aria-hidden="true"></i>
 					<div class="bot-inner">
-						<a href="wishlist.html">Wish List</a>
+						<a href="wishlist.php">Wish List</a>
 					</div>
 				</div>
 
@@ -988,7 +988,7 @@
 								</ul>
 							</div>
 							<input type="hidden" name="code" value="">
-							<input type="hidden" name="redirect" value="index.html">
+							<input type="hidden" name="redirect" value="index.php">
 						</form>
 					</div>
 

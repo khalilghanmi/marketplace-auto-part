@@ -2777,7 +2777,7 @@
 
         this._controls.$previous
             .addClass(options.navClass[0])
-            .html(options.navText[0])
+            .php(options.navText[0])
             .hide()
             .prependTo($container)
             .on('click', $.proxy(function(e) {
@@ -2785,7 +2785,7 @@
             }, this));
         this._controls.$next
             .addClass(options.navClass[1])
-            .html(options.navText[1])
+            .php(options.navText[1])
             .hide()
             .appendTo($container)
             .on('click', $.proxy(function(e) {
@@ -2877,7 +2877,7 @@
                 for (i = 0; i < this._controls.$indicators.children().length; i++) {
                     html += this._templates[this._core.relative(i)];
                 }
-                this._controls.$indicators.html(html);
+                this._controls.$indicators.php(html);
             } else if (difference > 0) {
                 html = new Array(difference + 1).join(this._templates[0]);
                 this._controls.$indicators.append(html);

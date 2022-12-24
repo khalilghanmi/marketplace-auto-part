@@ -49,7 +49,7 @@
 		
 		<!-- Begin Bar Tab -->
 		<nav class="bar bar-tab">
-			<a class="tab-item " href="index.html" data-transition="slide-in">
+			<a class="tab-item " href="index.php" data-transition="slide-in">
 				<span class="icon icon-home"></span>
 				<span class="tab-label">Home</span>
 			</a>
@@ -57,7 +57,7 @@
 				<span class="icon icon-search"></span>
 				<span class="tab-label">Search</span>
 			</a>
-			<a class="tab-item item-cart" href="checkout.html" data-transition="slide-in">
+			<a class="tab-item item-cart" href="checkout.php" data-transition="slide-in">
 				<span class="icon icon-download"></span>
 				<div id="cart" class="btn-shopping-cart">
 					<span class="total-shopping-cart cart-total-full">
@@ -66,7 +66,7 @@
 				
 				<span class="tab-label">View Cart</span>
 			</a>
-			<a class="tab-item" href="login.html" data-transition="slide-in">
+			<a class="tab-item" href="login.php" data-transition="slide-in">
 				<span class="icon icon-person"></span>
 				<span class="tab-label">My Account</span>
 			</a>
@@ -78,9 +78,9 @@
 		<div id="popover" class="popover fade bottom in right">
 			
 			<ul class="table-view">
-				<li class="table-view-cell"><a class="tab-item" href="index.html"> Home </a></li>
-				<li class="table-view-cell"><a class="tab-item" href="home2.html"> Home 2 </a></li>
-				<li class="table-view-cell"><a class="tab-item" href="home3.html"> Home 3 </a></li>
+				<li class="table-view-cell"><a class="tab-item" href="index.php"> Home </a></li>
+				<li class="table-view-cell"><a class="tab-item" href="home2.php"> Home 2 </a></li>
+				<li class="table-view-cell"><a class="tab-item" href="home3.php"> Home 3 </a></li>
 			</ul>
 		</div>
 		<!-- //End Bar Tab -->
@@ -108,67 +108,67 @@
 							<div class="col-xs-6">
 								<ul class="simple-list arrow-list bold-list">
 									
-									<li><a href="category.html">Watches</a>
+									<li><a href="category.php">Watches</a>
 										<ul>
-											<li><a href="category.html">Men's Watches</a> </li>
-											<li><a href="category.html">Women's Watches</a> </li>
-											<li><a href="category.html">Kids' Watches</a> </li>
-											<li><a href="category.html">Accessories</a> </li>
+											<li><a href="category.php">Men's Watches</a> </li>
+											<li><a href="category.php">Women's Watches</a> </li>
+											<li><a href="category.php">Kids' Watches</a> </li>
+											<li><a href="category.php">Accessories</a> </li>
 										</ul>
 									</li>
 								
-									<li><a href="category.html">Health &amp; Beauty</a>
+									<li><a href="category.php">Health &amp; Beauty</a>
 										<ul>
-											<li><a href="category.html">Perfumes</a> </li>
-											<li><a href="category.html">Makeup</a> </li>
-											<li><a href="category.html">Sun Care</a> </li>
-											<li><a href="category.html">Skin Care</a> </li>
-											<li><a href="category.html">Eye Care</a> </li>
-											<li><a href="category.html">Hair Care</a> </li>
+											<li><a href="category.php">Perfumes</a> </li>
+											<li><a href="category.php">Makeup</a> </li>
+											<li><a href="category.php">Sun Care</a> </li>
+											<li><a href="category.php">Skin Care</a> </li>
+											<li><a href="category.php">Eye Care</a> </li>
+											<li><a href="category.php">Hair Care</a> </li>
 										</ul>
 									</li>
-									<li><a href="category.html">Kids &amp; Babies</a>
+									<li><a href="category.php">Kids &amp; Babies</a>
 										<ul>
-											<li><a href="category.html">Toys</a> </li>
-											<li><a href="category.html">Games</a>
+											<li><a href="category.php">Toys</a> </li>
+											<li><a href="category.php">Games</a>
 												<ul>
-													<li><a href="category.html">test 25</a>
+													<li><a href="category.php">test 25</a>
 													</li>
 												</ul>
 											</li>
-											<li><a href="category.html">Puzzles</a> </li>
-											<li><a href="category.html">Hobbies</a> </li>
-											<li><a href="category.html">Strollers</a> </li>
-											<li><a href="category.html">Health &amp; Safety</a> </li>
+											<li><a href="category.php">Puzzles</a> </li>
+											<li><a href="category.php">Hobbies</a> </li>
+											<li><a href="category.php">Strollers</a> </li>
+											<li><a href="category.php">Health &amp; Safety</a> </li>
 										</ul>
 									</li>
-									<li><a href="category.html">Sports</a>
+									<li><a href="category.php">Sports</a>
 										<ul>
-											<li><a href="category.html">Cycling</a> </li>
-											<li><a href="category.html">Running</a> </li>
-											<li><a href="category.html">Swimming</a> </li>
-											<li><a href="category.html">Football</a> </li>
-											<li><a href="category.html">Golf</a> </li>
-											<li><a href="category.html">Windsurfing</a> </li>
+											<li><a href="category.php">Cycling</a> </li>
+											<li><a href="category.php">Running</a> </li>
+											<li><a href="category.php">Swimming</a> </li>
+											<li><a href="category.php">Football</a> </li>
+											<li><a href="category.php">Golf</a> </li>
+											<li><a href="category.php">Windsurfing</a> </li>
 										</ul>
 									</li>
-									<li><a href="category.html">Home &amp; Garden</a>
+									<li><a href="category.php">Home &amp; Garden</a>
 										<ul>
-											<li><a href="category.html">Bedding</a> </li>
-											<li><a href="category.html">Food</a> </li>
-											<li><a href="category.html">Furniture</a> </li>
-											<li><a href="category.html">Kitchen</a> </li>
-											<li><a href="category.html">Lighting</a> </li>
-											<li><a href="category.html">Tools</a> </li>
+											<li><a href="category.php">Bedding</a> </li>
+											<li><a href="category.php">Food</a> </li>
+											<li><a href="category.php">Furniture</a> </li>
+											<li><a href="category.php">Kitchen</a> </li>
+											<li><a href="category.php">Lighting</a> </li>
+											<li><a href="category.php">Tools</a> </li>
 										</ul>
 									</li>
-									<li><a href="category.html">Wines &amp; Spirits</a>
+									<li><a href="category.php">Wines &amp; Spirits</a>
 										<ul>
-											<li><a href="category.html">Wine</a> </li>
-											<li><a href="category.html">Whiskey</a> </li>
-											<li><a href="category.html">Vodka</a> </li>
-											<li><a href="category.html">Liqueurs</a> </li>
-											<li><a href="category.html">Beer</a> </li>
+											<li><a href="category.php">Wine</a> </li>
+											<li><a href="category.php">Whiskey</a> </li>
+											<li><a href="category.php">Vodka</a> </li>
+											<li><a href="category.php">Liqueurs</a> </li>
+											<li><a href="category.php">Beer</a> </li>
 										</ul>
 									</li>
 								</ul>
@@ -178,39 +178,39 @@
 								<ul class="simple-list arrow-list bold-list">
 									<li><a href="#">Special Offers</a>
 									</li>
-									<li><a href="my-account.html">My Account</a>
+									<li><a href="my-account.php">My Account</a>
 										<ul>
-											<li><a href="order-history.html">Order History</a>
+											<li><a href="order-history.php">Order History</a>
 											</li>
-											<li><a href="order-information.html">Order Information</a>
+											<li><a href="order-information.php">Order Information</a>
 											</li>
-											<li><a href="return.html">Return</a>
+											<li><a href="return.php">Return</a>
 											</li>
-											<li><a href="gift-voucher.html">Gift Voucher</a>
+											<li><a href="gift-voucher.php">Gift Voucher</a>
 											</li>
 										</ul>
 									</li>
-									<li><a href="cart.html">Shopping Cart</a>
+									<li><a href="cart.php">Shopping Cart</a>
 									</li>
-									<li><a href="checkout.html">Checkout</a>
+									<li><a href="checkout.php">Checkout</a>
 									</li>
-									<li><a href="search.html">Search</a>
+									<li><a href="search.php">Search</a>
 									</li>
 									<li>Information
 										<ul class="sitemap">
-											<li><a href="about-us.html">About Us</a>
+											<li><a href="about-us.php">About Us</a>
 											</li>
 											<li><a href="email-template" target="_blank">Email Template Page</a>
 											</li>
-											<li><a href="elements.html">Elements</a>
+											<li><a href="elements.php">Elements</a>
 											</li>
-											<li><a href="elements-forms.html">Forms</a>
+											<li><a href="elements-forms.php">Forms</a>
 											</li>
-											<li><a href="careers.html">Careers</a>
+											<li><a href="careers.php">Careers</a>
 											</li>
-											<li><a href="faq.html">Faq</a>
+											<li><a href="faq.php">Faq</a>
 											</li>
-											<li><a href="404.html">404</a>
+											<li><a href="404.php">404</a>
 											</li>
 											<li><a href="contact-us">Contact Us</a>
 											</li>
@@ -255,17 +255,17 @@
 
 				<div class="footernav-midde">
 					<ul class="footer-link-list row">
-						<li class="col-xs-6"><a href="about-us.html"> About us </a></li>
-						<li class="col-xs-6"><a href="sitemap.html"> Sitemap </a></li>
-						<li class="col-xs-6"><a href="blog-detail.html"> Blog Detail </a></li>
-						<li class="col-xs-6"><a href="category.html"> Category  </a></li>
+						<li class="col-xs-6"><a href="about-us.php"> About us </a></li>
+						<li class="col-xs-6"><a href="sitemap.php"> Sitemap </a></li>
+						<li class="col-xs-6"><a href="blog-detail.php"> Blog Detail </a></li>
+						<li class="col-xs-6"><a href="category.php"> Category  </a></li>
 						
-						<li class="col-xs-6"><a href="blogs.html"> Blog </a></li>
-						<li class="col-xs-6"><a href="product.html"> Product </a></li>
-						<li class="col-xs-6"><a href="login.html"> Login </a></li>
-						<li class="col-xs-6"><a href="checkout.html"> Checkout </a></li>
-						<li class="col-xs-6"><a href="register.html"> Register </a></li>
-						<li class="col-xs-6"><a href="contact.html"> Contact </a></li>
+						<li class="col-xs-6"><a href="blogs.php"> Blog </a></li>
+						<li class="col-xs-6"><a href="product.php"> Product </a></li>
+						<li class="col-xs-6"><a href="login.php"> Login </a></li>
+						<li class="col-xs-6"><a href="checkout.php"> Checkout </a></li>
+						<li class="col-xs-6"><a href="register.php"> Register </a></li>
+						<li class="col-xs-6"><a href="contact.php"> Contact </a></li>
 											
 					</ul>
 				</div>
@@ -287,7 +287,7 @@
 		<div class="content">
 			<div class="panel-left__top clearfix text-center">
 				<div class="panel-logo">
-					<a href="index.html"><img src="../image/demo-mobile/logo.png" title="Your Store" alt="Your Store"></a>
+					<a href="index.php"><img src="../image/demo-mobile/logo.png" title="Your Store" alt="Your Store"></a>
 				</div>
 				<div class="panel-search">
 					<div id="search" class="input-group">
@@ -509,13 +509,13 @@
 				<div class="col-xs-6">
 					<i class="fa fa-check-square-o" aria-hidden="true"></i>
 					<div class="bot-inner">
-						<a href="compare.html">Compare</a>
+						<a href="compare.php">Compare</a>
 					</div>
 				</div>
 				<div class="col-xs-6">
 					<i class="fa fa-heart" aria-hidden="true"></i>
 					<div class="bot-inner">
-						<a href="wishlist.html">Wish List</a>
+						<a href="wishlist.php">Wish List</a>
 					</div>
 				</div>
 
@@ -562,7 +562,7 @@
 								</ul>
 							</div>
 							<input type="hidden" name="code" value="">
-							<input type="hidden" name="redirect" value="index.html">
+							<input type="hidden" name="redirect" value="index.php">
 						</form>
 					</div>
 

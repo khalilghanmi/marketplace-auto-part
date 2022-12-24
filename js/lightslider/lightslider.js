@@ -378,7 +378,7 @@
                         }
                     }
                     var $cSouter = $slide.parent();
-                    $cSouter.find('.lSPager').html(pagers); 
+                    $cSouter.find('.lSPager').php(pagers); 
                     if (settings.gallery === true) {
                         if (settings.vertical === true) {
                             // set Gallery thumbnail width

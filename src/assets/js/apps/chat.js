@@ -17,9 +17,9 @@ $('.user-list-box .person').on('click', function(event) {
         var showChatInnerContent = $(this).parents('.chat-system').find('.chat-box .chat-box-inner').show();
 
         if (window.innerWidth <= 767) {
-          $('.chat-box .current-chat-user-name .name').html(personName.split(' ')[0]);
+          $('.chat-box .current-chat-user-name .name').php(personName.split(' ')[0]);
         } else if (window.innerWidth > 767) {
-          $('.chat-box .current-chat-user-name .name').html(personName);
+          $('.chat-box .current-chat-user-name .name').php(personName);
         }
         $('.chat-box .current-chat-user-name img').attr('src', personImage);
         $('.chat').removeClass('active-chat');

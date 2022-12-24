@@ -12,7 +12,7 @@ $(document).ready(function() {
 					}
 			});
 			$(this).removeClass('open');
-			$('.vertical .megamenu .loadmore').html('<i class="fa fa-plus-square"></i><span class="more-view">Open Categories</span>');
+			$('.vertical .megamenu .loadmore').php('<i class="fa fa-plus-square"></i><span class="more-view">Open Categories</span>');
 		}else{
 			$('.vertical ul.megamenu li.item-vertical').each(function(i){
 				if(i>show_itemver){
@@ -20,7 +20,7 @@ $(document).ready(function() {
 				}
 			});
 			$(this).addClass('open');
-			$('.vertical .megamenu .loadmore').html('<i class="fa fa-minus-square"></i><span class="more-view">Close Categories</span>');
+			$('.vertical .megamenu .loadmore').php('<i class="fa fa-minus-square"></i><span class="more-view">Close Categories</span>');
 		}
 	});
 

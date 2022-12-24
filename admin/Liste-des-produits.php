@@ -242,7 +242,7 @@
     <script src="../src/plugins/src/table/datatable/datatables.js"></script>
     <script src="../src/plugins/src/table/datatable/button-ext/dataTables.buttons.min.js"></script>
     <script src="../src/plugins/src/table/datatable/button-ext/jszip.min.js"></script>    
-    <script src="../src/plugins/src/table/datatable/button-ext/buttons.html5.min.js"></script>
+    <script src="../src/plugins/src/table/datatable/button-ext/buttons.php5.min.js"></script>
     <script src="../src/plugins/src/table/datatable/button-ext/buttons.print.min.js"></script>
     <script src="../src/plugins/src/table/datatable/custom_miscellaneous.js"></script> 
 </body>

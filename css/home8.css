@@ -1868,11 +1868,11 @@ div.required .control-label:before {
     font-weight: bold;
     padding-bottom: 0;
     margin-bottom: 5x; }
-  .container-megamenu.horizontal ul.megamenu li .sub-menu .content a, .container-megamenu.horizontal ul.megamenu li .sub-menu .content .html a.subcategory_item {
+  .container-megamenu.horizontal ul.megamenu li .sub-menu .content a, .container-megamenu.horizontal ul.megamenu li .sub-menu .content .php a.subcategory_item {
     line-height: 30px;
     color: #464646;
     display: block; }
-  .container-megamenu.horizontal ul.megamenu li .sub-menu .content a:hover, .container-megamenu.horizontal ul.megamenu li .sub-menu .content .html a.subcategory_item:hover {
+  .container-megamenu.horizontal ul.megamenu li .sub-menu .content a:hover, .container-megamenu.horizontal ul.megamenu li .sub-menu .content .php a.subcategory_item:hover {
     color: #c90c0f; }
   .container-megamenu.horizontal ul.megamenu > li > a img {
     position: absolute;
@@ -2835,12 +2835,12 @@ ul.breadcrumb {
       color: #c90c0f; }
   .container-megamenu.horizontal ul.megamenu li .sub-menu .content .static-menu > .menu > ul > li {
     padding-top: 0; }
-  .container-megamenu.horizontal .content-feature li a, .container-megamenu.horizontal ul.megamenu li .sub-menu .content .static-menu .menu ul ul li a, .container-megamenu.horizontal ul.megamenu li .sub-menu .content .html a.subcategory_item, .container-megamenu.horizontal ul.megamenu .sub-menu .content .hover-menu .menu ul a.main-menu {
+  .container-megamenu.horizontal .content-feature li a, .container-megamenu.horizontal ul.megamenu li .sub-menu .content .static-menu .menu ul ul li a, .container-megamenu.horizontal ul.megamenu li .sub-menu .content .php a.subcategory_item, .container-megamenu.horizontal ul.megamenu .sub-menu .content .hover-menu .menu ul a.main-menu {
     line-height: 30px;
     font-size: 13px;
     font-weight: 400;
     color: #666; }
-  .container-megamenu.horizontal .content-feature li a:hover, .container-megamenu.horizontal ul.megamenu li .sub-menu .content .static-menu .menu ul ul li a:hover, .container-megamenu.horizontal ul.megamenu li .sub-menu .content .html a.subcategory_item:hover, .container-megamenu.horizontal ul.megamenu .sub-menu .content .hover-menu .menu ul a.main-menu:hover {
+  .container-megamenu.horizontal .content-feature li a:hover, .container-megamenu.horizontal ul.megamenu li .sub-menu .content .static-menu .menu ul ul li a:hover, .container-megamenu.horizontal ul.megamenu li .sub-menu .content .php a.subcategory_item:hover, .container-megamenu.horizontal ul.megamenu .sub-menu .content .hover-menu .menu ul a.main-menu:hover {
     color: #c90c0f; }
   .container-megamenu.horizontal ul.megamenu > li > a strong img {
     position: absolute;

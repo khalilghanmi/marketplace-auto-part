@@ -138,49 +138,49 @@ function headerTypeChange($header){
 		switch($header){
 
 			case "header-home1" :
-				url = "header/header1-container.html";
+				url = "header/header1-container.php";
 				type = 'type_1';
 				headerStyle ='css/header1.css';
 				break;
 
 			case "header-home2" :
-				url = "header/header2-container.html";
+				url = "header/header2-container.php";
 				type = 'type_2';
 				headerStyle ='css/header2.css';
 				break;
 
 			case "header-home3" :
-				url = "header/header3-container.html";
+				url = "header/header3-container.php";
 				type = 'type_3';
 				headerStyle ='css/header3.css';
 				break;
 
 			case "header-home4" :
-				url = "header/header4-container.html";
+				url = "header/header4-container.php";
 				type = 'type_4';
 				headerStyle ='css/header4.css';
 				break;
 			
 			case "header-home5" :
-				url = "header/header5-container.html";
+				url = "header/header5-container.php";
 				type = 'type_5';
 				headerStyle ='css/header5.css';
 				break;
 				
 			case "header-home6" :
-				url = "header/header6-container.html";
+				url = "header/header6-container.php";
 				type = 'type_6';
 				headerStyle ='css/header6.css';
 				break;
 			
 			case "header-home7" :
-				url = "header/header7-container.html";
+				url = "header/header7-container.php";
 				type = 'type_7';
 				headerStyle ='css/header7.css';
 				break;
 			
 			case "header-home8" :
-				url = "header/header8-container.html";
+				url = "header/header8-container.php";
 				type = 'type_8';
 				headerStyle ='css/header8.css';
 				break;

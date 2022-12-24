@@ -8,7 +8,7 @@ $(document).ready(function() {
     // Setup - add a text input to each footer cell
     $('#individual-col-search tfoot th').each( function () {
         var title = $(this).text();
-        $(this).html( '<input type="text" class="form-control" placeholder="Search '+title+'" />' );
+        $(this).php( '<input type="text" class="form-control" placeholder="Search '+title+'" />' );
     } );
 
     // DataTable
