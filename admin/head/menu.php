@@ -135,6 +135,34 @@
                     </li>
        
                     <li class="menu menu-heading">
+                        <div class="heading"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-minus"><line x1="5" y1="12" x2="19" y2="12"></line></svg><span>Multi-vendeur</span></div>
+                    </li>
+
+
+                    <li class="menu">
+                        <a href="#Magazine" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle collapsed">
+                            <div class="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+                                <span>Multi-vendeur</span>
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                            </div>
+                        </a>
+                        <ul class="collapse submenu list-unstyled" id="Magazine" data-bs-parent="#accordionExample">
+                            
+                            <li>
+                                <a href="./Vendors.php"> Vendors </a>
+                            </li>
+                            <li>
+                                <a href="./Créer-un-Vendors.php"> Créer un Vendors </a>
+                            </li>                            
+                            <li>
+                                <a href="./Vendors-Modifier.php"> Vendors Modifier </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu menu-heading">
                         <div class="heading"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-minus"><line x1="5" y1="12" x2="19" y2="12"></line></svg><span>USER AND PAGES</span></div>
                     </li>                    
 
@@ -175,7 +203,7 @@
                             </li>
                         </ul>
                     </li>
- 
+                    
                     
                 </ul>
                 

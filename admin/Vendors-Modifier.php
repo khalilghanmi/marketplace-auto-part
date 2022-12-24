@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+    <title>Blog Modifier | Admin - Piéce Auto Tunisie </title>
+    <link rel="icon" type="image/x-icon" href="../src/assets/img/favicon.ico"/>
+    <link href="../layouts/semi-dark-menu/css/light/loader.css" rel="stylesheet" type="text/css" />
+    <link href="../layouts/semi-dark-menu/css/dark/loader.css" rel="stylesheet" type="text/css" />
+    <script src="../layouts/semi-dark-menu/loader.js"></script>
+    <!-- BEGIN GLOBAL MANDATORY STYLES -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+    <link href="../src/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="../layouts/semi-dark-menu/css/light/plugins.css" rel="stylesheet" type="text/css" />
+    <link href="../layouts/semi-dark-menu/css/dark/plugins.css" rel="stylesheet" type="text/css" />
+    <!-- END GLOBAL MANDATORY STYLES -->
+
+    <!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM STYLES -->
+    <link rel="stylesheet" href="../src/plugins/src/filepond/filepond.min.css">
+    <link rel="stylesheet" href="../src/plugins/src/filepond/FilePondPluginImagePreview.min.css">
+    <link rel="stylesheet" type="text/css" href="../src/plugins/src/tagify/tagify.css">
+
+    <link rel="stylesheet" type="text/css" href="../src/assets/css/light/forms/switches.css">
+    <link rel="stylesheet" type="text/css" href="../src/plugins/css/light/editors/quill/quill.snow.css">
+    <link rel="stylesheet" type="text/css" href="../src/plugins/css/light/tagify/custom-tagify.css">
+    <link href="../src/plugins/css/light/filepond/custom-filepond.css" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" type="text/css" href="../src/assets/css/dark/forms/switches.css">
+    <link rel="stylesheet" type="text/css" href="../src/plugins/css/dark/editors/quill/quill.snow.css">
+    <link rel="stylesheet" type="text/css" href="../src/plugins/css/dark/tagify/custom-tagify.css">
+    <link href="../src/plugins/css/dark/filepond/custom-filepond.css" rel="stylesheet" type="text/css" />
+    <!-- END PAGE LEVEL PLUGINS/CUSTOM STYLES -->
+    
+    <!--  BEGIN CUSTOM STYLE FILE  -->
+    <link rel="stylesheet" href="../src/assets/css/light/apps/blog-create.css">
+    <link rel="stylesheet" href="../src/assets/css/dark/apps/blog-create.css">
+    <!--  END CUSTOM STYLE FILE  -->
+</head>
+<body class="layout-boxed ">
+    
+    <!-- BEGIN LOADER -->
+    <div id="load_screen"> <div class="loader"> <div class="loader-content">
+        <div class="spinner-grow align-self-center"></div>
+    </div></div></div>
+    <!--  END LOADER -->
+
+    <!--  BEGIN NAVBAR  -->
+    <?php include 'head/header.php';   ?>
+    <!--  END NAVBAR  -->
+    <?php include 'head/menu.php';   ?>
+    <!--  BEGIN CONTENT AREA  -->
+        <div id="content" class="main-content">
+
+            <div class="layout-px-spacing">
+
+                <div class="middle-content container-xxl p-0">
+    
+                    <!-- BREADCRUMB -->
+                    <div class="page-meta">
+                        <nav class="breadcrumb-style-one" aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="#">App</a></li>
+                                <li class="breadcrumb-item"><a href="#">Blog</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Edit</li>
+                            </ol>
+                        </nav>
+                    </div>
+                    <!-- /BREADCRUMB -->
+
+                    <div class="row mb-4 layout-spacing layout-top-spacing">
+
+                        <div class="col-xxl-9 col-xl-12 col-lg-12 col-md-12 col-sm-12">
+
+                            <div class="widget-content widget-content-area blog-create-section">
+
+                                <div class="row mb-4">
+                                    <div class="col-sm-12">
+                                        <input type="text" class="form-control" id="post-title" placeholder="Post Title" value="Elegant and useful Admin Templates">
+                                    </div>
+                                </div>
+
+                                <div class="row mb-4">
+                                    <div class="col-sm-12">
+                                        <label>Content</label>
+                                        <div id="blog-description">
+                                            Aliquam leo elit, semper sed diam non, efficitur semper mi. Sed pulvinar velit massa, nec ornare arcu laoreet non. Quisque dignissim lectus eget lectus pulvinar imperdiet. Aliquam dictum porttitor laoreet. Duis ac tortor non sem vestibulum interdum in quis dui. Pellentesque nec augue eleifend, convallis tortor ac, posuere turpis. Nulla commodo euismod felis vitae eleifend. Morbi cursus maximus mauris ac lacinia. Nullam tellus dolor, sodales vitae nunc id, luctus lacinia leo. Sed id urna venenatis lacus lobortis ullamcorper nec dignissim odio.
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="widget-content widget-content-area blog-create-section mt-4">
+
+                                <h5 class="mb-4">SEO Settings</h5>
+                                
+                                <div class="row mb-4">
+                                    <div class="col-xxl-12 mb-4">
+                                        <input type="text" class="form-control" id="post-meta-title" placeholder="Post Title" value="Elegant and useful Admin Templates">
+                                    </div>
+                                    <div class="col-xxl-12">
+                                        <label for="post-meta-description">Meta Description</label>
+                                        <textarea name="post-meta-description" class="form-control" id="post-meta-description" cols="10" rows="5">Perspiciatis maxime facilis velit tenetur, iste expedita in dignissimos iure aut excepturi sapiente eligendi repellat. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut blanditiis assumenda doloremque fugiat minima tempora!</textarea>
+                                    </div>
+                                </div>
+
+                            </div>
+                            
+                        </div>
+
+                        <div class="col-xxl-3 col-xl-12 col-lg-12 col-md-12 col-sm-12 mt-xxl-0 mt-4">
+                            <div class="widget-content widget-content-area blog-create-section">
+                                <div class="row">
+                                    <div class="col-xxl-12 mb-4">
+                                        <div class="switch form-switch-custom switch-inline form-switch-primary">
+                                            <input class="switch-input" type="checkbox" role="switch" id="showPublicly" checked>
+                                            <label class="switch-label" for="showPublicly">Publish</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-xxl-12 mb-4">
+                                        <div class="switch form-switch-custom switch-inline form-switch-primary">
+                                            <input class="switch-input" type="checkbox" role="switch" id="enableComment" checked>
+                                            <label class="switch-label" for="enableComment">Enable Comments</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-xxl-12 col-md-12 mb-4">
+                                        <label for="tags">Tags</label>
+                                        <input id="tags" class="blog-tags" value="Admin, Themeforest, Bootstrap">
+                                    </div>
+                                    <div class="col-xxl-12 col-md-12 mb-4">
+                                        <label for="category">Category</label>
+                                        <input id="category" name="category" value="Themeforest, Cork Admin, Dashboard, Vue, Laravel" placeholder="Choose...">
+                                    </div>
+                                    <div class="col-xxl-12 col-md-12 mb-4">
+                                        <label for="product-images">Featured Image</label>
+                                        <div class="multiple-file-upload">
+                                            <input type="file" 
+                                                class="filepond file-upload-multiple"
+                                                name="filepond"
+                                                id="product-images" 
+                                                multiple 
+                                                data-allow-reorder="true"
+                                                data-max-file-size="3MB"
+                                                data-max-files="5">
+                                        </div>
+                                    </div>
+                                    <div class="col-xxl-12 col-sm-4 col-12 mx-auto">
+                                        <button class="btn btn-success w-100">Update Post</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                    </div>
+
+                </div>
+                
+            </div>
+            
+            </div>
+            <!--  BEGIN FOOTER  -->
+            <?php include 'head/footer.php';   ?>
+            <!--  END FOOTER  -->
+
+        </div>
+        <!--  END CONTENT AREA  -->
+    </div>
+    <!-- END MAIN CONTAINER -->
+    
+    <!-- BEGIN GLOBAL MANDATORY STYLES -->
+    <script src="../src/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../src/plugins/src/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="../src/plugins/src/mousetrap/mousetrap.min.js"></script>
+    <script src="../src/plugins/src/waves/waves.min.js"></script>
+    <script src="../layouts/semi-dark-menu/app.js"></script>
+    <!-- END GLOBAL MANDATORY STYLES -->
+
+    <!-- BEGIN PAGE LEVEL SCRIPTS -->
+    <script src="../src/plugins/src/editors/quill/quill.js"></script>
+    <script src="../src/plugins/src/filepond/filepond.min.js"></script>
+    <script src="../src/plugins/src/filepond/FilePondPluginFileValidateType.min.js"></script>
+    <script src="../src/plugins/src/filepond/FilePondPluginImageExifOrientation.min.js"></script>
+    <script src="../src/plugins/src/filepond/FilePondPluginImagePreview.min.js"></script>
+    <script src="../src/plugins/src/filepond/FilePondPluginImageCrop.min.js"></script>
+    <script src="../src/plugins/src/filepond/FilePondPluginImageResize.min.js"></script>
+    <script src="../src/plugins/src/filepond/FilePondPluginImageTransform.min.js"></script>
+    <script src="../src/plugins/src/filepond/filepondPluginFileValidateSize.min.js"></script>
+
+    <script src="../src/plugins/src/tagify/tagify.min.js"></script>
+
+    <script src="../src/assets/js/apps/blog-create.js"></script>
+
+    <script>
+        ecommerce.addFiles('../src/assets/img/product-1.jpg');
+    </script>
+    <!-- END PAGE LEVEL SCRIPTS -->
+</body>
+</html>
