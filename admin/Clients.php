@@ -196,7 +196,7 @@
                                       <div class="modal-dialog modal-xl" role="document">
                                         <div class="modal-content">
                                             <div class="modal-header">
-                                                <h5 class="modal-title" id="myExtraLargeModalLabel">Ajouter Adm</h5>
+                                                <h5 class="modal-title" id="myExtraLargeModalLabel">Ajouter Client</h5>
                                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
                                                   <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
                                                 </button>
@@ -204,55 +204,75 @@
                                             <div class="modal-body">
                                              
                                             <form class="row g-3">
+                                            <div class="col-md-6">
+                                            <label for="inputEmail4" class="form-label">Nom</label>
+                                            <input type="text" name="nom"class="form-control">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="inputPassword4" class="form-label">Prénom</label>
+                                            <input type="text" name="prenom" class="form-control">
+                                        </div>
                                         <div class="col-md-6">
                                             <label for="inputEmail4" class="form-label">Email</label>
-                                            <input type="email" class="form-control" id="inputEmail4">
+                                            <input type="email" name="email" class="form-control" id="inputEmail4">
                                         </div>
                                         <div class="col-md-6">
-                                            <label for="inputPassword4" class="form-label">Password</label>
-                                            <input type="password" class="form-control" id="inputPassword4">
+                                            <label for="inputPassword4" class="form-label">Mot de passe</label>
+                                            <input type="password" name="password" class="form-control" id="inputPassword4">
                                         </div>
                                         <div class="col-12">
-                                            <label for="inputAddress" class="form-label">Address</label>
-                                            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-                                        </div>
-                                        <div class="col-12">
-                                            <label for="inputAddress2" class="form-label">Address 2</label>
-                                            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                                            <label for="inputAddress" class="form-label">Addresse</label>
+                                            <input type="text" name="adresse" class="form-control" id="inputAddress" placeholder="1234 Main St">
                                         </div>
                                         <div class="col-md-6">
-                                            <label for="inputCity" class="form-label">City</label>
-                                            <input type="text" class="form-control" id="inputCity">
+                                            <label for="inputCity" class="form-label">Code Postale</label>
+                                            <input type="number" class="form-control" id="inputCity">
                                         </div>
-                                        <div class="col-md-4">
-                                            <label for="inputState" class="form-label">State</label>
-                                            <select id="inputState" class="form-select">
-                                                <option selected>Choose...</option>
-                                                <option>...</option>
-                                            </select>
+                                        <div class="col-md-6">
+                                            <label for="inputState" class="form-label">Mobile</label>
+                                            <input type="phone" class="form-control" id="inputCity">
                                         </div>
-                                        <div class="col-md-2">
-                                            <label for="inputZip" class="form-label">Zip</label>
-                                            <input type="text" class="form-control" id="inputZip">
+                                        <div class="col-md-6">
+                                        <label for="inputCivilité" class="form-label">Civilité</label><br>
+                                        <div class="form-check form-check-primary form-check-inline">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="form-check-radio-primary" checked="">
+                                             <label class="form-check-label" for="form-check-radio-primary">
+                                               Homme
+                                             </label>
                                         </div>
-                                        <div class="col-12">
+
+                                        <div class="form-check form-check-info form-check-inline">
+                                         <input class="form-check-input" type="radio" name="flexRadioDefault" id="form-check-radio-info">
+                                             <label class="form-check-label" for="form-check-radio-info">
+                                                Femme
+                                             </label>
+                                        </div>
+                  
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="inputdatenessance" class="form-label">Date de naissance</label>
+                                            <input type="date" name="date_n" class="form-control">
+                                        </div>
+                                        
+                                        
+                                        <div class="col-8">
                                             <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" id="gridCheck">
-                                                <label class="form-check-label" for="gridCheck">
-                                                    Check me out
-                                                </label>
+                                            <div class="form-check form-switch form-check-inline">
+                                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                                            <label class="form-check-label" for="flexSwitchCheckChecked">Statut</label>
+                                            </div>
                                             </div>
                                         </div>
-                                        <div class="col-12">
-                                            <button type="submit" class="btn btn-primary">Sign in</button>
+                                        <div class="col-2">
+                                        <button class="btn btn-light-dark" data-bs-dismiss="modal">Annuler</button>
+                                        </div>
+                                        <div class="col-2">
+                                        <button type="button" class="btn btn-primary">Enregistrer</button>
                                         </div>
                                     </form>
 
                                             </div>
-                                            <div class="modal-footer">
-                                                <button class="btn btn-light-dark" data-bs-dismiss="modal">Discard</button>
-                                                <button type="button" class="btn btn-primary">Save</button>
-                                            </div>
+                                            
                                         </div>
                                       </div>
                     </div>

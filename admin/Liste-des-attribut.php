@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
-    <title>Ecommerce List | CORK - Multipurpose Bootstrap Dashboard Template </title>
+    <title>Liste des attribut | Admin - Piéce Auto Tunisie </title>
     <link rel="icon" type="image/x-icon" href="../src/assets/img/favicon.ico"/>
     <link href="../layouts/semi-dark-menu/css/light/loader.css" rel="stylesheet" type="text/css" />
     <link href="../layouts/semi-dark-menu/css/dark/loader.css" rel="stylesheet" type="text/css" />
@@ -53,9 +53,7 @@
                     <div class="page-meta">
                         <nav class="breadcrumb-style-one" aria-label="breadcrumb">
                             <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="#">App</a></li>
-                                <li class="breadcrumb-item"><a href="#">Ecommerce</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">List</li>
+                                <li class="breadcrumb-item active" aria-current="page">Liste des attribut</li>
                             </ol>
                         </nav>
                     </div>
