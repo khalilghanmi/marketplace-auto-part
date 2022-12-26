@@ -1,12 +1,10 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
-    <title>Liste des produits | Admin - Piéce Auto Tunisie </title>
+    <title>Ecommerce List | Admin - Piéce Auto Tunisie </title>
     <link rel="icon" type="image/x-icon" href="../src/assets/img/favicon.ico"/>
     <link href="../layouts/semi-dark-menu/css/light/loader.css" rel="stylesheet" type="text/css" />
     <link href="../layouts/semi-dark-menu/css/dark/loader.css" rel="stylesheet" type="text/css" />
@@ -40,7 +38,7 @@
     </div></div></div>
     <!--  END LOADER -->
 
-    <!--  BEGIN NAVBAR  -->
+     <!--  BEGIN NAVBAR  -->
  <?php include 'head/header.php';   ?>
     <!--  END NAVBAR  -->
     <?php include 'head/menu.php';   ?>
@@ -67,7 +65,7 @@
                 
                         <div class="col-xl-12 col-lg-12 col-sm-12  layout-spacing">
                             <div class="widget-content widget-content-area br-8">
-                                <table id="ecommerce-list" id="html5-extension" class="table dt-table-hover" style="width:100%">
+                                <table id="ecommerce-list" class="table dt-table-hover" style="width:100%">
                                     <thead>
                                         <tr>
                                             <th class="checkbox-column"></th>
@@ -676,8 +674,8 @@
 
             </div>
             
-            <!--  BEGIN FOOTER  -->
-            <?php include 'head/footer.php';   ?>
+          <!--  BEGIN FOOTER  -->
+          <?php include 'head/footer.php';   ?>
             <!--  END FOOTER  -->
 
         </div>
@@ -694,14 +692,9 @@
     <script src="../layouts/semi-dark-menu/app.js"></script>
     <script src="../src/assets/js/custom.js"></script>
     <!-- END GLOBAL MANDATORY STYLES -->
+
     <!-- BEGIN PAGE LEVEL SCRIPTS -->
     <script src="../src/plugins/src/table/datatable/datatables.js"></script>
-    <script src="../src/plugins/src/table/datatable/button-ext/dataTables.buttons.min.js"></script>
-    <script src="../src/plugins/src/table/datatable/button-ext/jszip.min.js"></script>    
-    <script src="../src/plugins/src/table/datatable/button-ext/buttons.html5.min.js"></script>
-    <script src="../src/plugins/src/table/datatable/button-ext/buttons.print.min.js"></script>
-    <script src="../src/plugins/src/table/datatable/custom_miscellaneous.js"></script>
-    <!-- END PAGE LEVEL SCRIPTS -->    
     <script>
         ecommerceList = $('#ecommerce-list').DataTable({
             headerCallback:function(e, a, t, n, s) {

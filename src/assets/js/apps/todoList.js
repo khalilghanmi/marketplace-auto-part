@@ -233,7 +233,7 @@ function todoItem() {
     var $todoHtml = $(this).find('.todo-text').attr('data-todoHtml');
 
     $('.task-heading').text($_taskTitle);
-    $('.task-text').php($todoHtml);
+    $('.task-text').html($todoHtml);
     
     $('#todoShowListItem').modal('show');
   });

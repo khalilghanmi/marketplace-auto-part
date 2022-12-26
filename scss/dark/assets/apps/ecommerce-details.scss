@@ -316,7 +316,7 @@ body.dark {
                   svg {
                     width: 26px;
                     height: 26px;
-                    color: #c90c0f;
+                    color: #008eff;
                     fill: none;
                     stroke-width: 1.5;
                     margin-right: 0;
@@ -325,7 +325,7 @@ body.dark {
                 
                 &:not(.collapsed) {
                   border-bottom: 1px solid #1b2e4b;
-                  color: #c90c0f;
+                  color: #008eff;
                 }
 
                 &.collapsed {

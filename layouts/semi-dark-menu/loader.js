@@ -7,7 +7,7 @@ window.addEventListener("load", function(){
     var layoutName = 'Semi Dark Menu';
 
     var settingsObject = {
-        admin: 'Khalil Ghanmi Web Admin Template',
+        admin: 'Cork Admin Template',
         settings: {
             layout: {
                 name: layoutName,
@@ -38,7 +38,7 @@ window.addEventListener("load", function(){
 
         if (getcorkThemeObject !== null) {
                
-            if (ParsedObject.admin === 'Khalil Ghanmi Web Admin Template') {
+            if (ParsedObject.admin === 'Cork Admin Template') {
 
                 if (ParsedObject.settings.layout.name === layoutName) {
 
