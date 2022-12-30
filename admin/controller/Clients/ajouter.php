@@ -18,15 +18,24 @@ $nom = $_POST['nom'] ;
 // On vérifie si les champs sont vides
 if(empty($nom) OR empty($prenom) OR empty($password) OR empty($email) OR empty($adresse) OR empty($code_p) OR empty($mobile)OR empty($date_n))
     {
-    echo "<center><h4><font color='red'>Attention, seul le champs <b>ICQ</b> peut rester vide !</font></h4></center></b> </br>";
+    echo ' <div class="alert alert-light-danger alert-dismissible fade show border-0 mb-4" role="alert">
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"><svg> ... </svg></button>
+    Attention, seul le champs <b>ICQ</b> peut rester vide ! </button>
+</div> 
+   ';
     }
 // Aucun champ n'est vide, on peut enregistrer dans la table
 else if (!isEmail($email)) {
-		echo " <center><h4><font color='red'>Attention, email <b>ICQ</b> inncorrect !</font></h4></center></b> </br>";
+		echo '<div class="alert alert-light-danger alert-dismissible fade show border-0 mb-4" role="alert">
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"><svg> ... </svg></button>
+    Attention, email <b>ICQ</b> inncorrect ! </button></div> ';
 		exit();
 		}
-		else if (strlen($mtp) < 4 or strlen($mtp) > 20  ) {
-		echo " <center><h4><font color='red'>Attention, mote de passe <b>ICQ</b> inncorrect !</font></h4></center></b> </br>";
+		else if (strlen($password) < 4 or strlen($password) > 40  ) {
+		echo '
+        <div class="alert alert-light-danger alert-dismissible fade show border-0 mb-4" role="alert">
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"><svg> ... </svg></button>
+    Attention, mote de passe <b>ICQ</b> inncorrect !</button></div>';
 		exit();
 		}
 

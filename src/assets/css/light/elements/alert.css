@@ -32,7 +32,7 @@
   color: #000;
   opacity: 1;
   width: 18px;
-  background: transparent;
+  /* background: transparent; */
   padding: 13px 12px;
   box-shadow: none;
 }

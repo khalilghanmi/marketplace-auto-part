@@ -37,6 +37,7 @@ $res = mysqli_num_rows($req);
 
 <link rel="stylesheet" type="text/css" href="../src/plugins/css/dark/table/datatable/dt-global_style.css">
 <link rel="stylesheet" type="text/css" href="../src/plugins/css/dark/table/datatable/custom_dt_miscellaneous.css">
+<link rel="stylesheet" type="text/css" href="../src/assets/css/light/elements/alert.css">
     <!-- END PAGE LEVEL CUSTOM STYLES -->
 </head>
 <body class="layout-boxed ">
@@ -201,14 +202,14 @@ $res = mysqli_num_rows($req);
                                         <div class="col-md-6">
                                         <label for="inputCivilité" class="form-label">Civilité</label><br>
                                         <div class="form-check form-check-primary form-check-inline">
-                                            <input class="form-check-input" type="radio" name="Civilite" id="form-check-radio-primary" checked="">
+                                            <input class="form-check-input" type="radio" value="homme" name="Civilite" id="form-check-radio-primary" checked="">
                                              <label class="form-check-label" for="form-check-radio-primary">
                                                Homme
                                              </label>
                                         </div>
 
                                         <div class="form-check form-check-info form-check-inline">
-                                         <input class="form-check-input" type="radio" name="Civilite" id="form-check-radio-info">
+                                         <input class="form-check-input" type="radio" value="femme" name="Civilite" id="form-check-radio-info">
                                              <label class="form-check-label" for="form-check-radio-info">
                                                 Femme
                                              </label>
