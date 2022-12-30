@@ -119,16 +119,15 @@ $res = mysqli_num_rows($req);
                                     }
                                     echo'<td>
                                     <div class="btn-group">
-                                        <button type="button" class="btn btn-dark btn-sm">Open</button>
+                                        <button type="button" class="btn btn-dark btn-sm">Ouvrir</button>
                                         <button type="button" class="btn btn-dark btn-sm dropdown-toggle dropdown-toggle-split" id="dropdownMenuReference1" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-reference="parent">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
                                         </button>
                                         <div class="dropdown-menu" aria-labelledby="dropdownMenuReference1">
-                                            <a class="dropdown-item" href="#">Action</a>
-                                            <a class="dropdown-item" href="#">Another action</a>
-                                            <a class="dropdown-item" href="#">Something else here</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a class="dropdown-item" href="#">Separated link</a>
+                                            <a class="dropdown-item" href="#">modifier</a>
+                                            <a class="dropdown-item" href="#">Supprimer</a>
+                                            <a class="dropdown-item" href="#">Statut</a>
+                                            
                                         </div>
                                     </div>
                                     </td>
@@ -169,8 +168,8 @@ $res = mysqli_num_rows($req);
                                                 </button>
                                             </div>
                                             <div class="modal-body">
-                                             
-                                            <form class="row g-3">
+                                            <div id='alerte'></div>
+                                            <form class="row g-3" id='myforme'>
                                             <div class="col-md-6">
                                             <label for="inputEmail4" class="form-label">Nom</label>
                                             <input type="text" name="nom"class="form-control">
@@ -193,23 +192,23 @@ $res = mysqli_num_rows($req);
                                         </div>
                                         <div class="col-md-6">
                                             <label for="inputCity" class="form-label">Code Postale</label>
-                                            <input type="number" class="form-control" id="inputCity">
+                                            <input type="number" name="code_p" class="form-control" id="inputCity">
                                         </div>
                                         <div class="col-md-6">
                                             <label for="inputState" class="form-label">Mobile</label>
-                                            <input type="phone" class="form-control" id="inputCity">
+                                            <input type="phone"  name="mobile" class="form-control" id="inputCity">
                                         </div>
                                         <div class="col-md-6">
                                         <label for="inputCivilité" class="form-label">Civilité</label><br>
                                         <div class="form-check form-check-primary form-check-inline">
-                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="form-check-radio-primary" checked="">
+                                            <input class="form-check-input" type="radio" name="Civilite" id="form-check-radio-primary" checked="">
                                              <label class="form-check-label" for="form-check-radio-primary">
                                                Homme
                                              </label>
                                         </div>
 
                                         <div class="form-check form-check-info form-check-inline">
-                                         <input class="form-check-input" type="radio" name="flexRadioDefault" id="form-check-radio-info">
+                                         <input class="form-check-input" type="radio" name="Civilite" id="form-check-radio-info">
                                              <label class="form-check-label" for="form-check-radio-info">
                                                 Femme
                                              </label>
@@ -233,8 +232,8 @@ $res = mysqli_num_rows($req);
                                         <div class="col-2">
                                         <button class="btn btn-light-dark" data-bs-dismiss="modal">Annuler</button>
                                         </div>
-                                        <div class="col-2">
-                                        <button type="button" class="btn btn-primary">Enregistrer</button>
+                                        <div class="col-2">                                        
+                                        <a href="#" class="btn btn-primary" id='gi'>Enregistrer</a>
                                         </div>
                                     </form>
 
@@ -265,7 +264,25 @@ $res = mysqli_num_rows($req);
     <script src="../src/plugins/src/table/datatable/button-ext/buttons.print.min.js"></script>
     <script src="../src/plugins/src/table/datatable/custom_miscellaneous.js"></script>
     <!-- END PAGE LEVEL SCRIPTS -->  
-    
+    <script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/plugins.js"></script>
+	<script type="text/javascript">
+	                         $(function(){
+							$('#gi').click(function(){
+								var da = $('#myforme').serialize();
+								$.post('controller/Clients/ajouter.php',da,function(data){
+									if(data == ""){
+									window.location.replace("index.php");
+									}
+								else {
+									$('#alerte').html(data);
+								}
+								});
+							});
+							});
+                            
+
+    </script>
     <!-- END PAGE LEVEL SCRIPTS -->  
 </body>
 </html>
