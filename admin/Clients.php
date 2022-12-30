@@ -53,8 +53,8 @@
                     <div class="page-meta">
                         <nav class="breadcrumb-style-one" aria-label="breadcrumb">
                             <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="#">Datatables</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">Custom</li>
+                                
+                                <li class="breadcrumb-item active" aria-current="page">Clients</li>
                             </ol>
                         </nav>
                     </div>
@@ -62,9 +62,7 @@
                     
                   
     
-                    <div class="seperator-header">
-                        <h4 class="">Style 2</h4>
-                    </div>
+                     
                      <!-- xtra Large modal -->
                      <button type="button" class="btn btn-primary mb-2 me-4" data-bs-toggle="modal" data-bs-target=".bd-example-modal-xl">Ajouter</button>
                     <!-- Lage modal -->
@@ -91,86 +89,9 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr>
-                                            <td>khalil</td>
-                                            <td>ghanmi</td>
-                                            <td>ghanmi.khalil@gmail.com</td>
-                                            <td>homme</td>
-                                            <td>27-09-1993</td>
-                                            <td>19 rue jarzouna tunis</td>
-                                            <td>2017</td>
-                                            <td>+216 55347574</td>
-                                            <td><span class="shadow-none badge badge-primary">Approved</span></td>
-                                            <td>
-                                                <div class="btn-group">
-                                                    <button type="button" class="btn btn-dark btn-sm">Voir</button>
-                                                    <button type="button" class="btn btn-dark btn-sm dropdown-toggle dropdown-toggle-split" id="dropdownMenuReference1" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-reference="parent">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
-                                                    </button>
-                                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuReference1">
-                                                        <a class="dropdown-item" href="#">Voir</a>
-                                                        <a class="dropdown-item" href="#">Modifier</a>
-                                                        <a class="dropdown-item" href="#">Supprimer</a>
-                                                        <div class="dropdown-divider"></div>
-                                                        <a class="dropdown-item" href="#">statut</a>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                      
-                                        <tr>
-                                            <td>khalil</td>
-                                            <td>ghanmi</td>
-                                            <td>ghanmi.khalil@gmail.com</td>
-                                            <td>homme</td>
-                                            <td>27-09-1993</td>
-                                            <td>19 rue jarzouna tunis</td>
-                                            <td>2017</td>
-                                            <td>+216 55347574</td>
-                                            <td><span class="shadow-none badge badge-primary">Approved</span></td>
-                                            <td>
-                                                <div class="btn-group">
-                                                    <button type="button" class="btn btn-dark btn-sm">Voir</button>
-                                                    <button type="button" class="btn btn-dark btn-sm dropdown-toggle dropdown-toggle-split" id="dropdownMenuReference1" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-reference="parent">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
-                                                    </button>
-                                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuReference1">
-                                                        <a class="dropdown-item" href="#">Voir</a>
-                                                        <a class="dropdown-item" href="#">Modifier</a>
-                                                        <a class="dropdown-item" href="#">Supprimer</a>
-                                                        <div class="dropdown-divider"></div>
-                                                        <a class="dropdown-item" href="#">statut</a>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>khalil</td>
-                                            <td>ghanmi</td>
-                                            <td>ghanmi.khalil@gmail.com</td>
-                                            <td>homme</td>
-                                            <td>27-09-1993</td>
-                                            <td>19 rue jarzouna tunis</td>
-                                            <td>2017</td>
-                                            <td>+216 55347574</td>
-                                            <td><span class="shadow-none badge badge-primary">Approved</span></td>
-                                            <td>
-                                                <div class="btn-group">
-                                                    <button type="button" class="btn btn-dark btn-sm">Voir</button>
-                                                    <button type="button" class="btn btn-dark btn-sm dropdown-toggle dropdown-toggle-split" id="dropdownMenuReference1" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-reference="parent">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
-                                                    </button>
-                                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuReference1">
-                                                        <a class="dropdown-item" href="#">Voir</a>
-                                                        <a class="dropdown-item" href="#">Modifier</a>
-                                                        <a class="dropdown-item" href="#">Supprimer</a>
-                                                        <div class="dropdown-divider"></div>
-                                                        <a class="dropdown-item" href="#">statut</a>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                      
+                                                                              
+                                        <div id='yaffichi'></div>
+                                        
                                     </tbody>
                                 </table>
                                 </div>
@@ -300,5 +221,30 @@
     <!-- END PAGE LEVEL SCRIPTS -->  
     
     <!-- END PAGE LEVEL SCRIPTS -->  
+
+    <script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/plugins.js"></script>
+	<script type="text/javascript">
+	                         $(function(){
+							$('#gi').click(function(){
+								var da = $('#myforme').serialize();
+								$.post('login.php',da,function(data){
+									if(data == ""){
+									window.location.replace("index.php");
+									}
+								else {
+									$('#alerte').html(data);
+								}
+								});
+							});
+							});
+                            $(function(){							
+								$.post('controller/Clients/affichage.php',function(data){
+									$('#yaffichi').html(data);
+								});
+							});
+
+    </script>
+    
 </body>
 </html>
