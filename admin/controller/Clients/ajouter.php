@@ -11,12 +11,12 @@ $nom = $_POST['nom'] ;
   $adresse = $_POST['adresse'] ;
   $code_p = $_POST['code_p'] ;
   $mobile = $_POST['mobile'] ;
-  $email = $_POST['email'] ;
-  $email = $_POST['email'] ;
+  $Civilite = $_POST['Civilite'] ;
+  $date_n = $_POST['date_n'] ;
   $email = $_POST['email'] ;
 
 // On vérifie si les champs sont vides
-if(empty($email) OR empty($name) OR empty($mtp))
+if(empty($nom) OR empty($prenom) OR empty($password) OR empty($email) OR empty($adresse) OR empty($code_p) OR empty($mobile)OR empty($date_n))
     {
     echo "<center><h4><font color='red'>Attention, seul le champs <b>ICQ</b> peut rester vide !</font></h4></center></b> </br>";
     }
