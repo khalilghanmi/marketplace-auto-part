@@ -225,7 +225,7 @@ $res = mysqli_num_rows($req);
                                         <div class="col-8">
                                             <div class="form-check">
                                             <div class="form-check form-switch form-check-inline">
-                                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                                            <input class="form-check-input" type="checkbox" name="statut" role="switch" id="flexSwitchCheckChecked" checked>
                                             <label class="form-check-label" for="flexSwitchCheckChecked">Statut</label>
                                             </div>
                                             </div>
@@ -273,7 +273,10 @@ $res = mysqli_num_rows($req);
 								var da = $('#myforme').serialize();
 								$.post('controller/Clients/ajouter.php',da,function(data){
 									if(data == ""){
-									window.location.replace("index.php");
+                                        $('#alerte').html('<div class="alert alert-light-success alert-dismissible fade show border-0 mb-4" role="alert"> <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x close" data-bs-dismiss="alert"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></button> Ajouter clients Avec Succées. </div>');
+                                        setTimeout(
+                                        window.location.replace("Clients.php"), 10000);;
+                                         
 									}
 								else {
 									$('#alerte').html(data);
@@ -281,7 +284,7 @@ $res = mysqli_num_rows($req);
 								});
 							});
 							});
-                            
+                                      
 
     </script>
     <!-- END PAGE LEVEL SCRIPTS -->  
