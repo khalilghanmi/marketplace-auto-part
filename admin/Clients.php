@@ -83,16 +83,16 @@ $res = mysqli_num_rows($req);
                                 <table id="html5-extension" class="table dt-table-hover" style="width:100%">
                                     <thead>
                                         <tr>
-                                            <th>Nom</th>
-                                            <th>Prénom</th>
-                                            <th>Email</th>
-                                            <th>Civilité</th>
-                                            <th>Date de naissance</th>
-                                            <th>Adresse</th>
-                                            <th>Code Postal</th>
-                                            <th>Mobile</th>
-                                            <th>Statut</th>
-                                            <th>Action</th>
+                                            <th class="text-center">Nom</th>
+                                            <th class="text-center">Prénom</th>
+                                            <th class="text-center">Email</th>
+                                            <th class="text-center">Civilité</th>
+                                            <th class="text-center">Date de naissance</th>
+                                            <th class="text-center">Adresse</th>
+                                            <th class="text-center">Code Postal</th>
+                                            <th class="text-center">Mobile</th>
+                                            <th class="text-center">Statut</th>
+                                            <th class="text-center">Action</th>
                                             
                                         </tr>
                                     </thead>
@@ -112,10 +112,10 @@ $res = mysqli_num_rows($req);
                                     <td class="text-center">'.$data['code_p'].'</td>
                                     <td class="text-center">'.$data['mobile'].'</td>';
                                     if($data['Statut'] == 1){
-                                        echo'<td class="text-center"><span class="shadow-none badge badge-primary">Approuvé</span></td>';
+                                        echo'<td class="text-center"><span class="shadow-none badge badge-primary">activé</span></td>';
                                     }
                                     else{
-                                        echo'<td class="text-center"><span class="shadow-none badge badge-danger">Fermer</span></td>';
+                                        echo'<td class="text-center"><span class="shadow-none badge badge-danger">désactivé</span></td>';
                                     }
                                     echo'<td>
                                     <div class="btn-group">
