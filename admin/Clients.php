@@ -342,7 +342,7 @@ $res = mysqli_num_rows($req);
 
                     // AJAX request
                     $.ajax({
-                        url: 'controller/Clients/ajaxfile.php',
+                        url: 'controller/Clients/popup-modification.php',
                         type: 'post',
                         data: {userid: userid},
                         success: function(response){ 
