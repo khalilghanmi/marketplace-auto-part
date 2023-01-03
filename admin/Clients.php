@@ -66,6 +66,27 @@ $res = mysqli_num_rows($req);
                             </ol>
                         </nav>
                     </div>
+                    <div class="modal fade" id="empModal" role="dialog">
+                <div class="modal-dialog">
+                
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title">User Info</h4>
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                          
+                        </div>
+                        <div class="modal-body">
+                          
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                  
+                </div>
+            </div>
+
                      <!-- xtra Large modal -->
                      <button type="button" class="btn btn-primary mb-2 me-4" data-bs-toggle="modal" data-bs-target=".bd-example-modal-xl">Ajouter</button>
                     <!-- Lage modal -->
@@ -114,7 +135,8 @@ $res = mysqli_num_rows($req);
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
                                         </button>
                                         <div class="dropdown-menu" aria-labelledby="dropdownMenuReference1">
-                                            <a class="dropdown-item" href="#">modifier</a>
+                                            <a class="dropdown-item userinfo"  data-id="'.$data['id'].'" href="#">modifier</a>
+                                            
                                             <a class="dropdown-item" href="#">Supprimer</a>
                                             <a class="dropdown-item" href="#">Statut</a>
                                             
@@ -287,6 +309,8 @@ $res = mysqli_num_rows($req);
 
     <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/plugins.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+
 	<script type="text/javascript">
 	                         $(function(){
 							$('#gi').click(function(){
@@ -307,6 +331,31 @@ $res = mysqli_num_rows($req);
                                       
 
     </script>
+
+
+<script type='text/javascript'>
+            $(document).ready(function(){
+
+                $('.userinfo').click(function(){
+                   
+                    var userid = $(this).data('id');
+
+                    // AJAX request
+                    $.ajax({
+                        url: 'controller/Clients/ajaxfile.php',
+                        type: 'post',
+                        data: {userid: userid},
+                        success: function(response){ 
+                            // Add response in Modal body
+                            $('.modal-body').html(response); 
+
+                            // Display Modal
+                            $('#empModal').modal('show'); 
+                        }
+                    });
+                });
+            });
+            </script>
     <!-- END PAGE LEVEL SCRIPTS -->  
 </body>
 </html>
