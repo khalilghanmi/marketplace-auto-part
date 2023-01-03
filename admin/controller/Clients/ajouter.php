@@ -49,6 +49,7 @@ else
 		}
 		else  
 		{
+      $password = md5($password);
 		$sql = "INSERT  INTO customers VALUES ( '', '$nom', '$prenom', '$email', '$Civilite', '$date_n', '$adresse', '$code_p', '$mobile', '$statut', '$password', '', '$password')";
 		$req = mysqli_query($db,$sql) or die('Erreur SQL !'.$sql.'<br>'.mysql_error());
 		echo "";

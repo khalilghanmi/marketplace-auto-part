@@ -27,6 +27,7 @@ $res = mysqli_num_rows($req);
     
     <link rel="stylesheet" type="text/css" href="../src/plugins/css/light/table/datatable/dt-global_style.css">
     <link rel="stylesheet" type="text/css" href="../src/plugins/css/dark/table/datatable/dt-global_style.css">
+    <link rel="stylesheet" type="text/css" href="../src/assets/css/light/elements/alert.css">
     <!--  END CUSTOM STYLE FILE  -->
 
     <style>
@@ -60,8 +61,8 @@ $res = mysqli_num_rows($req);
                         <nav class="breadcrumb-style-one" aria-label="breadcrumb">
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item"><a href="#">App</a></li>
-                                <li class="breadcrumb-item"><a href="#">Ecommerce</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">List</li>
+                                <li class="breadcrumb-item"><a href="#">Clients</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Liste</li>
                             </ol>
                         </nav>
                     </div>
