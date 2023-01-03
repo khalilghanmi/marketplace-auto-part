@@ -10,7 +10,7 @@ $res = mysqli_num_rows($req);
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
-    <title>Ecommerce List | Admin - Piéce Auto Tunisie </title>
+    <title>Clients | Admin - Piéce Auto Tunisie </title>
     <link rel="icon" type="image/x-icon" href="../src/assets/img/favicon.ico"/>
     <link href="../layouts/semi-dark-menu/css/light/loader.css" rel="stylesheet" type="text/css" />
     <link href="../layouts/semi-dark-menu/css/dark/loader.css" rel="stylesheet" type="text/css" />
@@ -66,26 +66,26 @@ $res = mysqli_num_rows($req);
                             </ol>
                         </nav>
                     </div>
-                    <div class="modal fade" id="empModal" role="dialog">
-                <div class="modal-dialog">
-                
-                    <!-- Modal content-->
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h4 class="modal-title">User Info</h4>
-                          <button type="button" class="close" data-dismiss="modal">&times;</button>
-                          
-                        </div>
-                        <div class="modal-body">
-                          
-                        </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                        </div>
-                    </div>
-                  
-                </div>
-            </div>
+                    <div class="modal fade bd-example-modal-lg" id="empModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-lg" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="myLargeModalLabel">Large</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                                                      <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                   
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button class="btn btn-light-dark" data-bs-dismiss="modal">Discard</button>
+                                                    <button type="button" class="btn btn-primary">Save</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                    
 
                      <!-- xtra Large modal -->
                      <button type="button" class="btn btn-primary mb-2 me-4" data-bs-toggle="modal" data-bs-target=".bd-example-modal-xl">Ajouter</button>
@@ -135,7 +135,7 @@ $res = mysqli_num_rows($req);
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
                                         </button>
                                         <div class="dropdown-menu" aria-labelledby="dropdownMenuReference1">
-                                            <a class="dropdown-item userinfo"  data-id="'.$data['id'].'" href="#">modifier</a>
+                                            <a class="dropdown-item userinfo " data-bs-target=".bd-example-modal-lg" data-id="'.$data['id'].'" href="#">modifier</a>
                                             
                                             <a class="dropdown-item" href="#">Supprimer</a>
                                             <a class="dropdown-item" href="#">Statut</a>
@@ -310,7 +310,7 @@ $res = mysqli_num_rows($req);
     <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/plugins.js"></script>
 <script type="text/javascript" src="js/jquery.min.js"></script>
-
+<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
 	<script type="text/javascript">
 	                         $(function(){
 							$('#gi').click(function(){
