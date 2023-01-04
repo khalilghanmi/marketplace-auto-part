@@ -10,8 +10,8 @@ function isEmail($email) {
             $statut=0;
 			}
 
-  $date_added=date('y-m-d');
-if(empty($nom) OR empty($prenom)  OR empty($email) OR empty($adresse) OR empty($code_p) OR empty($mobile)OR empty($date_n))
+  
+if(empty($nom) OR empty($prenom)  OR empty($email) OR empty($adresse) OR empty($code_p) OR empty($mobile)OR empty($date_n) OR empty($civilite))
     {
     echo '<div class="alert alert-light-danger alert-dismissible fade show border-0 mb-4" role="alert">
     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"><svg> ... </svg></button>
@@ -33,7 +33,7 @@ else
 		$req = mysqli_query($db,$sql) or die('Erreur SQL !'.$sql.'<br>'.mysql_error());
 		
 		$res = mysqli_num_rows($req);
-		if($res!=0)  
+		if($res==0)  
 		{
 		echo '<div class="alert alert-light-danger alert-dismissible fade show border-0 mb-4" role="alert">
     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"><svg> ... </svg></button>
@@ -42,10 +42,19 @@ else
 		}
 		else  
 		{
-            echo '<div class="alert alert-light-danger alert-dismissible fade show border-0 mb-4" role="alert">
-            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"><svg> ... </svg></button>
-            Désolé, Client n\'existe pas dans site</button>
-        </div>';
+            $sql = "UPDATE customers SET nom='$nom',
+            prenom='$prenom',
+            email='$email',
+            civilite='$civilite',
+            date_n='$date_n',
+            adresse='$adresse',
+            code_p='$code_p',
+            mobile='$mobile',
+            Statut='$statut'
+            where id='$id'";
+            
+           $req = mysqli_query($db,$sql) or die('Erreur SQL !'.$sql.'<br>'.mysql_error());
+           echo "";
 		}
 	 }
      

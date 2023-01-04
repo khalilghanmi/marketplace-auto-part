@@ -12,6 +12,7 @@ while( $row = mysqli_fetch_array($result) ){
     $response .= '
     
                                             <form class="row g-3" id="myformemodif">
+                                            <input type="hidden" name="id" value="'.$row['id'].'" class="form-control">
                                             <div id="alertemodif"></div>
                                             <div class="col-md-6">
                                             <label for="inputEmail4" class="form-label">Nom</label>
@@ -46,7 +47,7 @@ while( $row = mysqli_fetch_array($result) ){
                                         <div class="form-check form-check-primary form-check-inline">
                                             <input class="form-check-input" type="radio"';
                                              if ($row['civilite']=='homme'){$response .= 'checked=""';}  
-                                             $response .= ' value="homme" name="Civilite" id="form-check-radio-primary" >
+                                             $response .= ' value="homme" name="civilite" id="form-check-radio-primary" >
                                              <label class="form-check-label" for="form-check-radio-primary">
                                                Homme
                                              </label>
@@ -55,7 +56,7 @@ while( $row = mysqli_fetch_array($result) ){
                                         <div class="form-check form-check-info form-check-inline">
                                          <input class="form-check-input" type="radio"';
                                          if ($row['civilite']=='femme'){$response .= 'checked=""';}
-                                         $response .= ' value="femme" name="Civilite" id="form-check-radio-info">
+                                         $response .= ' value="femme" name="civilite" id="form-check-radio-info">
                                              <label class="form-check-label" for="form-check-radio-info">
                                                 Femme
                                              </label>

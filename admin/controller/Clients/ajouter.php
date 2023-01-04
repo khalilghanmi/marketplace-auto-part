@@ -49,8 +49,9 @@ else
 		}
 		else  
 		{
+      $today = date("y-m-d");
       $password = md5($password);
-		$sql = "INSERT  INTO customers VALUES ( '', '$nom', '$prenom', '$email', '$Civilite', '$date_n', '$adresse', '$code_p', '$mobile', '$statut', '$password', '', '$password')";
+		$sql = "INSERT  INTO customers VALUES ( '', '$nom', '$prenom', '$email', '$Civilite', '$date_n', '$adresse', '$code_p', '$mobile', '$statut', '$password', '' , '$today')";
 		$req = mysqli_query($db,$sql) or die('Erreur SQL !'.$sql.'<br>'.mysql_error());
 		echo "";
 		}
