@@ -139,7 +139,7 @@ $res = mysqli_num_rows($req);
                                         <div class="dropdown-menu" aria-labelledby="dropdownMenuReference1">
                                             <a class="dropdown-item userinfo " data-bs-target=".bd-example-modal-lg" data-id="'.$data['id'].'" href="#">modifier</a>
                                             
-                                            <a class="dropdown-item" href="#">Supprimer</a>
+                                            <a class="dropdown-item userinfo" data-bs-target=".bd-example-modal-lg" data-id="'.$data['id'].'" href="#">Supprimer</a>
                                             <a class="dropdown-item" href="#">Statut</a>
                                             
                                         </div>
@@ -337,6 +337,24 @@ $res = mysqli_num_rows($req);
                         }
                     });
                 });
+            });
+
+            $(document).ready(function(){
+
+            $('.userinfo').click(function(){
+   
+            var userid = $(this).data('id');
+ 
+                $.ajax({
+                     url: 'controller/Clients/popup-suprimer.php',
+                     type: 'post',
+                    data: {userid: userid},
+                    success: function(response){ 
+                        $('.modal-body').html(response); 
+                        $('#empModal').modal('show'); 
+                    }
+                });
+            });
             });
             </script>
  
