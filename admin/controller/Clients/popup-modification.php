@@ -11,13 +11,13 @@ while( $row = mysqli_fetch_array($result) ){
    
     $response .= '
     
-                                            <form class="row g-3" id="myformemodif">
+    <form class="row g-3" id="myformemodif">
                                             <input type="hidden" name="id" value="'.$row['id'].'" class="form-control">
                                             <div id="alertemodif"></div>
                                             <div class="col-md-6">
                                             <label for="inputEmail4" class="form-label">Nom</label>
                                             <input type="text" name="nom" value="'.$row['nom'].'" class="form-control">
-                                        </div>
+                                            </div>
                                         <div class="col-md-6">
                                             <label for="inputPassword4" class="form-label">Prénom</label>
                                             <input type="text" name="prenom" value="'.$row['prenom'].'" class="form-control">
