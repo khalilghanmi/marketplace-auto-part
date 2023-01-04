@@ -10,8 +10,9 @@ $response = "";
 while( $row = mysqli_fetch_array($result) ){
    
     $response .= '
-    <div id="alerte"></div>
-                                            <form class="row g-3" id="myforme">
+    
+                                            <form class="row g-3" id="myformemodif">
+                                            <div id="alertemodif"></div>
                                             <div class="col-md-6">
                                             <label for="inputEmail4" class="form-label">Nom</label>
                                             <input type="text" name="nom" value="'.$row['nom'].'" class="form-control">
@@ -25,8 +26,8 @@ while( $row = mysqli_fetch_array($result) ){
                                             <input type="email" name="email" value="'.$row['email'].'" class="form-control" id="inputEmail4">
                                         </div>
                                         <div class="col-md-6">
-                                            <label for="inputPassword4" class="form-label">Mot de passe</label>
-                                            <input type="password" name="password" value="'.$row['password'].'" class="form-control" id="inputPassword4">
+                                            <label for="inputState" class="form-label">Mobile</label>
+                                            <input type="phone"  name="mobile" value="'.$row['mobile'].'" class="form-control" id="inputCity">
                                         </div>
                                         <div class="col-12">
                                             <label for="inputAddress" class="form-label">Addresse</label>
@@ -37,8 +38,8 @@ while( $row = mysqli_fetch_array($result) ){
                                             <input type="number" name="code_p" value="'.$row['code_p'].'" class="form-control" id="inputCity">
                                         </div>
                                         <div class="col-md-6">
-                                            <label for="inputState" class="form-label">Mobile</label>
-                                            <input type="phone"  name="mobile" value="'.$row['mobile'].'" class="form-control" id="inputCity">
+                                            <label for="inputdatenessance" class="form-label">Date de naissance</label>
+                                            <input type="date" name="date_n" value="'.$row['date_n'].'" class="form-control">
                                         </div>
                                         <div class="col-md-6">
                                         <label for="inputCivilité" class="form-label">Civilité</label><br>
@@ -61,13 +62,11 @@ while( $row = mysqli_fetch_array($result) ){
                                         </div>
                   
                                         </div>
-                                        <div class="col-md-6">
-                                            <label for="inputdatenessance" class="form-label">Date de naissance</label>
-                                            <input type="date" name="date_n" value="'.$row['date_n'].'" class="form-control">
-                                        </div>
                                         
                                         
-                                        <div class="col-8">
+                                        
+                                        <div class="col-6">
+                                        <label for="inputClients" class="form-label">Statut Client</label><br>
                                             <div class="form-check">
                                             <div class="form-check form-switch form-check-inline">
                                             <input class="form-check-input" type="checkbox"';
@@ -77,14 +76,8 @@ while( $row = mysqli_fetch_array($result) ){
                                             </div>
                                             </div>
                                         </div>
-                                        <div class="col-2">
-                                        <button class="btn btn-light-dark" data-bs-dismiss="modal">Annuler</button>
-                                        </div>
-                                        <div class="col-2">          
-                                                                       
-                                        <a href="#" class="btn btn-primary" id="gi">Enregistrer</a>
-                                        </div>
-                                    </form>
+                                       
+                                    
     
     
     ';

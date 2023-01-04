@@ -29,6 +29,7 @@ $res = mysqli_num_rows($req);
     <link rel="stylesheet" type="text/css" href="../src/plugins/css/dark/table/datatable/dt-global_style.css">
     <link rel="stylesheet" type="text/css" href="../src/assets/css/light/elements/alert.css">
     <!--  END CUSTOM STYLE FILE  -->
+   
 
     <style>
         #ecommerce-list img {
@@ -70,7 +71,7 @@ $res = mysqli_num_rows($req);
                                         <div class="modal-dialog modal-lg" role="document">
                                             <div class="modal-content">
                                                 <div class="modal-header">
-                                                    <h5 class="modal-title" id="myLargeModalLabel">Large</h5>
+                                                    Modification
                                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
                                                       <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
                                                     </button>
@@ -79,8 +80,9 @@ $res = mysqli_num_rows($req);
                                                    
                                                 </div>
                                                 <div class="modal-footer">
-                                                    <button class="btn btn-light-dark" data-bs-dismiss="modal">Discard</button>
-                                                    <button type="button" class="btn btn-primary">Save</button>
+                                                    <button class="btn btn-light-dark" data-bs-dismiss="modal">Annuler</button>
+                                                    <button type="button" class="btn btn-primary" id="modif" >Mise à jour</button>
+                                                    </form>
                                                 </div>
                                             </div>
                                         </div>
@@ -307,30 +309,11 @@ $res = mysqli_num_rows($req);
     </script>
     <!-- END PAGE LEVEL SCRIPTS -->    
 
-    <script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/plugins.js"></script>
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
-	<script type="text/javascript">
-	                         $(function(){
-							$('#gi').click(function(){
-								var da = $('#myforme').serialize();
-								$.post('controller/Clients/ajouter.php',da,function(data){
-									if(data == ""){
-                                        $('#alerte').html('<div class="alert alert-light-success alert-dismissible fade show border-0 mb-4" role="alert"> <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x close" data-bs-dismiss="alert"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></button> Ajouter clients Avec Succées. </div>');
-                                        setTimeout(
-                                        window.location.replace("Clients.php"), 10000);;
-                                         
-									}
-								else {
-									$('#alerte').html(data);
-								}
-								});
-							});
-							});
-                                      
-
-    </script>
+	
 
 
 <script type='text/javascript'>
@@ -356,6 +339,46 @@ $res = mysqli_num_rows($req);
                 });
             });
             </script>
-    <!-- END PAGE LEVEL SCRIPTS -->  
+ 
+
+ <script type="text/javascript">
+	                         $(function(){
+							$('#gi').click(function(){
+								var da = $('#myforme').serialize();
+								$.post('controller/Clients/ajouter.php',da,function(data){
+									if(data == ""){
+                                        $('#alerte').html('<div class="alert alert-light-success alert-dismissible fade show border-0 mb-4" role="alert"> <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x close" data-bs-dismiss="alert"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></button> Ajouter clients Avec Succées. </div>');
+                                        setTimeout(
+                                        window.location.replace("Clients.php"), 10000);;
+                                         
+									}
+								else {
+									$('#alerte').html(data);
+								}
+								});
+							});
+							});
+                            </script>
+    <script type="text/javascript">
+                            $(function(){
+							$('#modif').click(function(){
+								var da = $('#myformemodif').serialize();
+								$.post('controller/Clients/modifications.php',da,function(data){
+									if(data == ""){
+                                        $('#alertemodif').html('<div class="alert alert-light-success alert-dismissible fade show border-0 mb-4" role="alert"> <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x close" data-bs-dismiss="alert"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></button> Ajouter clients Avec Succées. </div>');
+                                        setTimeout(
+                                        window.location.replace("Clients.php"), 10000);;
+                                         
+									}
+								else {
+									$('#alertemodif').html(data);
+								}
+								});
+							});
+							});     
+                            
+
+    </script>
+
 </body>
 </html>
