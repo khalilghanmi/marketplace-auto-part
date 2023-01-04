@@ -29,7 +29,7 @@ else if (!isEmail($email)) {
 else
     {
 		
-		$sql = "SELECT * FROM customers WHERE email='$email'";
+		$sql = "SELECT * FROM customers WHERE id='$id'";
 		$req = mysqli_query($db,$sql) or die('Erreur SQL !'.$sql.'<br>'.mysql_error());
 		
 		$res = mysqli_num_rows($req);
