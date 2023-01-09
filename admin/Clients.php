@@ -89,7 +89,24 @@ $res = mysqli_num_rows($req);
                                             </div>
                                         </div>
                                     </div>
-                    
+                                    <div class="modal fade bd-example-modal-lg" id="empModale" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-lg" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    Suppression
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                                                      <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                                                    </button>
+                                                </div>
+                                                
+                                                    <div class="modal-body-suprimer">
+                                                    
+                                                    </div>
+                                                    
+                                               
+                                            </div>
+                                        </div>
+                                    </div>
 
                      <!-- xtra Large modal -->
                      <button type="button" class="btn btn-primary mb-2 me-4" data-bs-toggle="modal" data-bs-target=".bd-example-modal-xl">Ajouter</button>
@@ -352,8 +369,8 @@ $res = mysqli_num_rows($req);
                      type: 'post',
                     data: {userid: userid},
                     success: function(response){ 
-                        $('.modal-body').html(response); 
-                        $('#empModal').modal('show'); 
+                        $('.modal-body-suprimer').html(response); 
+                        $('#empModale').modal('show'); 
                     }
                 });
             });
