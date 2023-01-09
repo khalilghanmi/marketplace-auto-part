@@ -81,7 +81,7 @@ $res = mysqli_num_rows($req);
                                                     
                                                     </div>
                                                     <div class="modal-footer">
-                                                        <button class="btn btn-light-dark" data-bs-dismiss="modal">Annuler</button>
+                                                        <a href="#" class="btn btn-light-dark" data-bs-dismiss="modal">Annuler</a>
                                                         <button type="button" class="btn btn-primary" id="modif" >Mise à jour</button>
                                                         </form>
                                                     </div>
