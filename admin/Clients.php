@@ -280,7 +280,7 @@ $res = mysqli_num_rows($req);
                                             </div>
                                         </div>
                                         <div class="col-2">
-                                        <button class="btn btn-light-dark" data-bs-dismiss="modal">Annuler</button>
+                                        <a href="#" class="btn btn-light-dark" data-bs-dismiss="modal">Annuler</a>
                                         </div>
                                         <div class="col-2">          
                                                                        
