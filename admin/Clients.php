@@ -157,8 +157,7 @@ $res = mysqli_num_rows($req);
     <script src="../src/plugins/src/table/datatable/button-ext/jszip.min.js"></script>    
     <script src="../src/plugins/src/table/datatable/button-ext/buttons.html5.min.js"></script>
     <script src="../src/plugins/src/table/datatable/button-ext/buttons.print.min.js"></script>
-    <script src="../src/plugins/src/table/datatable/custom_miscellaneous.js"></script>
-    <!-- END PAGE LEVEL SCRIPTS -->    
+    <script src="../src/plugins/src/table/datatable/custom_miscellaneous.js"></script>    
     <script>
         ecommerceList = $('#ecommerce-list').DataTable({
             headerCallback:function(e, a, t, n, s) {
