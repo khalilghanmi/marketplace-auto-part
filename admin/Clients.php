@@ -411,11 +411,7 @@ $res = mysqli_num_rows($req);
     });
 });
 });
-            </script>
- 
-
- <script type="text/javascript">
-	                         $(function(){
+$(function(){
 							$('#gi').click(function(){
 								var da = $('#myforme').serialize();
 								$.post('controller/Clients/ajouter.php',da,function(data){
@@ -431,8 +427,7 @@ $res = mysqli_num_rows($req);
 								});
 							});
 							});
-                            </script>
-    <script type="text/javascript">
+
                             $(function(){
 							$('#modif').click(function(){
 								var da = $('#myformemodif').serialize();
@@ -449,9 +444,7 @@ $res = mysqli_num_rows($req);
 								});
 							});
 							});     
-                            
-
-    </script>
-
+            </script>
+ 
 </body>
 </html>

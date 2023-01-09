@@ -15,7 +15,7 @@ if(empty($nom) OR empty($prenom)  OR empty($email) OR empty($adresse) OR empty($
     {
     echo '<div class="alert alert-light-danger alert-dismissible fade show border-0 mb-4" role="alert">
     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"><svg> ... </svg></button>
-    Attention, seul le champs <b>ICQ</b> peut rester vide ! </button>
+    Attention, seul le champs peut rester vide ! </button>
 </div> 
    ';
     }
@@ -23,7 +23,7 @@ if(empty($nom) OR empty($prenom)  OR empty($email) OR empty($adresse) OR empty($
 else if (!isEmail($email)) {
 		echo '<div class="alert alert-light-danger alert-dismissible fade show border-0 mb-4" role="alert">
     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"><svg> ... </svg></button>
-    Attention, email <b>ICQ</b> inncorrect ! </button></div> ';
+    Attention, email inncorrect ! </button></div> ';
 		exit();
 		}
 else
