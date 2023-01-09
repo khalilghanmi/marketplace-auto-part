@@ -16,7 +16,7 @@ while( $row = mysqli_fetch_array($result) ){
                                             <input type="hidden" name="id" value="'.$row['id'].'" class="form-control">
                                             </div>
                                             <div class="modal-footer">
-                                                        <button class="btn btn-light-dark" data-bs-dismiss="modal">Annuler</button>
+                                                        <a href="#" class="btn btn-light-dark" data-bs-dismiss="modal">Annuler</a>
                                                         <input type="submit" class="btn btn-danger" value="Supprimer"  />
                                                         </form>
                                                     </div>
