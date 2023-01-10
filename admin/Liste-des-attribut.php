@@ -1,6 +1,6 @@
 <?php
 include 'controller/connection.php';             
-$sql = "SELECT * FROM customers";
+$sql = "SELECT * FROM attributes";
 $req = mysqli_query($db,$sql) or die('Erreur SQL !'.$sql.'<br>'.mysql_error());
 $res = mysqli_num_rows($req);
 ?>
@@ -10,67 +10,52 @@ $res = mysqli_num_rows($req);
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
-    <title>Clients | Admin - Piéce Auto Tunisie </title>
+    <title>Liste des attributes | Admin - Piéce Auto Tunisie </title>
     <link rel="icon" type="image/x-icon" href="../src/assets/img/favicon.ico"/>
     <link href="../layouts/semi-dark-menu/css/light/loader.css" rel="stylesheet" type="text/css" />
     <link href="../layouts/semi-dark-menu/css/dark/loader.css" rel="stylesheet" type="text/css" />
     <script src="../layouts/semi-dark-menu/loader.js"></script>
-    <!-- BEGIN GLOBAL MANDATORY STYLES -->
     <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
     <link href="../src/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="../layouts/semi-dark-menu/css/light/plugins.css" rel="stylesheet" type="text/css" />
     <link href="../layouts/semi-dark-menu/css/dark/plugins.css" rel="stylesheet" type="text/css" />
-    <!-- END GLOBAL MANDATORY STYLES -->
-
-    <!--  BEGIN CUSTOM STYLE FILE  -->
     <link rel="stylesheet" type="text/css" href="../src/plugins/src/table/datatable/datatables.css">
-    
     <link rel="stylesheet" type="text/css" href="../src/plugins/css/light/table/datatable/dt-global_style.css">
     <link rel="stylesheet" type="text/css" href="../src/plugins/css/dark/table/datatable/dt-global_style.css">
     <link rel="stylesheet" type="text/css" href="../src/assets/css/light/elements/alert.css">
-    <!--  END CUSTOM STYLE FILE  -->
-   
-
     <style>
         #ecommerce-list img {
             border-radius: 18px;
         }
     </style>
-    
 </head>
 <body class="" data-bs-spy="scroll" data-bs-bs-target="#navSection" data-bs-offset="140">
-    
-    <!-- BEGIN LOADER -->
+ 
     <div id="load_screen"> <div class="loader"> <div class="loader-content">
         <div class="spinner-grow align-self-center"></div>
     </div></div></div>
-    <!--  END LOADER -->
 
-    <!--  BEGIN NAVBAR  -->
  <?php include 'head/header.php';   ?>
-    <!--  END NAVBAR  -->
+
     <?php include 'head/menu.php';   ?>
-    <!--  BEGIN CONTENT AREA  -->
+
         <div id="content" class="main-content">
 
             <div class="layout-px-spacing">
 
                 <div class="middle-content container-xxl p-0">
-    
-                    <!-- BREADCRUMB -->
+ 
                     <div class="page-meta">
                         <nav class="breadcrumb-style-one" aria-label="breadcrumb">
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item"><a href="#">App</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">Liste des attribut</li>
+                                <li class="breadcrumb-item active" aria-current="page">Liste des attributes</li>
                             </ol>
                         </nav>
                     </div>
-                    <?php include 'controller/Clients/clients.php';   ?>
+                    <?php include 'controller/attributes/attributes.php';   ?>
                      <button type="button" class="btn btn-primary mb-2 me-4" data-bs-toggle="modal" data-bs-target=".bd-example-modal-xl">Ajouter</button>
-                    
                     <div class="row">
-                 
                     <div class="row layout-top-spacing">
                 
                         <div class="col-xl-12 col-lg-12 col-sm-12  layout-spacing">
@@ -79,13 +64,9 @@ $res = mysqli_num_rows($req);
                                     <thead>
                                         <tr>
                                             <th class="text-center">id</th>
-                                            <th class="text-center">Nom</th>
-                                            <th class="text-center">Prénom</th>
-                                            <th class="text-center">Email</th>
-                                            <th class="text-center">Mobile</th>
+                                            <th class="text-center">nom attributes</th>
                                             <th class="text-center">Statut</th>
                                             <th class="text-center">Action</th>
-                                            
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -96,10 +77,7 @@ $res = mysqli_num_rows($req);
                                     
                                     echo'<tr>
                                     <td class="text-center"> '.$data['id'].'</td>
-                                    <td class="text-center"> '.$data['nom'].'</td>
-                                    <td class="text-center">'.$data['prenom'].'</td>
-                                    <td class="text-center">'.$data['email'].'</td>
-                                    <td class="text-center">'.$data['mobile'].'</td>
+                                    <td class="text-center"> '.$data['nom_attributes'].'</td>
                                     ';
                                     if($data['Statut'] == 1){
                                         echo'<td class="text-center"><span class="shadow-none badge badge-primary">activé</span></td>';
@@ -138,7 +116,7 @@ $res = mysqli_num_rows($req);
                 </div>
                                 </div>
             <?php include 'head/footer.php'; 
-            include 'controller/Clients/popup-ajouter.php';
+            include 'controller/attributes/popup-ajouter.php';
             ?>
         </div>
     </div>
@@ -193,6 +171,6 @@ $res = mysqli_num_rows($req);
 <script type="text/javascript" src="js/plugins.js"></script>
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
-<script type="text/javascript" src="controller/Clients/clients.js"></script>
+<script type="text/javascript" src="controller/attributes/attributes.js"></script>
 </body>
 </html>
