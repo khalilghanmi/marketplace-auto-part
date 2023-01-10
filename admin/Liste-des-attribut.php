@@ -1,10 +1,16 @@
+<?php
+include 'controller/connection.php';             
+$sql = "SELECT * FROM customers";
+$req = mysqli_query($db,$sql) or die('Erreur SQL !'.$sql.'<br>'.mysql_error());
+$res = mysqli_num_rows($req);
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
-    <title>Liste des attribut | Admin - Piéce Auto Tunisie </title>
+    <title>Clients | Admin - Piéce Auto Tunisie </title>
     <link rel="icon" type="image/x-icon" href="../src/assets/img/favicon.ico"/>
     <link href="../layouts/semi-dark-menu/css/light/loader.css" rel="stylesheet" type="text/css" />
     <link href="../layouts/semi-dark-menu/css/dark/loader.css" rel="stylesheet" type="text/css" />
@@ -21,7 +27,9 @@
     
     <link rel="stylesheet" type="text/css" href="../src/plugins/css/light/table/datatable/dt-global_style.css">
     <link rel="stylesheet" type="text/css" href="../src/plugins/css/dark/table/datatable/dt-global_style.css">
+    <link rel="stylesheet" type="text/css" href="../src/assets/css/light/elements/alert.css">
     <!--  END CUSTOM STYLE FILE  -->
+   
 
     <style>
         #ecommerce-list img {
@@ -53,14 +61,16 @@
                     <div class="page-meta">
                         <nav class="breadcrumb-style-one" aria-label="breadcrumb">
                             <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="#">App</a></li>
                                 <li class="breadcrumb-item active" aria-current="page">Liste des attribut</li>
                             </ol>
                         </nav>
                     </div>
-                    <!-- /BREADCRUMB -->
-    <!-- xtra Large modal -->
-    <button type="button" class="btn btn-primary mb-2 me-4" data-bs-toggle="modal" data-bs-target=".bd-example-modal-xl">Ajouter</button>
-    <!-- Lage modal -->
+                    <?php include 'controller/Clients/clients.php';   ?>
+                     <button type="button" class="btn btn-primary mb-2 me-4" data-bs-toggle="modal" data-bs-target=".bd-example-modal-xl">Ajouter</button>
+                    
+                    <div class="row">
+                 
                     <div class="row layout-top-spacing">
                 
                         <div class="col-xl-12 col-lg-12 col-sm-12  layout-spacing">
@@ -68,602 +78,57 @@
                                 <table id="ecommerce-list" id="html5-extension" class="table dt-table-hover" style="width:100%">
                                     <thead>
                                         <tr>
-                                            <th class="checkbox-column"></th>
-                                            <th>Product</th>
-                                            <th>Added on</th>
-                                            <th>Status</th>
-                                            <th>Price</th>
-                                            <th class="no-content text-center">Action</th>
+                                            <th class="text-center">id</th>
+                                            <th class="text-center">Nom</th>
+                                            <th class="text-center">Prénom</th>
+                                            <th class="text-center">Email</th>
+                                            <th class="text-center">Mobile</th>
+                                            <th class="text-center">Statut</th>
+                                            <th class="text-center">Action</th>
+                                            
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>
-                                                <div class="d-flex justify-content-left align-items-center">
-                                                    <div class="avatar  me-3">
-                                                        <img src="../src/assets/img/product-3.jpg" alt="Avatar" width="64" height="64">
-                                                    </div>
-                                                    <div class="d-flex flex-column">
-                                                        <span class="text-truncate fw-bold">Nike Green Shoes</span>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td>2022/04/25</td>
-                                            <td><span class="badge badge-danger">Out of stock</span></td>
-                                            <td>$61</td>
-                                            <td class="text-center">
-                                                <div class="dropdown">
-                                                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink1" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
-                                                    </a>
-
-                                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink1">
-                                                        <a class="dropdown-item" href="javascript:void(0);">View</a>
-                                                        <a class="dropdown-item" href="javascript:void(0);">Edit</a>
-                                                        <a class="dropdown-item" href="javascript:void(0);">Delete</a>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>2</td>
-                                            <td>
-                                                <div class="d-flex justify-content-left align-items-center">
-                                                    <div class="avatar  me-3">
-                                                        <img src="../src/assets/img/product-8.jpg" alt="Avatar" width="64" height="64">
-                                                    </div>
-                                                    <div class="d-flex flex-column">
-                                                        <span class="text-truncate fw-bold">Drone</span>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td>2022/07/25</td>
-                                            <td><span class="badge badge-warning">Low Stock</span></td>
-                                            <td>$63</td>
-                                            <td class="text-center">
-                                                <div class="dropdown">
-                                                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
-                                                    </a>
-
-                                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink2">
-                                                        <a class="dropdown-item" href="javascript:void(0);">View</a>
-                                                        <a class="dropdown-item" href="javascript:void(0);">Edit</a>
-                                                        <a class="dropdown-item" href="javascript:void(0);">Delete</a>
-                                                    </div>
-                                                </div>                                                
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>3</td>
-                                            <td>
-                                                <div class="d-flex justify-content-left align-items-center">
-                                                    <div class="avatar  me-3">
-                                                        <img src="../src/assets/img/product-13.jpg" alt="Avatar" width="64" height="64">
-                                                    </div>
-                                                    <div class="d-flex flex-column">
-                                                        <span class="text-truncate fw-bold">Smart Cleaner</span>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td>2022/01/12</td>
-                                            <td><span class="badge badge-success">In Stock</span></td>
-                                            <td>$66</td>
-                                            <td class="text-center">
-
-                                                <div class="dropdown">
-                                                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink3" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
-                                                    </a>
-
-                                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink3">
-                                                        <a class="dropdown-item" href="javascript:void(0);">View</a>
-                                                        <a class="dropdown-item" href="javascript:void(0);">Edit</a>
-                                                        <a class="dropdown-item" href="javascript:void(0);">Delete</a>
-                                                    </div>
-                                                </div>
-                                                
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>4</td>
-                                            <td>
-                                                <div class="d-flex justify-content-left align-items-center">
-                                                    <div class="avatar  me-3">
-                                                        <img src="../src/assets/img/product-4.jpg" alt="Avatar" width="64" height="64">
-                                                    </div>
-                                                    <div class="d-flex flex-column">
-                                                        <span class="text-truncate fw-bold">Camera</span>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td>2022/03/29</td>
-                                            <td><span class="badge badge-danger">Out of stock</span></td>
-                                            <td>$22</td>
-                                            <td class="text-center">
-
-                                                <div class="dropdown">
-                                                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink4" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
-                                                    </a>
-
-                                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink4">
-                                                        <a class="dropdown-item" href="javascript:void(0);">View</a>
-                                                        <a class="dropdown-item" href="javascript:void(0);">Edit</a>
-                                                        <a class="dropdown-item" href="javascript:void(0);">Delete</a>
-                                                    </div>
-                                                </div>
-                                                
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>5</td>
-                                            <td>
-                                                <div class="d-flex justify-content-left align-items-center">
-                                                    <div class="avatar  me-3">
-                                                        <img src="../src/assets/img/product-5.jpg" alt="Avatar" width="64" height="64">
-                                                    </div>
-                                                    <div class="d-flex flex-column">
-                                                        <span class="text-truncate fw-bold">Nike Shoes</span>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td>2022/11/28</td>
-                                            <td><span class="badge badge-warning">Low Stock</span></td>
-                                            <td>$33</td>
-                                            <td class="text-center">
-
-                                                <div class="dropdown">
-                                                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink5" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
-                                                    </a>
-
-                                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink5">
-                                                        <a class="dropdown-item" href="javascript:void(0);">View</a>
-                                                        <a class="dropdown-item" href="javascript:void(0);">Edit</a>
-                                                        <a class="dropdown-item" href="javascript:void(0);">Delete</a>
-                                                    </div>
-                                                </div>
-                                                
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>6</td>
-                                            <td>
-                                                <div class="d-flex justify-content-left align-items-center">
-                                                    <div class="avatar  me-3">
-                                                        <img src="../src/assets/img/product-6.jpg" alt="Avatar" width="64" height="64">
-                                                    </div>
-                                                    <div class="d-flex flex-column">
-                                                        <span class="text-truncate fw-bold">MicroPhone</span>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td>2022/12/02</td>
-                                            <td><span class="badge badge-success">In Stock</span></td>
-                                            <td>$61</td>
-                                            <td class="text-center">
-
-                                                <div class="dropdown">
-                                                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink6" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
-                                                    </a>
-
-                                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink6">
-                                                        <a class="dropdown-item" href="javascript:void(0);">View</a>
-                                                        <a class="dropdown-item" href="javascript:void(0);">Edit</a>
-                                                        <a class="dropdown-item" href="javascript:void(0);">Delete</a>
-                                                    </div>
-                                                </div>
-                                                
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>7</td>
-                                            <td>
-                                                <div class="d-flex justify-content-left align-items-center">
-                                                    <div class="avatar  me-3">
-                                                        <img src="../src/assets/img/product-7.jpg" alt="Avatar" width="64" height="64">
-                                                    </div>
-                                                    <div class="d-flex flex-column">
-                                                        <span class="text-truncate fw-bold">Monitor</span>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td>2022/08/06</td>
-                                            <td><span class="badge badge-success">In Stock</span></td>
-                                            <td>$59</td>
-                                            <td class="text-center">
-
-                                                <div class="dropdown">
-                                                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink7" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
-                                                    </a>
-
-                                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink7">
-                                                        <a class="dropdown-item" href="javascript:void(0);">View</a>
-                                                        <a class="dropdown-item" href="javascript:void(0);">Edit</a>
-                                                        <a class="dropdown-item" href="javascript:void(0);">Delete</a>
-                                                    </div>
-                                                </div>
-                                                
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>8</td>
-                                            <td>
-                                                <div class="d-flex justify-content-left align-items-center">
-                                                    <div class="avatar  me-3">
-                                                        <img src="../src/assets/img/product-1.jpg" alt="Avatar" width="64" height="64">
-                                                    </div>
-                                                    <div class="d-flex flex-column">
-                                                        <span class="text-truncate fw-bold">Shoes</span>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td>2022/10/14</td>
-                                            <td><span class="badge badge-warning">Low Stock</span></td>
-                                            <td>$55</td>
-                                            <td class="text-center">
-
-                                                <div class="dropdown">
-                                                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink8" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
-                                                    </a>
-
-                                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink8">
-                                                        <a class="dropdown-item" href="javascript:void(0);">View</a>
-                                                        <a class="dropdown-item" href="javascript:void(0);">Edit</a>
-                                                        <a class="dropdown-item" href="javascript:void(0);">Delete</a>
-                                                    </div>
-                                                </div>
-                                                
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>9</td>
-                                            <td>
-                                                <div class="d-flex justify-content-left align-items-center">
-                                                    <div class="avatar  me-3">
-                                                        <img src="../src/assets/img/product-9.jpg" alt="Avatar" width="64" height="64">
-                                                    </div>
-                                                    <div class="d-flex flex-column">
-                                                        <span class="text-truncate fw-bold">Speakers</span>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td>2022/09/15</td>
-                                            <td><span class="badge badge-success">In Stock</span></td>
-                                            <td>$39</td>
-                                            <td class="text-center">
-
-                                                <div class="dropdown">
-                                                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink9" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
-                                                    </a>
-
-                                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink9">
-                                                        <a class="dropdown-item" href="javascript:void(0);">View</a>
-                                                        <a class="dropdown-item" href="javascript:void(0);">Edit</a>
-                                                        <a class="dropdown-item" href="javascript:void(0);">Delete</a>
-                                                    </div>
-                                                </div>
-                                                
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>10</td>
-                                            <td>
-                                                <div class="d-flex justify-content-left align-items-center">
-                                                    <div class="avatar  me-3">
-                                                        <img src="../src/assets/img/product-10.jpg" alt="Avatar" width="64" height="64">
-                                                    </div>
-                                                    <div class="d-flex flex-column">
-                                                        <span class="text-truncate fw-bold">XBox</span>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td>2022/12/13</td>
-                                            <td><span class="badge badge-danger">Out of stock</span></td>
-                                            <td>$23</td>
-                                            <td class="text-center">
-
-                                                <div class="dropdown">
-                                                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink10" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
-                                                    </a>
-
-                                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink10">
-                                                        <a class="dropdown-item" href="javascript:void(0);">View</a>
-                                                        <a class="dropdown-item" href="javascript:void(0);">Edit</a>
-                                                        <a class="dropdown-item" href="javascript:void(0);">Delete</a>
-                                                    </div>
-                                                </div>
-                                                
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>12</td>
-                                            <td>
-                                                <div class="d-flex justify-content-left align-items-center">
-                                                    <div class="avatar  me-3">
-                                                        <img src="../src/assets/img/product-11.jpg" alt="Avatar" width="64" height="64">
-                                                    </div>
-                                                    <div class="d-flex flex-column">
-                                                        <span class="text-truncate fw-bold">Phone</span>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td>2013/03/03</td>
-                                            <td><span class="badge badge-danger">Out of stock</span></td>
-                                            <td>$22</td>
-                                            <td class="text-center">
-
-                                                <div class="dropdown">
-                                                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink11" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
-                                                    </a>
-
-                                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink11">
-                                                        <a class="dropdown-item" href="javascript:void(0);">View</a>
-                                                        <a class="dropdown-item" href="javascript:void(0);">Edit</a>
-                                                        <a class="dropdown-item" href="javascript:void(0);">Delete</a>
-                                                    </div>
-                                                </div>
-                                                
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>13</td>
-                                            <td>
-                                                <div class="d-flex justify-content-left align-items-center">
-                                                    <div class="avatar  me-3">
-                                                        <img src="../src/assets/img/product-12.jpg" alt="Avatar" width="64" height="64">
-                                                    </div>
-                                                    <div class="d-flex flex-column">
-                                                        <span class="text-truncate fw-bold">Selfi Stick</span>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td>2022/10/16</td>
-                                            <td><span class="badge badge-success">In Stock</span></td>
-                                            <td>$36</td>
-                                            <td class="text-center">
-
-                                                <div class="dropdown">
-                                                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink12" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
-                                                    </a>
-
-                                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink12">
-                                                        <a class="dropdown-item" href="javascript:void(0);">View</a>
-                                                        <a class="dropdown-item" href="javascript:void(0);">Edit</a>
-                                                        <a class="dropdown-item" href="javascript:void(0);">Delete</a>
-                                                    </div>
-                                                </div>
-                                                
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>17</td>
-                                            <td>
-                                                <div class="d-flex justify-content-left align-items-center">
-                                                    <div class="avatar  me-3">
-                                                        <img src="../src/assets/img/product-14.jpg" alt="Avatar" width="64" height="64">
-                                                    </div>
-                                                    <div class="d-flex flex-column">
-                                                        <span class="text-truncate fw-bold">Sunglasses</span>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td>2022/06/09</td>
-                                            <td><span class="badge badge-success">In Stock</span></td>
-                                            <td>$64</td>
-                                            <td class="text-center">
-
-                                                <div class="dropdown">
-                                                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink19" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
-                                                    </a>
-
-                                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink19">
-                                                        <a class="dropdown-item" href="javascript:void(0);">View</a>
-                                                        <a class="dropdown-item" href="javascript:void(0);">Edit</a>
-                                                        <a class="dropdown-item" href="javascript:void(0);">Delete</a>
-                                                    </div>
-                                                </div>
-                                                
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>18</td>
-                                            <td>
-                                                <div class="d-flex justify-content-left align-items-center">
-                                                    <div class="avatar  me-3">
-                                                        <img src="../src/assets/img/product-15.jpg" alt="Avatar" width="64" height="64">
-                                                    </div>
-                                                    <div class="d-flex flex-column">
-                                                        <span class="text-truncate fw-bold">Flashlight</span>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td>2022/04/10</td>
-                                            <td><span class="badge badge-success">In Stock</span></td>
-                                            <td>$59</td>
-                                            <td class="text-center">
-
-                                                <div class="dropdown">
-                                                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink20" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
-                                                    </a>
-
-                                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink20">
-                                                        <a class="dropdown-item" href="javascript:void(0);">View</a>
-                                                        <a class="dropdown-item" href="javascript:void(0);">Edit</a>
-                                                        <a class="dropdown-item" href="javascript:void(0);">Delete</a>
-                                                    </div>
-                                                </div>
-                                                
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>20</td>
-                                            <td>
-                                                <div class="d-flex justify-content-left align-items-center">
-                                                    <div class="avatar  me-3">
-                                                        <img src="../src/assets/img/product-16.jpg" alt="Avatar" width="64" height="64">
-                                                    </div>
-                                                    <div class="d-flex flex-column">
-                                                        <span class="text-truncate fw-bold">Smart Watch</span>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td>2022/09/26</td>
-                                            <td><span class="badge badge-danger">Out of stock</span></td>
-                                            <td>$35</td>
-                                            <td class="text-center">
-
-                                                <div class="dropdown">
-                                                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink21" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
-                                                    </a>
-
-                                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink21">
-                                                        <a class="dropdown-item" href="javascript:void(0);">View</a>
-                                                        <a class="dropdown-item" href="javascript:void(0);">Edit</a>
-                                                        <a class="dropdown-item" href="javascript:void(0);">Delete</a>
-                                                    </div>
-                                                </div>
-                                                
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>21</td>
-                                            <td>
-                                                <div class="d-flex justify-content-left align-items-center">
-                                                    <div class="avatar  me-3">
-                                                        <img src="../src/assets/img/product-17.jpg" alt="Avatar" width="64" height="64">
-                                                    </div>
-                                                    <div class="d-flex flex-column">
-                                                        <span class="text-truncate fw-bold">Lamp</span>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td>2022/09/03</td>
-                                            <td><span class="badge badge-success">In Stock</span></td>
-                                            <td>$30</td>
-                                            <td class="text-center">
-
-                                                <div class="dropdown">
-                                                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink22" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
-                                                    </a>
-
-                                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink22">
-                                                        <a class="dropdown-item" href="javascript:void(0);">View</a>
-                                                        <a class="dropdown-item" href="javascript:void(0);">Edit</a>
-                                                        <a class="dropdown-item" href="javascript:void(0);">Delete</a>
-                                                    </div>
-                                                </div>
-                                                
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>22</td>
-                                            <td>
-                                                <div class="d-flex justify-content-left align-items-center">
-                                                    <div class="avatar  me-3">
-                                                        <img src="../src/assets/img/product-18.jpg" alt="Avatar" width="64" height="64">
-                                                    </div>
-                                                    <div class="d-flex flex-column">
-                                                        <span class="text-truncate fw-bold">Tablet</span>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td>2022/06/25</td>
-                                            <td><span class="badge badge-success">In Stock</span></td>
-                                            <td>$40</td>
-                                            <td class="text-center">
-
-                                                <div class="dropdown">
-                                                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink23" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
-                                                    </a>
-
-                                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink23">
-                                                        <a class="dropdown-item" href="javascript:void(0);">View</a>
-                                                        <a class="dropdown-item" href="javascript:void(0);">Edit</a>
-                                                        <a class="dropdown-item" href="javascript:void(0);">Delete</a>
-                                                    </div>
-                                                </div>
-                                                
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>23</td>
-                                            <td>
-                                                <div class="d-flex justify-content-left align-items-center">
-                                                    <div class="avatar  me-3">
-                                                        <img src="../src/assets/img/product-19.jpg" alt="Avatar" width="64" height="64">
-                                                    </div>
-                                                    <div class="d-flex flex-column">
-                                                        <span class="text-truncate fw-bold">Chair</span>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td>2022/12/12</td>
-                                            <td><span class="badge badge-success">In Stock</span></td>
-                                            <td>$21</td>
-                                            <td class="text-center">
-
-                                                <div class="dropdown">
-                                                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink24" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
-                                                    </a>
-
-                                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink24">
-                                                        <a class="dropdown-item" href="javascript:void(0);">View</a>
-                                                        <a class="dropdown-item" href="javascript:void(0);">Edit</a>
-                                                        <a class="dropdown-item" href="javascript:void(0);">Delete</a>
-                                                    </div>
-                                                </div>
-                                                
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>26</td>
-                                            <td>
-                                                <div class="d-flex justify-content-left align-items-center">
-                                                    <div class="avatar  me-3">
-                                                        <img src="../src/assets/img/product-14.jpg" alt="Avatar" width="64" height="64">
-                                                    </div>
-                                                    <div class="d-flex flex-column">
-                                                        <span class="text-truncate fw-bold">Sunglasses</span>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td>2022/12/22</td>
-                                            <td><span class="badge badge-danger">Out of stock</span></td>
-                                            <td>$42</td>
-                                            <td class="text-center">
-
-                                                <div class="dropdown">
-                                                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink25" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
-                                                    </a>
-
-                                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink25">
-                                                        <a class="dropdown-item" href="javascript:void(0);">View</a>
-                                                        <a class="dropdown-item" href="javascript:void(0);">Edit</a>
-                                                        <a class="dropdown-item" href="javascript:void(0);">Delete</a>
-                                                    </div>
-                                                </div>
-                                                
-                                            </td>
-                                            <!-- <td>$92,575</td> -->
-                                        </tr>
-                                    </tbody>
+                                    <?php
+                                    if($res!=0)  
+                                    {
+                                    While ($data = mysqli_fetch_array($req)){
+                                    
+                                    echo'<tr>
+                                    <td class="text-center"> '.$data['id'].'</td>
+                                    <td class="text-center"> '.$data['nom'].'</td>
+                                    <td class="text-center">'.$data['prenom'].'</td>
+                                    <td class="text-center">'.$data['email'].'</td>
+                                    <td class="text-center">'.$data['mobile'].'</td>
+                                    ';
+                                    if($data['Statut'] == 1){
+                                        echo'<td class="text-center"><span class="shadow-none badge badge-primary">activé</span></td>';
+                                    }
+                                    else{
+                                        echo'<td class="text-center"><span class="shadow-none badge badge-danger">désactivé</span></td>';
+                                    }
+                                    echo'<td>
+                                    <div class="btn-group text-center">
+                                        <button type="button" class="btn btn-dark btn-sm">Ouvrir</button>
+                                        <button type="button" class="btn btn-dark btn-sm dropdown-toggle dropdown-toggle-split" id="dropdownMenuReference1" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-reference="parent">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                                        </button>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuReference1">
+                                            <a class="dropdown-item userinfo " data-bs-target=".bd-example-modal-lg" data-id="'.$data['id'].'" href="#">modifier</a>
+                                            
+                                            <a class="dropdown-item userinfos" data-bs-target=".bd-example-modal-lg" data-id="'.$data['id'].'" href="#">Supprimer</a>
+                                            <a class="dropdown-item userinfosstatut" data-id="'.$data['id'].'" href="#">Statut</a>
+                                            
+                                        </div>
+                                    </div>
+                                    </td>
+                                      </tr>
+                                    ';
+                                    }
+                                    
+                                    }
+                                    ?>
+                                 </tbody>
                                 </table>
                             </div>
                         </div>
@@ -671,82 +136,13 @@
                     </div>
 
                 </div>
-
-            </div>
-            
-            <!--  BEGIN FOOTER  -->
-            <?php include 'head/footer.php';   ?>
-            <!--  END FOOTER  -->
-
+                                </div>
+            <?php include 'head/footer.php'; 
+            include 'controller/Clients/popup-ajouter.php';
+            ?>
         </div>
-        <!--  END CONTENT AREA  -->
     </div>
-    <!-- END MAIN CONTAINER -->
-    <div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
-                                      <div class="modal-dialog modal-xl" role="document">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h5 class="modal-title" id="myExtraLargeModalLabel">Ajouter Adm</h5>
-                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-                                                  <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
-                                                </button>
-                                            </div>
-                                            <div class="modal-body">
-                                            <form class="row g-3">
-                                        <div class="col-md-6">
-                                            <label for="inputEmail4" class="form-label">Email</label>
-                                            <input type="email" class="form-control" id="inputEmail4">
-                                        </div>
-                                        <div class="col-md-6">
-                                            <label for="inputPassword4" class="form-label">Password</label>
-                                            <input type="password" class="form-control" id="inputPassword4">
-                                        </div>
-                                        <div class="col-12">
-                                            <label for="inputAddress" class="form-label">Address</label>
-                                            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-                                        </div>
-                                        <div class="col-12">
-                                            <label for="inputAddress2" class="form-label">Address 2</label>
-                                            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-                                        </div>
-                                        <div class="col-md-6">
-                                            <label for="inputCity" class="form-label">City</label>
-                                            <input type="text" class="form-control" id="inputCity">
-                                        </div>
-                                        <div class="col-md-4">
-                                            <label for="inputState" class="form-label">State</label>
-                                            <select id="inputState" class="form-select">
-                                                <option selected>Choose...</option>
-                                                <option>...</option>
-                                            </select>
-                                        </div>
-                                        <div class="col-md-2">
-                                            <label for="inputZip" class="form-label">Zip</label>
-                                            <input type="text" class="form-control" id="inputZip">
-                                        </div>
-                                        <div class="col-12">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" id="gridCheck">
-                                                <label class="form-check-label" for="gridCheck">
-                                                    Check me out
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <div class="col-12">
-                                            <button type="submit" class="btn btn-primary">Sign in</button>
-                                        </div>
-                                    </form>
-                                        
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button class="btn btn-light-dark" data-bs-dismiss="modal">Discard</button>
-                                                <button type="button" class="btn btn-primary">Save</button>
-                                            </div>
-                                        </div>
-                                      </div>
-                    </div>
-    <!-- BEGIN GLOBAL MANDATORY STYLES -->
-    <script src="../src/plugins/src/global/vendors.min.js"></script>
+   <script src="../src/plugins/src/global/vendors.min.js"></script>
     <script src="../src/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="../src/plugins/src/perfect-scrollbar/perfect-scrollbar.min.js"></script>
     <script src="../src/plugins/src/mousetrap/mousetrap.min.js"></script>
@@ -760,8 +156,7 @@
     <script src="../src/plugins/src/table/datatable/button-ext/jszip.min.js"></script>    
     <script src="../src/plugins/src/table/datatable/button-ext/buttons.html5.min.js"></script>
     <script src="../src/plugins/src/table/datatable/button-ext/buttons.print.min.js"></script>
-    <script src="../src/plugins/src/table/datatable/custom_miscellaneous.js"></script>
-    <!-- END PAGE LEVEL SCRIPTS -->    
+    <script src="../src/plugins/src/table/datatable/custom_miscellaneous.js"></script>    
     <script>
         ecommerceList = $('#ecommerce-list').DataTable({
             headerCallback:function(e, a, t, n, s) {
@@ -794,6 +189,10 @@
         });
         multiCheck(ecommerceList);
     </script>
-    <!-- END PAGE LEVEL SCRIPTS -->    
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/plugins.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="controller/Clients/clients.js"></script>
 </body>
 </html>

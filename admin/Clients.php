@@ -63,7 +63,7 @@ $res = mysqli_num_rows($req);
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item"><a href="#">App</a></li>
                                 <li class="breadcrumb-item"><a href="#">Clients</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">Liste</li>
+                                <li class="breadcrumb-item active" aria-current="page">Liste des clients</li>
                             </ol>
                         </nav>
                     </div>
