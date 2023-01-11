@@ -12,7 +12,7 @@
                                             <form class="row g-3" id='myforme'>
                                             <div class="col-6">
                                         <label for="inputEmail4" class="form-label">Image marque</label><br>
-                                        <input class="multiple-file-upload" type="file" name="user_image" accept="image/*" /> 
+                                        <input class="multiple-file-upload" type="file" name="image_marques" accept="image/*" /> 
                                             </div>
                                             <div class="col-6">
                                         <label for="inputEmail4" class="form-label">Nom marques</label>

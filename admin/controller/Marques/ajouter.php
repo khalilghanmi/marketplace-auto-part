@@ -1,5 +1,5 @@
 <?php
-include '../connection.php'; 
+$db = mysqli_connect('localhost', 'root', '','pieces-auto-tunisie');
 
         if(isset($_POST['statut'])) {
 			$statut=1; }
@@ -14,24 +14,21 @@ include '../connection.php';
 </div> 
    ';
     }
-                $imgFile = $_FILES['user_image']['name'];
-                $tmp_dir = $_FILES['user_image']['tmp_name'];
-                $imgSize = $_FILES['user_image']['size'];
-                $dossier_ans=date('Y');
-                $dossier_moins=date('F');
+                 $imgFile = $_FILES['image_marques']['name'];
+                 $tmp_dir = $_FILES['image_marques']['tmp_name'];
+                $imgSize = $_FILES['image_marques']['size'];
                 if(empty($imgFile)){
                     $errMSG = "Please Select Image File.";
                 }
                 else
-                { $upload_dir = '../../../image/Marques/';
+                { $upload_dir = '../image/Marques/';
                     
                     $imgExt = strtolower(pathinfo($imgFile,PATHINFO_EXTENSION)); // get image extension
                  
                     $valid_extensions = array('jpeg', 'jpg', 'png', 'gif', 'webp', 'svg'); // valid extensions
-                    $khalilovic='khalilovic';
-                    // // rename uploading image
+                    
                     //  $userpic = $khalilovic.rand(1,10000).".".$imgExt;
-                     $userpic = $khalilovic.'_'.uniqid().".".$imgExt;
+                     $userpic = $name_marques.'_'.uniqid().".".$imgExt;
                         
                     // allow valid image file formats
                     if(in_array($imgExt, $valid_extensions)){			
