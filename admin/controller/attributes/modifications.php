@@ -11,7 +11,7 @@ function isEmail($email) {
 			}
 
   
-if(empty($nom) OR empty($prenom)  OR empty($email) OR empty($adresse) OR empty($code_p) OR empty($mobile)OR empty($date_n) OR empty($civilite))
+if(empty($nom_attributes))
     {
     echo '<div class="alert alert-light-danger alert-dismissible fade show border-0 mb-4" role="alert">
     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"><svg> ... </svg></button>
@@ -19,17 +19,10 @@ if(empty($nom) OR empty($prenom)  OR empty($email) OR empty($adresse) OR empty($
 </div> 
    ';
     }
-// Aucun champ n'est vide, on peut enregistrer dans la table
-else if (!isEmail($email)) {
-		echo '<div class="alert alert-light-danger alert-dismissible fade show border-0 mb-4" role="alert">
-    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"><svg> ... </svg></button>
-    Attention, email inncorrect ! </button></div> ';
-		exit();
-		}
 else
     {
 		
-		$sql = "SELECT * FROM customers WHERE id='$id'";
+		$sql = "SELECT * FROM attributes WHERE id_attributes='$id'";
 		$req = mysqli_query($db,$sql) or die('Erreur SQL !'.$sql.'<br>'.mysql_error());
 		
 		$res = mysqli_num_rows($req);
@@ -42,16 +35,10 @@ else
 		}
 		else  
 		{
-            $sql = "UPDATE customers SET nom='$nom',
-            prenom='$prenom',
-            email='$email',
-            civilite='$civilite',
-            date_n='$date_n',
-            adresse='$adresse',
-            code_p='$code_p',
-            mobile='$mobile',
+            $sql = "UPDATE attributes SET 
+            nom_attributes='$nom_attributes',
             Statut='$statut'
-            where id='$id'";
+            where id_attributes='$id'";
             
            $req = mysqli_query($db,$sql) or die('Erreur SQL !'.$sql.'<br>'.mysql_error());
            echo "";

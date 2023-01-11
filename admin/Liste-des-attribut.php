@@ -76,7 +76,7 @@ $res = mysqli_num_rows($req);
                                     While ($data = mysqli_fetch_array($req)){
                                     
                                     echo'<tr>
-                                    <td class="text-center"> '.$data['id'].'</td>
+                                    <td class="text-center"> '.$data['id_attributes'].'</td>
                                     <td class="text-center"> '.$data['nom_attributes'].'</td>
                                     ';
                                     if($data['Statut'] == 1){
@@ -85,17 +85,15 @@ $res = mysqli_num_rows($req);
                                     else{
                                         echo'<td class="text-center"><span class="shadow-none badge badge-danger">désactivé</span></td>';
                                     }
-                                    echo'<td>
-                                    <div class="btn-group text-center">
-                                        <button type="button" class="btn btn-dark btn-sm">Ouvrir</button>
+                                    echo'<td class="text-center">
+                                    <div class="btn-group">
+                                        <a class="btn btn-dark btn-sm userinfo " data-bs-target=".bd-example-modal-lg" data-id="'.$data['id_attributes'].'" href="#">Modifier</a>
                                         <button type="button" class="btn btn-dark btn-sm dropdown-toggle dropdown-toggle-split" id="dropdownMenuReference1" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-reference="parent">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
                                         </button>
                                         <div class="dropdown-menu" aria-labelledby="dropdownMenuReference1">
-                                            <a class="dropdown-item userinfo " data-bs-target=".bd-example-modal-lg" data-id="'.$data['id'].'" href="#">modifier</a>
-                                            
-                                            <a class="dropdown-item userinfos" data-bs-target=".bd-example-modal-lg" data-id="'.$data['id'].'" href="#">Supprimer</a>
-                                            <a class="dropdown-item userinfosstatut" data-id="'.$data['id'].'" href="#">Statut</a>
+                                            <a class="dropdown-item userinfos" data-bs-target=".bd-example-modal-lg" data-id="'.$data['id_attributes'].'" href="#">Supprimer</a>
+                                            <a class="dropdown-item userinfosstatut" data-id="'.$data['id_attributes'].'" href="#">Statut</a>
                                             
                                         </div>
                                     </div>

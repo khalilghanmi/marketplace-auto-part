@@ -29,7 +29,7 @@ else if (!isEmail($email)) {
 else
     {
 		
-		$sql = "SELECT * FROM customers WHERE id='$id'";
+		$sql = "SELECT * FROM customers WHERE id_customers='$id'";
 		$req = mysqli_query($db,$sql) or die('Erreur SQL !'.$sql.'<br>'.mysql_error());
 		
 		$res = mysqli_num_rows($req);
@@ -51,7 +51,7 @@ else
             code_p='$code_p',
             mobile='$mobile',
             Statut='$statut'
-            where id='$id'";
+            where id_customers='$id'";
             
            $req = mysqli_query($db,$sql) or die('Erreur SQL !'.$sql.'<br>'.mysql_error());
            echo "";

@@ -3,7 +3,7 @@ include '../connection.php';
 
 $userid = $_POST['userid'];
 
-$sql = "select * from customers where id=".$userid;
+$sql = "select * from customers where id_customers=".$userid;
 $result = mysqli_query($db,$sql);
 
 $response = "";
@@ -20,7 +20,7 @@ while( $row = mysqli_fetch_array($result) ){
                                         $response .= 'activer';
                                     }$response .= ' statut <span class="shadow-none badge badge-danger">'.$row['nom'].' '.$row['prenom'].'</span> ? </button></div>
                                             <form action="controller/Clients/statut.php" method="post" class="row g-3">
-                                            <input type="hidden" name="id" value="'.$row['id'].'" class="form-control">
+                                            <input type="hidden" name="id" value="'.$row['id_customers'].'" class="form-control">
                                             <input type="hidden" name="statut" value="'.$row['Statut'].'" class="form-control">
                                             </div>
                                             <div class="modal-footer">
