@@ -111,7 +111,7 @@
                                 <a href="./Liste-des-attribut.php"> Liste des attribut </a>
                             </li>
                             <li>
-                                <a href="./Liste-des-manufacturer.php"> Liste des manufacturer </a>
+                                <a href="./Liste-des-Marques.php"> Liste des Marques </a>
                             </li>
                                                       
                         </ul>
