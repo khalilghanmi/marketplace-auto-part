@@ -23,8 +23,9 @@ $res = mysqli_num_rows($req);
     <link rel="stylesheet" type="text/css" href="../src/plugins/css/light/table/datatable/dt-global_style.css">
     <link rel="stylesheet" type="text/css" href="../src/plugins/css/dark/table/datatable/dt-global_style.css">
     <link rel="stylesheet" type="text/css" href="../src/assets/css/light/elements/alert.css">
-    <link rel="stylesheet" type="text/css" href="../src/plugins/css/light/editors/quill/quill.snow.css">
-    <link rel="stylesheet" type="text/css" href="../src/plugins/css/dark/editors/quill/quill.snow.css">
+    <link rel="stylesheet" type="text/css" href="../src/plugins/src/tomSelect/tom-select.default.min.css">
+    <link rel="stylesheet" type="text/css" href="../src/plugins/css/light/tomSelect/custom-tomSelect.css">
+    <link rel="stylesheet" type="text/css" href="../src/plugins/css/dark/tomSelect/custom-tomSelect.css">
     <style>
         #ecommerce-list img {
             border-radius: 18px;
@@ -141,7 +142,9 @@ $res = mysqli_num_rows($req);
     <script src="../src/plugins/src/table/datatable/button-ext/jszip.min.js"></script>    
     <script src="../src/plugins/src/table/datatable/button-ext/buttons.html5.min.js"></script>
     <script src="../src/plugins/src/table/datatable/button-ext/buttons.print.min.js"></script>
-    <script src="../src/plugins/src/table/datatable/custom_miscellaneous.js"></script>    
+    <script src="../src/plugins/src/table/datatable/custom_miscellaneous.js"></script>   
+    <script src="../src/plugins/src/tomSelect/tom-select.base.js"></script>
+    <script src="../src/plugins/src/tomSelect/custom-tom-select.js"></script> 
     <script>
         ecommerceList = $('#ecommerce-list').DataTable({
             headerCallback:function(e, a, t, n, s) {
@@ -178,8 +181,6 @@ $res = mysqli_num_rows($req);
 <script type="text/javascript" src="js/plugins.js"></script>
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
-<script src="../src/plugins/src/editors/quill/quill.js"></script>
-<script src="../src/plugins/src/editors/quill/custom-quill.js"></script>
 <script type="text/javascript" src="controller/Categories-Produits/Categories.js"></script>
 </body>
 </html>

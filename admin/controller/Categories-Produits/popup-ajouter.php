@@ -15,8 +15,43 @@
                                         <input type="text" name="name_marques"class="form-control" required="required">
                                             </div>
                                             <div class="col-6">
-                                        <label for="inputEmail4" class="form-label">Image marque</label><br>
-                                        <input class="multiple-file-upload" type="file" name="image_marques" accept="image/*"  required="required"/> 
+                                        <label for="product-images">Parent</label>
+                                        <div id="select-box" class="col-lg-12 layout-spacing">
+                            <div class="statbox widget box box-shadow">
+                                <div class="widget-content widget-content-area">
+                                    <select id="select-beast" placeholder="Select a person..." autocomplete="off">
+                                        <option value="">Select a person...</option>
+                                        <option value="4">Thomas Edison</option>
+                                        <option value="1">Nikola</option>
+                                        <option value="3">Nikola Tesla</option>
+                                        <option value="5">Arnold Schwarzenegger</option>
+                                    </select>
+
+                                </div>
+                            </div>
+                        </div>
+
+                                           <input type="text" name="name_marques"class="form-control" required="required">
+                                            </div>
+                                            <div class="col-6">
+                                        <label for="product-images">Description</label>
+                                                <textarea class="form-control" aria-label="With textarea"></textarea>
+                                            </div>
+                                            <div class="col-sm-6">
+                                            <label for="inputEmail4" class="form-label">Upload Images</label><br>
+                                            <input class="multiple-file-upload" type="file" name="image_marques" accept="image/*"  required="required"/> 
+                                            </div>
+                                            <div class="col-6">
+                                        <label for="inputEmail4" class="form-label">Titre de la balise Meta</label>
+                                        <input type="text" name="name_marques"class="form-control" required="required">
+                                            </div>
+                                            <div class="col-6">
+                                        <label for="inputEmail4" class="form-label">Description de la balise méta</label>
+                                        <textarea class="form-control" aria-label="With textarea"></textarea>
+                                            </div>
+                                            <div class="col-6">
+                                        <label for="inputEmail4" class="form-label">Mots-clés des balises méta</label>
+                                        <textarea class="form-control" aria-label="With textarea"></textarea>
                                             </div>
                                         <div class="col-6">
                                         <label for="inputEmail4" class="form-label">Statut attributes</label>
@@ -27,69 +62,14 @@
                                             </div>
                                             </div>
                                         </div>
-
-                                        <div class="row mb-4">
-                                    <div class="col-sm-12">
-                                        <input type="text" class="form-control" id="inputEmail3" placeholder="Product Name">
-                                    </div>
-                                </div>
-
-                                <div class="row mb-4">
-                                    <div class="col-sm-12">
-                                        <label>Description</label>
-                                        <div class="widget-content widget-content-area">
-                                    <div id="content-container">
-                                        <div id="toolbar-container">
-                                            <button class="ql-bold" data-toggle="tooltip" data-placement="bottom" title="Bold"></button>
-                                            <button class="ql-underline" data-toggle="tooltip" data-placement="bottom" title="Underline"></button>
-                                            <button class="ql-italic" data-toggle="tooltip" data-placement="bottom" title="Add italic text <cmd+i>"></button>
-                                            <button class="ql-image" data-toggle="tooltip" data-placement="bottom" title="Upload image"></button>
-                                            <button class="ql-code-block" data-toggle="tooltip" data-placement="bottom" title="Show code"></button>
+                                        <div class="col-6">
+                                        
                                         </div>
-                                        <div id="quill-tooltip">
-                                            </div>
-                                    </div>
-
-                                </div>
-                                    </div>
-                                </div>
-
-                                <div class="row">
-                                    <div class="col-md-8">
-                                        <label for="product-images">Upload Images</label>
-                                        <div class="multiple-file-upload">
-                                            <input type="file" 
-                                                class="filepond file-upload-multiple"
-                                                name="filepond"
-                                                id="product-images" 
-                                                multiple 
-                                                data-allow-reorder="true"
-                                                data-max-file-size="3MB"
-                                                data-max-files="5">
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-4 text-center">
-                                        <div class="switch form-switch-custom switch-inline form-switch-primary mt-4">
-                                            <input class="switch-input" type="checkbox" role="switch" id="showPublicly" checked>
-                                            <label class="switch-label" for="showPublicly">Display publicly</label>
-                                        </div>
-                                    </div>
-
-
-
-
-
-
-
-
-
-                                        <div class="col-2">
+                                        <div class="col-3">
                                         <a href="#" class="btn btn-light-dark" data-bs-dismiss="modal">Annuler</a>
                                         </div>
-                                        <div class="col-2">          
+                                        <div class="col-3">          
                                         <button type="submit" name="btnsave" class="btn btn-primary">Enregistrer</button>
-                                        
                                         </div>
                                     </form>
 
