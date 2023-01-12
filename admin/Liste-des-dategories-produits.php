@@ -10,7 +10,7 @@ $res = mysqli_num_rows($req);
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
-    <title>Liste des Marques | Admin - Piéce Auto Tunisie </title>
+    <title>Liste des dategories | Admin - Piéce Auto Tunisie </title>
     <link rel="icon" type="image/x-icon" href="../src/assets/img/favicon.ico"/>
     <link href="../layouts/semi-dark-menu/css/light/loader.css" rel="stylesheet" type="text/css" />
     <link href="../layouts/semi-dark-menu/css/dark/loader.css" rel="stylesheet" type="text/css" />
@@ -23,7 +23,8 @@ $res = mysqli_num_rows($req);
     <link rel="stylesheet" type="text/css" href="../src/plugins/css/light/table/datatable/dt-global_style.css">
     <link rel="stylesheet" type="text/css" href="../src/plugins/css/dark/table/datatable/dt-global_style.css">
     <link rel="stylesheet" type="text/css" href="../src/assets/css/light/elements/alert.css">
-    
+    <link rel="stylesheet" type="text/css" href="../src/plugins/css/light/editors/quill/quill.snow.css">
+    <link rel="stylesheet" type="text/css" href="../src/plugins/css/dark/editors/quill/quill.snow.css">
     <style>
         #ecommerce-list img {
             border-radius: 18px;
@@ -50,7 +51,7 @@ $res = mysqli_num_rows($req);
                         <nav class="breadcrumb-style-one" aria-label="breadcrumb">
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item"><a href="#">App</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">Liste des Marques</li>
+                                <li class="breadcrumb-item active" aria-current="page">Liste des dategories</li>
                             </ol>
                         </nav>
                     </div>
@@ -177,6 +178,8 @@ $res = mysqli_num_rows($req);
 <script type="text/javascript" src="js/plugins.js"></script>
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+<script src="../src/plugins/src/editors/quill/quill.js"></script>
+<script src="../src/plugins/src/editors/quill/custom-quill.js"></script>
 <script type="text/javascript" src="controller/Categories-Produits/Categories.js"></script>
 </body>
 </html>
