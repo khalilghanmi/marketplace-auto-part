@@ -55,7 +55,7 @@ $res = mysqli_num_rows($req);
                         </nav>
                     </div>
                     <?php include 'controller/Marques/Marques.php';   ?>
-                     <button type="button" class="btn btn-primary mb-2 me-4" data-bs-toggle="modal" data-bs-target=".bd-example-modal-xl">Ajouter</button>
+                     <button type="button" class="btn mb-2 me-4" data-bs-toggle="modal" data-bs-target=".bd-example-modal-xl">Ajouter</button>
                     <div class="row">
                     <div class="row layout-top-spacing">
                 

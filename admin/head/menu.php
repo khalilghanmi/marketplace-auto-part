@@ -105,7 +105,7 @@
                                 <a href="./Créer-des-produits.php"> Créer des produits </a>
                             </li>                            
                             <li>
-                                <a href="./Categories-Produits.php"> Catégories Produits </a>
+                                <a href="./Liste-des-dategories-produits.php"> Liste des dategories </a>
                             </li> 
                             <li>
                                 <a href="./Liste-des-attribut.php"> Liste des attribut </a>

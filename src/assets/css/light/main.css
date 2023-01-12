@@ -906,7 +906,7 @@ select.form-control.form-custom {
   padding: 0.4375rem 1.25rem;
   text-shadow: none;
   font-size: 14px;
-  color: #3b3f5c;
+  color: #ffffff;
   font-weight: normal;
   white-space: normal;
   word-wrap: break-word;
@@ -914,7 +914,7 @@ select.form-control.form-custom {
   touch-action: manipulation;
   border-radius: 6px;
   cursor: pointer;
-  background-color: #e0e6ed;
+  background-color: #c90c0f;
   will-change: opacity, transform;
   transition: all 0.3s ease-out;
   -webkit-transition: all 0.3s ease-out;
@@ -946,8 +946,8 @@ select.form-control.form-custom {
   padding: 8px 8px;
 }
 .btn:hover {
-  color: #3b3f5c;
-  background-color: #f1f2f3;
+  color: #ffffff;
+  background-color: #3c3c3b;
   border-color: #d3d3d3;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;

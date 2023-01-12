@@ -1,6 +1,6 @@
 <?php
 include 'controller/connection.php';             
-$sql = "SELECT * FROM customers";
+$sql = "SELECT * FROM marques";
 $req = mysqli_query($db,$sql) or die('Erreur SQL !'.$sql.'<br>'.mysql_error());
 $res = mysqli_num_rows($req);
 ?>
@@ -10,83 +10,65 @@ $res = mysqli_num_rows($req);
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
-    <title>Clients | Admin - Piéce Auto Tunisie </title>
+    <title>Liste des Marques | Admin - Piéce Auto Tunisie </title>
     <link rel="icon" type="image/x-icon" href="../src/assets/img/favicon.ico"/>
     <link href="../layouts/semi-dark-menu/css/light/loader.css" rel="stylesheet" type="text/css" />
     <link href="../layouts/semi-dark-menu/css/dark/loader.css" rel="stylesheet" type="text/css" />
     <script src="../layouts/semi-dark-menu/loader.js"></script>
-    <!-- BEGIN GLOBAL MANDATORY STYLES -->
     <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
     <link href="../src/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="../layouts/semi-dark-menu/css/light/plugins.css" rel="stylesheet" type="text/css" />
     <link href="../layouts/semi-dark-menu/css/dark/plugins.css" rel="stylesheet" type="text/css" />
-    <!-- END GLOBAL MANDATORY STYLES -->
-
-    <!--  BEGIN CUSTOM STYLE FILE  -->
     <link rel="stylesheet" type="text/css" href="../src/plugins/src/table/datatable/datatables.css">
-    
     <link rel="stylesheet" type="text/css" href="../src/plugins/css/light/table/datatable/dt-global_style.css">
     <link rel="stylesheet" type="text/css" href="../src/plugins/css/dark/table/datatable/dt-global_style.css">
     <link rel="stylesheet" type="text/css" href="../src/assets/css/light/elements/alert.css">
-    <!--  END CUSTOM STYLE FILE  -->
-   
-
+    
     <style>
         #ecommerce-list img {
             border-radius: 18px;
         }
     </style>
-    
 </head>
 <body class="" data-bs-spy="scroll" data-bs-bs-target="#navSection" data-bs-offset="140">
-    
-    <!-- BEGIN LOADER -->
+ 
     <div id="load_screen"> <div class="loader"> <div class="loader-content">
         <div class="spinner-grow align-self-center"></div>
     </div></div></div>
-    <!--  END LOADER -->
 
-    <!--  BEGIN NAVBAR  -->
  <?php include 'head/header.php';   ?>
-    <!--  END NAVBAR  -->
+
     <?php include 'head/menu.php';   ?>
-    <!--  BEGIN CONTENT AREA  -->
+
         <div id="content" class="main-content">
 
             <div class="layout-px-spacing">
 
                 <div class="middle-content container-xxl p-0">
-    
-                    <!-- BREADCRUMB -->
+ 
                     <div class="page-meta">
                         <nav class="breadcrumb-style-one" aria-label="breadcrumb">
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item"><a href="#">App</a></li>
-                                <li class="breadcrumb-item"><a href="#">Clients</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">Liste des clients</li>
+                                <li class="breadcrumb-item active" aria-current="page">Liste des Marques</li>
                             </ol>
                         </nav>
                     </div>
-                    <?php include 'controller/Clients/clients.php';   ?>
+                    <?php include 'controller/Categories-Produits/Categories.php';   ?>
                      <button type="button" class="btn mb-2 me-4" data-bs-toggle="modal" data-bs-target=".bd-example-modal-xl">Ajouter</button>
-                    
                     <div class="row">
-                 
                     <div class="row layout-top-spacing">
                 
                         <div class="col-xl-12 col-lg-12 col-sm-12  layout-spacing">
                             <div class="widget-content widget-content-area br-8">
-                                <table id="ecommerce-list" id="html5-extension" class="table dt-table-hover" style="width:100%">
+                                <table id="ecommerce-list"  class="table dt-table-hover" style="width:100%">
                                     <thead>
                                         <tr>
-                                            <th class="text-center">id</th>
-                                            <th class="text-center">Nom</th>
-                                            <th class="text-center">Prénom</th>
-                                            <th class="text-center">Email</th>
-                                            <th class="text-center">Mobile</th>
+                                            <th class="text-center">Id</th>
+                                            <th class="text-center">Image marque</th>
+                                            <th class="text-center">Nom marques</th>
                                             <th class="text-center">Statut</th>
                                             <th class="text-center">Action</th>
-                                            
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -96,11 +78,14 @@ $res = mysqli_num_rows($req);
                                     While ($data = mysqli_fetch_array($req)){
                                     
                                     echo'<tr>
-                                    <td class="text-center"> '.$data['id_customers'].'</td>
-                                    <td class="text-center"> '.$data['nom'].'</td>
-                                    <td class="text-center">'.$data['prenom'].'</td>
-                                    <td class="text-center">'.$data['email'].'</td>
-                                    <td class="text-center">'.$data['mobile'].'</td>
+                                    <td class="text-center"> '.$data['id_marques'].'</td>
+                                    <td class="text-center"> 
+                                                    <div class="avatar  me-3">
+                                                        <img src="../'.$data['image_marques'].'" alt="Avatar" width="64" height="64">
+                                                    </div>
+                                                </td>
+                                    <td class="text-center"> '.$data['name_marques'].'</td>
+                                    
                                     ';
                                     if($data['Statut'] == 1){
                                         echo'<td class="text-center"><span class="shadow-none badge badge-primary">activé</span></td>';
@@ -108,18 +93,15 @@ $res = mysqli_num_rows($req);
                                     else{
                                         echo'<td class="text-center"><span class="shadow-none badge badge-danger">désactivé</span></td>';
                                     }
-                                    echo'<td>
-                                    <div class="btn-group text-center">
-                                       
-                                        <a class=" btn btn-dark btn-sm userinfo " data-bs-target=".bd-example-modal-lg" data-id="'.$data['id_customers'].'" href="#">Modifier</a>
+                                    echo'<td class="text-center">
+                                    <div class="btn-group">
+                                        <a class="btn btn-dark btn-sm userinfo " data-bs-target=".bd-example-modal-lg" data-id="'.$data['id_marques'].'" href="#">Modifier</a>
                                         <button type="button" class="btn btn-dark btn-sm dropdown-toggle dropdown-toggle-split" id="dropdownMenuReference1" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-reference="parent">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
                                         </button>
                                         <div class="dropdown-menu" aria-labelledby="dropdownMenuReference1">
-                                            
-                                            
-                                            <a class="dropdown-item userinfos" data-bs-target=".bd-example-modal-lg" data-id="'.$data['id_customers'].'" href="#">Supprimer</a>
-                                            <a class="dropdown-item userinfosstatut" data-id="'.$data['id_customers'].'" href="#">Statut</a>
+                                            <a class="dropdown-item userinfos" data-bs-target=".bd-example-modal-lg" data-id="'.$data['id_marques'].'" href="#">Supprimer</a>
+                                            <a class="dropdown-item userinfosstatut" data-id="'.$data['id_marques'].'" href="#">Statut</a>
                                             
                                         </div>
                                     </div>
@@ -140,7 +122,7 @@ $res = mysqli_num_rows($req);
                 </div>
                                 </div>
             <?php include 'head/footer.php'; 
-            include 'controller/Clients/popup-ajouter.php';
+            include 'controller/Categories-Produits/popup-ajouter.php';
             ?>
         </div>
     </div>
@@ -195,6 +177,6 @@ $res = mysqli_num_rows($req);
 <script type="text/javascript" src="js/plugins.js"></script>
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
-<script type="text/javascript" src="controller/Clients/clients.js"></script>
+<script type="text/javascript" src="controller/Categories-Produits/Categories.js"></script>
 </body>
 </html>
