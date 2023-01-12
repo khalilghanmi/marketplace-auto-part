@@ -21,7 +21,7 @@ $db = mysqli_connect('localhost', 'root', '','pieces-auto-tunisie');
                     $errMSG = "Please Select Image File.";
                 }
                 else
-                { $upload_dir = '../image/Marques/';
+                { $upload_dir = '../../../image/Marques/';
                     
                     $imgExt = strtolower(pathinfo($imgFile,PATHINFO_EXTENSION)); // get image extension
                  
@@ -44,18 +44,16 @@ $db = mysqli_connect('localhost', 'root', '','pieces-auto-tunisie');
                         $errMSG = "Sorry, only JPG, JPEG, PNG , webp & GIF files are allowed.";		
                     }
                 }
-                $donnees_binaires='';
-                $taille_fichier='';
-                $type_fichier='';
+                
                 $name_images='';		
                 $name_images.=$upload_dir;
                 $name_images.=$userpic;
                 if(!isset($errMSG))
                 {
-                    $sql = "INSERT  INTO prod_images VALUES ( '', '$donnees_binaires', '$name_images', '$taille_fichier', '$type_fichier')";
+                    $sql = "INSERT  INTO marques VALUES ( '', '$name_images', '$name_marques')";
                     $req = mysqli_query($db,$sql) or die('Erreur SQL !'.$sql.'<br>'.mysql_error());
                     $successMSG = "new record succesfully inserted ...";
-                    header("refresh:5;index.php");  
+                    header("refresh:5;../../Liste-des-Marques.php");  
                  
                 }
             

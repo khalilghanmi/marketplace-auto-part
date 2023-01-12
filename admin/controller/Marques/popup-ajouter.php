@@ -9,7 +9,7 @@
                                             </div>
                                             <div class="body" style="margin: 30px;">
                                             <div id='alerte'></div>
-                                            <form class="row g-3" id='myforme'>
+                                            <form class="row g-3"  id='myforme'>
                                             <div class="col-6">
                                         <label for="inputEmail4" class="form-label">Image marque</label><br>
                                         <input class="multiple-file-upload" type="file" name="image_marques" accept="image/*" /> 
@@ -31,7 +31,7 @@
                                         <a href="#" class="btn btn-light-dark" data-bs-dismiss="modal">Annuler</a>
                                         </div>
                                         <div class="col-2">          
-                                                                       
+                                        
                                         <a href="#" class="btn btn-primary" id='gi'>Enregistrer</a>
                                         </div>
                                     </form>
