@@ -8,15 +8,14 @@
                                                 </button>
                                             </div>
                                             <div class="body" style="margin: 30px;">
-                                            <div id='alerte'></div>
-                                            <form class="row g-3"  id='myforme'>
+                                            <form class="row g-3" method="post" action="controller/Marques/ajouter.php" enctype="multipart/form-data">
                                             <div class="col-6">
                                         <label for="inputEmail4" class="form-label">Image marque</label><br>
-                                        <input class="multiple-file-upload" type="file" name="image_marques" accept="image/*" /> 
+                                        <input class="multiple-file-upload" type="file" name="image_marques" accept="image/*"  required="required"/> 
                                             </div>
                                             <div class="col-6">
                                         <label for="inputEmail4" class="form-label">Nom marques</label>
-                                        <input type="text" name="name_marques"class="form-control">
+                                        <input type="text" name="name_marques"class="form-control" required="required">
                                             </div>
                                         <div class="col-6">
                                         <label for="inputEmail4" class="form-label">Statut attributes</label>
@@ -31,8 +30,8 @@
                                         <a href="#" class="btn btn-light-dark" data-bs-dismiss="modal">Annuler</a>
                                         </div>
                                         <div class="col-2">          
+                                        <button type="submit" name="btnsave" class="btn btn-primary">Enregistrer</button>
                                         
-                                        <a href="#" class="btn btn-primary" id='gi'>Enregistrer</a>
                                         </div>
                                     </form>
 

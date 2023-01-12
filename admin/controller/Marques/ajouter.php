@@ -6,14 +6,7 @@ $db = mysqli_connect('localhost', 'root', '','pieces-auto-tunisie');
 			else{
             $statut=0;
 			}  
-            if(empty($name_marques))
-    {
-    echo '<div class="alert alert-light-danger alert-dismissible fade show border-0 mb-4" role="alert">
-    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"><svg> ... </svg></button>
-    Attention, seul le champs peut rester vide !</button>
-</div> 
-   ';
-    }
+                $name_marques=$_POST['name_marques'];
                  $imgFile = $_FILES['image_marques']['name'];
                  $tmp_dir = $_FILES['image_marques']['tmp_name'];
                 $imgSize = $_FILES['image_marques']['size'];
@@ -46,14 +39,15 @@ $db = mysqli_connect('localhost', 'root', '','pieces-auto-tunisie');
                 }
                 
                 $name_images='';		
-                $name_images.=$upload_dir;
+                $name_images.='image/Marques/';
                 $name_images.=$userpic;
+                
                 if(!isset($errMSG))
                 {
-                    $sql = "INSERT  INTO marques VALUES ( '', '$name_images', '$name_marques')";
+                    $sql = "INSERT  INTO marques VALUES ( '', '$name_marques', '$name_images','$statut')";
                     $req = mysqli_query($db,$sql) or die('Erreur SQL !'.$sql.'<br>'.mysql_error());
                     $successMSG = "new record succesfully inserted ...";
-                    header("refresh:5;../../Liste-des-Marques.php");  
+                    header("refresh:0;../../Liste-des-Marques.php");  
                  
                 }
             
