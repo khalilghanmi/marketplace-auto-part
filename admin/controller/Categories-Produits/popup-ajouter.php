@@ -17,12 +17,20 @@
                                             <div class="col-6">
                                         <label for="product-images">Parent</label>
                                         
-                                            <select id="input-tags" placeholder="Select a person..." autocomplete="off">
+                                            <select id="input-tags" name="parent" class="form-control" placeholder="Select a person..." autocomplete="off">
                                                 <option value="">Select a person...</option>
                                                 <option value="a">Thomas Edison</option>
                                                 <option value="b">Nikola</option>
                                                 <option value="c">Nikola Tesla</option>
                                                 <option value="d">Arnold Schwarzenegger</option>
+                                                <option value="e">khalil ghanmi</option>
+                                                <option value="fb">hatem ben ammar</option>
+                                                <option value="g">aziz fnoun</option>
+                                                <option value="h">amir ouled hssan</option>
+                                                <option value="i">haythem gargouri</option>
+                                                <option value="j">ghanmi hamza</option>
+                                                <option value="k">amine ouled hssan</option>
+                                                <option value="l">khalil khedri</option>
                                             </select>
                                          
                                             </div>
