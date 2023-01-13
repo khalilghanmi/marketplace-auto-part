@@ -1910,9 +1910,6 @@
 	      'item': (data, escape) => {
 	        return '<div>' + escape(data[field_label]) + '</div>';
 	      },
-	      'option_create': (data, escape) => {
-	        return '<div class="create">Add <strong>' + escape(data.input) + '</strong>&hellip;</div>';
-	      },
 	      'no_results': () => {
 	        return '<div class="no-results">No results found</div>';
 	      },
