@@ -9,7 +9,7 @@ if(empty($name_category)  OR empty($meta_title))
    ';
     }
 elseif(!empty($parent)){
-                $sql = "SELECT * FROM category_description WHERE name_category='$parent'";
+                $sql = "SELECT * FROM category_description WHERE category_id='$parent'";
                 $req = mysqli_query($db,$sql) or die('Erreur SQL !'.$sql.'<br>'.mysql_error());
                 $res = mysqli_num_rows($req);
                 if($res==0)  // l'url existe déjà, on affiche un message d'erreur
@@ -23,13 +23,6 @@ elseif(!empty($parent)){
                 else{
                 echo"";  
                 }
-                    } 
-else{
-
-}
-             
-          
-        
-    
-     
+}     
+  
 ?>

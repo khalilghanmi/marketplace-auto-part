@@ -89,11 +89,38 @@ $ress = mysqli_num_rows($reqs);
                                                     <div class="avatar  me-3">
                                                         <img src="../'.$datas['category_image'].'" alt="Avatar" width="64" height="64">
                                                     </div>
-                                                </td>
-                                    <td class="text-center"> '.$data['name_category'].'</td>
-                                    
-                                    ';
-                                    if($data['name_category'] == 1){
+                                                </td>';
+                                                $testing_categories=$datas['parent_id'];
+                                                $testing_categories_id=$datas['category_id'];
+                                                 if($datas['parent_id']==0){
+                                                    echo'<td class="text-center"> '.$data['name_category'].'</td>';
+                                                    
+                                                 }
+                                                 else{
+                                                    echo'<td class="text-center">'; 
+                                                    $sql = "SELECT * FROM category";
+                                                    $reqf = mysqli_query($db,$sql) or die('Erreur SQL !'.$sql.'<br>'.mysql_error());
+                                                    While ($datab = mysqli_fetch_array($reqf)){
+                                                        if($datab['parent_id']==0){
+                                                            $idcatigore=$datab['category_id'];
+                                                            $sql = "SELECT * FROM category_description Where category_id ='$idcatigore'";
+                                                            $reqfvv = mysqli_query($db,$sql) or die('Erreur SQL !'.$sql.'<br>'.mysql_error());
+                                                            $datan = mysqli_fetch_array($reqfvv);
+                                                            echo' '.$datan['name_category'].' >';
+                                                            $testing_categories_id=$datab['category_id'];
+                                                         }
+                                                        elseif($testing_categories_id == $datab['parent_id']){
+                                                            $sql = "SELECT * FROM category_description Where category_id ='$testing_categories_id'";
+                                                            $reqfvv = mysqli_query($db,$sql) or die('Erreur SQL !'.$sql.'<br>'.mysql_error());
+                                                            $datan = mysqli_fetch_array($reqfvv);
+                                                            echo' '.$datan['name_category'].' >';
+                                                            $testing_categories=$datab['parent_id'];
+                                                        }                
+                                                    }
+                                                    echo '</td>';
+                                                 }
+                                          
+                                    if($datas['Statut'] == 1){
                                         echo'<td class="text-center"><span class="shadow-none badge badge-primary">activé</span></td>';
                                     }
                                     else{
