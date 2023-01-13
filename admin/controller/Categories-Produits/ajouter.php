@@ -1,6 +1,13 @@
 <?php
 $db = mysqli_connect('localhost', 'root', '','pieces-auto-tunisie');
-
+if(empty($name_category) OR empty($description_category) OR empty($meta_title) OR empty($meta_description) OR empty($meta_keyword) OR empty($category_image) OR empty($mobile)OR empty($date_n))
+    {
+    echo '<div class="alert alert-light-danger alert-dismissible fade show border-0 mb-4" role="alert">
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"><svg> ... </svg></button>
+    Attention, seul le champs peut rester vide ! </button>
+</div> 
+   ';
+    }
         if(isset($_POST['statut'])) {
 			$statut=1; }
 			else{

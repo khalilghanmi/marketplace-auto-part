@@ -26,6 +26,7 @@ $res = mysqli_num_rows($req);
     <link rel="stylesheet" type="text/css" href="../src/plugins/src/tomSelect/tom-select.default.min.css">
     <link rel="stylesheet" type="text/css" href="../src/plugins/css/light/tomSelect/custom-tomSelect.css">
     <link rel="stylesheet" type="text/css" href="../src/plugins/css/dark/tomSelect/custom-tomSelect.css">
+    
     <style>
         #ecommerce-list img {
             border-radius: 18px;
@@ -182,5 +183,8 @@ $res = mysqli_num_rows($req);
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
 <script type="text/javascript" src="controller/Categories-Produits/Categories.js"></script>
+<script>
+   
+    </script>
 </body>
 </html>

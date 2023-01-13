@@ -8,69 +8,61 @@
                                                 </button>
                                             </div>
                                             <div class="body" style="margin: 30px;">
-                                            <form class="row g-3" method="post" action="controller/Categories-Produits/ajouter.php" enctype="multipart/form-data">
-                                            
+                                            <form class="row g-3" id='myforme'  enctype="multipart/form-data">
+                                            <div id='alerte'></div>
                                             <div class="col-6">
                                         <label for="inputEmail4" class="form-label">Nom de catégorie</label>
-                                        <input type="text" name="name_marques"class="form-control" required="required">
+                                        <input type="text" name="name_category" class="form-control" >
                                             </div>
                                             <div class="col-6">
                                         <label for="product-images">Parent</label>
-                                        <div id="select-box" class="col-lg-12 layout-spacing">
-                                        <div class="statbox widget box box-shadow">
-                                         <div class="widget-content widget-content-area">
+                                        
                                             <select id="input-tags" placeholder="Select a person..." autocomplete="off">
                                                 <option value="">Select a person...</option>
-                                                <option value="4">Thomas Edison</option>
-                                                <option value="1">Nikola</option>
-                                                <option value="3">Nikola Tesla</option>
-                                                <option value="5">Arnold Schwarzenegger</option>
+                                                <option value="a">Thomas Edison</option>
+                                                <option value="b">Nikola</option>
+                                                <option value="c">Nikola Tesla</option>
+                                                <option value="d">Arnold Schwarzenegger</option>
                                             </select>
-                                            <script>
-</script>
-                                </div>
-                            </div>
-                        </div>
-
-                                           <input type="text" name="name_marques"class="form-control" required="required">
+                                         
                                             </div>
                                             <div class="col-6">
                                         <label for="product-images">Description</label>
-                                                <textarea class="form-control" aria-label="With textarea"></textarea>
+                                                <textarea class="form-control" name="description_category" aria-label="With textarea"></textarea>
                                             </div>
                                             <div class="col-sm-6">
                                             <label for="inputEmail4" class="form-label">Upload Images</label><br>
-                                            <input class="multiple-file-upload" type="file" name="image_marques" accept="image/*"  required="required"/> 
+                                            <input class="multiple-file-upload" type="file" name="category_image" accept="image/*"  /> 
                                             </div>
                                             <div class="col-6">
                                         <label for="inputEmail4" class="form-label">Titre de la balise Meta</label>
-                                        <input type="text" name="name_marques"class="form-control" required="required">
+                                        <input type="text" name="meta_title" class="form-control" >
                                             </div>
                                             <div class="col-6">
                                         <label for="inputEmail4" class="form-label">Description de la balise méta</label>
-                                        <textarea class="form-control" aria-label="With textarea"></textarea>
+                                        <textarea class="form-control" name="meta_description" aria-label="With textarea"></textarea>
                                             </div>
                                             <div class="col-6">
                                         <label for="inputEmail4" class="form-label">Mots-clés des balises méta</label>
-                                        <textarea class="form-control" aria-label="With textarea"></textarea>
+                                        <textarea class="form-control" name="meta_keyword" aria-label="With textarea"></textarea>
                                             </div>
                                         <div class="col-6">
                                         <label for="inputEmail4" class="form-label">Statut attributes</label>
                                             <div class="form-check">
                                             <div class="form-check form-switch form-check-inline">
-                                            <input class="form-check-input" type="checkbox" name="statut" role="switch" id="flexSwitchCheckChecked" checked>
+                                            <input class="form-check-input" type="checkbox" name="Statut" role="switch" id="flexSwitchCheckChecked" checked>
                                             <label class="form-check-label" for="flexSwitchCheckChecked">Statut</label>
                                             </div>
                                             </div>
                                         </div>
                                         <div class="col-6">
-                                        
+                                       
                                         </div>
                                         <div class="col-3">
                                         <a href="#" class="btn btn-light-dark" data-bs-dismiss="modal">Annuler</a>
                                         </div>
                                         <div class="col-3">          
-                                        <button type="submit" name="btnsave" class="btn btn-primary">Enregistrer</button>
+                                        <a href="#" class="btn btn-primary" id='gi'>Enregistrer</a>
                                         </div>
                                     </form>
 
