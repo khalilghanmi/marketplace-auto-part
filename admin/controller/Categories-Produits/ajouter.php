@@ -1,20 +1,18 @@
 <?php
 include '../connection.php'; 
-if(empty($name_category)  OR empty($meta_title))
-    {
-    echo '<div class="alert alert-light-danger alert-dismissible fade show border-0 mb-4" role="alert">
-    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"><svg> ... </svg></button>
-    Attention, seul le champs peut rester vide ! gggggggggggg </button>
-</div> 
-   ';
-    }
-  elseif(empty($name_category)){
-    if(isset($_POST['statut'])) {
-        $statut=1; }
-        else{
-        $statut=0;
-        }  
-            
+if(isset($_POST['Statut'])) {
+    $statut=1; }
+    else{
+    $statut=0;
+    }  
+$name_category=$_POST['name_category'];
+$parent=$_POST['parent'];
+$description_category=$_POST['description_category'];
+$meta_title=$_POST['meta_title'];
+$meta_description=$_POST['meta_description'];
+$meta_keyword=$_POST['meta_keyword'];
+if(empty($parent)){
+    
              $imgFile = $_FILES['category_image']['name'];
              $tmp_dir = $_FILES['category_image']['tmp_name'];
              $imgSize = $_FILES['category_image']['size'];
@@ -54,14 +52,14 @@ if(empty($name_category)  OR empty($meta_title))
             {
                 $sql = "INSERT  INTO category VALUES ( '', '$name_images', '0','$statut')";
                 $req = mysqli_query($db,$sql) or die('Erreur SQL !'.$sql.'<br>'.mysql_error());
-                $sql = "SELECT * FROM category where name_images=$name_images";
+                $sql = "SELECT * FROM category where category_image='$name_images'";
                 $req = mysqli_query($db,$sql) or die('Erreur SQL !'.$sql.'<br>'.mysql_error());
                 $data = mysqli_fetch_array($req);
                 $idcat=$data['category_id'];
-                $sql = "INSERT  INTO category_description VALUES ( '', '$name_category', '$description_category','$meta_title','$meta_description','$meta_keyword')";
+                $sql = "INSERT  INTO category_description VALUES ( '$idcat', '$name_category', '$description_category','$meta_title','$meta_description','$meta_keyword')";
                 $req = mysqli_query($db,$sql) or die('Erreur SQL !'.$sql.'<br>'.mysql_error());
-                $successMSG = "new record succesfully inserted ...";
-                header("refresh:0;../../Liste-des-Marques.php");  
+                
+                header("refresh:0;../../Liste-des-dategories-produits.php");  
              
             }
         

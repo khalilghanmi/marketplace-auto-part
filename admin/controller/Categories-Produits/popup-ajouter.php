@@ -8,7 +8,7 @@
                                                 </button>
                                             </div>
                                             <div class="body" style="margin: 30px;">
-                                            <form class="row g-3" id='myforme'  enctype="multipart/form-data">
+                                            <form class="row g-3" id='myforme' method="post" action="controller/Categories-Produits/ajouter.php"  enctype="multipart/form-data">
                                             <div id='alerte'></div>
                                             <div class="col-6">
                                         <label for="inputEmail4" class="form-label">Nom de catégorie</label>
@@ -19,18 +19,18 @@
                                         
                                             <select id="input-tags" name="parent" class="form-control" placeholder="Select a person..." autocomplete="off">
                                                 <option value="">Select a person...</option>
-                                                <option value="a">Thomas Edison</option>
-                                                <option value="b">Nikola</option>
-                                                <option value="c">Nikola Tesla</option>
-                                                <option value="d">Arnold Schwarzenegger</option>
-                                                <option value="e">khalil ghanmi</option>
-                                                <option value="fb">hatem ben ammar</option>
-                                                <option value="g">aziz fnoun</option>
-                                                <option value="h">amir ouled hssan</option>
-                                                <option value="i">haythem gargouri</option>
-                                                <option value="j">ghanmi hamza</option>
-                                                <option value="k">amine ouled hssan</option>
-                                                <option value="l">khalil khedri</option>
+                                                <?php
+                                                include '../connection.php'; 
+                                                $sql = "SELECT * FROM category_description";
+                                                $req = mysqli_query($db,$sql) or die('Erreur SQL !'.$sql.'<br>'.mysql_error());
+                                                $res = mysqli_num_rows($req);
+                                                if($res!=0)  
+                                    {
+                                    While ($data = mysqli_fetch_array($req)){
+                                        echo'<option value="'.$data['category_id'].'">'.$data['name_category'].'</option>';
+                                    }
+                                    }
+                                    ?>       
                                             </select>
                                          
                                             </div>

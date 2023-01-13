@@ -1,8 +1,11 @@
 <?php
 include 'controller/connection.php';             
-$sql = "SELECT * FROM marques";
+$sql = "SELECT * FROM category_description";
 $req = mysqli_query($db,$sql) or die('Erreur SQL !'.$sql.'<br>'.mysql_error());
 $res = mysqli_num_rows($req);
+$sql = "SELECT * FROM category";
+$reqs = mysqli_query($db,$sql) or die('Erreur SQL !'.$sql.'<br>'.mysql_error());
+$ress = mysqli_num_rows($reqs);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -76,21 +79,21 @@ $res = mysqli_num_rows($req);
                                     </thead>
                                     <tbody>
                                     <?php
-                                    if($res!=0)  
+                                    if(($res!=0) and ($ress!=0))   
                                     {
-                                    While ($data = mysqli_fetch_array($req)){
+                                    While ($data = mysqli_fetch_array($req) and $datas = mysqli_fetch_array($reqs)){
                                     
                                     echo'<tr>
-                                    <td class="text-center"> '.$data['id_marques'].'</td>
+                                    <td class="text-center"> '.$data['category_id'].'</td>
                                     <td class="text-center"> 
                                                     <div class="avatar  me-3">
-                                                        <img src="../'.$data['image_marques'].'" alt="Avatar" width="64" height="64">
+                                                        <img src="../'.$datas['category_image'].'" alt="Avatar" width="64" height="64">
                                                     </div>
                                                 </td>
-                                    <td class="text-center"> '.$data['name_marques'].'</td>
+                                    <td class="text-center"> '.$data['name_category'].'</td>
                                     
                                     ';
-                                    if($data['Statut'] == 1){
+                                    if($data['name_category'] == 1){
                                         echo'<td class="text-center"><span class="shadow-none badge badge-primary">activé</span></td>';
                                     }
                                     else{
@@ -98,13 +101,13 @@ $res = mysqli_num_rows($req);
                                     }
                                     echo'<td class="text-center">
                                     <div class="btn-group">
-                                        <a class="btn btn-dark btn-sm userinfo " data-bs-target=".bd-example-modal-lg" data-id="'.$data['id_marques'].'" href="#">Modifier</a>
+                                        <a class="btn btn-dark btn-sm userinfo " data-bs-target=".bd-example-modal-lg" data-id="'.$data['category_id'].'" href="#">Modifier</a>
                                         <button type="button" class="btn btn-dark btn-sm dropdown-toggle dropdown-toggle-split" id="dropdownMenuReference1" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-reference="parent">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
                                         </button>
                                         <div class="dropdown-menu" aria-labelledby="dropdownMenuReference1">
-                                            <a class="dropdown-item userinfos" data-bs-target=".bd-example-modal-lg" data-id="'.$data['id_marques'].'" href="#">Supprimer</a>
-                                            <a class="dropdown-item userinfosstatut" data-id="'.$data['id_marques'].'" href="#">Statut</a>
+                                            <a class="dropdown-item userinfos" data-bs-target=".bd-example-modal-lg" data-id="'.$data['category_id'].'" href="#">Supprimer</a>
+                                            <a class="dropdown-item userinfosstatut" data-id="'.$data['category_id'].'" href="#">Statut</a>
                                             
                                         </div>
                                     </div>
