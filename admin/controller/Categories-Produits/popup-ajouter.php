@@ -17,16 +17,17 @@
                                             <div class="col-6">
                                         <label for="product-images">Parent</label>
                                         <div id="select-box" class="col-lg-12 layout-spacing">
-                            <div class="statbox widget box box-shadow">
-                                <div class="widget-content widget-content-area">
-                                    <select id="select-beast" placeholder="Select a person..." autocomplete="off">
-                                        <option value="">Select a person...</option>
-                                        <option value="4">Thomas Edison</option>
-                                        <option value="1">Nikola</option>
-                                        <option value="3">Nikola Tesla</option>
-                                        <option value="5">Arnold Schwarzenegger</option>
-                                    </select>
-
+                                        <div class="statbox widget box box-shadow">
+                                         <div class="widget-content widget-content-area">
+                                            <select id="input-tags" placeholder="Select a person..." autocomplete="off">
+                                                <option value="">Select a person...</option>
+                                                <option value="4">Thomas Edison</option>
+                                                <option value="1">Nikola</option>
+                                                <option value="3">Nikola Tesla</option>
+                                                <option value="5">Arnold Schwarzenegger</option>
+                                            </select>
+                                            <script>
+</script>
                                 </div>
                             </div>
                         </div>

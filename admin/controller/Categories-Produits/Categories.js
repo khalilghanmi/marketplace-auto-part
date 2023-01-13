@@ -40,4 +40,8 @@ $.ajax({
 });
 });
 });
- 
+new TomSelect("#input-tags",{
+    persist: false,
+    createOnBlur: true,
+    create: true
+});
