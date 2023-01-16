@@ -90,3 +90,14 @@ function viewsubcat($categories)
 		?>
 	</ul>
 <?php } ?>
+
+
+------------------$_COOKIE
+
+<?php 
+			                        if( ! empty($category['subcategory'])){
+                                    echo'<tr><td>';
+				                    echo viewsubcat($category['subcategory']);
+                                    echo '</tr> </th>';
+			                        } 
+		                            ?>
