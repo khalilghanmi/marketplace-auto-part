@@ -19,18 +19,7 @@
                                         
                                             <select id="input-tags" name="parent" class="form-control" placeholder="Select a person..." autocomplete="off">
                                                 <option value="">Select a person...</option>
-                                                <?php
-                                                include '../connection.php'; 
-                                                $sql = "SELECT * FROM category_description";
-                                                $req = mysqli_query($db,$sql) or die('Erreur SQL !'.$sql.'<br>'.mysql_error());
-                                                $res = mysqli_num_rows($req);
-                                                if($res!=0)  
-                                    {
-                                    While ($data = mysqli_fetch_array($req)){
-                                        echo'<option value="'.$data['category_id'].'">'.$data['name_category'].'</option>';
-                                    }
-                                    }
-                                    ?>       
+                                               
                                             </select>
                                          
                                             </div>

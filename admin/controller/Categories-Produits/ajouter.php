@@ -5,6 +5,7 @@ if(isset($_POST['Statut'])) {
     else{
     $statut=0;
     }  
+$date_added=date('y-m-d');
 $name_category=$_POST['name_category'];
 $parent=$_POST['parent'];
 $description_category=$_POST['description_category'];
@@ -50,13 +51,7 @@ if(empty($parent)){
             
             if(!isset($errMSG))
             {
-                $sql = "INSERT  INTO category VALUES ( '', '$name_images', '0','$statut')";
-                $req = mysqli_query($db,$sql) or die('Erreur SQL !'.$sql.'<br>'.mysql_error());
-                $sql = "SELECT * FROM category where category_image='$name_images'";
-                $req = mysqli_query($db,$sql) or die('Erreur SQL !'.$sql.'<br>'.mysql_error());
-                $data = mysqli_fetch_array($req);
-                $idcat=$data['category_id'];
-                $sql = "INSERT  INTO category_description VALUES ( '$idcat', '$name_category', '$description_category','$meta_title','$meta_description','$meta_keyword')";
+                $sql = "INSERT  INTO category VALUES ( '', '0', '$name_category','$description_category','$name_images','$meta_title','$meta_description','$meta_keyword','$statut','$date_added')";
                 $req = mysqli_query($db,$sql) or die('Erreur SQL !'.$sql.'<br>'.mysql_error());
                 
                 header("refresh:0;../../Liste-des-dategories-produits.php");  
@@ -102,15 +97,9 @@ else{
    
    if(!isset($errMSG))
    {
-       $sql = "INSERT  INTO category VALUES ( '', '$name_images', '$parent','$statut')";
+       $sql = "INSERT  INTO category VALUES ( '', '$parent', '$name_category','$description_category','$name_images','$meta_title','$meta_description','$meta_keyword','$statut','$date_added')";
        $req = mysqli_query($db,$sql) or die('Erreur SQL !'.$sql.'<br>'.mysql_error());
-       $sql = "SELECT * FROM category where category_image='$name_images'";
-       $req = mysqli_query($db,$sql) or die('Erreur SQL !'.$sql.'<br>'.mysql_error());
-       $data = mysqli_fetch_array($req);
-       $idcat=$data['category_id'];
-       $sql = "INSERT  INTO category_description VALUES ( '$idcat', '$name_category', '$description_category','$meta_title','$meta_description','$meta_keyword')";
-       $req = mysqli_query($db,$sql) or die('Erreur SQL !'.$sql.'<br>'.mysql_error());
-       
+                
        header("refresh:0;../../Liste-des-dategories-produits.php");  
     
    }

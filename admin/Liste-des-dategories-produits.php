@@ -1,9 +1,94 @@
 <?php
-include 'controller/connection.php';             
-$sql = "SELECT * FROM category,category_description WHERE parent_id = 0 and category.category_id = category_description.category_id";
-$req = mysqli_query($db,$sql) or die('Erreur SQL !'.$sql.'<br>'.mysql_error());
-$res = mysqli_num_rows($req);
+function dbconnect(){
+	$host = "localhost";
+	$connuser = "root";
+	$connpass = "";
+	$connname = "pieces-auto-tunisie";
 
+	$conn = new mysqli($host, $connuser, $connpass, $connname);
+
+	if($conn->connect_error){
+		die("Connection failed: ".$conn->connect_error);
+	}
+	
+	return $conn;
+}
+?>
+<?php
+
+function categories()
+{
+	$conn = dbconnect();
+	$sql = "SELECT * FROM category WHERE parent_id=0";
+	$result = $conn->query($sql);
+	
+	$categories = array();
+	
+	while($row = $result->fetch_assoc())
+	{
+		$categories[] = array(
+			'category_id' => $row['category_id'],
+			'parent_id' => $row['parent_id'],
+			'name_category' => $row['name_category'],
+            'category_image' => $row['category_image'],
+            'description_category' => $row['description_category'],
+            'meta_title' => $row['meta_title'],
+            'meta_description' => $row['meta_description'],
+            'meta_keyword' => $row['meta_keyword'],
+            'Statut' => $row['Statut'],
+            'created_at' => $row['created_at'],
+			'subcategory' => sub_categories($row['category_id']),
+		);
+	}
+	
+	return $categories;
+}
+
+function sub_categories($id)
+{	
+	
+	$conn = dbconnect();
+	$sql = "SELECT * FROM category WHERE parent_id=$id";
+	$result = $conn->query($sql);
+	
+	$categories = array();
+	
+	while($row = $result->fetch_assoc())
+	{
+		$categories[] = array(
+			'category_id' => $row['category_id'],
+			'parent_id' => $row['parent_id'],
+			'name_category' => $row['name_category'],
+            'category_image' => $row['category_image'],
+            'description_category' => $row['description_category'],
+            'meta_title' => $row['meta_title'],
+            'meta_description' => $row['meta_description'],
+            'meta_keyword' => $row['meta_keyword'],
+            'Statut' => $row['Statut'],
+            'created_at' => $row['created_at'],
+			'subcategory' => sub_categories($row['category_id']),
+		);
+	}
+	return $categories;
+}
+
+?>
+ <?php
+function viewsubcat($categories)
+{
+	$html = '<tr>';
+	foreach($categories as $category){
+
+		$html .= '<td>'.$category['name_category'].'</td>';
+		
+		if( ! empty($category['subcategory'])){
+			$html .= viewsubcat($category['subcategory']);
+		}
+	}
+	$html .= '</tr>';
+	
+	return $html;
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -76,103 +161,29 @@ $res = mysqli_num_rows($req);
                                         </tr>
                                     </thead>
                                     <tbody>
-                                    <?php
-                                    if(($res!=0))   
-                                    {
-                                    While ($data = mysqli_fetch_array($req)){
-                                        echo'<tr>
-                                    <td class="text-center"> '.$data['category_id'].'</td>
-                                    <td class="text-center"> 
-                                                    <div class="avatar  me-3">
-                                                        <img src="../'.$data['category_image'].'" alt="Avatar" width="64" height="64">
-                                                    </div>
-                                                </td>';
-                                                 if($data['parent_id']==0){
-                                                    echo'<td class="text-center"> '.$data['name_category'].'</td>';
-                                                    
-                                                 }
-                                                  
-                                          
-                                    if($data['Statut'] == 1){
-                                        echo'<td class="text-center"><span class="shadow-none badge badge-primary">activé</span></td>';
-                                    }
-                                    else{
-                                        echo'<td class="text-center"><span class="shadow-none badge badge-danger">désactivé</span></td>';
-                                    }
-                                    echo'<td class="text-center">
-                                    <div class="btn-group">
-                                        <a class="btn btn-dark btn-sm userinfo " data-bs-target=".bd-example-modal-lg" data-id="'.$data['category_id'].'" href="#">Modifier</a>
-                                        <button type="button" class="btn btn-dark btn-sm dropdown-toggle dropdown-toggle-split" id="dropdownMenuReference1" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-reference="parent">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
-                                        </button>
-                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuReference1">
-                                            <a class="dropdown-item userinfos" data-bs-target=".bd-example-modal-lg" data-id="'.$data['category_id'].'" href="#">Supprimer</a>
-                                            <a class="dropdown-item userinfosstatut" data-id="'.$data['category_id'].'" href="#">Statut</a>
-                                            
-                                        </div>
-                                    </div>
-                                    </td>
-                                      </tr>
-                                    ';
-                                    $concat_name=$data['name_category'];
-
-
-                                    $idcat=$data['category_id'];
-$sql = "SELECT * FROM category";
-$reqs = mysqli_query($db,$sql) or die('Erreur SQL !'.$sql.'<br>'.mysql_error());
-$reso = mysqli_num_rows($reqs);
-if($reso!=0)  // l'url existe déjà, on affiche un message d'erreur
-{
-    While ($datacat = mysqli_fetch_array($reqs)){
-        $sql = "SELECT * FROM category,category_description WHERE parent_id = '$idcat' and category.category_id = category_description.category_id";
-        $reqs = mysqli_query($db,$sql) or die('Erreur SQL !'.$sql.'<br>'.mysql_error());
-        $reso = mysqli_num_rows($reqs);
-        if($reso!=0)  // l'url existe déjà, on affiche un message d'erreur
-        {
-        $datas = mysqli_fetch_array($reqs);
-        echo'<tr>
-        <td class="text-center"> '.$datas['category_id'].'</td>
-        <td class="text-center"> 
-                        <div class="avatar  me-3">
-                            <img src="../'.$datas['category_image'].'" alt="Avatar" width="64" height="64">
-                        </div>
-                    </td>';
-                    $concat_name.=' > '.$datas['name_category'].'';
-                        echo'<td class="text-center"> '.$concat_name.'</td>';
-                        
-            
-        if($data['Statut'] == 1){
-            echo'<td class="text-center"><span class="shadow-none badge badge-primary">activé</span></td>';
-        }
-        else{
-            echo'<td class="text-center"><span class="shadow-none badge badge-danger">désactivé</span></td>';
-        }
-        echo'<td class="text-center">
-        <div class="btn-group">
-            <a class="btn btn-dark btn-sm userinfo " data-bs-target=".bd-example-modal-lg" data-id="'.$datas['category_id'].'" href="#">Modifier</a>
-            <button type="button" class="btn btn-dark btn-sm dropdown-toggle dropdown-toggle-split" id="dropdownMenuReference1" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-reference="parent">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuReference1">
-                <a class="dropdown-item userinfos" data-bs-target=".bd-example-modal-lg" data-id="'.$datas['category_id'].'" href="#">Supprimer</a>
-                <a class="dropdown-item userinfosstatut" data-id="'.$datas['category_id'].'" href="#">Statut</a>
-                
-            </div>
-        </div>
-        </td>
-          </tr>
-        ';
-        $idcat=$datas['category_id'];
-    }    
-}                             
-
-
-}
-
-
-                                    }
-                                }
-                                    ?>
+                                    <?php $categories = categories(); ?>
+                                    <?php foreach($categories as $category){ ?>
+                                       <?php
+                                       echo'<td class="text-center"> '.$category['category_id'].'</td>
+                                            <td class="text-center"> '.$category['category_image'].'</td>';
+                                       ?> 
+                                    
+                                    
+		                            <tr>
+			                        <td><?php echo $category['name_category'] ?></td>
+                                    </tr>
+                                    <?php echo'<td class="text-center">'.$category['Statut'].'</td>';?>
+		                            <?php 
+			                        if( ! empty($category['subcategory'])){
+                                    echo'<tr><td>';
+				                    echo viewsubcat($category['subcategory']);
+                                    echo '</tr> </th>';
+			                        } 
+		                            ?>
+	                                
+                                    <?php } ?>
+                                      
+ 
                                  </tbody>
                                 </table>
                             </div>
