@@ -194,6 +194,7 @@ function viewsubcat($categories)
            <img src="../'.$category['category_image'].'" alt="Avatar" width="64" height="64">
            </div></td>
            <td class="text-center"> '.$category['name_category'].'</td>';
+           
            if($category['Statut'] == 1){
                echo'<td class="text-center"><span class="shadow-none badge badge-primary">activé</span></td>';
            }

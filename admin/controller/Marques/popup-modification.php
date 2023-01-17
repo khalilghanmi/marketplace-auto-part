@@ -14,7 +14,7 @@ while( $row = mysqli_fetch_array($result) ){
                                             <div id="alertemodif"></div>
                                             <div class="col-6">
                                             <label for="inputEmail4" class="form-label">Image marque</label><br>
-                                            <input class="multiple-file-upload" type="file" name="image_marques" accept="image/*"  required="required"/> 
+                                            <input class="multiple-file-upload" type="file" name="image_marques" accept="image/*"/> 
                                             </div>
                                             <div class="col-md-6">
                                             <label for="inputEmail4" class="form-label">Nom marques*</label>

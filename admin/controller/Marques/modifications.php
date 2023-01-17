@@ -12,7 +12,13 @@ $db = mysqli_connect('localhost', 'root', '','pieces-auto-tunisie');
                  $tmp_dir = $_FILES['image_marques']['tmp_name'];
                 $imgSize = $_FILES['image_marques']['size'];
                 if(empty($imgFile)){
-                    $errMSG = "Please Select Image File.";
+                    $sql = "UPDATE marques SET 
+                    name_marques='$name_marques',
+                    Statut='$statut'
+                    where id_marques='$id'";
+                   $req = mysqli_query($db,$sql) or die('Erreur SQL !'.$sql.'<br>'.mysql_error());
+                    $successMSG = "new record succesfully inserted ...";
+                    header("refresh:0;../../Liste-des-Marques.php");  
                 }
                 else
                 { $upload_dir = '../../../image/Marques/';
@@ -32,8 +38,7 @@ $db = mysqli_connect('localhost', 'root', '','pieces-auto-tunisie');
                     else{
                         $errMSG = "Sorry, only JPG, JPEG, PNG , webp & GIF files are allowed.";		
                     }
-                }
-                $name_images='';		
+                    $name_images='';		
                 $name_images.='image/Marques/';
                 $name_images.=$userpic;
                 if(!isset($errMSG))
@@ -48,6 +53,8 @@ $db = mysqli_connect('localhost', 'root', '','pieces-auto-tunisie');
                     header("refresh:0;../../Liste-des-Marques.php");  
                  
                 }
+                }
+                
             
      
 ?>
