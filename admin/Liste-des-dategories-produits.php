@@ -79,8 +79,10 @@ function viewsubcat($categories)
 	$html = '<tr>';
 	foreach($categories as $category){
 
-		$html .= '<td>'.$category['category_id'].'</td>
-                  <td class="text-center"> '.$category['category_image'].'</td>
+		$html .= '<td class="text-center">'.$category['category_id'].'</td>
+                  <td class="text-center"><div class="avatar  me-3">
+                  <img src="../'.$category['category_image'].'" alt="Avatar" width="64" height="64">
+                  </div></td>
                   <td class="text-center"> '.$category['name_category'].'</td>';
                 if($category['Statut'] == 1){
                     $html .='<td class="text-center"><span class="shadow-none badge badge-primary">activé</span></td>';
@@ -88,7 +90,7 @@ function viewsubcat($categories)
                 else{
                     $html .='<td class="text-center"><span class="shadow-none badge badge-danger">désactivé</span></td>';
                 }
-                $html .='<td>
+                $html .='<td class="text-center">
                 <div class="btn-group text-center">
                 <a class=" btn btn-dark btn-sm userinfo " data-bs-target=".bd-example-modal-lg" data-id="'.$category['category_id'].'" href="#">Modifier</a>
                 <button type="button" class="btn btn-dark btn-sm dropdown-toggle dropdown-toggle-split" id="dropdownMenuReference1" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-reference="parent">
@@ -186,9 +188,11 @@ function viewsubcat($categories)
                                     <?php $categories = categories(); ?>
 <?php foreach($categories as $category){ ?>
 		<tr>
-			<td><?php echo $category['category_id'] ?></td>
+			<td class="text-center"><?php echo $category['category_id'] ?></td>
            <?php
-           echo'<td class="text-center"> '.$category['category_image'].'</td>
+           echo'<td class="text-center"><div class="avatar  me-3">
+           <img src="../'.$category['category_image'].'" alt="Avatar" width="64" height="64">
+           </div></td>
            <td class="text-center"> '.$category['name_category'].'</td>';
            if($category['Statut'] == 1){
                echo'<td class="text-center"><span class="shadow-none badge badge-primary">activé</span></td>';
@@ -196,7 +200,7 @@ function viewsubcat($categories)
            else{
                echo'<td class="text-center"><span class="shadow-none badge badge-danger">désactivé</span></td>';
            }
-           echo'<td>
+           echo'<td class="text-center">
    <div class="btn-group text-center">
       
        <a class=" btn btn-dark btn-sm userinfo " data-bs-target=".bd-example-modal-lg" data-id="'.$category['category_id'].'" href="#">Modifier</a>
