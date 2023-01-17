@@ -1,3 +1,6 @@
+<?php
+
+?>
 <div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
                                       <div class="modal-dialog modal-xl" role="document">
                                         <div class="modal-content">
@@ -19,7 +22,18 @@
                                         
                                             <select id="input-tags" name="parent" class="form-control" placeholder="Select a person..." autocomplete="off">
                                                 <option value="">Select a person...</option>
-                                               
+                                               <?php
+                                               $db = mysqli_connect('localhost', 'root', '','pieces-auto-tunisie');            
+                                               $sql = "SELECT * FROM category";
+                                               $req = mysqli_query($db,$sql) or die('Erreur SQL !'.$sql.'<br>'.mysql_error());
+                                               $res = mysqli_num_rows($req);
+                                               if($res!=0)  
+                                                       {
+                                                       While ($data = mysqli_fetch_array($req)){
+                                                       echo'<option value="'.$data['category_id'].'">'.$data['name_category'].'</option>';
+                                                       }
+                                                       }
+                                               ?>
                                             </select>
                                          
                                             </div>

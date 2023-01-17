@@ -50,7 +50,7 @@ function sub_categories($id)
 	$conn = dbconnect();
 	$sql = "SELECT * FROM category WHERE parent_id=$id";
 	$result = $conn->query($sql);
-	
+	$res = mysqli_num_rows($result);
 	$categories = array();
 	
 	while($row = $result->fetch_assoc())
@@ -178,8 +178,8 @@ function viewsubcat($categories)
                                     <thead>
                                         <tr>
                                             <th class="text-center">Id</th>
-                                            <th class="text-center">Image marque</th>
-                                            <th class="text-center">Nom marques</th>
+                                            <th class="text-center">Image catégories</th>
+                                            <th class="text-center">Nom catégories</th>
                                             <th class="text-center">Statut</th>
                                             <th class="text-center">Action</th>
                                         </tr>
