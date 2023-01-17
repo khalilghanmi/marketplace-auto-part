@@ -73,49 +73,45 @@ function sub_categories($id)
 }
 
 ?>
- <?php
+<?php
 function viewsubcat($categories)
 {
-	$html = '';
+	$html = '<tr>';
 	foreach($categories as $category){
 
-		$html .= '<tr>';
+		$html .= '<td>'.$category['category_id'].'</td>
+                  <td class="text-center"> '.$category['category_image'].'</td>
+                  <td class="text-center"> '.$category['name_category'].'</td>';
+                if($category['Statut'] == 1){
+                    $html .='<td class="text-center"><span class="shadow-none badge badge-primary">activé</span></td>';
+                }
+                else{
+                    $html .='<td class="text-center"><span class="shadow-none badge badge-danger">désactivé</span></td>';
+                }
+                $html .='<td>
+                <div class="btn-group text-center">
+                <a class=" btn btn-dark btn-sm userinfo " data-bs-target=".bd-example-modal-lg" data-id="'.$category['category_id'].'" href="#">Modifier</a>
+                <button type="button" class="btn btn-dark btn-sm dropdown-toggle dropdown-toggle-split" id="dropdownMenuReference1" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-reference="parent">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuReference1">
+                <a class="dropdown-item userinfos" data-bs-target=".bd-example-modal-lg" data-id="'.$category['category_id'].'" href="#">Supprimer</a>
+                <a class="dropdown-item userinfosstatut" data-id="'.$category['category_id'].'" href="#">Statut</a>
+                </div>
+                </div>
+                </td>
+        ';
 		
 		if( ! empty($category['subcategory'])){
-            $html .= '<td class="text-center"> '.$category['category_id'].'</td>
-            <td class="text-center"> '.$category['category_image'].'</td>
-            <td class="text-center"> '.$category['name_category'].'</td>';
-            if($category['Statut'] == 1){
-                echo'<td class="text-center"><span class="shadow-none badge badge-primary">activé</span></td>';
-            }
-            else{
-                echo'<td class="text-center"><span class="shadow-none badge badge-danger">désactivé</span></td>';
-            }
-            echo'<td>
-    <div class="btn-group text-center">
-       
-        <a class=" btn btn-dark btn-sm userinfo " data-bs-target=".bd-example-modal-lg" data-id="'.$category['category_id'].'" href="#">Modifier</a>
-        <button type="button" class="btn btn-dark btn-sm dropdown-toggle dropdown-toggle-split" id="dropdownMenuReference1" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-reference="parent">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
-        </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuReference1">
-            
-            
-            <a class="dropdown-item userinfos" data-bs-target=".bd-example-modal-lg" data-id="'.$category['category_id'].'" href="#">Supprimer</a>
-            <a class="dropdown-item userinfosstatut" data-id="'.$category['category_id'].'" href="#">Statut</a>
-            
-        </div>
-    </div>
-    </td>
-      ';
-			 
+			$html .= viewsubcat($category['subcategory']);
 		}
-        
 	}
 	$html .= '</tr>';
+	
 	return $html;
 }
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -188,47 +184,42 @@ function viewsubcat($categories)
                                     </thead>
                                     <tbody>
                                     <?php $categories = categories(); ?>
-                                    <?php foreach($categories as $category){ ?>
-                                       <?php
-                                       echo'
-                                       <tr>
-                                       <td class="text-center"> '.$category['category_id'].'</td>
-                                            <td class="text-center"> '.$category['category_image'].'</td>
-                                            <td class="text-center"> '.$category['name_category'].'</td>';
-                                            if($category['Statut'] == 1){
-                                                echo'<td class="text-center"><span class="shadow-none badge badge-primary">activé</span></td>';
-                                            }
-                                            else{
-                                                echo'<td class="text-center"><span class="shadow-none badge badge-danger">désactivé</span></td>';
-                                            }
-                                            echo'<td>
-                                    <div class="btn-group text-center">
-                                       
-                                        <a class=" btn btn-dark btn-sm userinfo " data-bs-target=".bd-example-modal-lg" data-id="'.$category['category_id'].'" href="#">Modifier</a>
-                                        <button type="button" class="btn btn-dark btn-sm dropdown-toggle dropdown-toggle-split" id="dropdownMenuReference1" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-reference="parent">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
-                                        </button>
-                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuReference1">
-                                            
-                                            
-                                            <a class="dropdown-item userinfos" data-bs-target=".bd-example-modal-lg" data-id="'.$category['category_id'].'" href="#">Supprimer</a>
-                                            <a class="dropdown-item userinfosstatut" data-id="'.$category['category_id'].'" href="#">Statut</a>
-                                            
-                                        </div>
-                                    </div>
-                                    </td>
-                                      </tr>
-                                    ';
-                                       ?> 
-		                            <?php 
-			                        if( ! empty($category['subcategory'])){
-				                    echo viewsubcat($category['subcategory']);
-                                    
-			                        } 
-		                            ?>
-	                                
-                                    <?php } ?>
-                                      
+<?php foreach($categories as $category){ ?>
+		<tr>
+			<td><?php echo $category['category_id'] ?></td>
+           <?php
+           echo'<td class="text-center"> '.$category['category_image'].'</td>
+           <td class="text-center"> '.$category['name_category'].'</td>';
+           if($category['Statut'] == 1){
+               echo'<td class="text-center"><span class="shadow-none badge badge-primary">activé</span></td>';
+           }
+           else{
+               echo'<td class="text-center"><span class="shadow-none badge badge-danger">désactivé</span></td>';
+           }
+           echo'<td>
+   <div class="btn-group text-center">
+      
+       <a class=" btn btn-dark btn-sm userinfo " data-bs-target=".bd-example-modal-lg" data-id="'.$category['category_id'].'" href="#">Modifier</a>
+       <button type="button" class="btn btn-dark btn-sm dropdown-toggle dropdown-toggle-split" id="dropdownMenuReference1" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-reference="parent">
+           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+       </button>
+       <div class="dropdown-menu" aria-labelledby="dropdownMenuReference1">
+           
+           
+           <a class="dropdown-item userinfos" data-bs-target=".bd-example-modal-lg" data-id="'.$category['category_id'].'" href="#">Supprimer</a>
+           <a class="dropdown-item userinfosstatut" data-id="'.$category['category_id'].'" href="#">Statut</a>
+           
+       </div>
+   </div>
+   </td>';
+           ?> 
+		<?php 
+			if( ! empty($category['subcategory'])){
+				echo viewsubcat($category['subcategory']);
+			} 
+		?>
+	</tr>
+<?php } ?>
  
                                  </tbody>
                                 </table>
