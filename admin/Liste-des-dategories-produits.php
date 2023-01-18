@@ -76,10 +76,10 @@ function sub_categories($id)
 <?php
 function viewsubcat($categories)
 {
-	$html = '<tr>';
+	$html = '';
 	foreach($categories as $category){
 
-		$html .= '<td class="text-center">'.$category['category_id'].'</td>
+		$html .= '<tr><td class="text-center">'.$category['category_id'].'</td>
                   <td class="text-center"><div class="avatar  me-3">
                   <img src="../'.$category['category_image'].'" alt="Avatar" width="64" height="64">
                   </div></td>
@@ -102,13 +102,14 @@ function viewsubcat($categories)
                 </div>
                 </div>
                 </td>
+                </tr>
         ';
 		
 		if( ! empty($category['subcategory'])){
 			$html .= viewsubcat($category['subcategory']);
 		}
 	}
-	$html .= '</tr>';
+	 
 	
 	return $html;
 }
@@ -217,13 +218,13 @@ function viewsubcat($categories)
        </div>
    </div>
    </td>';
-           ?> 
+           ?> </tr>
 		<?php 
 			if( ! empty($category['subcategory'])){
 				echo viewsubcat($category['subcategory']);
 			} 
 		?>
-	</tr>
+	
 <?php } ?>
  
                                  </tbody>

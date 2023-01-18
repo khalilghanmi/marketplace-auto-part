@@ -73,7 +73,7 @@ else{
    if(empty($imgFile)){
     $name_category =replaceSpecialChar($name_category);
     $name_image_finales='image/categories/defaults.png';
-    $sql = "INSERT  INTO category VALUES ( '', '0', '$name_category','$description_category','$name_image_finales','$meta_title','$meta_description','$meta_keyword','$statut','$date_added')";
+    $sql = "INSERT  INTO category VALUES ( '', '$parent', '$name_category','$description_category','$name_image_finales','$meta_title','$meta_description','$meta_keyword','$statut','$date_added')";
     $req = mysqli_query($db,$sql) or die('Erreur SQL !'.$sql.'<br>'.mysql_error());
     
     header("refresh:0;../../Liste-des-dategories-produits.php");
