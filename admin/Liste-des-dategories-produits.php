@@ -74,16 +74,18 @@ function sub_categories($id)
 
 ?>
 <?php
-function viewsubcat($categories)
+function viewsubcat($categories,$concatsubcatigory)
 {
 	$html = '';
+    $concatsubcatigorys =$concatsubcatigory;
 	foreach($categories as $category){
-
+        
 		$html .= '<tr><td class="text-center">'.$category['category_id'].'</td>
                   <td class="text-center"><div class="avatar  me-3">
                   <img src="../'.$category['category_image'].'" alt="Avatar" width="64" height="64">
                   </div></td>
-                  <td class="text-center">--'.$category['name_category'].'</td>';
+                  <td class="text-center">'.$concatsubcatigorys.' > '.$category['name_category'].'</td>';
+                  
                 if($category['Statut'] == 1){
                     $html .='<td class="text-center"><span class="shadow-none badge badge-primary">activé</span></td>';
                 }
@@ -106,7 +108,9 @@ function viewsubcat($categories)
         ';
 		
 		if( ! empty($category['subcategory'])){
-			$html .= viewsubcat($category['subcategory']);
+            $concatsubcatigory = $concatsubcatigorys.' > '.$category['name_category'].'';
+			$html .= viewsubcat($category['subcategory'],$concatsubcatigory);
+
 		}
 	}
 	 
@@ -195,7 +199,7 @@ function viewsubcat($categories)
            <img src="../'.$category['category_image'].'" alt="Avatar" width="64" height="64">
            </div></td>
            <td class="text-center">'.$category['name_category'].'</td>';
-           
+           $concatsubcatigory=$category['name_category'];
            if($category['Statut'] == 1){
                echo'<td class="text-center"><span class="shadow-none badge badge-primary">activé</span></td>';
            }
@@ -221,7 +225,7 @@ function viewsubcat($categories)
            ?> </tr>
 		<?php 
 			if( ! empty($category['subcategory'])){
-				echo viewsubcat($category['subcategory']);
+				echo viewsubcat($category['subcategory'],$concatsubcatigory);
 			} 
 		?>
 	
