@@ -5,12 +5,12 @@ if($_POST['statut']==1) {
 	else{
 	$statut=1;
 	}
-	$sql = "UPDATE marques SET 
+	$sql = "UPDATE category SET 
 	Statut='$statut'
-	where id_marques='$id'";
+	where category_id='$id'";
 	
    $req = mysqli_query($db,$sql) or die('Erreur SQL !'.$sql.'<br>'.mysql_error());
-		header('Location: ../../Liste-des-Marques.php');
+		header('Location: ../../Liste-des-dategories-produits.php');
 	
      
 ?>

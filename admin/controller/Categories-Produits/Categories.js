@@ -15,7 +15,7 @@ $(document).ready(function(){
     $('.userinfo').click(function(){
         var userid = $(this).data('id');
         $.ajax({
-            url: 'controller/Marques/popup-modification.php',
+            url: 'controller/Categories-Produits/popup-modification.php',
             type: 'post',
             data: {userid: userid},
             success: function(response){ 
@@ -29,7 +29,7 @@ $(document).ready(function(){
 $('.userinfos').click(function(){
 var userid = $(this).data('id');
     $.ajax({
-         url: 'controller/Marques/popup-suprimer.php',
+         url: 'controller/Categories-Produits/popup-suprimer.php',
          type: 'post',
         data: {userid: userid},
         success: function(response){ 
@@ -43,7 +43,7 @@ $(document).ready(function(){
 $('.userinfosstatut').click(function(){
 var userid = $(this).data('id');
 $.ajax({
-    url: 'controller/Marques/popup-statut.php',
+    url: 'controller/Categories-Produits/popup-statut.php',
     type: 'post',
     data: {userid: userid},
     success: function(response){ 
