@@ -11,10 +11,10 @@ while( $row = mysqli_fetch_array($result) ){
    
     $response .= '
                                             <input type="hidden" name="id" value="'.$row['category_id'].'" class="form-control">
-                                            <div id="alertemodif"></div>
+                                             
                                             <div class="col-12 text-center">
                                         <label for="inputEmail4" class="form-label">Nom de catégorie</label>
-                                        <input type="text" name="name_category" value="'.$row['name_category'].'" class="form-control" >
+                                        <input type="text" name="name_category" value="'.$row['name_category'].'" class="form-control" required >
                                             </div>
                                             <div class="col-12 text-center">
                                         <label for="product-images">Parent</label>
@@ -68,7 +68,7 @@ while( $row = mysqli_fetch_array($result) ){
                                             </div>
                                             <div class="col-12 text-center">
                                         <label for="inputEmail4" class="form-label">Titre de la balise Meta</label>
-                                        <input type="text" name="meta_title" value="'.$row['meta_title'].'" class="form-control" >
+                                        <input type="text" name="meta_title" value="'.$row['meta_title'].'" class="form-control" required>
                                             </div>
                                             <div class="col-12 text-center">
                                         <label for="inputEmail4" class="form-label">Description de la balise méta</label>

@@ -11,6 +11,19 @@ $(function(){
         });
     });
     });
+    $(function(){
+        $('#modif').click(function(){
+            var da = $('#myformemodif').serialize();
+            $.post('controller/Categories-Produits/controller-parent.php',da,function(data){
+                if(data == ""){
+                    $('#myformemodif').submit();
+                }
+            else {
+                $('#alertemodif').html(data);
+            }
+            });
+        });
+        });
 $(document).ready(function(){
     $('.userinfo').click(function(){
         var userid = $(this).data('id');
