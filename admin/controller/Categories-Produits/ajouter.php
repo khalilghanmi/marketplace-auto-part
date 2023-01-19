@@ -12,29 +12,24 @@ $description_category=$_POST['description_category'];
 $meta_title=$_POST['meta_title'];
 $meta_description=$_POST['meta_description'];
 $meta_keyword=$_POST['meta_keyword'];
-
-
-$sql = "SELECT * FROM category WHERE meta_title='$meta_title'";
-$req = mysqli_query($db,$sql) or die('Erreur SQL !'.$sql.'<br>'.mysql_error());
-$res = mysqli_num_rows($req);
-if($res!=0)   
-{
-    $s=1;
-    While ($data = mysqli_fetch_array($req)){
-        $meta_title=$meta_title.'-'.$s;
-        $sql = "SELECT * FROM category WHERE meta_title='$meta_title'";
-        $req = mysqli_query($db,$sql) or die('Erreur SQL !'.$sql.'<br>'.mysql_error());
-        $res = mysqli_num_rows($req);
+$test=false;
+$s=1;
+$meta_titles =$meta_title;
+While ($test == false){
+    $sql = "SELECT * FROM category WHERE meta_title='$meta_titles'";
+    $req = mysqli_query($db,$sql) or die('Erreur SQL !'.$sql.'<br>'.mysql_error());
+    $res = mysqli_num_rows($req);
+    if($res!=0)   
+    {
+     $meta_titles =$meta_title;
+     $meta_titles=$meta_titles.'-'.$s;
+     $s=$s+1;
     }
-    
+    else{
+        $meta_title=$meta_titles;
+        $test=true;
+    }
 }
-else{
-echo"";  
-}
-
-
-
-
 if(empty($parent)){
     
              $imgFile = $_FILES['category_image']['name'];
