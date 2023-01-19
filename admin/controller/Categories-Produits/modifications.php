@@ -13,7 +13,24 @@ $db = mysqli_connect('localhost', 'root', '','pieces-auto-tunisie');
                  $meta_title=$_POST['meta_title'];
                  $meta_description=$_POST['meta_description'];
                  $meta_keyword=$_POST['meta_keyword'];
-                 
+                 $test=false;
+$s=1;
+$meta_titles =$meta_title;
+While ($test == false){
+    $sql = "SELECT * FROM category WHERE meta_title='$meta_titles' AND category_id <> '$id' ";
+    $req = mysqli_query($db,$sql) or die('Erreur SQL !'.$sql.'<br>'.mysql_error());
+    $res = mysqli_num_rows($req);
+    if($res!=0)   
+    {
+     $meta_titles =$meta_title;
+     $meta_titles=$meta_titles.'-'.$s;
+     $s=$s+1;
+    }
+    else{
+        $meta_title=$meta_titles;
+        $test=true;
+    }
+}
                  $imgFile = $_FILES['category_image']['name'];
                  $tmp_dir = $_FILES['category_image']['tmp_name'];
                  $imgSize = $_FILES['category_image']['size'];
