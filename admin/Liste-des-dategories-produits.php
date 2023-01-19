@@ -84,7 +84,8 @@ function viewsubcat($categories,$concatsubcatigory)
                   <td class="text-center"><div class="avatar  me-3">
                   <img src="../'.$category['category_image'].'" alt="Avatar" width="64" height="64">
                   </div></td>
-                  <td class="text-center">'.$concatsubcatigorys.' > '.$category['name_category'].'</td>';
+                  <td class="text-center">'.$concatsubcatigorys.' > '.$category['name_category'].'</td>
+                  <td class="text-center">'.$category['meta_title'].'</td>';
                   
                 if($category['Statut'] == 1){
                     $html .='<td class="text-center"><span class="shadow-none badge badge-primary">activé</span></td>';
@@ -185,6 +186,7 @@ function viewsubcat($categories,$concatsubcatigory)
                                             <th class="text-center">Id</th>
                                             <th class="text-center">Image catégories</th>
                                             <th class="text-center">Nom catégories</th>
+                                            <th class="text-center">Meta title</th>
                                             <th class="text-center">Statut</th>
                                             <th class="text-center">Action</th>
                                         </tr>
@@ -198,7 +200,8 @@ function viewsubcat($categories,$concatsubcatigory)
            echo'<td class="text-center"><div class="avatar  me-3">
            <img src="../'.$category['category_image'].'" alt="Avatar" width="64" height="64">
            </div></td>
-           <td class="text-center">'.$category['name_category'].'</td>';
+           <td class="text-center">'.$category['name_category'].'</td>
+           <td class="text-center">'.$category['meta_title'].'</td>';
            $concatsubcatigory=$category['name_category'];
            if($category['Statut'] == 1){
                echo'<td class="text-center"><span class="shadow-none badge badge-primary">activé</span></td>';
