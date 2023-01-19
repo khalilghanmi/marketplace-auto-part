@@ -6,20 +6,37 @@ $db = mysqli_connect('localhost', 'root', '','pieces-auto-tunisie');
 			else{
             $statut=0;
 			}  
-                $id=$_POST['id'];
-                 $name_marques=$_POST['name_marques'];
-                 $imgFile = $_FILES['image_marques']['name'];
-                 $tmp_dir = $_FILES['image_marques']['tmp_name'];
-                $imgSize = $_FILES['image_marques']['size'];
+                 $id=$_POST['id'];
+                 $name_category=$_POST['name_category'];
+                 $parent=$_POST['parent'];
+                 $description_category=$_POST['description_category'];
+                 $meta_title=$_POST['meta_title'];
+                 $meta_description=$_POST['meta_description'];
+                 $meta_keyword=$_POST['meta_keyword'];
+                 
+                 $imgFile = $_FILES['category_image']['name'];
+                 $tmp_dir = $_FILES['category_image']['tmp_name'];
+                 $imgSize = $_FILES['category_image']['size'];
                 if(empty($imgFile)){
-                    $errMSG = "Please Select Image File.";
+                    $sql = "UPDATE category SET 
+                    name_category='$name_category',
+                    parent_id = '$parent',
+                    description_category='$description_category',
+                    meta_title = '$meta_title',
+                    meta_description='$meta_description',
+                    meta_keyword = '$meta_keyword',
+                    Statut='$statut'
+                    where category_id='$id'";
+                   $req = mysqli_query($db,$sql) or die('Erreur SQL !'.$sql.'<br>'.mysql_error());
+                    $successMSG = "new record succesfully inserted ...";
+                    header("refresh:0;../../Liste-des-dategories-produits.php");  
                 }
                 else
-                { $upload_dir = '../../../image/Marques/';
+                { $upload_dir = '../../../image/categories/';
                     $imgExt = strtolower(pathinfo($imgFile,PATHINFO_EXTENSION));
                     $valid_extensions = array('jpeg', 'jpg', 'png', 'gif', 'webp', 'svg');
                     //  $userpic = $khalilovic.rand(1,10000).".".$imgExt;
-                     $userpic = $name_marques.'_'.uniqid().".".$imgExt;
+                     $userpic = $name_category.'_'.uniqid().".".$imgExt;
                     if(in_array($imgExt, $valid_extensions)){			
                         // Check file size '5MB'
                         if($imgSize < 500000000000000)				{
@@ -32,22 +49,28 @@ $db = mysqli_connect('localhost', 'root', '','pieces-auto-tunisie');
                     else{
                         $errMSG = "Sorry, only JPG, JPEG, PNG , webp & GIF files are allowed.";		
                     }
-                }
                 $name_images='';		
-                $name_images.='image/Marques/';
+                $name_images.='image/categories/';
                 $name_images.=$userpic;
                 if(!isset($errMSG))
                 {
-                    $sql = "UPDATE marques SET 
-                    name_marques='$name_marques',
-                    image_marques = '$name_images',
+                    $sql = "UPDATE category SET 
+                    name_category='$name_category',
+                    parent_id = '$parent',
+                    category_image = '$name_images',
+                    description_category='$description_category',
+                    meta_title = '$meta_title',
+                    meta_description='$meta_description',
+                    meta_keyword = '$meta_keyword',
                     Statut='$statut'
-                    where id_marques='$id'";
+                    where category_id='$id'";
                    $req = mysqli_query($db,$sql) or die('Erreur SQL !'.$sql.'<br>'.mysql_error());
                     $successMSG = "new record succesfully inserted ...";
-                    header("refresh:0;../../Liste-des-Marques.php");  
+                    header("refresh:5;../../Liste-des-dategories-produits.php");  
                  
                 }
+                }
+                
             
      
 ?>
