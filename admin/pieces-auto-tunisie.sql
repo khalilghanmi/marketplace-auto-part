@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : jeu. 19 jan. 2023 à 20:57
+-- Généré le : ven. 20 jan. 2023 à 20:47
 -- Version du serveur : 10.4.24-MariaDB
 -- Version de PHP : 7.4.29
 
@@ -29,7 +29,7 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `attributes` (
   `id_attributes` int(11) NOT NULL,
-  `nom_attributes` varchar(150) NOT NULL,
+  `nom_attributes` varchar(150) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
   `Statut` int(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -53,12 +53,12 @@ INSERT INTO `attributes` (`id_attributes`, `nom_attributes`, `Statut`) VALUES
 CREATE TABLE `category` (
   `category_id` int(11) NOT NULL,
   `parent_id` int(111) NOT NULL,
-  `name_category` varchar(255) CHARACTER SET latin1 COLLATE latin1_bin NOT NULL,
-  `description_category` text CHARACTER SET latin1 COLLATE latin1_bin NOT NULL,
-  `category_image` varchar(255) CHARACTER SET latin1 COLLATE latin1_bin NOT NULL,
-  `meta_title` varchar(255) CHARACTER SET latin1 COLLATE latin1_bin NOT NULL,
-  `meta_description` varchar(255) CHARACTER SET latin1 COLLATE latin1_bin NOT NULL,
-  `meta_keyword` varchar(255) CHARACTER SET latin1 COLLATE latin1_bin NOT NULL,
+  `name_category` varchar(255) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
+  `description_category` text CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
+  `category_image` varchar(255) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
+  `meta_title` varchar(255) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
+  `meta_description` varchar(255) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
+  `meta_keyword` varchar(255) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
   `Statut` int(1) NOT NULL,
   `created_at` datetime DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -68,14 +68,15 @@ CREATE TABLE `category` (
 --
 
 INSERT INTO `category` (`category_id`, `parent_id`, `name_category`, `description_category`, `category_image`, `meta_title`, `meta_description`, `meta_keyword`, `Statut`, `created_at`) VALUES
-(2, 0, 'computer', '', 'image/categories/computer_63c5793e94b6e.webp', 'computer', '', '', 0, '2023-01-16 00:00:00'),
+(2, 0, 'computer', '', 'image/categories/computer_63c5793e94b6e.webp', 'computer', '', '', 1, '2023-01-16 00:00:00'),
 (21, 2, 'samsung', '', 'image/categories/samsung_63c82b057bb86.webp', 'samsung', '', '', 1, '2023-01-18 00:00:00'),
 (22, 2, 'dell', '', 'image/categories/dell_63c82b175eb56.png', 'dell', '', '', 1, '2023-01-18 00:00:00'),
 (23, 0, 'acer', '', 'image/categories/acer_63c97f07da30f.png', 'acer', '', '', 0, '2023-01-18 00:00:00'),
 (24, 22, 'inspiron1150', '', 'image/categories/inspiron1150_63c82fdc53781.png', 'inspiron1150', '', '', 1, '2023-01-18 00:00:00'),
 (25, 24, '2011', '', 'image/categories/2011_63c83521eed20.png', '2011', '', '', 1, '2023-01-18 00:00:00'),
-(26, 0, 'changé catégories', '', 'image/categories/changé catégories_63c838ae272d7.png', 'changé catégories', '', '', 1, '2023-01-18 00:00:00'),
-(36, 0, 'computer', '', 'image/categories/computer_63c99d276de9b.webp', 'computer-1', '', '', 1, '2023-01-19 00:00:00');
+(26, 0, 'chang? cat?gories', '', 'image/categories/chang? cat?gories_63c838ae272d7.png', 'chang? cat?gories', '', '', 1, '2023-01-18 00:00:00'),
+(36, 0, 'computer', '', 'image/categories/computer_63c99d276de9b.webp', 'computer-1', '', '', 1, '2023-01-19 00:00:00'),
+(37, 0, 'computer', '', 'image/categories/computer_63cad451a6fbb.png', 'computer-2', '', '', 1, '2023-01-20 00:00:00');
 
 -- --------------------------------------------------------
 
@@ -85,17 +86,17 @@ INSERT INTO `category` (`category_id`, `parent_id`, `name_category`, `descriptio
 
 CREATE TABLE `customers` (
   `id_customers` int(11) NOT NULL,
-  `nom` varchar(32) NOT NULL,
-  `prenom` varchar(32) NOT NULL,
-  `email` varchar(96) NOT NULL,
-  `civilite` varchar(6) NOT NULL,
+  `nom` varchar(32) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
+  `prenom` varchar(32) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
+  `email` varchar(96) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
+  `civilite` varchar(6) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
   `date_n` date NOT NULL,
-  `adresse` varchar(80) NOT NULL,
+  `adresse` varchar(80) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
   `code_p` int(4) NOT NULL,
-  `mobile` varchar(32) NOT NULL,
+  `mobile` varchar(32) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
   `Statut` int(1) NOT NULL,
-  `password` varchar(40) NOT NULL,
-  `cart` text NOT NULL,
+  `password` varchar(40) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
+  `cart` text CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
   `date_added` date NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -118,8 +119,8 @@ INSERT INTO `customers` (`id_customers`, `nom`, `prenom`, `email`, `civilite`, `
 
 CREATE TABLE `marques` (
   `id_marques` int(11) NOT NULL,
-  `name_marques` varchar(64) CHARACTER SET armscii8 DEFAULT NULL,
-  `image_marques` varchar(255) CHARACTER SET armscii8 NOT NULL,
+  `name_marques` varchar(64) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `image_marques` varchar(255) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
   `Statut` int(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -179,7 +180,7 @@ ALTER TABLE `attributes`
 -- AUTO_INCREMENT pour la table `category`
 --
 ALTER TABLE `category`
-  MODIFY `category_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=37;
+  MODIFY `category_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=38;
 
 --
 -- AUTO_INCREMENT pour la table `customers`

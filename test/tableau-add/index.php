@@ -17,6 +17,24 @@ $(document).ready(function(){
     $("tr").remove();
   });
 });
+$(document).ready(function(){ 
+  $("#insert").click(function(){
+    $('#myformemodif').submit();
+  });
+});
+
+
+$(function(){
+        $('#modif').click(function(){
+            var da = $('#myformemodif').serialize();
+            $.post('affichage.php',da,function(data){
+                
+                $('#alertemodif').html(data);
+           
+            });
+        });
+        });
+
 </script>
 </head>
 <body>
@@ -29,24 +47,39 @@ $(document).ready(function(){
   <li>List item 2</li>
   <li>List item 3</li>
 </ol>
-<form action="affichage.php" method="post">
-<table class="testing" border="2px" width="100%" >
-    <tr><form action="affichage.php" method="post">
-    <td><input type="text" name="nom"></td>
+<!-- <form action="third.php" method="get">
     
+    Red     <input type="checkbox" name="color[]" id="color" value="Red">
+    Green   <input type="checkbox" name="color[]" id="color" value="Green">
+    Blue    <input type="checkbox" name="color[]" id="color" value="Blue">
+    Cyan    <input type="checkbox" name="color[]" id="color" value="Cyan">
+    Magenta <input type="checkbox" name="color[]" id="color" value="Magenta">
+    Yellow  <input type="checkbox" name="color[]" id="color" value="Yellow">
+    Black   <input type="checkbox" name="color[]" id="color" value="Black">
+     
+    <input type="submit" value="submit">
+</form> -->
+ 
+<form action="third.php" method="get">
+<table class="testing" border="2px" width="100%" >
+    <tr>
+    <td><input type="text" name="nom[]"></td>
+    </form>
     </tr>
     <tr>
      
-    <td><form action="affichage.php" method="post"><input type="text" name="nom"></td>
+    <td><input type="text" name="nom[]"></td>
     </tr>
+     
     <tr>
      
-    <td><form action="affichage.php" method="post"><input type="text" name="nom"></td>
+    <td><input type="text" name="nom[]"></td>
+   
     </tr>
 </table>
-<button id="delateline">delate text</button>
-<button id="btn2">Append list items</button>
-<input type="submit" value="test">
+<input type="submit"   value="test"> 
 </form>
+  
+
 </body>
 </html>
