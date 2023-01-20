@@ -9,7 +9,7 @@ $(document).ready(function(){
   });
 
   $("#btn2").click(function(){
-    $("table").prepend("<tr><td>khalil</td><td>ghanmi</td><td>29</td><td>tunis</td></tr>");
+    $(".testing").prepend("<tr><td>khalil</td><td>ghanmi</td><td>29</td><td>tunis</td></tr>");
   });
 });
 </script>
@@ -24,7 +24,7 @@ $(document).ready(function(){
   <li>List item 2</li>
   <li>List item 3</li>
 </ol>
-<table border="2px" width="100%" >
+<table class="testing" border="2px" width="100%" >
     <tr>
         <td>khalil</td>
         <td>khalil</td>
