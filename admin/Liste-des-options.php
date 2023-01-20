@@ -173,8 +173,19 @@ $res = mysqli_num_rows($req);
 <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
 <script type="text/javascript" src="controller/Liste-des-options/options.js"></script>
 <script>
-    
-
+$(document).ready(function(){ 
+    $("#addline").click(function(){
+      $(".addlinetab").prepend('<tr><td><input type="text" name="nom"class="form-control"></td><td><input class="multiple-file-upload" type="file" name="category_image" accept="image/*"  /></td><td><button type="button" id="delateline" class="btn btn-danger btnDelete" ><svg style="color: #fff;" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x-circle"><circle cx="12" cy="12" r="10"></circle><line x1="15" y1="9" x2="9" y2="15"></line><line x1="9" y1="9" x2="15" y2="15"></line></svg></button></td></tr>');
+    });
+  });
+  
+  $(document).ready(function(){
+  
+  $("#tbUser").on('click','.btnDelete',function(){
+        $(this).closest('tr').remove();
+      });
+  
+  });    
 $(document).ready(function(){
       $("select.seletors").change(function(){
         var liste, texte;
@@ -211,16 +222,9 @@ $(document).ready(function(){
         }
         
       });
-      
+     
 });
-
-$(document).ready(function(){
-
-$("#tbUser").on('click','.btnDelete',function(){
-      $(this).closest('tr').remove();
-    });
-
-});
+ 
 </script>
 </body>
 </html>
