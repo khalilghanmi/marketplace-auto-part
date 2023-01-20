@@ -31,7 +31,21 @@ $(document).ready(function(){
         texte = liste.options[liste.selectedIndex].text;
         alert("Vous avez sélectionné le langage : " + texte);
         if(texte=='Select' || texte=='Radio' || texte=='Checkbox' ){
-          $('#affich').html('<form action="third.php" method="get"><table class="testing" border="2px" width="100%" ><tr><td><input type="text" name="nom[]"></td></form></tr><tr><td><input type="text" name="nom[]"></td></tr><tr><td><input type="text" name="nom[]"></td></tr></table><input type="submit"   value="test"></form><button id="btn2">ajout</button>');
+          $('#affich').html(`
+          <form action="third.php" method="get">
+          <table class="testing" border="2px" width="100%" >
+          <tr>
+          <td><input type="text" name="nom[]"></td>
+          
+          </tr>
+          <tr>
+          <td><input type="text" name="nom[]"></td>
+          </tr>
+          <tr>
+          <td><input type="text" name="nom[]"></td>
+          </tr>
+          </table>
+          <input type="submit"   value="test"></form><button id="btn2">ajout</button>`);
         }
         else{
           $('#affich').html('');

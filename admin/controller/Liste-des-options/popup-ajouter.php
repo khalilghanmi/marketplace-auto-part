@@ -16,8 +16,8 @@
                                             <input type="text" name="nom"class="form-control">
                                         </div>
                                         <div class="col-md-12">
-                                            <label for="inputPassword4" class="form-label">Type</label>
-                                            <select id="input-tags" name="parent" class="form-control" placeholder="Select a person..." autocomplete="off">
+                                            <label for="inputPassword4"  class="form-label ">Type</label>
+                                            <select id="liste" name="parent" class="form-control seletors" placeholder="Select a person..." autocomplete="off">
                                             <optgroup label="Choose">
                                             <option value="select">Select</option>
                                             <option value="radio">Radio</option>
@@ -38,29 +38,9 @@
                                             </select>        
                                         </div>
                                          
-
-                                        <fieldset style="display: block;">
-                                            <legend>Option Values</legend>
-                                            <table id="tbUser"  class="table dt-table-hover table-bordered addlinetab" style="width:100%">
-                                            <thead>
-                                                <tr>
-                                                    <th class="text-left required">Option Value Name</th>
-                                                    <th class="text-center">Image Options</th>
-                                                    <th class="text-center">Sort Order</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody> 
-                                                <tr>
-                                                <td colspan="2"></td>
-                                                <td class="text-center"><button type="button" id="addline"  class="btn btn-primary">
-                                                +
-                                                </button></td>
-                                                </tr>
-                                            </tbody>
-                                            </table>
-                                        </fieldset>
-
-
+                                        <div class="col-md-12">
+                                        <div id='affich'></div> 
+                                        </div>
 
                                         <div class="col-2">
                                         <a href="#" class="btn btn-light-dark" data-bs-dismiss="modal">Annuler</a>
