@@ -103,7 +103,11 @@
                             </li>
                             <li>
                                 <a href="./Créer-des-produits.php"> Créer des produits </a>
-                            </li>                            
+                            </li> 
+                            
+                            <li>
+                                <a href="./Liste-des-options.php"> Liste des options </a>
+                            </li>
                             <li>
                                 <a href="./Liste-des-dategories-produits.php"> Liste des dategories </a>
                             </li> 
