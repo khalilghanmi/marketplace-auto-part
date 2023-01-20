@@ -34,11 +34,46 @@ $(function(){
             });
         });
         });
+       
+
+        $(document).ready(function(){
+      $("select.seletors").change(function(){
+        var liste, texte;
+        liste = document.getElementById("liste");
+        texte = liste.options[liste.selectedIndex].text;
+        alert("Vous avez sélectionné le langage : " + texte);
+      });
+    });
+
+    
 
 </script>
 </head>
 <body>
+  
+<form>
+<select   name="parent" id="liste" class="form-control seletors"  autocomplete="off">
+                                            <optgroup label="Choose">
+                                            <option value="select">Select</option>
+                                            <option value="radio">Radio</option>
+                                            <option value="checkbox">Checkbox</option>
+                                            </optgroup>
+                                            <optgroup label="Input">
+                                            <option value="text">Text</option>
+                                            <option value="textarea">Textarea</option>
+                                            </optgroup>
+                                            <optgroup label="File">
+                                            <option value="file">File</option>
+                                            </optgroup>
+                                            <optgroup label="Date">
+                                            <option value="date">Date</option>
+                                            <option value="time">Time</option>
+                                            <option value="datetime">Date &amp; Time</option>
+                                            </optgroup>
+                                            </select> 
 
+  </form>
+    <div id='affich'></div>                                        
 <p>This is a paragraph.</p>
 <p>This is another paragraph.</p>
 
