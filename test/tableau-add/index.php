@@ -9,7 +9,12 @@ $(document).ready(function(){
   });
 
   $("#btn2").click(function(){
-    $(".testing").prepend("<tr><td>khalil</td><td>ghanmi</td><td>29</td><td>tunis</td></tr>");
+    $(".testing").prepend("<tr><td>khalil</td><td>ghanmi</td><td>29</td><td><button id='delateline'>delate text</button></td></tr>");
+  });
+});
+$(document).ready(function(){ 
+  $("#delateline").click(function(){
+    $("tr").remove();
   });
 });
 </script>
@@ -24,28 +29,30 @@ $(document).ready(function(){
   <li>List item 2</li>
   <li>List item 3</li>
 </ol>
+<form action="affichage.php" method="post">
 <table class="testing" border="2px" width="100%" >
     <tr>
-        <td>khalil</td>
-        <td>khalil</td>
-        <td>khalil</td>
-        <td>khalil</td>
+    <td><input type="text" name="nom"></td>
+    <td><input type="text" name="nom"></td>
+    <td><input type="text" name="nom"></td>
+    <td><input type="text" name="nom"></td>
     </tr>
     <tr>
-        <td>khalil</td>
-        <td>khalil</td>
-        <td>khalil</td>
-        <td>khalil</td>
+    <td><input type="text" name="nom"></td>
+    <td><input type="text" name="nom"></td>
+    <td><input type="text" name="nom"></td>
+    <td><input type="text" name="nom"></td>
     </tr>
     <tr>
-        <td>khalil</td>
-        <td>khalil</td>
-        <td>khalil</td>
-        <td>khalil</td>
+    <td><input type="text" name="nom"></td>
+    <td><input type="text" name="nom"></td>
+    <td><input type="text" name="nom"></td>
+    <td><input type="text" name="nom"></td>
     </tr>
 </table>
-<button id="btn1">Append text</button>
+<button id="delateline">delate text</button>
 <button id="btn2">Append list items</button>
-
+<input type="submit" value="test">
+</form>
 </body>
 </html>
