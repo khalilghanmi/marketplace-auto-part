@@ -31,23 +31,17 @@ $(document).ready(function(){
 </ol>
 <form action="affichage.php" method="post">
 <table class="testing" border="2px" width="100%" >
-    <tr>
+    <tr><form action="affichage.php" method="post">
     <td><input type="text" name="nom"></td>
-    <td><input type="text" name="nom"></td>
-    <td><input type="text" name="nom"></td>
-    <td><input type="text" name="nom"></td>
+    
     </tr>
     <tr>
-    <td><input type="text" name="nom"></td>
-    <td><input type="text" name="nom"></td>
-    <td><input type="text" name="nom"></td>
-    <td><input type="text" name="nom"></td>
+     
+    <td><form action="affichage.php" method="post"><input type="text" name="nom"></td>
     </tr>
     <tr>
-    <td><input type="text" name="nom"></td>
-    <td><input type="text" name="nom"></td>
-    <td><input type="text" name="nom"></td>
-    <td><input type="text" name="nom"></td>
+     
+    <td><form action="affichage.php" method="post"><input type="text" name="nom"></td>
     </tr>
 </table>
 <button id="delateline">delate text</button>
