@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : ven. 20 jan. 2023 à 20:47
+-- Généré le : ven. 27 jan. 2023 à 21:23
 -- Version du serveur : 10.4.24-MariaDB
 -- Version de PHP : 7.4.29
 
@@ -138,6 +138,22 @@ INSERT INTO `marques` (`id_marques`, `name_marques`, `image_marques`, `Statut`) 
 (9, 'alt', 'image/Marques/alt_63c02587902c1.png', 1),
 (10, 'Mecaniki', 'image/Marques/Mecaniki_63c033e6f391c.svg', 0);
 
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `options`
+--
+
+CREATE TABLE `options` (
+  `id_options` int(11) NOT NULL,
+  `id_value_options` int(100) NOT NULL,
+  `name_options` varchar(30) COLLATE utf8_bin NOT NULL,
+  `type_options` varchar(100) COLLATE utf8_bin NOT NULL,
+  `name_value_options` varchar(100) COLLATE utf8_bin NOT NULL,
+  `image_options` varchar(255) COLLATE utf8_bin NOT NULL,
+  `Statut` int(1) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+
 --
 -- Index pour les tables déchargées
 --
@@ -167,6 +183,12 @@ ALTER TABLE `marques`
   ADD PRIMARY KEY (`id_marques`);
 
 --
+-- Index pour la table `options`
+--
+ALTER TABLE `options`
+  ADD PRIMARY KEY (`id_options`);
+
+--
 -- AUTO_INCREMENT pour les tables déchargées
 --
 
@@ -193,6 +215,12 @@ ALTER TABLE `customers`
 --
 ALTER TABLE `marques`
   MODIFY `id_marques` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+
+--
+-- AUTO_INCREMENT pour la table `options`
+--
+ALTER TABLE `options`
+  MODIFY `id_options` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
