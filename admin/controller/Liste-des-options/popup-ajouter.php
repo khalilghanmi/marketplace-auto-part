@@ -10,14 +10,15 @@
                                             </div>
                                             <div class="body" style="margin: 30px;">
                                             <div id='alerte'></div>
-                                            <form class="row g-3" id='myforme'>
+                                            <form class="row g-3" id='myforme'  method="post" action="controller/Liste-des-options/ajouter.php"  enctype="multipart/form-data">
                                             <div class="col-md-12">
                                             <label for="inputEmail4" class="form-label">Option Name</label>
-                                            <input type="text" name="nom"class="form-control">
+                                            <input type="text" name="name_options"class="form-control">
                                         </div>
                                         <div class="col-md-12">
                                             <label for="inputPassword4"  class="form-label ">Type</label>
-                                            <select id="liste" name="parent" class="form-control seletors" placeholder="Select a person..." autocomplete="off">
+                                            <select id="liste" name="type_options" class="form-control seletors" placeholder="Select a person..." autocomplete="off">
+                                            <option value="">Select type option...</option>
                                             <optgroup label="Choose">
                                             <option value="select">Select</option>
                                             <option value="radio">Radio</option>
