@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : ven. 27 jan. 2023 à 21:23
+-- Généré le : dim. 29 jan. 2023 à 19:17
 -- Version du serveur : 10.4.24-MariaDB
 -- Version de PHP : 7.4.29
 
@@ -155,6 +155,23 @@ CREATE TABLE `options` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 --
+-- Déchargement des données de la table `options`
+--
+
+INSERT INTO `options` (`id_options`, `id_value_options`, `name_options`, `type_options`, `name_value_options`, `image_options`, `Statut`) VALUES
+(15, 0, 'checkbox', 'select', '', '', 0),
+(16, 0, 'checkboxfn', 'select', '', '', 0),
+(20, 0, 'Select', 'select', '', '', 1),
+(21, 20, 'Select', 'select', 'xl', 'image/options/xl_63d6b1e25c6a3.png', 1),
+(22, 20, 'Select', 'select', 'xxl', 'image/options/xxl_63d6b1e26a036.png', 1),
+(23, 20, 'Select', 'select', 'xxxl', 'image/options/xxxl_63d6b1e271f3b.png', 1),
+(24, 0, 'Les Couleur', 'checkbox', '', '', 1),
+(25, 24, 'Les Couleur', 'checkbox', 'red', 'image/options/red_63d6b232c139e.webp', 1),
+(26, 24, 'Les Couleur', 'checkbox', 'green', 'image/options/green_63d6b232c6b7a.png', 1),
+(27, 24, 'Les Couleur', 'checkbox', 'yellow', 'image/options/yellow_63d6b232d171d.jpg', 1),
+(28, 24, 'Les Couleur', 'checkbox', 'blue', 'image/options/blue_63d6b232dc4d4.png', 1);
+
+--
 -- Index pour les tables déchargées
 --
 
@@ -220,7 +237,7 @@ ALTER TABLE `marques`
 -- AUTO_INCREMENT pour la table `options`
 --
 ALTER TABLE `options`
-  MODIFY `id_options` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id_options` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
