@@ -3,7 +3,7 @@ include '../connection.php';
 
 $userid = $_POST['userid'];
 
-$sql = "select * from customers where id_customers=".$userid;
+$sql = "select * from options where id_options=".$userid;
 $result = mysqli_query($db,$sql);
 
 $response = "";
@@ -18,9 +18,9 @@ while( $row = mysqli_fetch_array($result) ){
                                     if ($row['Statut']=='1'){$response .= 'désactiver ';}
                                     else {
                                         $response .= 'activer';
-                                    }$response .= ' statut <span class="shadow-none badge badge-danger">'.$row['nom'].' '.$row['prenom'].'</span> ? </button></div>
-                                            <form action="controller/Clients/statut.php" method="post" class="row g-3">
-                                            <input type="hidden" name="id" value="'.$row['id_customers'].'" class="form-control">
+                                    }$response .= ' statut <span class="shadow-none badge badge-danger">'.$row['name_options'].' et '.$row['type_options'].'</span> ? </button></div>
+                                            <form action="controller/Liste-des-options/statut.php" method="post" class="row g-3">
+                                            <input type="hidden" name="id" value="'.$row['id_options'].'" class="form-control">
                                             <input type="hidden" name="statut" value="'.$row['Statut'].'" class="form-control">
                                             </div>
                                             <div class="modal-footer">

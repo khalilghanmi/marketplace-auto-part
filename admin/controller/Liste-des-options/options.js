@@ -17,7 +17,7 @@ $(document).ready(function(){
 $('.userinfos').click(function(){
 var userid = $(this).data('id');
     $.ajax({
-         url: 'controller/Clients/popup-suprimer.php',
+         url: 'controller/Liste-des-options/popup-suprimer.php',
          type: 'post',
         data: {userid: userid},
         success: function(response){ 
@@ -31,7 +31,7 @@ $(document).ready(function(){
 $('.userinfosstatut').click(function(){
 var userid = $(this).data('id');
 $.ajax({
-    url: 'controller/Clients/popup-statut.php',
+    url: 'controller/Liste-des-options/popup-statut.php',
     type: 'post',
     data: {userid: userid},
     success: function(response){ 
