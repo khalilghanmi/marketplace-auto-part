@@ -3,87 +3,82 @@ include '../connection.php';
 
 $userid = $_POST['userid'];
 
-$sql = "select * from customers where id_customers=".$userid;
+$sql = "select * from options where id_options =".$userid;
 $result = mysqli_query($db,$sql);
 
 $response = "";
 while( $row = mysqli_fetch_array($result) ){
    
     $response .= '
-    
-    <form class="row g-3" id="myformemodif">
-                                            <input type="hidden" name="id" value="'.$row['id_customers'].'" class="form-control">
-                                            <div id="alertemodif"></div>
-                                            <div class="col-md-6">
-                                            <label for="inputEmail4" class="form-label">Nom</label>
-                                            <input type="text" name="nom" value="'.$row['nom'].'" class="form-control">
-                                            </div>
-                                        <div class="col-md-6">
-                                            <label for="inputPassword4" class="form-label">Prénom</label>
-                                            <input type="text" name="prenom" value="'.$row['prenom'].'" class="form-control">
+    <div class="body" style="margin: 30px;">
+                                            <div ></div>
+                                            <form class="row g-3"   method="post" action="controller/Liste-des-options/ajouter.php"  enctype="multipart/form-data">
+                                            <div class="col-md-12">
+                                            <label for="inputEmail4" class="form-label">Option Name</label>
+                                            <input type="text" name="name_options" value="'.$row['name_options'].'" class="form-control">
                                         </div>
-                                        <div class="col-md-6">
-                                            <label for="inputEmail4" class="form-label">Email</label>
-                                            <input type="email" name="email" value="'.$row['email'].'" class="form-control" id="inputEmail4">
-                                        </div>
-                                        <div class="col-md-6">
-                                            <label for="inputState" class="form-label">Mobile</label>
-                                            <input type="phone"  name="mobile" value="'.$row['mobile'].'" class="form-control" id="inputCity">
-                                        </div>
-                                        <div class="col-12">
-                                            <label for="inputAddress" class="form-label">Addresse</label>
-                                            <input type="text" name="adresse" value="'.$row['adresse'].'" class="form-control" id="inputAddress" placeholder="1234 Main St">
-                                        </div>
-                                        <div class="col-md-6">
-                                            <label for="inputCity" class="form-label">Code Postale</label>
-                                            <input type="number" name="code_p" value="'.$row['code_p'].'" class="form-control" id="inputCity">
-                                        </div>
-                                        <div class="col-md-6">
-                                            <label for="inputdatenessance" class="form-label">Date de naissance</label>
-                                            <input type="date" name="date_n" value="'.$row['date_n'].'" class="form-control">
-                                        </div>
-                                        <div class="col-md-6">
-                                        <label for="inputCivilité" class="form-label">Civilité</label><br>
-                                        <div class="form-check form-check-primary form-check-inline">
-                                            <input class="form-check-input" type="radio"';
-                                             if ($row['civilite']=='homme'){$response .= 'checked=""';}  
-                                             $response .= ' value="homme" name="civilite" id="form-check-radio-primary" >
-                                             <label class="form-check-label" for="form-check-radio-primary">
-                                               Homme
-                                             </label>
+                                        <div class="col-md-12">
+                                            <label for="inputPassword4"  class="form-label ">Type</label>
+                                            <select  name="type_options" class="form-control seletors" placeholder="Select a person..." autocomplete="off">
+                                            <option value="'.$row['type_options'].'">'.$row['type_options'].'</option>
+                                            </select>
+                                            ';
+                                            
+                                           if($row['type_options']=="checkbox" || $row['type_options']=="radio" || $row['type_options']=="select"){
+                                            $response .= '<fieldset style="display: block;">
+                                            <legend>Option Values</legend>
+                                            <table id="tbUser"  class="table dt-table-hover table-bordered addlinetab" style="width:100%">
+                                            <thead>
+                                                <tr>
+                                                    <th class="text-left required">Option Value Name</th>
+                                                    <th class="text-center">Image Options</th>
+                                                    <th class="text-center">Sort Order</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>';
+                                            $sql = "select * from options where id_value_options =".$userid;
+                                            $req = mysqli_query($db,$sql) or die('Erreur SQL !'.$sql.'<br>'.mysql_error());
+                                            $res = mysqli_num_rows($req);
+                                            if($res!=0){
+                                            While ($data = mysqli_fetch_array($req)){
+                                                $response .= '<tr>
+                                                <td>
+                                                    <input type="text" name="name_value_options[]" value="'.$data['name_value_options'].'" class="form-control"></td>
+                                                    <td><input class="multiple-file-upload" type="file" name="image_options[]" accept="image/*"  />
+                                                </td>
+                                                <td><button type="button" id="delateline" class="btn btn-danger btnDelete" >
+                                                        <svg style="color: #fff;" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x-circle"><circle cx="12" cy="12" r="10"></circle><line x1="15" y1="9" x2="9" y2="15"></line><line x1="9" y1="9" x2="15" y2="15"></line></svg></button>
+                                                </td>
+                                            </tr>
+                                                ';
+                                            }
+                                    
+                                            }
+                                                $response .= '</tbody>
+                                            </table>
+                                        </fieldset>
+                                            
+                                            ';
+
+                                        }
+                                            $response .= '  </div>
+                                         
+                                        <div class="col-md-12">
+                                        <div  ></div> 
                                         </div>
 
-                                        <div class="form-check form-check-info form-check-inline">
-                                         <input class="form-check-input" type="radio"';
-                                         if ($row['civilite']=='femme'){$response .= 'checked=""';}
-                                         $response .= ' value="femme" name="civilite" id="form-check-radio-info">
-                                             <label class="form-check-label" for="form-check-radio-info">
-                                                Femme
-                                             </label>
+                                        <div class="col-2">
+                                        <a href="#" class="btn btn-light-dark" data-bs-dismiss="modal">Annuler</a>
                                         </div>
-                  
+                                        <div class="col-2">          
+                                                                       
+                                        <a href="#" class="btn btn-primary"  >Enregistrer</a>
                                         </div>
-                                        
-                                        
-                                        
-                                        <div class="col-6">
-                                        <label for="inputClients" class="form-label">Statut Client</label><br>
-                                            <div class="form-check">
-                                            <div class="form-check form-switch form-check-inline">
-                                            <input class="form-check-input" type="checkbox"';
-                                            if ($row['Statut']=='1'){$response .= ' checked';}
-                                            $response .= ' name="statut" role="switch" id="flexSwitchCheckChecked" >
-                                            <label class="form-check-label" for="flexSwitchCheckChecked">Statut</label>
+                                    </form>
+
                                             </div>
-                                            </div>
-                                        </div>
-                                       
-                                    
-    
-    
-    ';
+     ';
 
 }
 
 echo $response;
-exit;

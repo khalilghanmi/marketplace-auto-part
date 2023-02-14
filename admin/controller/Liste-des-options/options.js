@@ -3,7 +3,7 @@ $(document).ready(function(){
     $('.userinfo').click(function(){
         var userid = $(this).data('id');
         $.ajax({
-            url: 'controller/Clients/popup-modification.php',
+            url: 'controller/Liste-des-options/popup-modification.php',
             type: 'post',
             data: {userid: userid},
             success: function(response){ 
