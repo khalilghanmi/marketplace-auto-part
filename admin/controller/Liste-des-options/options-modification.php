@@ -371,7 +371,7 @@ $data = mysqli_fetch_array($req);
                                         </div>
 
                                         <div class="col-2">
-                                        <a href="#" class="btn btn-light-dark" data-bs-dismiss="modal">Annuler</a>
+                                        <a href="../../Liste-des-options.php" class="btn btn-light-dark">Retour</a>
                                         </div>
                                         <div class="col-3">          
                                                                        
