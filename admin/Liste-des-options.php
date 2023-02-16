@@ -90,7 +90,10 @@ $res = mysqli_num_rows($req);
                                     }
                                     echo'<td class="text-center">
                                     <div class="btn-group">
-                                        <button class="btn btn-dark btn-sm userinfo " data-bs-target=".bd-example-modal-lg" data-id="'.$data['id_options'].'" >Modifier</button>
+                                        <form action="controller/Liste-des-options/options-modification.php" method="post" class="row g-3">
+                                        <input type="hidden" name="id_options" value="'.$data['id_options'].'"\>
+                                        <button class="btn btn-dark btn-sm userinfo " type="submit" data-bs-target=".bd-example-modal-lg" >Modifier</button>
+                                        </form>
                                         <button type="button" class="btn btn-dark btn-sm dropdown-toggle dropdown-toggle-split" id="dropdownMenuReference1" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-reference="parent">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
                                         </button>
@@ -174,19 +177,19 @@ $res = mysqli_num_rows($req);
 <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
 <script type="text/javascript" src="controller/Liste-des-options/options.js"></script>
 <script>
-$(document).ready(function(){ 
-    $("#addline").click(function(){
-      $(".addlinetab").prepend('<tr><td><input type="text" name="nom"class="form-control"></td><td><input class="multiple-file-upload" type="file" name="image_options" accept="image/*"  /></td><td><button type="button" id="delateline" class="btn btn-danger btnDelete" ><svg style="color: #fff;" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x-circle"><circle cx="12" cy="12" r="10"></circle><line x1="15" y1="9" x2="9" y2="15"></line><line x1="9" y1="9" x2="15" y2="15"></line></svg></button></td></tr>');
-    });
-  });
+// $(document).ready(function(){ 
+//     $("#addline").click(function(){
+//       $(".addlinetab").prepend('<tr><td><input type="text" name="nom"class="form-control"></td><td><input class="multiple-file-upload" type="file" name="image_options" accept="image/*"  /></td><td><button type="button" id="delateline" class="btn btn-danger btnDelete" ><svg style="color: #fff;" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x-circle"><circle cx="12" cy="12" r="10"></circle><line x1="15" y1="9" x2="9" y2="15"></line><line x1="9" y1="9" x2="15" y2="15"></line></svg></button></td></tr>');
+//     });
+//   });
   
-  $(document).ready(function(){
+//   $(document).ready(function(){
   
-  $("#tbUser").on('click','.btnDelete',function(){
-        $(this).closest('tr').remove();
-      });
+//   $("#tbUser").on('click','.btnDelete',function(){
+//         $(this).closest('tr').remove();
+//       });
   
-  });    
+//   });    
 $(document).ready(function(){
       $("select.seletors").change(function(){
         var liste, texte;
