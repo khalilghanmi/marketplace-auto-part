@@ -31,14 +31,14 @@ $date_added=date('y-m-d');
                     $file_op = $imgFile[$i] ?? '';
                     $tmp_dir_op = $tmp_dir[$i] ?? '';
                     $imgSize_op = $imgSize[$i] ?? '';
- 
-                    if(empty($file_op)){
+                    if(empty($file_op) && empty($name_vp)){
+                      
+                    } 
+                    elseif(empty($file_op)){
                     
                     $name_image_finales='image/options/defaults.png';
                     $sql = "INSERT  INTO options VALUES ( '', '$id_values', '$name_options','$type_options','$name_vp','$name_image_finales','$statut')";
                     $req = mysqli_query($db,$sql) or die('Erreur SQL !'.$sql.'<br>'.mysql_error());
-                    
-                    
                     }
                     else
                     { 

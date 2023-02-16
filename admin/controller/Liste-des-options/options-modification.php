@@ -45,7 +45,7 @@ $data = mysqli_fetch_array($req);
                 <div class="navbar-nav theme-brand flex-row  text-center">
                     <div class="nav-logo">
                         <div class="nav-item theme-logo">
-                        <a href="./index.php">
+                        <a href="../../index.php">
                                 <img src="../../../src/assets/img/logo.svg" class="navbar-logo" alt="logo">
                             </a>
                         </div>
@@ -70,10 +70,10 @@ $data = mysqli_fetch_array($req);
                         </a>
                         <ul class="collapse submenu list-unstyled" id="dashboard" data-bs-parent="#accordionExample">
                             <li class="active">
-                                <a href="./Analytics.php"> Analyses </a>
+                                <a href="../../Analytics.php"> Analyses </a>
                             </li>
                             <li>
-                                <a href="./Ventes.php"> Ventes </a>
+                                <a href="../../Ventes.php"> Ventes </a>
                             </li>
                         </ul>
                     </li>
@@ -81,7 +81,7 @@ $data = mysqli_fetch_array($req);
                         <div class="heading"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-minus"><line x1="5" y1="12" x2="19" y2="12"></line></svg><span>Ecommerce</span></div>
                     </li>
                     <li class="menu">
-                        <a href="./Boite-de-courriel.php" aria-expanded="false" class="dropdown-toggle">
+                        <a href="../../Boite-de-courriel.php" aria-expanded="false" class="dropdown-toggle">
                             <div class="">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
                                 <span>Boite de courriel</span>
@@ -100,16 +100,16 @@ $data = mysqli_fetch_array($req);
                         </a>
                         <ul class="collapse submenu list-unstyled" id="invoice" data-bs-parent="#accordionExample">
                             <li>
-                                <a href="./Liste-des-ventes.php"> Liste des ventes </a>
+                                <a href="../../Liste-des-ventes.php"> Liste des ventes </a>
                             </li>
                             <li>
-                                <a href="./Aperçu-des-ventes.php"> Aperçu des ventes </a>
+                                <a href="../../Aperçu-des-ventes.php"> Aperçu des ventes </a>
                             </li>
                             <li>
-                                <a href="./Ajouter-des-ventes.php"> Ajouter des ventes </a>
+                                <a href="../../Ajouter-des-ventes.php"> Ajouter des ventes </a>
                             </li>
                             <li>
-                                <a href="./Editeur-de-ventes.php"> Editeur de ventes </a>
+                                <a href="../../Editeur-de-ventes.php"> Editeur de ventes </a>
                             </li>                            
                         </ul>
                     </li>
@@ -125,23 +125,23 @@ $data = mysqli_fetch_array($req);
                         </a>
                         <ul class="collapse submenu list-unstyled" id="Produits" data-bs-parent="#accordionExample">
                             <li>
-                                <a href="./Liste-des-produits.php"> Liste des produits </a>
+                                <a href="../../Liste-des-produits.php"> Liste des produits </a>
                             </li>
                             <li>
-                                <a href="./Créer-des-produits.php"> Créer des produits </a>
+                                <a href="../../Créer-des-produits.php"> Créer des produits </a>
                             </li> 
                             
                             <li>
-                                <a href="./Liste-des-options.php"> Liste des options </a>
+                                <a href="../../Liste-des-options.php"> Liste des options </a>
                             </li>
                             <li>
-                                <a href="./Liste-des-dategories-produits.php"> Liste des dategories </a>
+                                <a href="../../Liste-des-dategories-produits.php"> Liste des dategories </a>
                             </li> 
                             <li>
-                                <a href="./Liste-des-attribut.php"> Liste des attribut </a>
+                                <a href="../../Liste-des-attribut.php"> Liste des attribut </a>
                             </li>
                             <li>
-                                <a href="./Liste-des-Marques.php"> Liste des Marques </a>
+                                <a href="../../Liste-des-Marques.php"> Liste des Marques </a>
                             </li>                           
                         </ul>
                     </li>
@@ -158,13 +158,13 @@ $data = mysqli_fetch_array($req);
                         <ul class="collapse submenu list-unstyled" id="blog" data-bs-parent="#accordionExample">
                             
                             <li>
-                                <a href="./listes-de-blogs.php"> listes de blogs </a>
+                                <a href="../../listes-de-blogs.php"> listes de blogs </a>
                             </li>
                             <li>
-                                <a href="./Créer-un-blog.php"> Créer un blog </a>
+                                <a href="../../Créer-un-blog.php"> Créer un blog </a>
                             </li>                            
                             <li>
-                                <a href="./Blog-Modifier.php"> Blog Modifier </a>
+                                <a href="../../Blog-Modifier.php"> Blog Modifier </a>
                             </li>
                         </ul>
                     </li>
@@ -183,13 +183,13 @@ $data = mysqli_fetch_array($req);
                         </a>
                         <ul class="collapse submenu list-unstyled" id="Magazine" data-bs-parent="#accordionExample"> 
                             <li>
-                                <a href="./Vendors.php"> Vendors </a>
+                                <a href="../../Vendors.php"> Vendors </a>
                             </li>
                             <li>
-                                <a href="./Créer-un-Vendors.php"> Créer un Vendors </a>
+                                <a href="../../Créer-un-Vendors.php"> Créer un Vendors </a>
                             </li>                            
                             <li>
-                                <a href="./Vendors-Modifier.php"> Vendors Modifier </a>
+                                <a href="../../Vendors-Modifier.php"> Vendors Modifier </a>
                             </li>
                         </ul>
                     </li>
@@ -208,7 +208,7 @@ $data = mysqli_fetch_array($req);
                         </a>
                         <ul class="collapse submenu list-unstyled" id="Clients" data-bs-parent="#accordionExample">
                             <li>
-                                <a href="./Clients.php"> Clients </a>
+                                <a href="../../Clients.php"> Clients </a>
                             </li>
                              
                         </ul>
@@ -229,10 +229,10 @@ $data = mysqli_fetch_array($req);
                         </a>
                         <ul class="collapse submenu list-unstyled" id="user-profile" data-bs-parent="#accordionExample">
                             <li>
-                                <a href="./profil-de-utilisateur.php"> profil de l'utilisateur </a>
+                                <a href="../../profil-de-utilisateur.php"> profil de l'utilisateur </a>
                             </li>
                             <li>
-                                <a href="./paramètres-du-compte.php"> paramètres du compte </a>
+                                <a href="../../paramètres-du-compte.php"> paramètres du compte </a>
                             </li>
                         </ul>
                     </li>
@@ -248,7 +248,7 @@ $data = mysqli_fetch_array($req);
                         </a>
                         <ul class="collapse submenu list-unstyled" id="administration" data-bs-parent="#accordionExample">
                             <li>
-                                <a href="./administration.php"> gestion administration </a>
+                                <a href="../../administration.php"> gestion administration </a>
                             </li>
                         </ul>
                     </li>
@@ -277,8 +277,8 @@ $data = mysqli_fetch_array($req);
                         <div class="col-xl-12 col-lg-12 col-sm-12  layout-spacing">
                             <div class="widget-content widget-content-area br-8">
                                             <div class="body" style="margin: 30px;">
-                                            <div id='alerte'></div>
-                                            <form class="row g-3" id='myforme'  method="post" action="controller/Liste-des-options/ajouter.php"  enctype="multipart/form-data">
+                                            <div id='alertemodif'></div>
+                                            <form class="row g-3" id='mymodif'  method="post" action="modifications.php"  enctype="multipart/form-data">
                                             <input type="hidden" name="id_options" value="<?php echo $data['id_options']?>"\>
                                             <div class="col-md-12">
                                             <label for="inputEmail4" class="form-label">Option Name</label>
@@ -360,13 +360,22 @@ $data = mysqli_fetch_array($req);
                                          ?>   
                                         <div id='affich'></div> 
                                         </div>
+                                        <div class="col-6">
+                                        <label for="inputEmail4" class="form-label">Statut attributes</label>
+                                            <div class="form-check">
+                                            <div class="form-check form-switch form-check-inline">
+                                            <input class="form-check-input" type="checkbox" name="Statut" role="switch" id="flexSwitchCheckChecked" checked>
+                                            <label class="form-check-label" for="flexSwitchCheckChecked">Statut</label>
+                                            </div>
+                                            </div>
+                                        </div>
 
                                         <div class="col-2">
                                         <a href="#" class="btn btn-light-dark" data-bs-dismiss="modal">Annuler</a>
                                         </div>
-                                        <div class="col-2">          
+                                        <div class="col-3">          
                                                                        
-                                        <a href="#" class="btn btn-primary" id='gi'>Enregistrer</a>
+                                        <a href="#" class="btn btn-primary" id='gimodif'>Enregistrer Modification</a>
                                         </div>
                                     </form>
 

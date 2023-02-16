@@ -9,15 +9,19 @@ if(isset($_POST['Statut'])) {
 $date_added=date('y-m-d');
 $name_options=$_POST['name_options'];
 $type_options=$_POST['type_options'];
-
-$sql = "DELETE FROM options WHERE id_options=$id or id_value_options='$id' ";
+$id_options=$_POST['id_options'];
+$sql = "DELETE FROM options WHERE id_value_options='$id_options' ";
 $req = mysqli_query($db,$sql) or die('Erreur SQL !'.$sql.'<br>'.mysql_error());
 
 $date_added=date('y-m-d');
-  			$sql = "INSERT  INTO options VALUES ( '', '0', '$name_options','$type_options','','','$statut')";
+$sql = "UPDATE options SET 
+                    name_options='$name_options',
+                    type_options = '$type_options',                    
+                    Statut='$statut'
+                    where id_options='$id_options'";
   			$req = mysqli_query($db,$sql) or die('Erreur SQL !'.$sql.'<br>'.mysql_error());			 
 		    if($type_options=='select' || $type_options=='radio' || $type_options=='checkbox'){
-				$sql = "SELECT * FROM options WHERE name_options='$name_options'";
+				$sql = "SELECT * FROM options WHERE id_options='$id_options'";
 				$req = mysqli_query($db,$sql) or die('Erreur SQL !'.$sql.'<br>'.mysql_error());
 				$data = mysqli_fetch_array($req);
 				$name_value_options=$_POST['name_value_options'];
@@ -33,8 +37,10 @@ $date_added=date('y-m-d');
                     $file_op = $imgFile[$i] ?? '';
                     $tmp_dir_op = $tmp_dir[$i] ?? '';
                     $imgSize_op = $imgSize[$i] ?? '';
- 
-                    if(empty($file_op)){
+                    if(empty($file_op) && empty($name_vp)){
+                      
+                    } 
+                    elseif(empty($file_op)){
                     
                     $name_image_finales='image/options/defaults.png';
                     $sql = "INSERT  INTO options VALUES ( '', '$id_values', '$name_options','$type_options','$name_vp','$name_image_finales','$statut')";
