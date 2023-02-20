@@ -8,5 +8,4 @@ if(empty($name_options) or empty($type_options) )
 </div> 
    ';
     }
-
 ?>
