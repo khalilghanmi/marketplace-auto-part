@@ -11,18 +11,18 @@ $data = mysqli_fetch_array($req);
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
     <title>Modifications des options | Admin - Piéce Auto Tunisie </title>
-    <link rel="icon" type="image/x-icon" href="../../../src/assets/img/favicon.ico"/>
-    <link href="../../../layouts/semi-dark-menu/css/light/loader.css" rel="stylesheet" type="text/css" />
-    <link href="../../../layouts/semi-dark-menu/css/dark/loader.css" rel="stylesheet" type="text/css" />
-    <script src="../../../layouts/semi-dark-menu/loader.js"></script>
+    <link rel="icon" type="image/x-icon" href="../../src/assets/img/favicon.ico"/>
+    <link href="../../layouts/semi-dark-menu/css/light/loader.css" rel="stylesheet" type="text/css" />
+    <link href="../../layouts/semi-dark-menu/css/dark/loader.css" rel="stylesheet" type="text/css" />
+    <script src="../../layouts/semi-dark-menu/loader.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
-    <link href="../../../src/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <link href="../../../layouts/semi-dark-menu/css/light/plugins.css" rel="stylesheet" type="text/css" />
-    <link href="../../../layouts/semi-dark-menu/css/dark/plugins.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../../../src/plugins/src/table/datatable/datatables.css">
-    <link rel="stylesheet" type="text/css" href="../../../src/plugins/css/light/table/datatable/dt-global_style.css">
-    <link rel="stylesheet" type="text/css" href="../../../src/plugins/css/dark/table/datatable/dt-global_style.css">
-    <link rel="stylesheet" type="text/css" href="../../../src/assets/css/light/elements/alert.css">
+    <link href="../../src/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="../../layouts/semi-dark-menu/css/light/plugins.css" rel="stylesheet" type="text/css" />
+    <link href="../../layouts/semi-dark-menu/css/dark/plugins.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../src/plugins/src/table/datatable/datatables.css">
+    <link rel="stylesheet" type="text/css" href="../../src/plugins/css/light/table/datatable/dt-global_style.css">
+    <link rel="stylesheet" type="text/css" href="../../src/plugins/css/dark/table/datatable/dt-global_style.css">
+    <link rel="stylesheet" type="text/css" href="../../src/assets/css/light/elements/alert.css">
     
     <style>
         #ecommerce-list img {
@@ -393,13 +393,13 @@ $data = mysqli_fetch_array($req);
             ?>
         </div>
     </div>
-    <script src="../../../src/plugins/src/global/vendors.min.js"></script>
-    <script src="../../../src/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="../../../src/plugins/src/perfect-scrollbar/perfect-scrollbar.min.js"></script>
-    <script src="../../../src/plugins/src/mousetrap/mousetrap.min.js"></script>
-    <script src="../../../src/plugins/src/waves/waves.min.js"></script>
-    <script src="../../../layouts/semi-dark-menu/app.js"></script>
-    <script src="../../../src/assets/js/custom.js"></script>
+    <script src="../../src/plugins/src/global/vendors.min.js"></script>
+    <script src="../../src/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../../src/plugins/src/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="../../src/plugins/src/mousetrap/mousetrap.min.js"></script>
+    <script src="../../src/plugins/src/waves/waves.min.js"></script>
+    <script src="../../layouts/semi-dark-menu/app.js"></script>
+    <script src="../../src/assets/js/custom.js"></script>
 <script type="text/javascript" src="../../js/jquery.js"></script>
 <script type="text/javascript" src="../../js/jquery.min.js"></script>
 <script type="text/javascript" src="../../js/bootstrap.bundle.min.js"></script>

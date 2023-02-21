@@ -127,21 +127,21 @@ function viewsubcat($categories,$concatsubcatigory)
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
     <title>Liste des dategories | Admin - Piéce Auto Tunisie </title>
-    <link rel="icon" type="image/x-icon" href="../src/assets/img/favicon.ico"/>
-    <link href="../layouts/semi-dark-menu/css/light/loader.css" rel="stylesheet" type="text/css" />
-    <link href="../layouts/semi-dark-menu/css/dark/loader.css" rel="stylesheet" type="text/css" />
-    <script src="../layouts/semi-dark-menu/loader.js"></script>
+    <link rel="icon" type="image/x-icon" href="src/assets/img/favicon.ico"/>
+    <link href="layouts/semi-dark-menu/css/light/loader.css" rel="stylesheet" type="text/css" />
+    <link href="layouts/semi-dark-menu/css/dark/loader.css" rel="stylesheet" type="text/css" />
+    <script src="layouts/semi-dark-menu/loader.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
-    <link href="../src/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <link href="../layouts/semi-dark-menu/css/light/plugins.css" rel="stylesheet" type="text/css" />
-    <link href="../layouts/semi-dark-menu/css/dark/plugins.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../src/plugins/src/table/datatable/datatables.css">
-    <link rel="stylesheet" type="text/css" href="../src/plugins/css/light/table/datatable/dt-global_style.css">
-    <link rel="stylesheet" type="text/css" href="../src/plugins/css/dark/table/datatable/dt-global_style.css">
-    <link rel="stylesheet" type="text/css" href="../src/assets/css/light/elements/alert.css">
-    <link rel="stylesheet" type="text/css" href="../src/plugins/src/tomSelect/tom-select.default.min.css">
-    <link rel="stylesheet" type="text/css" href="../src/plugins/css/light/tomSelect/custom-tomSelect.css">
-    <link rel="stylesheet" type="text/css" href="../src/plugins/css/dark/tomSelect/custom-tomSelect.css">
+    <link href="src/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="layouts/semi-dark-menu/css/light/plugins.css" rel="stylesheet" type="text/css" />
+    <link href="layouts/semi-dark-menu/css/dark/plugins.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="src/plugins/src/table/datatable/datatables.css">
+    <link rel="stylesheet" type="text/css" href="src/plugins/css/light/table/datatable/dt-global_style.css">
+    <link rel="stylesheet" type="text/css" href="src/plugins/css/dark/table/datatable/dt-global_style.css">
+    <link rel="stylesheet" type="text/css" href="src/assets/css/light/elements/alert.css">
+    <link rel="stylesheet" type="text/css" href="src/plugins/src/tomSelect/tom-select.default.min.css">
+    <link rel="stylesheet" type="text/css" href="src/plugins/css/light/tomSelect/custom-tomSelect.css">
+    <link rel="stylesheet" type="text/css" href="src/plugins/css/dark/tomSelect/custom-tomSelect.css">
     
     <style>
         #ecommerce-list img {
@@ -248,23 +248,23 @@ function viewsubcat($categories,$concatsubcatigory)
             ?>
         </div>
     </div>
-   <script src="../src/plugins/src/global/vendors.min.js"></script>
-    <script src="../src/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="../src/plugins/src/perfect-scrollbar/perfect-scrollbar.min.js"></script>
-    <script src="../src/plugins/src/mousetrap/mousetrap.min.js"></script>
-    <script src="../src/plugins/src/waves/waves.min.js"></script>
-    <script src="../layouts/semi-dark-menu/app.js"></script>
-    <script src="../src/assets/js/custom.js"></script>
+   <script src="src/plugins/src/global/vendors.min.js"></script>
+    <script src="src/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="src/plugins/src/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="src/plugins/src/mousetrap/mousetrap.min.js"></script>
+    <script src="src/plugins/src/waves/waves.min.js"></script>
+    <script src="layouts/semi-dark-menu/app.js"></script>
+    <script src="src/assets/js/custom.js"></script>
     <!-- END GLOBAL MANDATORY STYLES -->
     <!-- BEGIN PAGE LEVEL SCRIPTS -->
-    <script src="../src/plugins/src/table/datatable/datatables.js"></script>
-    <script src="../src/plugins/src/table/datatable/button-ext/dataTables.buttons.min.js"></script>
-    <script src="../src/plugins/src/table/datatable/button-ext/jszip.min.js"></script>    
-    <script src="../src/plugins/src/table/datatable/button-ext/buttons.html5.min.js"></script>
-    <script src="../src/plugins/src/table/datatable/button-ext/buttons.print.min.js"></script>
-    <script src="../src/plugins/src/table/datatable/custom_miscellaneous.js"></script>   
-    <script src="../src/plugins/src/tomSelect/tom-select.base.js"></script>
-    <script src="../src/plugins/src/tomSelect/custom-tom-select.js"></script> 
+    <script src="src/plugins/src/table/datatable/datatables.js"></script>
+    <script src="src/plugins/src/table/datatable/button-ext/dataTables.buttons.min.js"></script>
+    <script src="src/plugins/src/table/datatable/button-ext/jszip.min.js"></script>    
+    <script src="src/plugins/src/table/datatable/button-ext/buttons.html5.min.js"></script>
+    <script src="src/plugins/src/table/datatable/button-ext/buttons.print.min.js"></script>
+    <script src="src/plugins/src/table/datatable/custom_miscellaneous.js"></script>   
+    <script src="src/plugins/src/tomSelect/tom-select.base.js"></script>
+    <script src="src/plugins/src/tomSelect/custom-tom-select.js"></script> 
     <script>
         ecommerceList = $('#ecommerce-list').DataTable({
             headerCallback:function(e, a, t, n, s) {
