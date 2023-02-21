@@ -4,26 +4,20 @@ function dbconnect(){
 	$connuser = "root";
 	$connpass = "";
 	$connname = "pieces-auto-tunisie";
-
 	$conn = new mysqli($host, $connuser, $connpass, $connname);
-
 	if($conn->connect_error){
 		die("Connection failed: ".$conn->connect_error);
 	}
-	
 	return $conn;
 }
 ?>
 <?php
-
 function categories()
 {
 	$conn = dbconnect();
 	$sql = "SELECT * FROM category WHERE parent_id=0";
 	$result = $conn->query($sql);
-	
 	$categories = array();
-	
 	while($row = $result->fetch_assoc())
 	{
 		$categories[] = array(
@@ -40,19 +34,16 @@ function categories()
 			'subcategory' => sub_categories($row['category_id']),
 		);
 	}
-	
 	return $categories;
 }
 
 function sub_categories($id)
-{	
-	
+{
 	$conn = dbconnect();
 	$sql = "SELECT * FROM category WHERE parent_id=$id";
 	$result = $conn->query($sql);
 	$res = mysqli_num_rows($result);
 	$categories = array();
-	
 	while($row = $result->fetch_assoc())
 	{
 		$categories[] = array(
@@ -71,7 +62,6 @@ function sub_categories($id)
 	}
 	return $categories;
 }
-
 ?>
 <?php
 function viewsubcat($categories,$concatsubcatigory)
@@ -114,12 +104,9 @@ function viewsubcat($categories,$concatsubcatigory)
 
 		}
 	}
-	 
-	
 	return $html;
 }
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -127,27 +114,7 @@ function viewsubcat($categories,$concatsubcatigory)
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
     <title>Liste des dategories | Admin - Piéce Auto Tunisie </title>
-    <link rel="icon" type="image/x-icon" href="src/assets/img/favicon.ico"/>
-    <link href="layouts/semi-dark-menu/css/light/loader.css" rel="stylesheet" type="text/css" />
-    <link href="layouts/semi-dark-menu/css/dark/loader.css" rel="stylesheet" type="text/css" />
-    <script src="layouts/semi-dark-menu/loader.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
-    <link href="src/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <link href="layouts/semi-dark-menu/css/light/plugins.css" rel="stylesheet" type="text/css" />
-    <link href="layouts/semi-dark-menu/css/dark/plugins.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="src/plugins/src/table/datatable/datatables.css">
-    <link rel="stylesheet" type="text/css" href="src/plugins/css/light/table/datatable/dt-global_style.css">
-    <link rel="stylesheet" type="text/css" href="src/plugins/css/dark/table/datatable/dt-global_style.css">
-    <link rel="stylesheet" type="text/css" href="src/assets/css/light/elements/alert.css">
-    <link rel="stylesheet" type="text/css" href="src/plugins/src/tomSelect/tom-select.default.min.css">
-    <link rel="stylesheet" type="text/css" href="src/plugins/css/light/tomSelect/custom-tomSelect.css">
-    <link rel="stylesheet" type="text/css" href="src/plugins/css/dark/tomSelect/custom-tomSelect.css">
-    
-    <style>
-        #ecommerce-list img {
-            border-radius: 18px;
-        }
-    </style>
+    <?php include 'head/library-header.php';   ?>
 </head>
 <body class="" data-bs-spy="scroll" data-bs-bs-target="#navSection" data-bs-offset="140">
  
@@ -250,15 +217,9 @@ function viewsubcat($categories,$concatsubcatigory)
     </div>
    <script src="src/plugins/src/global/vendors.min.js"></script>
     <script src="src/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="src/plugins/src/perfect-scrollbar/perfect-scrollbar.min.js"></script>
-    <script src="src/plugins/src/mousetrap/mousetrap.min.js"></script>
-    <script src="src/plugins/src/waves/waves.min.js"></script>
     <script src="layouts/semi-dark-menu/app.js"></script>
     <script src="src/assets/js/custom.js"></script>
-    <!-- END GLOBAL MANDATORY STYLES -->
-    <!-- BEGIN PAGE LEVEL SCRIPTS -->
     <script src="src/plugins/src/table/datatable/datatables.js"></script>
-    
     <script src="src/plugins/src/tomSelect/tom-select.base.js"></script>
     <script src="src/plugins/src/tomSelect/custom-tom-select.js"></script> 
     <script>
