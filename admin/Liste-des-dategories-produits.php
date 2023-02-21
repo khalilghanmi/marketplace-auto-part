@@ -258,11 +258,7 @@ function viewsubcat($categories,$concatsubcatigory)
     <!-- END GLOBAL MANDATORY STYLES -->
     <!-- BEGIN PAGE LEVEL SCRIPTS -->
     <script src="src/plugins/src/table/datatable/datatables.js"></script>
-    <script src="src/plugins/src/table/datatable/button-ext/dataTables.buttons.min.js"></script>
-    <script src="src/plugins/src/table/datatable/button-ext/jszip.min.js"></script>    
-    <script src="src/plugins/src/table/datatable/button-ext/buttons.html5.min.js"></script>
-    <script src="src/plugins/src/table/datatable/button-ext/buttons.print.min.js"></script>
-    <script src="src/plugins/src/table/datatable/custom_miscellaneous.js"></script>   
+    
     <script src="src/plugins/src/tomSelect/tom-select.base.js"></script>
     <script src="src/plugins/src/tomSelect/custom-tom-select.js"></script> 
     <script>

@@ -83,7 +83,7 @@ While ($test == false){
                     where category_id='$id'";
                    $req = mysqli_query($db,$sql) or die('Erreur SQL !'.$sql.'<br>'.mysql_error());
                     $successMSG = "new record succesfully inserted ...";
-                    header("refresh:5;../../Liste-des-dategories-produits.php");  
+                    header("refresh:0;../../Liste-des-dategories-produits.php");  
                  
                 }
                 }
