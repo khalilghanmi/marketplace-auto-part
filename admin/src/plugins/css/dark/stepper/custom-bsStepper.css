@@ -12,10 +12,10 @@ body.dark .bs-stepper-content {
   width: 100%;
 }
 body.dark .bs-stepper .step.crossed + .line {
-  background-color: #4361ee;
+  background-color: #c90c0f;
 }
 body.dark .step.crossed .step-trigger.disabled .bs-stepper-circle, body.dark .step.crossed .step-trigger:disabled .bs-stepper-circle {
-  background-color: #4361ee;
+  background-color: #c90c0f;
   color: #fff;
 }
 body.dark .bs-stepper .line, body.dark .bs-stepper-line {
@@ -41,10 +41,10 @@ body.dark .bs-stepper .step-trigger.disabled .bs-stepper-circle, body.dark .bs-s
   font-weight: 700;
 }
 body.dark .active .bs-stepper-circle {
-  background-color: #4361ee;
+  background-color: #c90c0f;
 }
 body.dark .bs-stepper-label:focus {
-  color: #4361ee;
+  color: #c90c0f;
 }
 
 /* 

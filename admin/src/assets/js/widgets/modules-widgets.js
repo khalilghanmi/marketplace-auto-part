@@ -357,7 +357,7 @@ window.addEventListener("load", function(){
         yaxis: {
           min: 0
         },
-        colors: ['#4361ee'],
+        colors: ['#c90c0f'],
         tooltip: {
           x: {
             show: false,
@@ -849,7 +849,7 @@ window.addEventListener("load", function(){
         yaxis: {
           min: 0
         },
-        colors: ['#4361ee'],
+        colors: ['#c90c0f'],
         tooltip: {
           x: {
             show: false,
@@ -1874,7 +1874,7 @@ window.addEventListener("load", function(){
             floating: false,
             style: {
               fontSize: '18px',
-              color:  '#4361ee'
+              color:  '#c90c0f'
             }
           },
           title: {
@@ -2278,7 +2278,7 @@ window.addEventListener("load", function(){
           colors: ['#1b55e2', '#e7515a'],
           subtitle: {
             style: {
-              color:  '#4361ee'
+              color:  '#c90c0f'
             }
           },
           title: {

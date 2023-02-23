@@ -445,19 +445,19 @@
 }
 .ql-snow .ql-stroke {
   fill: none;
-  stroke: #4361ee;
+  stroke: #c90c0f;
   stroke-linecap: round;
   stroke-linejoin: round;
   stroke-width: 2;
 }
 .ql-snow .ql-stroke-miter {
   fill: none;
-  stroke: #4361ee;
+  stroke: #c90c0f;
   stroke-miterlimit: 10;
   stroke-width: 2;
 }
 .ql-snow .ql-fill, .ql-snow .ql-stroke.ql-fill {
-  fill: #4361ee;
+  fill: #c90c0f;
 }
 .ql-snow .ql-empty {
   fill: none;
@@ -731,7 +731,7 @@
 }
 .ql-toolbar.ql-snow .ql-picker-label {
   border: 1px solid transparent;
-  color: #4361ee;
+  color: #c90c0f;
 }
 .ql-toolbar.ql-snow .ql-picker-options {
   border: 1px solid transparent;

@@ -38,7 +38,7 @@ body.dark .bs-tooltip-top .tooltip-tooltip-arrow::before {
 */
 /*		Tooltip Inner 	*/
 body.dark .tooltip-primary .tooltip-inner {
-  color: #4361ee;
+  color: #c90c0f;
   background-color: #060818;
 }
 body.dark .tooltip-success .tooltip-inner {

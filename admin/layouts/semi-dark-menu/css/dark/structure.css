@@ -980,7 +980,7 @@ body.dark #sidebar ul.menu-categories li.menu > .dropdown-toggle svg:not(.badge-
   stroke-width: 1.8;
 }
 body.dark #sidebar ul.menu-categories li.menu.active > .dropdown-toggle {
-  background-color: #4361ee;
+  background-color: #c90c0f;
 }
 body.dark #sidebar ul.menu-categories li.menu.active > .dropdown-toggle svg, body.dark #sidebar ul.menu-categories li.menu.active > .dropdown-toggle span {
   color: #fff;
@@ -1089,7 +1089,7 @@ body.dark #sidebar ul.menu-categories ul.submenu > li.active:before {
   content: "";
   position: absolute;
   background-color: rgba(255, 255, 255, 0.07);
-  background-color: #4361ee;
+  background-color: #c90c0f;
   width: 15px;
   height: 42px;
   width: 100%;

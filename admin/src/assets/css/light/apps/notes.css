@@ -116,7 +116,7 @@
   padding: 4px 7px;
   height: 24px;
   width: 23px;
-  color: #4361ee;
+  color: #c90c0f;
   font-weight: 600;
 }
 .tab-title .nav-pills.group-list .nav-item a {
@@ -164,7 +164,7 @@
 }
 .tab-title li.mail-labels a.dropdown-item:hover {
   background-color: #fff;
-  color: #4361ee;
+  color: #c90c0f;
 }
 .tab-title li.mail-labels .label:after {
   position: absolute;
@@ -191,7 +191,7 @@
   margin-bottom: 43px;
 }
 .note-container .switch .active-view {
-  color: #4361ee;
+  color: #c90c0f;
   fill: rgba(27, 85, 226, 0.2392156863);
 }
 .note-container .switch .view-list, .note-container .switch .view-grid {

@@ -351,7 +351,7 @@ window.addEventListener("load", function(){
       yaxis: {
         min: 0
       },
-      colors: ['#4361ee'],
+      colors: ['#c90c0f'],
       tooltip: {
         x: {
           show: false,
@@ -843,7 +843,7 @@ window.addEventListener("load", function(){
       yaxis: {
         min: 0
       },
-      colors: ['#4361ee'],
+      colors: ['#c90c0f'],
       tooltip: {
         x: {
           show: false,

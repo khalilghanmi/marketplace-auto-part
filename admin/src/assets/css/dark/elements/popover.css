@@ -76,7 +76,7 @@ body.dark .popover-dark .popover-arrow:after, body.dark .popover-dark .popover-a
 body.dark .popover-primary .popover-header {
   background-color: #060818;
   border: none;
-  color: #4361ee;
+  color: #c90c0f;
 }
 body.dark .popover-success .popover-header {
   background-color: #060818;
@@ -112,7 +112,7 @@ body.dark .popover-dark .popover-header {
 /*  	Popover Body 	*/
 body.dark .popover-primary .popover-body {
   background-color: #060818;
-  color: #4361ee;
+  color: #c90c0f;
 }
 body.dark .popover-success .popover-body {
   background-color: #060818;

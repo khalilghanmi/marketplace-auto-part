@@ -18,8 +18,8 @@ while( $row = mysqli_fetch_array($result) ){
                                     if ($row['Statut']=='1'){$response .= 'désactiver ';}
                                     else {
                                         $response .= 'activer';
-                                    }$response .= ' statut <span class="shadow-none badge badge-danger">'.$row['nom'].' '.$row['prenom'].'</span> ? </button></div>
-                                            <form action="controller/Clients/statut.php" method="post" class="row g-3">
+                                    }$response .= ' statut <span class="shadow-none badge badge-danger">'.$row['nom_attributes'].'</span> ? </button></div>
+                                            <form action="controller/attributes/statut.php" method="post" class="row g-3">
                                             <input type="hidden" name="id" value="'.$row['id_attributes'].'" class="form-control">
                                             <input type="hidden" name="statut" value="'.$row['Statut'].'" class="form-control">
                                             </div>
