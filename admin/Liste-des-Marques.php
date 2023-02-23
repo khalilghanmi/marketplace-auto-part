@@ -11,24 +11,7 @@ $res = mysqli_num_rows($req);
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
     <title>Liste des Marques | Admin - Piéce Auto Tunisie </title>
-    <link rel="icon" type="image/x-icon" href="src/assets/img/favicon.ico"/>
-    <link href="layouts/semi-dark-menu/css/light/loader.css" rel="stylesheet" type="text/css" />
-    <link href="layouts/semi-dark-menu/css/dark/loader.css" rel="stylesheet" type="text/css" />
-    <script src="layouts/semi-dark-menu/loader.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
-    <link href="src/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <link href="layouts/semi-dark-menu/css/light/plugins.css" rel="stylesheet" type="text/css" />
-    <link href="layouts/semi-dark-menu/css/dark/plugins.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="src/plugins/src/table/datatable/datatables.css">
-    <link rel="stylesheet" type="text/css" href="src/plugins/css/light/table/datatable/dt-global_style.css">
-    <link rel="stylesheet" type="text/css" href="src/plugins/css/dark/table/datatable/dt-global_style.css">
-    <link rel="stylesheet" type="text/css" href="src/assets/css/light/elements/alert.css">
-    
-    <style>
-        #ecommerce-list img {
-            border-radius: 18px;
-        }
-    </style>
+    <?php include 'head/library-header.php';   ?>
 </head>
 <body class="" data-bs-spy="scroll" data-bs-bs-target="#navSection" data-bs-offset="140">
  
@@ -126,21 +109,7 @@ $res = mysqli_num_rows($req);
             ?>
         </div>
     </div>
-   <script src="src/plugins/src/global/vendors.min.js"></script>
-    <script src="src/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="src/plugins/src/perfect-scrollbar/perfect-scrollbar.min.js"></script>
-    <script src="src/plugins/src/mousetrap/mousetrap.min.js"></script>
-    <script src="src/plugins/src/waves/waves.min.js"></script>
-    <script src="layouts/semi-dark-menu/app.js"></script>
-    <script src="src/assets/js/custom.js"></script>
-    <!-- END GLOBAL MANDATORY STYLES -->
-    <!-- BEGIN PAGE LEVEL SCRIPTS -->
-    <script src="src/plugins/src/table/datatable/datatables.js"></script>
-    <script src="src/plugins/src/table/datatable/button-ext/dataTables.buttons.min.js"></script>
-    <script src="src/plugins/src/table/datatable/button-ext/jszip.min.js"></script>    
-    <script src="src/plugins/src/table/datatable/button-ext/buttons.html5.min.js"></script>
-    <script src="src/plugins/src/table/datatable/button-ext/buttons.print.min.js"></script>
-    <script src="src/plugins/src/table/datatable/custom_miscellaneous.js"></script>    
+    <?php include 'head/library-footer.php';   ?>
     <script>
         ecommerceList = $('#ecommerce-list').DataTable({
             headerCallback:function(e, a, t, n, s) {
@@ -173,10 +142,6 @@ $res = mysqli_num_rows($req);
         });
         multiCheck(ecommerceList);
     </script>
-<script type="text/javascript" src="js/jquery.js"></script>
-<script type="text/javascript" src="js/plugins.js"></script>
-<script type="text/javascript" src="js/jquery.min.js"></script>
-<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
 <script type="text/javascript" src="controller/Marques/Marques.js"></script>
 </body>
 </html>

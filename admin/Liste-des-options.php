@@ -11,24 +11,7 @@ $res = mysqli_num_rows($req);
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
     <title>Liste des options | Admin - Piéce Auto Tunisie </title>
-    <link rel="icon" type="image/x-icon" href="src/assets/img/favicon.ico"/>
-    <link href="layouts/semi-dark-menu/css/light/loader.css" rel="stylesheet" type="text/css" />
-    <link href="layouts/semi-dark-menu/css/dark/loader.css" rel="stylesheet" type="text/css" />
-    <script src="layouts/semi-dark-menu/loader.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
-    <link href="src/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <link href="layouts/semi-dark-menu/css/light/plugins.css" rel="stylesheet" type="text/css" />
-    <link href="layouts/semi-dark-menu/css/dark/plugins.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="src/plugins/src/table/datatable/datatables.css">
-    <link rel="stylesheet" type="text/css" href="src/plugins/css/light/table/datatable/dt-global_style.css">
-    <link rel="stylesheet" type="text/css" href="src/plugins/css/dark/table/datatable/dt-global_style.css">
-    <link rel="stylesheet" type="text/css" href="src/assets/css/light/elements/alert.css">
-    
-    <style>
-        #ecommerce-list img {
-            border-radius: 18px;
-        }
-    </style>
+    <?php include 'head/library-header.php';   ?>
 </head>
 <body class="" data-bs-spy="scroll" data-bs-bs-target="#navSection" data-bs-offset="140">
  
@@ -124,21 +107,7 @@ $res = mysqli_num_rows($req);
             ?>
         </div>
     </div>
-   <script src="src/plugins/src/global/vendors.min.js"></script>
-    <script src="src/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="src/plugins/src/perfect-scrollbar/perfect-scrollbar.min.js"></script>
-    <script src="src/plugins/src/mousetrap/mousetrap.min.js"></script>
-    <script src="src/plugins/src/waves/waves.min.js"></script>
-    <script src="layouts/semi-dark-menu/app.js"></script>
-    <script src="src/assets/js/custom.js"></script>
-    <!-- END GLOBAL MANDATORY STYLES -->
-    <!-- BEGIN PAGE LEVEL SCRIPTS -->
-    <script src="src/plugins/src/table/datatable/datatables.js"></script>
-    <script src="src/plugins/src/table/datatable/button-ext/dataTables.buttons.min.js"></script>
-    <script src="src/plugins/src/table/datatable/button-ext/jszip.min.js"></script>    
-    <script src="src/plugins/src/table/datatable/button-ext/buttons.html5.min.js"></script>
-    <script src="src/plugins/src/table/datatable/button-ext/buttons.print.min.js"></script>
-       
+    <?php include 'head/library-footer.php';   ?>
     <script>
         ecommerceList = $('#ecommerce-list').DataTable({
             headerCallback:function(e, a, t, n, s) {
@@ -171,25 +140,9 @@ $res = mysqli_num_rows($req);
         });
         multiCheck(ecommerceList);
     </script>
-<script type="text/javascript" src="js/jquery.js"></script>
-<!-- <script type="text/javascript" src="js/plugins.js"></script> -->
-<script type="text/javascript" src="js/jquery.min.js"></script>
-<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+
 <script type="text/javascript" src="controller/Liste-des-options/options.js"></script>
 <script>
-// $(document).ready(function(){ 
-//     $("#addline").click(function(){
-//       $(".addlinetab").prepend('<tr><td><input type="text" name="nom"class="form-control"></td><td><input class="multiple-file-upload" type="file" name="image_options" accept="image/*"  /></td><td><button type="button" id="delateline" class="btn btn-danger btnDelete" ><svg style="color: #fff;" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x-circle"><circle cx="12" cy="12" r="10"></circle><line x1="15" y1="9" x2="9" y2="15"></line><line x1="9" y1="9" x2="15" y2="15"></line></svg></button></td></tr>');
-//     });
-//   });
-  
-//   $(document).ready(function(){
-  
-//   $("#tbUser").on('click','.btnDelete',function(){
-//         $(this).closest('tr').remove();
-//       });
-  
-//   });    
 $(document).ready(function(){
       $("select.seletors").change(function(){
         var liste, texte;
@@ -241,7 +194,6 @@ $(document).ready(function(){
       });
      
 });
- 
 </script>
 </body>
 </html>
