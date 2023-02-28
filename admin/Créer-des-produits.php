@@ -78,7 +78,10 @@
                             </li>
                             <li class="nav-item" role="presentation">
                                 <button class="nav-link" id="pills" data-bs-toggle="pill" data-bs-target="#Fournisseur" type="button" role="tab" aria-controls="pills-home" aria-selected="false">Fournisseur</button>
-                            </li>  
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="btn btn-success w-100">Ajouter produit</button>
+                            </li>    
                         </ul>
                                 <div class="tab-content" id="pills-tabContent">  
                                     <?php
