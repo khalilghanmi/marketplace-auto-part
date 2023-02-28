@@ -64,7 +64,25 @@
                     <div class="simple-pill">
     <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
         <li class="nav-item" role="presentation">
-            <button class="nav-link active" id="pills" data-bs-toggle="pill" data-bs-target="#General" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Home</button>
+            <button class="nav-link active" id="pills" data-bs-toggle="pill" data-bs-target="#General" type="button" role="tab" aria-controls="pills-home" aria-selected="true">General</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills" data-bs-toggle="pill" data-bs-target="#Data" type="button" role="tab" aria-controls="pills-home" aria-selected="false">Data</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills" data-bs-toggle="pill" data-bs-target="#Links" type="button" role="tab" aria-controls="pills-home" aria-selected="false">Links</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills" data-bs-toggle="pill" data-bs-target="#Attributl" type="button" role="tab" aria-controls="pills-home" aria-selected="false">Attributl</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills" data-bs-toggle="pill" data-bs-target="#Options" type="button" role="tab" aria-controls="pills-home" aria-selected="false">Options</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills" data-bs-toggle="pill" data-bs-target="#Promo" type="button" role="tab" aria-controls="pills-home" aria-selected="false">Promo</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills" data-bs-toggle="pill" data-bs-target="#Fournisseur" type="button" role="tab" aria-controls="pills-home" aria-selected="false">Fournisseur</button>
         </li>  
     </ul>
     <div class="tab-content" id="pills-tabContent">
@@ -75,7 +93,8 @@
         include 'controller/Liste-des-produits/les-tabs/Links.php';
         include 'controller/Liste-des-produits/les-tabs/Attribut.php';
         include 'controller/Liste-des-produits/les-tabs/Options.php';
-        include 'controller/Liste-des-produits/les-tabs/General.php';
+        include 'controller/Liste-des-produits/les-tabs/Promo.php';
+        include 'controller/Liste-des-produits/les-tabs/Fournisseur.php';
          
         ?>
  
