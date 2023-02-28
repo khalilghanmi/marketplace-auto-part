@@ -49,9 +49,7 @@
                     <div class="page-meta">
                         <nav class="breadcrumb-style-one" aria-label="breadcrumb">
                             <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="#">App</a></li>
-                                <li class="breadcrumb-item"><a href="#">Ecommerce</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">Create</li>
+                                <li class="breadcrumb-item active" aria-current="page">Créer des produits</li>
                             </ol>
                         </nav>
                     </div>
@@ -68,7 +66,7 @@
                                 <button class="nav-link" id="pills" data-bs-toggle="pill" data-bs-target="#Links" type="button" role="tab" aria-controls="pills-home" aria-selected="false">Links</button>
                             </li>
                             <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="pills" data-bs-toggle="pill" data-bs-target="#Attributl" type="button" role="tab" aria-controls="pills-home" aria-selected="false">Attributl</button>
+                                <button class="nav-link" id="pills" data-bs-toggle="pill" data-bs-target="#Attribut" type="button" role="tab" aria-controls="pills-home" aria-selected="false">Attributl</button>
                             </li>
                             <li class="nav-item" role="presentation">
                                 <button class="nav-link" id="pills" data-bs-toggle="pill" data-bs-target="#Options" type="button" role="tab" aria-controls="pills-home" aria-selected="false">Options</button>
