@@ -41,7 +41,7 @@ if(empty($parent)){
                 $sql = "INSERT  INTO category VALUES ( '', '0', '$name_category','$description_category','$name_image_finales','$meta_title','$meta_description','$meta_keyword','$statut','$date_added')";
                 $req = mysqli_query($db,$sql) or die('Erreur SQL !'.$sql.'<br>'.mysql_error());
                 
-                header("refresh:0;../../Liste-des-dategories-produits.php");
+                header("refresh:0;../../Liste-des-categories-produits.php");
             }
             else
             { $upload_dir = '../../../image/categories/';
@@ -75,7 +75,7 @@ if(empty($parent)){
                 $sql = "INSERT  INTO category VALUES ( '', '0', '$name_category','$description_category','$name_images','$meta_title','$meta_description','$meta_keyword','$statut','$date_added')";
                 $req = mysqli_query($db,$sql) or die('Erreur SQL !'.$sql.'<br>'.mysql_error());
                 
-                header("refresh:0;../../Liste-des-dategories-produits.php");  
+                header("refresh:0;../../Liste-des-categories-produits.php");  
              
                 }
             }
@@ -93,7 +93,7 @@ else{
     $sql = "INSERT  INTO category VALUES ( '', '$parent', '$name_category','$description_category','$name_image_finales','$meta_title','$meta_description','$meta_keyword','$statut','$date_added')";
     $req = mysqli_query($db,$sql) or die('Erreur SQL !'.$sql.'<br>'.mysql_error());
     
-    header("refresh:0;../../Liste-des-dategories-produits.php");
+    header("refresh:0;../../Liste-des-categories-produits.php");
    }
    else
    { $upload_dir = '../../../image/categories/';
@@ -127,7 +127,7 @@ else{
                 $sql = "INSERT  INTO category VALUES ( '', '$parent', '$name_category','$description_category','$name_images','$meta_title','$meta_description','$meta_keyword','$statut','$date_added')";
                 $req = mysqli_query($db,$sql) or die('Erreur SQL !'.$sql.'<br>'.mysql_error());
                     
-                header("refresh:0;../../Liste-des-dategories-produits.php");  
+                header("refresh:0;../../Liste-des-categories-produits.php");  
         
             }
    }

@@ -5,36 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
     <title>Créer un blog | Admin - Piéce Auto Tunisie </title>
-    <link rel="icon" type="image/x-icon" href="../src/assets/img/favicon.ico"/>
-    <link href="../layouts/semi-dark-menu/css/light/loader.css" rel="stylesheet" type="text/css" />
-    <link href="../layouts/semi-dark-menu/css/dark/loader.css" rel="stylesheet" type="text/css" />
-    <script src="../layouts/semi-dark-menu/loader.js"></script>
+    <link rel="icon" type="image/x-icon" href="src/assets/img/favicon.ico"/>
+    <link href="layouts/semi-dark-menu/css/light/loader.css" rel="stylesheet" type="text/css" />
+    <link href="layouts/semi-dark-menu/css/dark/loader.css" rel="stylesheet" type="text/css" />
+    <script src="layouts/semi-dark-menu/loader.js"></script>
     <!-- BEGIN GLOBAL MANDATORY STYLES -->
     <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
-    <link href="../src/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <link href="../layouts/semi-dark-menu/css/light/plugins.css" rel="stylesheet" type="text/css" />
-    <link href="../layouts/semi-dark-menu/css/dark/plugins.css" rel="stylesheet" type="text/css" />
+    <link href="src/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="layouts/semi-dark-menu/css/light/plugins.css" rel="stylesheet" type="text/css" />
+    <link href="layouts/semi-dark-menu/css/dark/plugins.css" rel="stylesheet" type="text/css" />
     <!-- END GLOBAL MANDATORY STYLES -->
 
     <!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM STYLES -->
-    <link rel="stylesheet" href="../src/plugins/src/filepond/filepond.min.css">
-    <link rel="stylesheet" href="../src/plugins/src/filepond/FilePondPluginImagePreview.min.css">
-    <link rel="stylesheet" type="text/css" href="../src/plugins/src/tagify/tagify.css">
+    <link rel="stylesheet" href="src/plugins/src/filepond/filepond.min.css">
+    <link rel="stylesheet" href="src/plugins/src/filepond/FilePondPluginImagePreview.min.css">
+    <link rel="stylesheet" type="text/css" href="src/plugins/src/tagify/tagify.css">
 
-    <link rel="stylesheet" type="text/css" href="../src/assets/css/light/forms/switches.css">
-    <link rel="stylesheet" type="text/css" href="../src/plugins/css/light/editors/quill/quill.snow.css">
-    <link rel="stylesheet" type="text/css" href="../src/plugins/css/light/tagify/custom-tagify.css">
-    <link href="../src/plugins/css/light/filepond/custom-filepond.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="src/assets/css/light/forms/switches.css">
+    <link rel="stylesheet" type="text/css" href="src/plugins/css/light/editors/quill/quill.snow.css">
+    <link rel="stylesheet" type="text/css" href="src/plugins/css/light/tagify/custom-tagify.css">
+    <link href="src/plugins/css/light/filepond/custom-filepond.css" rel="stylesheet" type="text/css" />
 
-    <link rel="stylesheet" type="text/css" href="../src/assets/css/dark/forms/switches.css">
-    <link rel="stylesheet" type="text/css" href="../src/plugins/css/dark/editors/quill/quill.snow.css">
-    <link rel="stylesheet" type="text/css" href="../src/plugins/css/dark/tagify/custom-tagify.css">
-    <link href="../src/plugins/css/dark/filepond/custom-filepond.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="src/assets/css/dark/forms/switches.css">
+    <link rel="stylesheet" type="text/css" href="src/plugins/css/dark/editors/quill/quill.snow.css">
+    <link rel="stylesheet" type="text/css" href="src/plugins/css/dark/tagify/custom-tagify.css">
+    <link href="src/plugins/css/dark/filepond/custom-filepond.css" rel="stylesheet" type="text/css" />
     <!-- END PAGE LEVEL PLUGINS/CUSTOM STYLES -->
     
     <!--  BEGIN CUSTOM STYLE FILE  -->
-    <link rel="stylesheet" href="../src/assets/css/light/apps/blog-create.css">
-    <link rel="stylesheet" href="../src/assets/css/dark/apps/blog-create.css">
+    <link rel="stylesheet" href="src/assets/css/light/apps/blog-create.css">
+    <link rel="stylesheet" href="src/assets/css/dark/apps/blog-create.css">
     <!--  END CUSTOM STYLE FILE  -->
 </head>
 <body class="layout-boxed ">
@@ -172,27 +172,27 @@
     <!-- END MAIN CONTAINER -->
     
     <!-- BEGIN GLOBAL MANDATORY STYLES -->
-    <script src="../src/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="../src/plugins/src/perfect-scrollbar/perfect-scrollbar.min.js"></script>
-    <script src="../src/plugins/src/mousetrap/mousetrap.min.js"></script>
-    <script src="../src/plugins/src/waves/waves.min.js"></script>
-    <script src="../layouts/semi-dark-menu/app.js"></script>
+    <script src="src/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="src/plugins/src/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="src/plugins/src/mousetrap/mousetrap.min.js"></script>
+    <script src="src/plugins/src/waves/waves.min.js"></script>
+    <script src="layouts/semi-dark-menu/app.js"></script>
     <!-- END GLOBAL MANDATORY STYLES -->
 
     <!-- BEGIN PAGE LEVEL SCRIPTS -->
-    <script src="../src/plugins/src/editors/quill/quill.js"></script>
-    <script src="../src/plugins/src/filepond/filepond.min.js"></script>
-    <script src="../src/plugins/src/filepond/FilePondPluginFileValidateType.min.js"></script>
-    <script src="../src/plugins/src/filepond/FilePondPluginImageExifOrientation.min.js"></script>
-    <script src="../src/plugins/src/filepond/FilePondPluginImagePreview.min.js"></script>
-    <script src="../src/plugins/src/filepond/FilePondPluginImageCrop.min.js"></script>
-    <script src="../src/plugins/src/filepond/FilePondPluginImageResize.min.js"></script>
-    <script src="../src/plugins/src/filepond/FilePondPluginImageTransform.min.js"></script>
-    <script src="../src/plugins/src/filepond/filepondPluginFileValidateSize.min.js"></script>
+    <script src="src/plugins/src/editors/quill/quill.js"></script>
+    <script src="src/plugins/src/filepond/filepond.min.js"></script>
+    <script src="src/plugins/src/filepond/FilePondPluginFileValidateType.min.js"></script>
+    <script src="src/plugins/src/filepond/FilePondPluginImageExifOrientation.min.js"></script>
+    <script src="src/plugins/src/filepond/FilePondPluginImagePreview.min.js"></script>
+    <script src="src/plugins/src/filepond/FilePondPluginImageCrop.min.js"></script>
+    <script src="src/plugins/src/filepond/FilePondPluginImageResize.min.js"></script>
+    <script src="src/plugins/src/filepond/FilePondPluginImageTransform.min.js"></script>
+    <script src="src/plugins/src/filepond/filepondPluginFileValidateSize.min.js"></script>
 
-    <script src="../src/plugins/src/tagify/tagify.min.js"></script>
+    <script src="src/plugins/src/tagify/tagify.min.js"></script>
 
-    <script src="../src/assets/js/apps/blog-create.js"></script>
+    <script src="src/assets/js/apps/blog-create.js"></script>
 
     <!-- END PAGE LEVEL SCRIPTS -->
 </body>

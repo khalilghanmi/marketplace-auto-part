@@ -96,7 +96,7 @@
                                 <a href="./Liste-des-options.php"> Liste des options </a>
                             </li>
                             <li>
-                                <a href="./Liste-des-dategories-produits.php"> Liste des dategories </a>
+                                <a href="./Liste-des-categories-produits.php"> Liste des categories </a>
                             </li> 
                             <li>
                                 <a href="./Liste-des-attribut.php"> Liste des attribut </a>
