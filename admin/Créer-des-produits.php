@@ -32,24 +32,20 @@
     <link href="src/assets/css/dark/components/tabs.css" rel="stylesheet" type="text/css" />
 </head>
 <body class="">
-    
-    <!-- BEGIN LOADER -->
     <div id="load_screen"> <div class="loader"> <div class="loader-content">
         <div class="spinner-grow align-self-center"></div>
     </div></div></div>
-    <!--  END LOADER -->
- <!--  BEGIN NAVBAR  -->
+   
  <?php include 'head/header.php';   ?>
-    <!--  END NAVBAR  -->
+    
     <?php include 'head/menu.php';   ?>
-    <!--  BEGIN CONTENT AREA  -->
+   
         <div id="content" class="main-content">
 
             <div class="layout-px-spacing">
 
                 <div class="middle-content container-xxl p-0">
     
-                    <!-- BREADCRUMB -->
                     <div class="page-meta">
                         <nav class="breadcrumb-style-one" aria-label="breadcrumb">
                             <ol class="breadcrumb">
@@ -59,8 +55,7 @@
                             </ol>
                         </nav>
                     </div>
-                    <!-- /BREADCRUMB -->
-
+                    
                     <div class="simple-pill">
                         <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                             <li class="nav-item" role="presentation">
@@ -101,13 +96,10 @@
                 
             </div>
 
-             
-            <!--  BEGIN FOOTER  -->
             <?php include 'head/footer.php';   ?>
-            <!--  END FOOTER  -->
-
+         
         </div>
-        <!--  END CONTENT AREA  -->
+        
     </div>
    
     <script src="src/bootstrap/js/bootstrap.bundle.min.js"></script>
